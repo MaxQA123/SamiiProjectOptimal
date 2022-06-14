@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages
+namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages
 {
-    public partial class LogInTeacher
+    public partial class LogInAssertions
     {
     }
 }

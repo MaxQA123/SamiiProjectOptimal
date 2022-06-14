@@ -1,0 +1,91 @@
+{
+  "uuid": "2a4d118a-d125-4496-9901-644ac15d9157-tr-0-1003",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteAdminTests.LogInAsAdmin",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteAdminTests.LogInAsAdmin",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LogInAsAdmin"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "LogInAsAdmin",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.ArgumentException : The SearchContext of the locator object cannot be null (Parameter 'locator')",
+    "trace": "   at SeleniumExtras.PageObjects.PageFactory.InitElements(Object page, IElementLocator locator, IPageObjectMemberDecorator decorator)\r\n   at SeleniumExtras.PageObjects.PageFactory.InitElements(Object page, IElementLocator locator)\r\n   at SeleniumExtras.PageObjects.PageFactory.InitElements(ISearchContext driver, Object page)\r\n   at SamiiProjectOptimal.PageObjects.Pages.GetPage[T]() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\Pages.cs:line 21\r\n   at SamiiProjectOptimal.PageObjects.Pages.get_LogInAdmin() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\Pages.cs:line 26\r\n   at SamiiProjectOptimal.Tests.WebSiteAdminTests.LogInAsAdmin() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteAdminTests.cs:line 29"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LogInAsAdmin",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.ArgumentException : The SearchContext of the locator object cannot be null (Parameter 'locator')",
+        "trace": "   at SeleniumExtras.PageObjects.PageFactory.InitElements(Object page, IElementLocator locator, IPageObjectMemberDecorator decorator)\r\n   at SeleniumExtras.PageObjects.PageFactory.InitElements(Object page, IElementLocator locator)\r\n   at SeleniumExtras.PageObjects.PageFactory.InitElements(ISearchContext driver, Object page)\r\n   at SamiiProjectOptimal.PageObjects.Pages.GetPage[T]() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\Pages.cs:line 21\r\n   at SamiiProjectOptimal.PageObjects.Pages.get_LogInAdmin() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\Pages.cs:line 26\r\n   at SamiiProjectOptimal.Tests.WebSiteAdminTests.LogInAsAdmin() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteAdminTests.cs:line 29"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "eb5e390a4bba4a5893ab84a165222719-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655219505748,
+      "stop": 1655219505887
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655219505747,
+  "stop": 1655219505894
+}

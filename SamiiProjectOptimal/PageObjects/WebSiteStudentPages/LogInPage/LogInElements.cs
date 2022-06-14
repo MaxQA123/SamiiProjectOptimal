@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages
+namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
 {
-    public partial class LogInTeacher
+    public partial class LogInStudent
     {
         public IWebElement FIeldInputEmail => Browser._Driver.FindElement(_FIeldInputEmail);
         public readonly static By _FIeldInputEmail = By.XPath("//input[@id = 'email']");

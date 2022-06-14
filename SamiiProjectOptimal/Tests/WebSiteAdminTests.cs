@@ -1,21 +1,21 @@
-﻿using System;
+﻿using Allure.Commons;
+using NUnit.Allure.Attributes;
+using NUnit.Allure.Core;
+using NUnit.Framework;
+using SamiiProjectOptimal.Additional;
+using SamiiProjectOptimal.PageObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NUnit.Allure.Core;
-using NUnit.Framework;
-using Allure.Commons;
-using NUnit.Allure.Attributes;
-using System.Threading.Tasks;
-using SamiiProjectOptimal.PageObjects;
 using System.Threading;
-using SamiiProjectOptimal.Additional;
+using System.Threading.Tasks;
 
 namespace SamiiProjectOptimal.Tests
 {
     [TestFixture]
     [AllureNUnit]
-    public class WebSiteStudentTests : TestBaseWeb
+    public class WebSiteAdminTests : TestBaseWeb
     {
         [Test]
         [AllureTag("Regression")]
@@ -24,11 +24,12 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "qatester91311@gmail.com")]
         [AllureSuite("Client")]
         [AllureSubSuite("Login")]
-        public void LogInAsStudent()
+
+        public void LogInAsAdmin()
         {
-            Pages.LogInStudent
+            Pages.LogInAdmin
                 .EnterEmailPassword();
-            Pages.LogInStudent
+            Pages.LogInAdmin
                 .ClickButtonSignIn();
             Thread.Sleep(5000);
         }

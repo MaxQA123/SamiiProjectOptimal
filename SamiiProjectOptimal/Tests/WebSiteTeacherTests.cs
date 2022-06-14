@@ -12,9 +12,9 @@ namespace SamiiProjectOptimal
     {
         [Test]
         [AllureTag("Regression")]
-        [AllureOwner("Artem Sukharevskyi")]
+        [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Artem", "qatester91311@gmail.com")]
+        [Author("Maksim", "qatester91311@gmail.com")]
         [AllureSuite("Client")]
         [AllureSubSuite("Login")]
         public void LogInAsTeacher()

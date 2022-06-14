@@ -1,5 +1,7 @@
 ﻿using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
+using SamiiProjectOptimal.PageObjects.WebSiteAdminPages;
+using SamiiProjectOptimal.PageObjects.WebSiteStudentPages;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages;
 using SeleniumExtras.PageObjects;
 using System;
@@ -21,7 +23,8 @@ namespace SamiiProjectOptimal.PageObjects
             return page;
         }
 
-        public static LogIn LogIn => GetPage<LogIn>();
+        public static LogInAdmin LogInAdmin => GetPage<LogInAdmin>();
+        public static LogInStudent LogInStudent => GetPage<LogInStudent>();
 
     }
 }
