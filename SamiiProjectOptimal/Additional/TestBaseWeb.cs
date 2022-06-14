@@ -12,7 +12,7 @@ namespace SamiiProjectOptimal.Additional
         [SetUp]
         public void SetUp()
         {
-            Browser._Driver.Navigate().GoToUrl(EndPoints.homePage);
+            Browser._Driver.Navigate().GoToUrl(EndPoints.logInPageUrl);
         }
     }
 }

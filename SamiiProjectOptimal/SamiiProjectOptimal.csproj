@@ -23,4 +23,8 @@
     <PackageReference Include="WebDriverManager" Version="2.13.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="PageObjects\WebSiteStudentPages\" />
+  </ItemGroup>
+
 </Project>

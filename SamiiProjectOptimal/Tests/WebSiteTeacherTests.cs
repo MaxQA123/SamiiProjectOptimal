@@ -17,7 +17,7 @@ namespace SamiiProjectOptimal
         [Author("Artem", "qatester91311@gmail.com")]
         [AllureSuite("Client")]
         [AllureSubSuite("Login")]
-        public void Setup()
+        public void LogInAsTeacher()
         {
         }
 

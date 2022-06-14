@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace SamiiProjectOptimal.Additional
 {
-    public class TestData
+    public class EndPoints
     {
+        public const string logInPageUrl = "https://samii-refact.anuitexdevelopment.com/#/";
+    }
+
+    public class Credentials
+    {
+        public const string emailStudentOne = "newstud@xitroo.com";
+        public const string passwordStudentOne = "1111";
     }
 }

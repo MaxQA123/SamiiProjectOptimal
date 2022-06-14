@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInPage
+namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages
 {
     public partial class LogIn
     {
