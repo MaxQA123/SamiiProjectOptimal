@@ -1,7 +1,9 @@
 ﻿using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
+using SamiiProjectOptimal.PageObjects.EmailXitrooPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages;
+using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages;
 using SeleniumExtras.PageObjects;
 using System;
@@ -25,6 +27,8 @@ namespace SamiiProjectOptimal.PageObjects
 
         public static LogInAdmin LogInAdmin => GetPage<LogInAdmin>();
         public static LogInStudent LogInStudent => GetPage<LogInStudent>();
+        public static CreateAccountStudent CreateAccountStudent => GetPage<CreateAccountStudent>();
+        public static EmailXitroo EmailXitroo => GetPage<EmailXitroo>();
 
     }
 }

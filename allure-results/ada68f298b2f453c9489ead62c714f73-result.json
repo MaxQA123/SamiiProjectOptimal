@@ -1,0 +1,88 @@
+{
+  "uuid": "916ab436-221e-423f-83cd-8f881c690721-tr-0-1006",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.CreateAccountForStudent",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.CreateAccountForStudent",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateAccountForStudent"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "CreateAccountForStudent",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "CreateAccountForStudent"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CreateAccountForStudent",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dc628e2e9f3442ac935da5f0492c3846-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655284591459,
+      "stop": 1655284607534
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655284591457,
+  "stop": 1655284607542
+}

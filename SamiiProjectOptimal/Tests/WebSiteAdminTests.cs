@@ -31,7 +31,7 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPassword();
             Pages.LogInAdmin
                 .ClickButtonSignIn();
-            Thread.Sleep(5000);
+            Thread.Sleep(10000);
         }
     }
 }

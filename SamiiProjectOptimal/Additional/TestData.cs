@@ -9,10 +9,16 @@ namespace SamiiProjectOptimal.Additional
     public class EndPoints
     {
         public const string logInPageUrl = "https://samii-refact.anuitexdevelopment.com/#/";
+        public const string VerifyCodePageUrl = "https://samii-refact.anuitexdevelopment.com/#/signup?isTeacher=false";
+
+        public const string emailUrlXitroo = "https://xitroo.com/#happybose@xitroo.com";
+        //public const string ServiceXitroo = "https://xitroo.com/#highdarwin@xitroo.com";
+        ///#highdarwin@xitroo.com - добавляется если нужно, чтоб почта открывалась с введённой почтой которую нужно открыть
     }
 
     public class Credentials
     {
+        public const string emailForCreateAccount = "happybose@xitroo.com";
         public const string emailStudentOne = "newstud@xitroo.com";
         public const string passwordStudentOne = "1111";
 

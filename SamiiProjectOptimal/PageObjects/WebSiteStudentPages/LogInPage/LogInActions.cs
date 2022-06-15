@@ -23,5 +23,12 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
 
             return this;
         }
+
+        public LogInStudent ClickLinkCreateAnAccount()
+        {
+            LinkCreateAnAccountl.Click();
+
+            return this;
+        }
     }
 }

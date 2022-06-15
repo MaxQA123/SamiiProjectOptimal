@@ -10,6 +10,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
 {
     public partial class LogInStudent
     {
+        public IWebElement LinkCreateAnAccountl => Browser._Driver.FindElement(_LinkCreateAnAccount);
+        public readonly static By _LinkCreateAnAccount = By.XPath("//a[text() = 'Create an account']");
+
         public IWebElement FIeldInputEmail => Browser._Driver.FindElement(_FIeldInputEmail);
         public readonly static By _FIeldInputEmail = By.XPath("//input[@id = 'email']");
 
