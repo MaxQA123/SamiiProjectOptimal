@@ -11,18 +11,30 @@ namespace SamiiProjectOptimal.Additional
         public const string logInPageUrl = "https://samii-refact.anuitexdevelopment.com/#/";
         public const string VerifyCodePageUrl = "https://samii-refact.anuitexdevelopment.com/#/signup?isTeacher=false";
 
-        public const string emailUrlXitroo = "https://xitroo.com/#berserkcori@xitroo.com";
+        public const string emailUrlXitroo = "https://xitroo.com/#gigantickalam@xitroo.com";
         //public const string ServiceXitroo = "https://xitroo.com/#highdarwin@xitroo.com";
         ///#highdarwin@xitroo.com - добавляется если нужно, чтоб почта открывалась с введённой почтой которую нужно открыть
     }
 
     public class Credentials
     {
-        public const string emailForCreateAccount = "berserkcori@xitroo.com";
+        public const string emailForCreateAccount = "gigantickalam@xitroo.com";
+        public const string passwordForCreateAccount = "1111";
+
         public const string emailStudentOne = "newstud@xitroo.com";
         public const string passwordStudentOne = "1111";
 
         public const string emailAdmin = "admin@admin.com1";
         public const string passwordAdmin = "1111";
+    }
+
+    public class CountryCode
+    {
+        public const string russia = "+7";
+    }
+
+    public class UploadImages
+    {
+        public const string avatarStudent = $"\\UploadImages\\ImagePandaStudent.jpg";
     }
 }

@@ -1,0 +1,91 @@
+{
+  "uuid": "387cd792-1884-4fca-916d-c1905416e60c-tr-0-1006",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.CreateAccountForStudent",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.CreateAccountForStudent",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateAccountForStudent"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "CreateAccountForStudent",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : chrome not reachable\n  (Session info: chrome=102.0.5005.115)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElements(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_1(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElements(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElements(By by)\r\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass27_0.<VisibilityOfAllElementsLocatedBy>b__0(IWebDriver driver)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage.ConfirmationCodeStudent.EnterDataVerify(String code) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\ConfirmationCodePage\\ConfirmationCodeActions.cs:line 16\r\n   at SamiiProjectOptimal.Tests.WebSiteStudentTests.CreateAccountForStudent() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteStudentTests.cs:line 63"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CreateAccountForStudent",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : chrome not reachable\n  (Session info: chrome=102.0.5005.115)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElements(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_1(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElements(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElements(By by)\r\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass27_0.<VisibilityOfAllElementsLocatedBy>b__0(IWebDriver driver)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage.ConfirmationCodeStudent.EnterDataVerify(String code) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\ConfirmationCodePage\\ConfirmationCodeActions.cs:line 16\r\n   at SamiiProjectOptimal.Tests.WebSiteStudentTests.CreateAccountForStudent() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteStudentTests.cs:line 63"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "531544f445eb44a19288c4d41e164b45-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655372688144,
+      "stop": 1655372723420
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655372688143,
+  "stop": 1655372723430
+}

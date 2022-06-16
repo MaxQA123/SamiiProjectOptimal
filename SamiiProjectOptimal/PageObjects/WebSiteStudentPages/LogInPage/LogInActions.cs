@@ -1,4 +1,5 @@
-﻿using SamiiProjectOptimal.Additional;
+﻿using OpenQA.Selenium;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,18 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
             return this;
         }
 
+        public LogInStudent EnterEmailPasswordAfterCreateAccount()
+        {
+            WaitUntil.ShouldLocate(_FIeldInputEmail);
+            FIeldInputEmail.SendKeys(Credentials.emailForCreateAccount);
+            FIeldInputPassword.SendKeys(Credentials.passwordForCreateAccount);
+
+            return this;
+        }
+
         public LogInStudent ClickButtonSignIn()
         {
+            WaitUntil.ElementIsClickable(ButtonLogIn);
             ButtonLogIn.Click();
 
             return this;

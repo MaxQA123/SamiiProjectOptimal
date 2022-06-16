@@ -12,6 +12,7 @@ using System.Threading;
 using SamiiProjectOptimal.Additional;
 using OpenQA.Selenium;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage;
+using SamiiProjectOptimal.PageObjects.WorkWithIssuePage;
 
 namespace SamiiProjectOptimal.Tests
 {
@@ -64,6 +65,16 @@ namespace SamiiProjectOptimal.Tests
                 .EnterDataVerify(verificationCode);
             Pages.ConfirmationCodeStudent
                 .ClickNextButton();
+            Pages.LogInStudent
+                .EnterEmailPasswordAfterCreateAccount();
+            Pages.LogInStudent
+                .ClickButtonSignIn();
+            Pages.CreateAccountStudent
+                .ClickButtonRoleStudent();
+            Pages.CreateAccountStudent
+                .EnterFirslastNamePhoneAddress();
+            Pages.CreateAccountStudent
+                .UploadImage();
             Thread.Sleep(10000);
         }
 
@@ -73,6 +84,9 @@ namespace SamiiProjectOptimal.Tests
         {
             Pages.EmailXitroo
                 .OpenNewTab();
+            Browser._Driver.Navigate().GoToUrl(TestDataEndPoint.studentProfileSetup);
+            Pages.CreateAccountStudent
+                .EnterFirslastNamePhoneAddress();
             Thread.Sleep(5000);
         }
     }
