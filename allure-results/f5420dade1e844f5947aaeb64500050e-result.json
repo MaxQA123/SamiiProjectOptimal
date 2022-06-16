@@ -1,0 +1,88 @@
+{
+  "uuid": "31dbf9de-0b8b-49b4-900f-0b6d2953e899-tr-0-1005",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.LogInAsStudent",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.LogInAsStudent",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LogInAsStudent"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "LogInAsStudent",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "LogInAsStudent"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LogInAsStudent",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "65730324a22a4e21b33f8cd8c9cf2c0d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655354772658,
+      "stop": 1655354786467
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655354772657,
+  "stop": 1655354786481
+}

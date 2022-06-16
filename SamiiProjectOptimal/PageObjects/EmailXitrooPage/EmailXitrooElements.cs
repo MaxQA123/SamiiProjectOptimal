@@ -10,8 +10,9 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
 {
     public partial class EmailXitroo
     {
-        //tbody[@id = 'mailList']//th[text() = '1']
-        //th[text() = '1']
+        public IWebElement IframeXitrooLetter => Browser._Driver.FindElement(_IframeXitrooLetter);
+        public readonly static By _IframeXitrooLetter = By.XPath("//iframe[@id = 'mailContentFrame']");
+        
         public IWebElement SelectLetterNumberOneNew => Browser._Driver.FindElement(_SelectLetterNumberOneNew);
         public readonly static By _SelectLetterNumberOneNew = By.XPath("//tbody[@id = 'mailList']//th[text() = '1']");
 

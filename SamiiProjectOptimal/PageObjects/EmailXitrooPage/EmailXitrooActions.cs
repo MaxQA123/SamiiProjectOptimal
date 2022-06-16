@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,25 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
 {
     public partial class EmailXitroo
     {
-
-        public EmailXitroo OpenNewLetterResetPassword()
+        public EmailXitroo OpenNewTab()
         {
-            WaitUntil.ElementVisibileAndClickable(By.XPath("//tbody[@id = 'mailList']//th[text() = '1']"));
+            ((IJavaScriptExecutor)Browser._Driver).ExecuteScript("window.open();");
+            Browser._Driver.SwitchTo().Window(Browser._Driver.WindowHandles.Last());
+
+            return this;    
+        }
+
+        public EmailXitroo CloseNewTab()
+        {
+            ((IJavaScriptExecutor)Browser._Driver).ExecuteScript("window.close();");
+            Browser._Driver.SwitchTo().Window(Browser._Driver.WindowHandles.First());
+
+            return this;
+        }
+
+        public EmailXitroo OpenWelcomeToSammii()
+        {
+            WaitUntil.ElementVisibileAndClickable(By.XPath("//tbody[@id = 'mailList']//th[text() = '1']"), 120);
             SelectLetterNumberOneNew.Click();
 
             return this;
@@ -21,9 +37,11 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
 
         public string CopyVerificationCode()
         {
+            WaitUntil.WaitSomeInterval(5);
+            Browser._Driver.SwitchTo().Frame(IframeXitrooLetter);
             WaitUntil.ShouldLocate(_VerificationCodeXitroo);
-            //string code = VerificationCodeXitroo.Text.Trim(new char[] { 'V', 'e', 'r', 'f', 'c', 'a', 't', 'i', 'o', 'n', ' ', 'd', ':' });
-            string code = VerificationCodeXitroo.Text.Substring(20, 25);
+            string code = VerificationCodeXitroo.Text.Trim(new char[] { 'V', 'e', 'r', 'f', 'c', 'a', 't', 'i', 'o', 'n', ' ', 'd', ':' });
+            //string code = VerificationCodeXitroo.Text.Substring(20, 25);
 
             return code;
         }

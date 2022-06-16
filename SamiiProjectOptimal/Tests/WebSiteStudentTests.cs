@@ -50,11 +50,30 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPasswordCnfrmPsswrd();
             Pages.CreateAccountStudent
                 .ClickSignUpButtonCrtAccnt();
+            Pages.EmailXitroo
+                .OpenNewTab();
             Browser._Driver.Navigate().GoToUrl(EndPoints.emailUrlXitroo);
             Pages.EmailXitroo
-                .OpenNewLetterResetPassword();
+                .OpenWelcomeToSammii();
+
             string verificationCode = Pages.EmailXitroo.CopyVerificationCode();
+
+            Pages.EmailXitroo
+                .CloseNewTab();
+            Pages.ConfirmationCodeStudent
+                .EnterDataVerify(verificationCode);
+            Pages.ConfirmationCodeStudent
+                .ClickNextButton();
             Thread.Sleep(10000);
+        }
+
+        [Test]
+
+        public void Demo()
+        {
+            Pages.EmailXitroo
+                .OpenNewTab();
+            Thread.Sleep(5000);
         }
     }
 }
