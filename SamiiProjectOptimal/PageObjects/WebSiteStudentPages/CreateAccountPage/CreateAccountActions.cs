@@ -1,4 +1,5 @@
-﻿using RimuTec.Faker;
+﻿using OpenQA.Selenium;
+using RimuTec.Faker;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -67,6 +68,41 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage
             return this;
         }
 
+        public CreateAccountStudent ClickNextButton()
+        {
+            WaitUntil.ElementIsClickable(ButtonNextCrtPrfl);
+            ButtonNextCrtPrfl.Click();
+
+            return this;
+        }
+
         #endregion
+
+        #region StudentProfileSetupBillingTab
+
+        public CreateAccountStudent ClickCompleteButton()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            WaitUntil.ElementIsClickable(ButtonCompleteBillingCrtAccnt, 60);
+            ButtonCompleteBillingCrtAccnt.Click();
+
+            return this;
+        }
+
+        #endregion
+
+        #region EditImagePageAfterUploadAvatar
+
+        public CreateAccountStudent ClickButtonDone()
+        {
+            WaitUntil.ShouldLocate(_ButtonDoneCrtAccnt);
+            ButtonDoneCrtAccntt.Click();
+
+            return this;
+        }
+
+        #endregion
+
     }
+
 }

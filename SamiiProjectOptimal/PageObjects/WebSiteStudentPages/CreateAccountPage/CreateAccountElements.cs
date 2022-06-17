@@ -34,10 +34,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage
 
         #region StudentProfileSetupAdministratorTab
 
-        //img[@src = 'assets/images/avatar-default.png']
-        //div[@class = 'avatar-container']//div[@class = 'ng-star-inserted']
         public IWebElement IconAddAvatarCrtPrfl => Browser._Driver.FindElement(_IconAddAvatarCrtPrfl);
-        public readonly static By _IconAddAvatarCrtPrfl = By.XPath("//div[@class = 'avatar-container']//div[@class = 'ng-star-inserted']");
+        public readonly static By _IconAddAvatarCrtPrfl = By.XPath("//input[@type = 'file']");
 
         public IWebElement FieldInputFirstNameCrtPrfl => Browser._Driver.FindElement(_FieldInputFirstNameCrtPrfl);
         public readonly static By _FieldInputFirstNameCrtPrfl = By.XPath("//input[@name = 'firstName']");
@@ -53,6 +51,20 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage
 
         public IWebElement ButtonNextCrtPrfl => Browser._Driver.FindElement(_ButtonNextCrtPrfl);
         public readonly static By _ButtonNextCrtPrfl = By.XPath("//button[@class = 'btn icon grey']");
+
+        #endregion
+
+        #region StudentProfileSetupBillingTab
+
+        public IWebElement ButtonCompleteBillingCrtAccnt => Browser._Driver.FindElement(_ButtonCompleteBillingCrtAccnt);
+        public readonly static By _ButtonCompleteBillingCrtAccnt = By.XPath("//button[text() = 'Complete ']");
+
+        #endregion
+
+        #region EditImagePageAfterUploadAvatar
+
+        public IWebElement ButtonDoneCrtAccntt => Browser._Driver.FindElement(_ButtonDoneCrtAccnt);
+        public readonly static By _ButtonDoneCrtAccnt = By.XPath("//button[@class = 'btn btn-success w-100']");
 
         #endregion
     }

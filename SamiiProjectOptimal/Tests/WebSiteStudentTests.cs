@@ -75,7 +75,13 @@ namespace SamiiProjectOptimal.Tests
                 .EnterFirslastNamePhoneAddress();
             Pages.CreateAccountStudent
                 .UploadImage();
-            Thread.Sleep(10000);
+            Pages.CreateAccountStudent
+                .ClickButtonDone();
+            Pages.CreateAccountStudent
+                .ClickNextButton();
+            Pages.CreateAccountStudent
+                .ClickCompleteButton();
+            Thread.Sleep(5000);
         }
 
         [Test]
