@@ -6,6 +6,7 @@ using SamiiProjectOptimal.PageObjects.WebSiteStudentPages;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher;
+using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherConfirmCodePage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccountPage;
 using SeleniumExtras.PageObjects;
 using System;
@@ -34,7 +35,6 @@ namespace SamiiProjectOptimal.PageObjects
         public static TeacherCreateAccount TeacherCreateAccount => GetPage<TeacherCreateAccount>();
         public static EmailXitroo EmailXitroo => GetPage<EmailXitroo>();
         public static ConfirmationCodeStudent ConfirmationCodeStudent => GetPage<ConfirmationCodeStudent>();
-        
-
+        public static TeacherConfirmCode TeacherConfirmCode => GetPage<TeacherConfirmCode>();
     }
 }

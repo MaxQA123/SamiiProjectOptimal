@@ -24,5 +24,18 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
 
         public IWebElement ButtonSearchEmail => Browser._Driver.FindElement(_ButtonSearchEmail);
         public readonly static By _ButtonSearchEmail = By.XPath("//button[@id = 'requestButton']");
+
+        public IWebElement ButtonBackEmail => Browser._Driver.FindElement(_ButtonBackEmail);
+        public readonly static By _ButtonBackEmail = By.XPath("//button[@id = 'backButton']");
+
+        #region ForCopyFromXitrooEmailToFieldInputLogInPage
+
+        public IWebElement FIeldInputEmailLogInPage => Browser._Driver.FindElement(_FIeldInputEmailLogInPage);
+        public readonly static By _FIeldInputEmailLogInPage = By.XPath("//input[@id = 'email']");
+
+        public IWebElement FieldInputEmailXitroo => Browser._Driver.FindElement(_FieldInputEmailXitroo);
+        public readonly static By _FieldInputEmailXitroo = By.XPath("//input[@id = 'mailInput']");
+
+        #endregion
     }
 }

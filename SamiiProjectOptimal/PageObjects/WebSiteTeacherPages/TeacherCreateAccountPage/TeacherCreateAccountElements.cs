@@ -25,5 +25,43 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccou
         public IWebElement IconShowPassword => Browser._Driver.FindElement(_IconShowPassword);
         public readonly static By _IconShowPassword = By.XPath("//i[@class = 'fas fa-eye']");
 
+        #region ContinueRegistrationAfterConfirmEmail
+
+        public IWebElement ButtonSelectRoleTeacher => Browser._Driver.FindElement(_ButtonSelectRoleTeacher);
+        public readonly static By _ButtonSelectRoleTeacher = By.XPath("//div[@class = 'container']//div[1]//div[1]//div");
+
+        public IWebElement ButtonSelectRoleStudent => Browser._Driver.FindElement(_ButtonSelectRoleStudent);
+        public readonly static By _ButtonSelectRoleStudent = By.XPath("//div[@class = 'container']//div[1]//div[2]//div");
+
+        #endregion
+
+        #region TeacherProfileSetupAdministratorTab
+
+        public IWebElement FieldInputTeacherFirstName => Browser._Driver.FindElement(_FieldInputTeacherFirstName);
+        public readonly static By _FieldInputTeacherFirstName = By.XPath("//input[@name = 'firstName']");
+
+        public IWebElement FieldInputTeacherLastName => Browser._Driver.FindElement(_FieldInputTeacherLastName);
+        public readonly static By _FieldInputTeacherLastName = By.XPath("//input[@name = 'lastName']");
+
+        public IWebElement FieldInputTeacherAllInstrumentsTaughte => Browser._Driver.FindElement(_FieldInputTeacherAllInstrumentsTaughte);
+        public readonly static By _FieldInputTeacherAllInstrumentsTaughte = By.XPath("//input[@name = 'instrument-search']");
+
+        public IWebElement FieldInputTeachingAddress => Browser._Driver.FindElement(_FieldInputTeachingAddress);
+        public readonly static By _FieldInputTeachingAddress = By.XPath("//input[@class = 'form-control client-address dropdown-toggle ng-untouched ng-pristine ng-valid']");
+
+        public IWebElement FieldInputTeacherPhoneNumber => Browser._Driver.FindElement(_FieldInputTeacherPhoneNumber);
+        public readonly static By _FieldInputTeacherPhoneNumber = By.XPath("//input[@name = 'phone']");
+
+        public IWebElement FieldInputTeacherDateOfBirth => Browser._Driver.FindElement(_FieldInputTeacherDateOfBirth);
+        public readonly static By _FieldInputTeacherDateOfBirth = By.XPath("//input[@name = 'dp']");
+
+        public IWebElement CheckBoxShowLessonPriceRange => Browser._Driver.FindElement(_CheckBoxShowLessonPriceRange);
+        public readonly static By _CheckBoxShowLessonPriceRange = By.XPath("//input[@class = 'form-control col-md-1 border-none ng-valid ng-dirty ng-touched']");
+
+        public IWebElement LinkTeacherNextButton => Browser._Driver.FindElement(_LinkTeacherNextButton);
+        public readonly static By _LinkTeacherNextButton = By.XPath("//div[@class = 'd-flex justify-content-end button-area']//button");
+
+        #endregion
+
     }
 }
