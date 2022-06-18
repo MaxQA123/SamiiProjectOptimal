@@ -13,6 +13,7 @@ using SamiiProjectOptimal.Additional;
 using OpenQA.Selenium;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage;
 using SamiiProjectOptimal.PageObjects.WorkWithIssuePage;
+using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage;
 
 namespace SamiiProjectOptimal.Tests
 {

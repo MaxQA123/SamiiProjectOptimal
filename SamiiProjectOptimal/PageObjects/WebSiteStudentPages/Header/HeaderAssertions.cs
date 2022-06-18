@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
+namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.Header
 {
-    public partial class LogInTeacher
+    public partial class HeaderStudent
     {
     }
 }

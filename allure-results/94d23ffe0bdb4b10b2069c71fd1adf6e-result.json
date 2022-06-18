@@ -1,0 +1,91 @@
+{
+  "uuid": "370ba06a-c901-4b2a-aa92-7b39880940e0-tr-0-1007",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.LogInAsTeacher",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.LogInAsTeacher",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LogInAsTeacher"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "LogInAsTeacher",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccountPage.TeacherCreateAccount.EnterEmailPasswordConfirmPassword() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherCreateAccountPage\\TeacherCreateAccountActions.cs:line 17\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.LogInAsTeacher() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 26"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LogInAsTeacher",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccountPage.TeacherCreateAccount.EnterEmailPasswordConfirmPassword() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherCreateAccountPage\\TeacherCreateAccountActions.cs:line 17\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.LogInAsTeacher() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 26"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "fe16c87a4bf2479d9539abac99a1e8bb-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655524022511,
+      "stop": 1655524055181
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655524022509,
+  "stop": 1655524055189
+}

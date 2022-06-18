@@ -15,5 +15,13 @@ namespace SamiiProjectOptimal.Additional
             return new string(Enumerable.Repeat(chars, size)
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
+
+        public static string RandomEmail(int size)
+        {
+            Random random = new Random();
+            const string chars = "qwertyuiopasdfghjklzxcvbnm";
+            return new string(Enumerable.Repeat(chars, size)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
     }
 }

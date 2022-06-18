@@ -6,10 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages
+namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
 {
     public partial class LogInTeacher
     {
+        public IWebElement LinkCreateAnAccountl => Browser._Driver.FindElement(_LinkCreateAnAccount);
+        public readonly static By _LinkCreateAnAccount = By.XPath("//a[text() = 'Create an account']");
+
         public IWebElement FIeldInputEmail => Browser._Driver.FindElement(_FIeldInputEmail);
         public readonly static By _FIeldInputEmail = By.XPath("//input[@id = 'email']");
 

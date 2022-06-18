@@ -18,5 +18,11 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
 
         public IWebElement VerificationCodeXitroo => Browser._Driver.FindElement(_VerificationCodeXitroo);
         public readonly static By _VerificationCodeXitroo = By.XPath("//div[contains(text(), 'Verification code:')]");
+
+        public IWebElement FieldInputEmail => Browser._Driver.FindElement(_FieldInputEmail);
+        public readonly static By _FieldInputEmail = By.XPath("//input[@id = 'mailInput']");
+
+        public IWebElement ButtonSearchEmail => Browser._Driver.FindElement(_ButtonSearchEmail);
+        public readonly static By _ButtonSearchEmail = By.XPath("//button[@id = 'requestButton']");
     }
 }

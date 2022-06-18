@@ -3,8 +3,10 @@ using NUnit.Framework;
 using Allure.Commons;
 using NUnit.Allure.Attributes;
 using SamiiProjectOptimal.Additional;
+using SamiiProjectOptimal.PageObjects;
+using System.Threading;
 
-namespace SamiiProjectOptimal
+namespace SamiiProjectOptimal.Tests
 {
     [TestFixture]
     [AllureNUnit]
@@ -19,6 +21,27 @@ namespace SamiiProjectOptimal
         [AllureSubSuite("Login")]
         public void LogInAsTeacher()
         {
+            Pages.LogInTeacher
+                .ClickCreateAnAccount();
+            Pages.TeacherCreateAccount
+                .EnterEmailPasswordConfirmPassword();
+
+            string email = Pages.TeacherCreateAccount.CopyEmailFromCrtAccntPg();
+
+            Pages.TeacherCreateAccount
+                .ClickIconShowPassword();
+            Pages.TeacherCreateAccount
+                .ClickSignUpButton();
+            Pages.EmailXitroo
+                .OpenNewTab();
+            Browser._Driver.Navigate().GoToUrl(EndPoints.emailRandomUrlXitroo);
+            Pages.EmailXitroo
+                .EnterEmail(email);
+            Pages.EmailXitroo
+                .ClickSearchButton();
+            Pages.EmailXitroo
+                .OpenWelcomeToSammii();
+            Thread.Sleep(5000);
         }
 
     }

@@ -46,5 +46,22 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return code;
         }
 
+        public EmailXitroo EnterEmail(string email)
+        {
+            WaitUntil.ShouldLocate(_FieldInputEmail);
+            FieldInputEmail.SendKeys(email);
+
+            return this;
+        }
+
+        public EmailXitroo ClickSearchButton()
+        {
+            WaitUntil.ShouldLocate(_ButtonSearchEmail);
+            ButtonSearchEmail.Click();
+            WaitUntil.ShouldLocate(_SelectLetterNumberOneNew);
+
+            return this;
+        }
+
     }
 }
