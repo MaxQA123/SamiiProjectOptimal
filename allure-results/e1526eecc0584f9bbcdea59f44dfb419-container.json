@@ -1,0 +1,78 @@
+{
+  "uuid": "f28c0361-2c3b-41ef-aed3-ff1d2dd4bd97-tc-0-1000",
+  "name": "SamiiProjectOptimal.Tests.WebSiteAdminTests.LogInAsAdmin",
+  "children": [
+    "776b34c7-773a-4a36-91da-97edb7185af1-tr-0-1001"
+  ],
+  "befores": [
+    {
+      "name": "DobeforeAllTheTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1655631933753,
+      "stop": 1655631933753
+    },
+    {
+      "name": "SetUp",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : unknown error: cannot determine loading status\nfrom disconnected: not connected to DevTools\n  (Session info: chrome=102.0.5005.115)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.set_Url(String value)\r\n   at OpenQA.Selenium.Navigator.GoToUrl(String url)\r\n   at SamiiProjectOptimal.Additional.TestBaseWeb.SetUp() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\TestBaseWeb.cs:line 15"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1655631933754,
+      "stop": 1655631933754
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEach",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1655631933754,
+      "stop": 1655631933754
+    },
+    {
+      "name": "DoAfterAllTheTests",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1655631933755,
+      "stop": 1655631933755
+    }
+  ],
+  "links": [],
+  "start": 1655631930368,
+  "stop": 1655631933807
+}

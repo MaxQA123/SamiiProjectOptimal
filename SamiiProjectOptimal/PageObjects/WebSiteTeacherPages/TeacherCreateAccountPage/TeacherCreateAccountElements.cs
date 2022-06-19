@@ -58,10 +58,17 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccou
         public IWebElement CheckBoxShowLessonPriceRange => Browser._Driver.FindElement(_CheckBoxShowLessonPriceRange);
         public readonly static By _CheckBoxShowLessonPriceRange = By.XPath("//input[@class = 'form-control col-md-1 border-none ng-valid ng-dirty ng-touched']");
 
-        public IWebElement LinkTeacherNextButton => Browser._Driver.FindElement(_LinkTeacherNextButton);
-        public readonly static By _LinkTeacherNextButton = By.XPath("//div[@class = 'd-flex justify-content-end button-area']//button");
+        public IWebElement ButtonTeacherNextStepButton => Browser._Driver.FindElement(_ButtonTeacherNextStepButton);
+        public readonly static By _ButtonTeacherNextStepButton = By.XPath("//div[@class = 'd-flex justify-content-end button-area']//button");
 
         #endregion
 
+        #region TeacherProfileSetupAdministratorTabDropDownSelectingInstruments
+
+        //Работает только если использовать локатор //button[text() = 'Accompanist']
+        public IWebElement ButtonInstrumentAccompanistTeacher => Browser._Driver.FindElement(_ButtonInstrumentAccompanistTeacher);
+        public readonly static By _ButtonInstrumentAccompanistTeacher = By.XPath("//button[text() = 'Accompanist']");
+
+        #endregion
     }
 }

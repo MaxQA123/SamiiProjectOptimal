@@ -67,8 +67,19 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogIn();
             Pages.TeacherCreateAccount
                 .ClickButtonTeacher();
-
-            Thread.Sleep(5000);
+            Pages.TeacherCreateAccount
+                .EnterFirstLastNameAddressPhone();
+            Pages.TeacherCreateAccount
+                .SelectInstrument();
+            Pages.TeacherCreateAccount
+                .ScrollToFieldDateOfBirth();
+            Pages.TeacherCreateAccount
+                .EnterForTeacherDateOfBirth();
+            //Pages.TeacherCreateAccount
+            //    .CkickOnCheckBoxShowLessonPriceRange();
+            Pages.TeacherCreateAccount
+                .ClickButtonNextStep();
+            Thread.Sleep(50000);
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using SamiiProjectOptimal.Additional;
+﻿using RimuTec.Faker;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,5 +54,67 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccou
 
             return this;
         }
+
+        #region TeacherProfileSetupAdministratorTab
+
+        public TeacherCreateAccount EnterFirstLastNameAddressPhone()
+        {
+            WaitUntil.ShouldLocate(_FieldInputTeacherFirstName);
+            FieldInputTeacherFirstName.SendKeys(Name.FirstName());
+            WaitUntil.WaitSomeInterval(1);
+            FieldInputTeacherLastName.SendKeys(Name.LastName());
+            WaitUntil.WaitSomeInterval(1);
+            FieldInputTeachingAddress.SendKeys(Address.FullAddress());
+            WaitUntil.WaitSomeInterval(1);
+            FieldInputTeacherPhoneNumber.SendKeys(CountryCode.russia + RandomGenerateData.RandomPhoneNumber);
+
+            return this;
+        }
+
+        public TeacherCreateAccount SelectInstrument()
+        {
+            WaitUntil.ShouldLocate(_FieldInputTeacherAllInstrumentsTaughte);
+            FieldInputTeacherAllInstrumentsTaughte.Click();
+            WaitUntil.ShouldLocate(_ButtonInstrumentAccompanistTeacher);
+            ButtonInstrumentAccompanistTeacher.Click();
+
+            return this;
+        }
+
+        public TeacherCreateAccount ScrollToFieldDateOfBirth()
+        {
+            WaitUntil.ShouldLocate(_FieldInputTeacherDateOfBirth);
+            Scrolling.ScrollToElement(FieldInputTeacherDateOfBirth);
+
+            return this;
+        }
+
+        public TeacherCreateAccount EnterForTeacherDateOfBirth()
+        {
+            WaitUntil.ShouldLocate(_FieldInputTeacherDateOfBirth);
+            Input.InputFunctionWithClear(FieldInputTeacherDateOfBirth, "15/");
+            Input.InputFunctionWithoutClear(FieldInputTeacherDateOfBirth, "04/");
+            Input.InputFunctionWithoutClear(FieldInputTeacherDateOfBirth, "1985");
+
+            return this;
+        }
+
+        public TeacherCreateAccount CkickOnCheckBoxShowLessonPriceRange()
+        {
+            WaitUntil.ElementIsClickable(CheckBoxShowLessonPriceRange);
+            CheckBoxShowLessonPriceRange.Click();
+
+            return this;
+        }
+
+        public TeacherCreateAccount ClickButtonNextStep()
+        {
+            WaitUntil.ShouldLocate(_ButtonTeacherNextStepButton);
+            ButtonTeacherNextStepButton.Click();
+
+            return this;
+        }
+
+        #endregion
     }
 }
