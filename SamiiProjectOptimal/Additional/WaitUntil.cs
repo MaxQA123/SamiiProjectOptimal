@@ -13,7 +13,7 @@ namespace SamiiProjectOptimal.Additional
     {
         public static void ShouldLocate(By location)
         {
-            new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(30)).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(location));
+            new WebDriverWait(Browser._Driver, TimeSpan.FromSeconds(60)).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(location));
         }
 
         public static void ElementIsClickable(IWebElement element, int seconds = 10)

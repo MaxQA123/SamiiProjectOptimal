@@ -41,5 +41,23 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
             return this;
         }
 
+        public LogInTeacher EnterEamilPassword()
+        {
+            WaitUntil.ShouldLocate(_FIeldInputEmail);
+            FIeldInputEmail.SendKeys(Credentials.emailTeacherOne);
+            WaitUntil.WaitSomeInterval(1);
+            FIeldInputPassword.SendKeys(Credentials.passwordTeacherOne);
+
+            return this;
+        }
+
+        public LogInTeacher ClickButtonLogInAsTeacher()
+        {
+            WaitUntil.ShouldLocate(_ButtonLogIn);
+            ButtonLogIn.Click();
+
+            return this;
+        }
+
     }
 }

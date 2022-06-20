@@ -79,8 +79,49 @@ namespace SamiiProjectOptimal.Tests
             //    .CkickOnCheckBoxShowLessonPriceRange();
             Pages.TeacherCreateAccount
                 .ClickButtonNextStep();
-            Thread.Sleep(50000);
+            Thread.Sleep(5000);
         }
 
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "qatester91311@gmail.com")]
+        [AllureSuite("Client")]
+        [AllureSubSuite("Login")]
+
+        public void LogInAsTeacher()
+        {
+            Pages.LogInTeacher
+                .EnterEamilPassword();
+            Pages.LogInTeacher
+                .ClickButtonLogInAsTeacher();
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "qatester91311@gmail.com")]
+        [AllureSuite("Client")]
+        [AllureSubSuite("Login")]
+
+        public void SetDateLessonByTheTeacher()
+        {
+            Pages.LogInTeacher
+                .EnterEamilPassword();
+            Pages.LogInTeacher
+                .ClickButtonLogInAsTeacher();
+            Pages.HeaderTeacher
+                .ClickArrowDropDown();
+            Pages.HeaderTeacher
+                .ClickButtonItemLessonSheduler();
+            Pages.TeacherLessonSheduler
+                .ClickCellTwoPmHomeStudio();
+            Pages.TeacherLssnShdlrMdlWndw
+                .SelectAllInstruments();
+            Thread.Sleep(5000);
+        }
     }
 }

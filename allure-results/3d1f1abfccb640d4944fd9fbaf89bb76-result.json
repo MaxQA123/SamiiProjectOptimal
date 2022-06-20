@@ -1,0 +1,91 @@
+{
+  "uuid": "24ac7b35-4ed9-4d12-9124-344bf5eba8df-tr-0-1009",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonasTeacher",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonasTeacher",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetDateLessonasTeacher"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "SetDateLessonasTeacher",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'timeline-container']//td[30]//div[@class = 'click-zone clickable']\"}\n  (Session info: chrome=102.0.5005.115)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage.TeacherLessonSheduler.get_CellTwoPmHomeStudio() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherLessonShedulerPage\\TeacherLessonShedulerElements.cs:line 19\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage.TeacherLessonSheduler.ClickCellTwoPmHomeStudio() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherLessonShedulerPage\\TeacherLessonShedulerActions.cs:line 20\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonasTeacher() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 120"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetDateLessonasTeacher",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'timeline-container']//td[30]//div[@class = 'click-zone clickable']\"}\n  (Session info: chrome=102.0.5005.115)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage.TeacherLessonSheduler.get_CellTwoPmHomeStudio() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherLessonShedulerPage\\TeacherLessonShedulerElements.cs:line 19\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage.TeacherLessonSheduler.ClickCellTwoPmHomeStudio() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherLessonShedulerPage\\TeacherLessonShedulerActions.cs:line 20\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonasTeacher() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 120"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "562adae4d8584a729cb21ece868f8724-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655715267409,
+      "stop": 1655715287223
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655715267407,
+  "stop": 1655715287230
+}

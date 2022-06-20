@@ -24,6 +24,8 @@ namespace SamiiProjectOptimal.Additional
 
         public const string emailStudentOne = "newstud@xitroo.com";
         public const string passwordStudentOne = "1111";
+
+        public const string emailTeacherOne = "testteach@xitroo.com1";
         public const string passwordTeacherOne = "1111";
 
         public const string emailAdmin = "admin@admin.com1";

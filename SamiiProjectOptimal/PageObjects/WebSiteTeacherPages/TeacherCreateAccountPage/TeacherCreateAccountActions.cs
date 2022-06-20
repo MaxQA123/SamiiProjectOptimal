@@ -91,10 +91,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccou
 
         public TeacherCreateAccount EnterForTeacherDateOfBirth()
         {
-            WaitUntil.ShouldLocate(_FieldInputTeacherDateOfBirth);
-            Input.InputFunctionWithClear(FieldInputTeacherDateOfBirth, "15/");
-            Input.InputFunctionWithoutClear(FieldInputTeacherDateOfBirth, "04/");
-            Input.InputFunctionWithoutClear(FieldInputTeacherDateOfBirth, "1985");
+            Input.InputFunctionWithClear(FieldInputTeacherDateOfBirth, "15/04/1985");
 
             return this;
         }
