@@ -10,14 +10,45 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
     public partial class TeacherLssnShdlrMdlWndw
     {
         public TeacherLssnShdlrMdlWndw SelectAllInstruments()
-        {
-            //WaitUntil.WaitSomeInterval(3);
-            //Browser._Driver.SwitchTo().Frame(IframeLssnShdlrMdlWndwTeacher);
-            //WaitUntil.WaitSomeInterval(3);
+        { 
             WaitUntil.ShouldLocate(_ButtonDropDownInstruments);
             ButtonDropDownInstruments.Click();
             WaitUntil.WaitSomeInterval(1);
             CheckBoxSelectAll.Click();
+            WaitUntil.WaitSomeInterval(1);
+            ButtonArrowCloseDropDownInstruments.Click();
+
+            return this;
+        }
+
+        public TeacherLssnShdlrMdlWndw SelectRecurrenceOnce()
+        {
+            WaitUntil.ShouldLocate(_ButtonDropDownOnceRecurrence);
+            ButtonDropDownOnceRecurrence.Click();
+
+            return this;
+        }
+
+        public TeacherLssnShdlrMdlWndw EnterPriceToStudentsPerGroup()
+        {
+            WaitUntil.ShouldLocate(_FieldStudentsPerGroupPrice);
+            FieldStudentsPerGroupPrice.SendKeys(RandomGenerateData.RandomPriceInteger(2) + "." + RandomGenerateData.RandomPriceKopeck(2));
+
+            return this;
+        }
+
+        public TeacherLssnShdlrMdlWndw ClickButtonNext()
+        {
+            WaitUntil.ShouldLocate(_ButtonNextDetailsTab);
+            ButtonNextDetailsTab.Click();
+
+            return this;
+        }
+
+        public TeacherLssnShdlrMdlWndw ClickButtonSaveForTeacher()
+        {
+            WaitUntil.ShouldLocate(_ButtonSaveForTeacher);
+            ButtonSaveForTeacher.Click();
 
             return this;
         }

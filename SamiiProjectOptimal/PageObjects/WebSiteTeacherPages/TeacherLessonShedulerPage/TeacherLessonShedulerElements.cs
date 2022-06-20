@@ -19,6 +19,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
         public IWebElement CellHalfPastThreePmHomeStudio => Browser._Driver.FindElement(_CellHalfPastThreePmHomeStudio);
         public readonly static By _CellHalfPastThreePmHomeStudio = By.XPath("//div[@class = 'timeline-container']//td[34]//div[@class = 'click-zone clickable']");
 
+        public IWebElement CellHalfPastEightPmHomeStudio => Browser._Driver.FindElement(_CellHalfPastEightPmHomeStudio);
+        public readonly static By _CellHalfPastEightPmHomeStudio = By.XPath("//div[@class = 'timeline-container']//td[42]//div[@class = 'click-zone clickable']");
+
         #endregion
     }
 }

@@ -1,0 +1,88 @@
+{
+  "uuid": "b84545f1-2aa7-4ceb-a572-c3e1af446817-tr-0-1009",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonByTheTeacher",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonByTheTeacher",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetDateLessonByTheTeacher"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "SetDateLessonByTheTeacher",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "SetDateLessonByTheTeacher"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetDateLessonByTheTeacher",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "3e427a7d9604482d9b65a3244e612394-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655729477437,
+      "stop": 1655729509654
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655729477436,
+  "stop": 1655729509664
+}

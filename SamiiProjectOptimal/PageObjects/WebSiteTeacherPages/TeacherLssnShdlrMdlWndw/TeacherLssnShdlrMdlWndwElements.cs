@@ -24,12 +24,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
         public IWebElement ButtonDropDownInstruments => Browser._Driver.FindElement(_ButtonDropDownInstruments);
         public readonly static By _ButtonDropDownInstruments = By.XPath("//span[@class = 'dropdown-btn']//span");
 
-
         public IWebElement ButtonArrowCloseDropDownInstruments => Browser._Driver.FindElement(_ButtonArrowCloseDropDownInstruments);
         public readonly static By _ButtonArrowCloseDropDownInstruments = By.XPath("//span[@class = 'dropdown-up']");
-
-        public IWebElement ButtonDropDownRecurrence => Browser._Driver.FindElement(_ButtonDropDownRecurrence);
-        public readonly static By _ButtonDropDownRecurrence = By.XPath("//select[@name = 'recurrenceType']");
 
         public IWebElement ButtonDropDownOnceRecurrence => Browser._Driver.FindElement(_ButtonDropDownOnceRecurrence);
         public readonly static By _ButtonDropDownOnceRecurrence = By.XPath("//select[@name = 'recurrenceType']//option[3]");
@@ -52,6 +48,13 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 
         public IWebElement CheckBoxSelectAll => Browser._Driver.FindElement(_CheckBoxSelectAll);
         public readonly static By _CheckBoxSelectAll = By.XPath("//li[@class = 'multiselect-item-checkbox ng-star-inserted']//div[text() = 'Select All']");
+
+        #endregion
+
+        #region TeacherLessonShedulerTab
+
+        public IWebElement ButtonSaveForTeacher => Browser._Driver.FindElement(_ButtonSaveForTeacher);
+        public readonly static By _ButtonSaveForTeacher = By.XPath("//div[@class = 'lesson-create-resources-container']//button[@class = 'btn btn-primary']");
 
         #endregion
     }

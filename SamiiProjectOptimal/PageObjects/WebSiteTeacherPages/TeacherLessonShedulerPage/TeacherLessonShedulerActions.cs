@@ -14,9 +14,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
         public TeacherLessonSheduler ClickCellTwoPmHomeStudio()
         {
             WaitUntil.WaitSomeInterval(10);
-            CellTwoPmHomeStudio.Click();
+            CellHalfPastEightPmHomeStudio.Click();
             WaitUntil.WaitSomeInterval(1);
-            CellTwoPmHomeStudio.Click();
+            CellHalfPastEightPmHomeStudio.Click();
 
             return this;
         }

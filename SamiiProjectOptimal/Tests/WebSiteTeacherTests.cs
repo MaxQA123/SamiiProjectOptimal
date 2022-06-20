@@ -121,6 +121,14 @@ namespace SamiiProjectOptimal.Tests
                 .ClickCellTwoPmHomeStudio();
             Pages.TeacherLssnShdlrMdlWndw
                 .SelectAllInstruments();
+            Pages.TeacherLssnShdlrMdlWndw
+                .SelectRecurrenceOnce();
+            Pages.TeacherLssnShdlrMdlWndw
+                .EnterPriceToStudentsPerGroup();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonNext();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonSaveForTeacher();
             Thread.Sleep(5000);
         }
     }
