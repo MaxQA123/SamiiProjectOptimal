@@ -1,0 +1,91 @@
+{
+  "uuid": "6c5fb348-c6c5-4926-b7a5-e3fb34631cc8-tr-0-1011",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.RemoveLessonOnNextDay",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.RemoveLessonOnNextDay",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "RemoveLessonOnNextDay"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "RemoveLessonOnNextDay",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button _ngcontent-c17=\"\" class=\"btn icon\">...</button> is not clickable at point (816, 395). Other element would receive the click: <i class=\"toaster-icon icon-info\"></i>\n  (Session info: chrome=102.0.5005.115)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage.TeacherLessonSheduler.ClickArrowRight() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherLessonShedulerPage\\TeacherLessonShedulerActions.cs:line 26\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.RemoveLessonOnNextDay() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 192"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "RemoveLessonOnNextDay",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button _ngcontent-c17=\"\" class=\"btn icon\">...</button> is not clickable at point (816, 395). Other element would receive the click: <i class=\"toaster-icon icon-info\"></i>\n  (Session info: chrome=102.0.5005.115)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage.TeacherLessonSheduler.ClickArrowRight() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherLessonShedulerPage\\TeacherLessonShedulerActions.cs:line 26\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.RemoveLessonOnNextDay() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 192"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ef4b37157f1644efb0a359c5c5ef15be-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655813077846,
+      "stop": 1655813093746
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655813077845,
+  "stop": 1655813093756
+}

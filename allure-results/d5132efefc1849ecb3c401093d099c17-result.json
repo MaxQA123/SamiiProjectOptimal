@@ -1,0 +1,91 @@
+{
+  "uuid": "c6ed3886-f3e2-4ebf-b7a2-438780b61ff1-tr-0-1009",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonByTheTeacher",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonByTheTeacher",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetDateLessonByTheTeacher"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <qatester91311@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Client"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "SetDateLessonByTheTeacher",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div _ngcontent-c18=\"\" class=\"click-zone clickable\" triggers=\"keypress:focusout\"></div> is not clickable at point (1337, 412). Other element would receive the click: <div _ngcontent-c20=\"\" class=\"p-5\">...</div>\n  (Session info: chrome=102.0.5005.115)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage.TeacherLessonSheduler.ClickTwiceCell() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherLessonShedulerPage\\TeacherLessonShedulerActions.cs:line 19\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonByTheTeacher() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 120"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetDateLessonByTheTeacher",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div _ngcontent-c18=\"\" class=\"click-zone clickable\" triggers=\"keypress:focusout\"></div> is not clickable at point (1337, 412). Other element would receive the click: <div _ngcontent-c20=\"\" class=\"p-5\">...</div>\n  (Session info: chrome=102.0.5005.115)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage.TeacherLessonSheduler.ClickTwiceCell() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\TeacherLessonShedulerPage\\TeacherLessonShedulerActions.cs:line 19\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonByTheTeacher() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 120"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "cb1e8bb96d924d909ff1eacf7a422f24-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655801922559,
+      "stop": 1655801947729
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655801922556,
+  "stop": 1655801947737
+}

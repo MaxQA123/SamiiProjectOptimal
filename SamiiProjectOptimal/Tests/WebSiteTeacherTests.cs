@@ -118,7 +118,7 @@ namespace SamiiProjectOptimal.Tests
             Pages.HeaderTeacher
                 .ClickButtonItemLessonSheduler();
             Pages.TeacherLessonSheduler
-                .ClickCellTwoPmHomeStudio();
+                .ClickTwiceCell();
             Pages.TeacherLssnShdlrMdlWndw
                 .SelectAllInstruments();
             Pages.TeacherLssnShdlrMdlWndw
@@ -129,7 +129,47 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNext();
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonSaveForTeacher();
+            Pages.TeacherLessonSheduler
+                .ClickOnceCell();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonAssignLessonTo();
+            Pages.TeacherLssnShdlrMdlWndw
+                .SelectFirstStudentToAssign();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonAssignStudent();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonNextAfterAssignStudent();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonSaveForTeacher();
             Thread.Sleep(5000);
         }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "qatester91311@gmail.com")]
+        [AllureSuite("Client")]
+        [AllureSubSuite("Login")]
+
+        public void DeleteLesson()
+        {
+            Pages.LogInTeacher
+                .EnterEamilPassword();
+            Pages.LogInTeacher
+                .ClickButtonLogInAsTeacher();
+            Pages.HeaderTeacher
+                .ClickArrowDropDown();
+            Pages.HeaderTeacher
+                .ClickButtonItemLessonSheduler();
+            Pages.TeacherLessonSheduler
+                .ClickOnceCell();
+            Pages.TeacherLssnShdlrMdlWndw
+               .ClickDeleteDtlsTab();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonYes();
+            Thread.Sleep(5000);
+        }
+
     }
 }

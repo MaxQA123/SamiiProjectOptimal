@@ -9,6 +9,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 {
     public partial class TeacherLssnShdlrMdlWndw
     {
+
+        #region TeacherDetailsTab
+
         public TeacherLssnShdlrMdlWndw SelectAllInstruments()
         { 
             WaitUntil.ShouldLocate(_ButtonDropDownInstruments);
@@ -37,13 +40,33 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw ClickButtonNext()
+        public TeacherLssnShdlrMdlWndw EnterMinPriceToStudentsPerGroup()
         {
-            WaitUntil.ShouldLocate(_ButtonNextDetailsTab);
-            ButtonNextDetailsTab.Click();
+            WaitUntil.ShouldLocate(_FieldStudentsPerGroupPrice);
+            FieldStudentsPerGroupPrice.SendKeys(PriceForLesson.minPrice);
 
             return this;
         }
+
+        public TeacherLssnShdlrMdlWndw ClickButtonNext()
+        {
+            WaitUntil.ShouldLocate(_ButtonNextDetailsTabBeforeSaved);
+            ButtonNextDetailsTabBeforeSaved.Click();
+
+            return this;
+        }
+
+        public TeacherLssnShdlrMdlWndw ClickButtonAssignLessonTo()
+        {
+            WaitUntil.ShouldLocate(_ButtonAssignLessonToAfterSaved);
+            ButtonAssignLessonToAfterSaved.Click();
+
+            return this;
+        }
+
+        #endregion
+
+        #region TeacherLessonShedulerTab
 
         public TeacherLssnShdlrMdlWndw ClickButtonSaveForTeacher()
         {
@@ -53,5 +76,64 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
+        #endregion
+
+        public TeacherLssnShdlrMdlWndw ClickDeleteDtlsTab()
+        {
+            WaitUntil.ShouldLocate(_ButtonDeleteDetailsTab);
+            ButtonDeleteDetailsTab.Click();
+
+            return this;
+        }
+
+        #region AssignStudentsModalWindow
+
+        public TeacherLssnShdlrMdlWndw SelectFirstStudentToAssign()
+        {
+            WaitUntil.WaitSomeInterval(5);
+            ButtonDropDownStudents.Click();
+            WaitUntil.WaitSomeInterval(3);
+            CheckBoxFirststudent.Click();
+
+            return this;
+        }
+
+        public TeacherLssnShdlrMdlWndw ClickButtonAssignStudent()
+        {
+            WaitUntil.ShouldLocate(_ButtonAssignStudents);
+            ButtonAssignStudents.Click();
+
+            return this;
+        }
+
+        public TeacherLssnShdlrMdlWndw ClickButtonNextAfterAssignStudent()
+        {
+            WaitUntil.ShouldLocate(_ButtonNextDetailsTabAfterSaved);
+            ButtonNextDetailsTabAfterSaved.Click();
+
+            return this;
+        }
+
+        #endregion
+
+        #region ModalWindowDeleteLesson
+
+        public TeacherLssnShdlrMdlWndw ClickButtonYes()
+        {
+            WaitUntil.ShouldLocate(_ButtonYesDeleteLessonMdlWndw);
+            ButtonYesDeleteLessonMdlWndw.Click();
+
+            return this;
+        }
+
+        public TeacherLssnShdlrMdlWndw ClickButtonYNo()
+        {
+            WaitUntil.ShouldLocate(_ButtonNoDeleteLessonMdlWndw);
+            ButtonNoDeleteLessonMdlWndw.Click();
+
+            return this;
+        }
+
+        #endregion
     }
 }

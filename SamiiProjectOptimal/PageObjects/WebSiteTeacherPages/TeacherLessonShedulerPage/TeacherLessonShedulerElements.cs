@@ -10,6 +10,18 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
 {
     public partial class TeacherLessonSheduler
     {
+        public IWebElement ButtonAwaitingMoveConfirmations => Browser._Driver.FindElement(_ButtonAwaitingMoveConfirmations);
+        public readonly static By _ButtonAwaitingMoveConfirmations = By.XPath("//div[@class = 'align-self-end ng-star-inserted']//button[1]");
+
+        #region TheDateSelectorAboveTheLessonsScheduler
+        public IWebElement ButtonArrowLeftSelectingDate => Browser._Driver.FindElement(_ButtonArrowLeftSelectingDate);
+        public readonly static By _ButtonArrowLeftSelectingDate = By.XPath("//div[@class = 'd-flex flex-wrap justify-content-center align-items-center']//button[1]//i");
+
+        public IWebElement ButtonArrowRightSelectingDate => Browser._Driver.FindElement(_ButtonArrowRightSelectingDate);
+        public readonly static By _ButtonArrowRightSelectingDate = By.XPath("//div[@class = 'd-flex flex-wrap justify-content-center align-items-center']//button[2]");
+
+        #endregion
+
         #region CellsOnTheLessonScheduler
 
         // Если <29 то 28 - 13PM, а если >29 то 30 - 2 : 30PM для //td[29]//div[@class = 'click-zone clickable']

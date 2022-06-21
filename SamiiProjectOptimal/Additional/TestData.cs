@@ -46,4 +46,9 @@ namespace SamiiProjectOptimal.Additional
     {
         public static string Xitroo = "@xitroo.com";
     }
+
+    public class PriceForLesson
+    {
+        public const string minPrice = "10";
+    }
 }

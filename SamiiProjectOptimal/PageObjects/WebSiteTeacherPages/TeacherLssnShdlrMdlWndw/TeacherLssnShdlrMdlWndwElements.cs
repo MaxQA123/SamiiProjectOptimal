@@ -36,12 +36,19 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
         public IWebElement FieldStudentsPerGroupPrice => Browser._Driver.FindElement(_FieldStudentsPerGroupPrice);
         public readonly static By _FieldStudentsPerGroupPrice = By.XPath("//input[@class = 'form-control mr-4 ng-untouched ng-pristine ng-valid']");
 
-        public IWebElement ButtonAssignLessonTo => Browser._Driver.FindElement(_ButtonAssignLessonTo);
-        public readonly static By _ButtonAssignLessonTo = By.XPath("//div[@class = 'd-flex justify-content-between pc-markup']//button[2]");
+        //The button is _ButtonAssignLessonToAfterSaved on the third place, after had saved the lesson and then had opened LessonSheduler the modal window
+        public IWebElement ButtonAssignLessonToAfterSaved => Browser._Driver.FindElement(_ButtonAssignLessonToAfterSaved);
+        public readonly static By _ButtonAssignLessonToAfterSaved = By.XPath("//div[@class = 'd-flex justify-content-between pc-markup']//button[3]");
 
-        public IWebElement ButtonNextDetailsTab => Browser._Driver.FindElement(_ButtonNextDetailsTab);
-        public readonly static By _ButtonNextDetailsTab = By.XPath("//div[@class = 'd-flex justify-content-between pc-markup']//button[3]");
+        public IWebElement ButtonNextDetailsTabBeforeSaved => Browser._Driver.FindElement(_ButtonNextDetailsTabBeforeSaved);
+        public readonly static By _ButtonNextDetailsTabBeforeSaved = By.XPath("//div[@class = 'd-flex justify-content-between pc-markup']//button[3]");
 
+        public IWebElement ButtonNextDetailsTabAfterSaved => Browser._Driver.FindElement(_ButtonNextDetailsTabAfterSaved);
+        public readonly static By _ButtonNextDetailsTabAfterSaved = By.XPath("//div[@class = 'd-flex justify-content-between pc-markup']//button[4]");
+
+        public IWebElement ButtonDeleteDetailsTab => Browser._Driver.FindElement(_ButtonDeleteDetailsTab);
+        public readonly static By _ButtonDeleteDetailsTab = By.XPath("//div[@class = 'd-flex justify-content-between pc-markup']//button[1]");
+        
         #endregion
 
         #region DropDownMenuInstruments
@@ -55,6 +62,32 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 
         public IWebElement ButtonSaveForTeacher => Browser._Driver.FindElement(_ButtonSaveForTeacher);
         public readonly static By _ButtonSaveForTeacher = By.XPath("//div[@class = 'lesson-create-resources-container']//button[@class = 'btn btn-primary']");
+
+        #endregion
+
+        #region AssignStudentsModalWindow
+
+        public IWebElement ButtonDropDownStudents => Browser._Driver.FindElement(_ButtonDropDownStudents);
+        public readonly static By _ButtonDropDownStudents = By.XPath("//span[text() = 'Students...']");
+
+        public IWebElement CheckBoxFirststudent => Browser._Driver.FindElement(_CheckBoxFirststudent);
+        public readonly static By _CheckBoxFirststudent = By.XPath("//div[@class = 'lesson-assign-container']//div[@class = 'dropdown-list']//ul[2]//li//div");
+
+        public IWebElement ButtonArrowCloseListStudents => Browser._Driver.FindElement(_ButtonArrowCloseListStudents);
+        public readonly static By _ButtonArrowCloseListStudents = By.XPath("//div[@class = 'lesson-assign-container']//span[@class = 'dropdown-up']");
+
+        public IWebElement ButtonAssignStudents => Browser._Driver.FindElement(_ButtonAssignStudents);
+        public readonly static By _ButtonAssignStudents = By.XPath("//div[@class = 'd-flex justify-content-between ng-star-inserted']//button[2]");
+
+        #endregion
+
+        #region ModalWindowDeleteLesson
+
+        public IWebElement ButtonNoDeleteLessonMdlWndw => Browser._Driver.FindElement(_ButtonNoDeleteLessonMdlWndw);
+        public readonly static By _ButtonNoDeleteLessonMdlWndw = By.XPath("//div[@class = 'lesson-delete-container']//button[1]");
+
+        public IWebElement ButtonYesDeleteLessonMdlWndw => Browser._Driver.FindElement(_ButtonYesDeleteLessonMdlWndw);
+        public readonly static By _ButtonYesDeleteLessonMdlWndw = By.XPath("//div[@class = 'lesson-delete-container']//button[2]");
 
         #endregion
     }
