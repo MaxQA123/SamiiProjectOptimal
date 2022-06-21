@@ -1,1 +1,1 @@
-allure serve C:\Automation\SamiiProjectOptimal\\allure-results
+allure serve C:\Automation\SamiiProjectOptimal\allure-results

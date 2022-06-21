@@ -1,4 +1,5 @@
-﻿using SamiiProjectOptimal.Additional;
+﻿using NUnit.Allure.Attributes;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages
 {
     public partial class LogInAdmin
     {
+        [AllureStep("Enter Credentials")]
         public LogInAdmin EnterEmailPassword()
         {
             WaitUntil.ShouldLocate(_FIeldInputEmail);
