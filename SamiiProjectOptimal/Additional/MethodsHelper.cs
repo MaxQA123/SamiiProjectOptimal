@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace SamiiProjectOptimal.Additional
 {
     public class Input
     {
+        [AllureStep("InputFunctionWithClear")]
         public static void InputFunctionWithClear(IWebElement element, string text)
         {
             WaitUntil.ElementIsClickable(element);
@@ -16,6 +18,7 @@ namespace SamiiProjectOptimal.Additional
             element.SendKeys(text);
         }
 
+        [AllureStep("InputFunctionWithoutClear")]
         public static void InputFunctionWithoutClear(IWebElement element, string text)
         {
             WaitUntil.ElementIsClickable(element);

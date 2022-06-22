@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Allure.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace SamiiProjectOptimal.Additional
 {
     public class RandomGenerateData
     {
+        [AllureStep("RandomPhoneNumber")]
         public static string RandomPhoneNumber(int size)
         {
             Random random = new Random();
@@ -16,6 +18,7 @@ namespace SamiiProjectOptimal.Additional
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
+        [AllureStep("RandomEmail")]
         public static string RandomEmail(int size)
         {
             Random random = new Random();
@@ -24,6 +27,7 @@ namespace SamiiProjectOptimal.Additional
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
+        [AllureStep("RandomPriceInteger")]
         public static string RandomPriceInteger(int size)
         {
             Random random = new Random();
@@ -32,6 +36,7 @@ namespace SamiiProjectOptimal.Additional
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
+        [AllureStep("RandomPriceKopeck")]
         public static string RandomPriceKopeck(int size)
         {
             Random random = new Random();

@@ -15,11 +15,12 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage
     {
         public CreateAccountStudent EnterEmailPasswordCnfrmPsswrd()
         {
-            WaitUntil.ElementIsClickable(FieldInputUsernameEmail);
-            FieldInputUsernameEmail.SendKeys(Credentials.emailForCreateAccount);
-            WaitUntil.ElementIsClickable(FieldInputPasswordCrtAccnt);
-            FieldInputPasswordCrtAccnt.SendKeys(Credentials.passwordStudentOne);
-            FieldInputConfirmPasswordCrtAccnt.SendKeys(Credentials.passwordStudentOne);
+            WaitUntil.ShouldLocate(_FieldInputUsernameEmail);
+            FieldInputUsernameEmail.SendKeys(RandomGenerateData.RandomEmail(6) + NameDomen.Xitroo);
+            WaitUntil.WaitSomeInterval(1);
+            FieldInputPasswordCrtAccnt.SendKeys(Credentials.passwordTeacherOne);
+            WaitUntil.WaitSomeInterval(1);
+            FieldInputConfirmPasswordCrtAccnt.SendKeys(Credentials.passwordTeacherOne);
 
             return this;
         }

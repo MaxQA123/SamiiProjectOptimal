@@ -21,6 +21,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages
             return this;
         }
 
+        [AllureStep("ClickButtonSignIn")]
         public LogInAdmin ClickButtonSignIn()
         {
             WaitUntil.WaitSomeInterval(1);

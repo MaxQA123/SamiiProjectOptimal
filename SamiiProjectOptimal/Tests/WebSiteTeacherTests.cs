@@ -16,9 +16,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Maksim", "qatester91311@gmail.com")]
-        [AllureSuite("Client")]
-        [AllureSubSuite("Login")]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("CreateAccount")]
         public void CreateAccountForTeacher()
         {
             Pages.LogInTeacher
@@ -86,8 +86,8 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Maksim", "qatester91311@gmail.com")]
-        [AllureSuite("Client")]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Teacher")]
         [AllureSubSuite("Login")]
 
         public void LogInAsTeacher()
@@ -103,9 +103,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Maksim", "qatester91311@gmail.com")]
-        [AllureSuite("Client")]
-        [AllureSubSuite("Login")]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("SetDateLesson")]
 
         public void SetDateLessonByTheTeacher()
         {
@@ -148,9 +148,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Maksim", "qatester91311@gmail.com")]
-        [AllureSuite("Client")]
-        [AllureSubSuite("Login")]
+        [Author("Maksim", "maxqatesting390@gmail.comm")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("DeleteLesson")]
 
         public void DeleteLesson()
         {

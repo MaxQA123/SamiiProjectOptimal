@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace SamiiProjectOptimal.Additional
 {
     public class Scrolling
     {
+        [AllureStep("ScrollToElement")]
         public static IWebElement ScrollToElement(IWebElement element)
         {
             IJavaScriptExecutor js = (IJavaScriptExecutor)Browser._Driver;

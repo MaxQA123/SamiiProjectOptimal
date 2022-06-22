@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
 {
     public partial class LogInStudent
     {
+        [AllureStep("EnterEmailPassword")]
         public LogInStudent EnterEmailPassword()
         {
             FIeldInputEmail.SendKeys(Credentials.emailStudentOne);
@@ -18,15 +20,16 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
             return this;
         }
 
+        [AllureStep("EnterPasswordAfterCreateAccount")]
         public LogInStudent EnterEmailPasswordAfterCreateAccount()
         {
             WaitUntil.ShouldLocate(_FIeldInputEmail);
-            FIeldInputEmail.SendKeys(Credentials.emailForCreateAccount);
             FIeldInputPassword.SendKeys(Credentials.passwordForCreateAccount);
 
             return this;
         }
 
+        [AllureStep("ClickButtonSignIn")]
         public LogInStudent ClickButtonSignIn()
         {
             WaitUntil.ElementIsClickable(ButtonLogIn);
@@ -35,6 +38,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
             return this;
         }
 
+        [AllureStep("ClickLinkCreateAnAccount")]
         public LogInStudent ClickLinkCreateAnAccount()
         {
             LinkCreateAnAccountl.Click();

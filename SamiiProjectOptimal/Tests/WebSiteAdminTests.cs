@@ -21,8 +21,8 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Maksim", "qatester91311@gmail.com")]
-        [AllureSuite("Client")]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Admin")]
         [AllureSubSuite("Login")]
 
         public void LogInAsAdmin()

@@ -25,8 +25,8 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Maksim", "qatester91311@gmail.com")]
-        [AllureSuite("Client")]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Student")]
         [AllureSubSuite("Login")]
         public void LogInAsStudent()
         {
@@ -41,20 +41,27 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Maksim", "qatester91311@gmail.com")]
-        [AllureSuite("Client")]
-        [AllureSubSuite("Login")]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Student")]
+        [AllureSubSuite("CreateAccount")]
         public void CreateAccountForStudent()
         {
             Pages.LogInStudent
                 .ClickLinkCreateAnAccount();
             Pages.CreateAccountStudent
                 .EnterEmailPasswordCnfrmPsswrd();
+
+            string email = Pages.TeacherCreateAccount.CopyEmailFromCrtAccntPg();
+
             Pages.CreateAccountStudent
                 .ClickSignUpButtonCrtAccnt();
             Pages.EmailXitroo
                 .OpenNewTab();
-            Browser._Driver.Navigate().GoToUrl(EndPoints.emailUrlXitroo);
+            Browser._Driver.Navigate().GoToUrl(EndPoints.emailRandomUrlXitroo);
+            Pages.EmailXitroo
+                .EnterEmail(email);
+            Pages.EmailXitroo
+                .ClickSearchButton();
             Pages.EmailXitroo
                 .OpenWelcomeToSammii();
 
@@ -66,6 +73,19 @@ namespace SamiiProjectOptimal.Tests
                 .EnterDataVerify(verificationCode);
             Pages.ConfirmationCodeStudent
                 .ClickNextButton();
+
+            Pages.LogInTeacher
+                .SwitchTabEmailXitroo();
+            Pages.EmailXitroo
+                .ClickButtonBack();
+
+            string _email = Pages.EmailXitroo.CopyEmailPgXitroo();
+
+            Pages.EmailXitroo
+                .SwitchOnLogInPage();
+            Pages.EmailXitroo
+                .EnterRepeatEmail(_email);
+
             Pages.LogInStudent
                 .EnterEmailPasswordAfterCreateAccount();
             Pages.LogInStudent
@@ -86,6 +106,12 @@ namespace SamiiProjectOptimal.Tests
         }
 
         [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Student")]
+        [AllureSubSuite("Demo")]
 
         public void Demo()
         {

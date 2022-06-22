@@ -1,4 +1,5 @@
-﻿using SamiiProjectOptimal.Additional;
+﻿using NUnit.Allure.Attributes;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
 {
     public partial class LogInTeacher
     {
+        [AllureStep("ClickLinkCreateAnAccount")]
         public LogInTeacher ClickCreateAnAccount()
         {
             LinkCreateAnAccountl.Click();
@@ -16,6 +18,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
             return this;
         }
 
+        [AllureStep("SwitchTabEmailXitroo")]
         public LogInTeacher SwitchTabEmailXitroo()
         {
             WaitUntil.WaitSomeInterval(5);
@@ -25,6 +28,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
             return this;
         }
 
+        [AllureStep("EnterPassword")]
         public LogInTeacher EnterPassword()
         {
             WaitUntil.ShouldLocate(_FIeldInputPassword);
@@ -33,6 +37,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
             return this;
         }
 
+        [AllureStep("ClickButtonLogIn")]
         public LogInTeacher ClickButtonLogIn()
         {
             WaitUntil.ShouldLocate(_ButtonLogIn);
@@ -41,6 +46,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
             return this;
         }
 
+        [AllureStep("EnterEamilPassword")]
         public LogInTeacher EnterEamilPassword()
         {
             WaitUntil.ShouldLocate(_FIeldInputEmail);
@@ -51,6 +57,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
             return this;
         }
 
+        [AllureStep("ClickButtonLogInAsTeacher")]
         public LogInTeacher ClickButtonLogInAsTeacher()
         {
             WaitUntil.ShouldLocate(_ButtonLogIn);

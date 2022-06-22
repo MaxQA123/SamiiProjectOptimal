@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using SamiiProjectOptimal.Additional;
 using System;
@@ -11,6 +12,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
 {
     public partial class EmailXitroo
     {
+        [AllureStep("OpenNewTab")]
         public EmailXitroo OpenNewTab()
         {
             ((IJavaScriptExecutor)Browser._Driver).ExecuteScript("window.open();");
@@ -19,6 +21,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;    
         }
 
+        [AllureStep("CloseNewTab")]
         public EmailXitroo CloseNewTab()
         {
             ((IJavaScriptExecutor)Browser._Driver).ExecuteScript("window.close();");
@@ -27,6 +30,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;
         }
 
+        [AllureStep("OpenWelcomeToSammii")]
         public EmailXitroo OpenWelcomeToSammii()
         {
             WaitUntil.ElementVisibileAndClickable(By.XPath("//tbody[@id = 'mailList']//th[text() = '1']"), 120);
@@ -35,6 +39,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;
         }
 
+        [AllureStep("CopyVerificationCode")]
         public string CopyVerificationCode()
         {
             WaitUntil.WaitSomeInterval(5);
@@ -46,6 +51,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return code;
         }
 
+        [AllureStep("EnterEmail")]
         public EmailXitroo EnterEmail(string _email)
         {
             WaitUntil.ShouldLocate(_FieldInputEmail);
@@ -54,6 +60,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;
         }
 
+        [AllureStep("ClickSearchButton")]
         public EmailXitroo ClickSearchButton()
         {
             WaitUntil.ShouldLocate(_ButtonSearchEmail);
@@ -64,6 +71,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;
         }
 
+        [AllureStep("ClickButtonBack")]
         public EmailXitroo ClickButtonBack()
         {
             WaitUntil.ShouldLocate(_ButtonBackEmail);
@@ -72,6 +80,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;
         }
 
+        [AllureStep("CopyEmailPgXitroo")]
         public string CopyEmailPgXitroo()
         {
             WaitUntil.ShouldLocate(_FieldInputEmailXitroo);
@@ -81,6 +90,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return _email;
         }
 
+        [AllureStep("EnterRepeatEmail")]
         public EmailXitroo EnterRepeatEmail(string _email)
         {
             WaitUntil.ShouldLocate(_FIeldInputEmailLogInPage);
@@ -89,6 +99,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;
         }
 
+        [AllureStep("SwitchOnLogInPage")]
         public EmailXitroo SwitchOnLogInPage()
         {
             WaitUntil.WaitSomeInterval(3);
