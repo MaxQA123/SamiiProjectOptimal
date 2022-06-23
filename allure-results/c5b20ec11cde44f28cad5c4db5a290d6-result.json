@@ -1,0 +1,119 @@
+{
+  "uuid": "fd5ef169-bf59-4016-8643-142851e13cf7-tr-0-1002",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetDateNewLesson",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetDateNewLesson",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetDateNewLesson"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "SetDateLesson"
+    }
+  ],
+  "links": [],
+  "name": "SetDateNewLesson",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "SetDateNewLesson"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetDateNewLesson",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1655973601974,
+          "stop": 1655973603506
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1655973603507,
+          "stop": 1655973604665
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "4bf9ea2a4e61484a8a0e9edb68e34365-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655973598841,
+      "stop": 1655973615287
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655973598838,
+  "stop": 1655973615292
+}

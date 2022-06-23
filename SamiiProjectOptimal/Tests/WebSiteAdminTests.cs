@@ -33,5 +33,35 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Thread.Sleep(10000);
         }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Admin")]
+        [AllureSubSuite("SetDateLesson")]
+
+        public void SetDateNewLesson()
+        {
+            Pages.LogInAdmin
+                .EnterEmailPassword();
+            Pages.LogInAdmin
+                .ClickButtonSignIn();
+            Pages.AdminHome
+                .ScrollToPaginationEducatorTbl();
+            Pages.AdminHome
+                .ClickButtonThreeOnPgntnEducator();
+            Pages.AdminHome
+                .ClickButtonDetailsTestTeacher();
+            Pages.EducatorsView
+                .ClickButtonImpersonateEducatorView();
+            Pages.HeaderAdminWebSite
+                .ClickArrowDropDown();
+            Pages.HeaderAdminWebSite
+                .ClickButtonItemLessonSheduler();
+                
+            Thread.Sleep(10000);
+        }
     }
 }

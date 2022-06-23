@@ -1,5 +1,6 @@
 ﻿using NUnit.Allure.Attributes;
 using OpenQA.Selenium;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +20,12 @@ namespace SamiiProjectOptimal.Additional
             return element;
         }
 
-        //public static IWebElement ScrollToElement(IWebElement element)
-        //{
-        //    IJavaScriptExecutor js = (IJavaScriptExecutor)Browser._Driver;
-        //    js.ExecuteScript("arguments[0].scrollIntoView();", element);
+        [AllureStep("ScrollToDownWebPage")]
+        public static void ScrollToDownWebPage()
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)Browser._Driver;
+            js.ExecuteScript("window.scrollBy(0, 1000)");
+        }
 
-        //    return element;
-        //}
     }
 }

@@ -1,0 +1,139 @@
+{
+  "uuid": "036fd776-e723-4a29-8239-c8897dae9768-tr-0-1002",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetDateNewLesson",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetDateNewLesson",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetDateNewLesson"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "SetDateLesson"
+    }
+  ],
+  "links": [],
+  "name": "SetDateNewLesson",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "SetDateNewLesson"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetDateNewLesson",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1655978760909,
+          "stop": 1655978762415
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1655978762415,
+          "stop": 1655978763533
+        },
+        {
+          "name": "ScrollToElement",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "WebElement",
+              "value": "Element (id = 9d046f6a-7c73-43b6-b46b-3867686c9169)"
+            }
+          ],
+          "start": 1655978773158,
+          "stop": 1655978773170
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "fa6107ceba26438b88a479e42d76b5b7-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1655978757638,
+      "stop": 1655978783608
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1655978757636,
+  "stop": 1655978783618
+}

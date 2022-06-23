@@ -2,6 +2,9 @@
 using SamiiProjectOptimal.Additional;
 using SamiiProjectOptimal.PageObjects.EmailXitrooPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages;
+using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage;
+using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.EducatorsViewPage;
+using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage;
@@ -40,7 +43,12 @@ namespace SamiiProjectOptimal.PageObjects
         public static ConfirmationCodeStudent ConfirmationCodeStudent => GetPage<ConfirmationCodeStudent>();
         public static TeacherConfirmCode TeacherConfirmCode => GetPage<TeacherConfirmCode>();
         public static HeaderTeacher HeaderTeacher => GetPage<HeaderTeacher>();
+        public static HeaderAdminWebSite HeaderAdminWebSite => GetPage<HeaderAdminWebSite>();
         public static TeacherLessonSheduler TeacherLessonSheduler => GetPage<TeacherLessonSheduler>();
         public static TeacherLssnShdlrMdlWndw TeacherLssnShdlrMdlWndw => GetPage<TeacherLssnShdlrMdlWndw>();
+        public static AdminHome AdminHome => GetPage<AdminHome>();
+        public static Scrolling Scrolling => GetPage<Scrolling>();
+        public static EducatorsView EducatorsView => GetPage<EducatorsView>();
+
     }
 }
