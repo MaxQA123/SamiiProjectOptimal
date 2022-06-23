@@ -60,6 +60,32 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDown();
             Pages.HeaderAdminWebSite
                 .ClickButtonItemLessonSheduler();
+            Pages.AdminLessonSheduler
+                .ClickTwiceCell();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectAllInstruments();
+            //Pages.AdminLssnShdlrMdlWndwPg
+            //    .SelectRecurrenceOnce();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .EnterPriceToStudentsPerGroup();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonNext();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonSaveForAdmin();
+            Pages.AdminLessonSheduler
+                .ClickOnceCell();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonAssignLessonToAfterSaved();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectFirstStudentToAssign();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonAssignStudent();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonNextAfterAssignStudent();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonSaveForAdmin();
+            Pages.AdminLessonSheduler
+                .ClickOnceCell();
                 
             Thread.Sleep(10000);
         }

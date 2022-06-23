@@ -1,4 +1,5 @@
-﻿using SamiiProjectOptimal.Additional;
+﻿using NUnit.Allure.Attributes;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePa
 {
     public partial class HeaderAdminWebSite
     {
+        [AllureStep("ClickArrowDropDown")]
         public HeaderAdminWebSite ClickArrowDropDown()
         {
             WaitUntil.ShouldLocate(_ArrowDropDownMenu);
@@ -17,8 +19,10 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePa
             return this;
         }
 
+        [AllureStep("ClickButtonItemLessonSheduler")]
         public HeaderAdminWebSite ClickButtonItemLessonSheduler()
         {
+            WaitUntil.WaitSomeInterval(3);
             WaitUntil.ShouldLocate(_ButtonItemLessonSheduler);
             ButtonItemLessonSheduler.Click();
 

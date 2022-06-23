@@ -43,6 +43,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage
 
         #region TableEducator
 
+        [AllureStep("ClickButtonDetailsTestTeacher")]
         public AdminHome ClickButtonDetailsTestTeacher()
         {
             WaitUntil.WaitSomeInterval(1);

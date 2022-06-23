@@ -3,6 +3,8 @@ using SamiiProjectOptimal.Additional;
 using SamiiProjectOptimal.PageObjects.EmailXitrooPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage;
+using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage;
+using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.EducatorsViewPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages;
@@ -45,7 +47,9 @@ namespace SamiiProjectOptimal.PageObjects
         public static HeaderTeacher HeaderTeacher => GetPage<HeaderTeacher>();
         public static HeaderAdminWebSite HeaderAdminWebSite => GetPage<HeaderAdminWebSite>();
         public static TeacherLessonSheduler TeacherLessonSheduler => GetPage<TeacherLessonSheduler>();
+        public static AdminLessonSheduler AdminLessonSheduler => GetPage<AdminLessonSheduler>();
         public static TeacherLssnShdlrMdlWndw TeacherLssnShdlrMdlWndw => GetPage<TeacherLssnShdlrMdlWndw>();
+        public static AdminLssnShdlrMdlWndwPg AdminLssnShdlrMdlWndwPg => GetPage<AdminLssnShdlrMdlWndwPg>();
         public static AdminHome AdminHome => GetPage<AdminHome>();
         public static Scrolling Scrolling => GetPage<Scrolling>();
         public static EducatorsView EducatorsView => GetPage<EducatorsView>();

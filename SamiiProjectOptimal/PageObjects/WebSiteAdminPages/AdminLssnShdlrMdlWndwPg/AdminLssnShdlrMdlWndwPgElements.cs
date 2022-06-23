@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMdlWndw
+namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg
 {
-    public partial class TeacherLssnShdlrMdlWndw
+    public partial class AdminLssnShdlrMdlWndwPg
     {
         public IWebElement IframeLssnShdlrMdlWndwTeacher => Browser._Driver.FindElement(_IframeLssnShdlrMdlWndwTeacher);
         public readonly static By _IframeLssnShdlrMdlWndwTeacher = By.XPath("//iframe[@id = 'cb-master-frame']");
@@ -32,7 +32,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 
         public IWebElement ButtonDropDownDailyRecurrence => Browser._Driver.FindElement(_ButtonDropDownDailyRecurrence);
         public readonly static By _ButtonDropDownDailyRecurrence = By.XPath("/select[@name = 'recurrenceType']//option[2]");
-
+       
         public IWebElement ButtonDropDownOnceRecurrence => Browser._Driver.FindElement(_ButtonDropDownOnceRecurrence);
         public readonly static By _ButtonDropDownOnceRecurrence = By.XPath("//select[@name = 'recurrenceType']//option[3]");
 
@@ -57,7 +57,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 
         public IWebElement ButtonDeleteDetailsTab => Browser._Driver.FindElement(_ButtonDeleteDetailsTab);
         public readonly static By _ButtonDeleteDetailsTab = By.XPath("//div[@class = 'd-flex justify-content-between pc-markup']//button[1]");
-        
+
         #endregion
 
         #region DropDownMenuInstruments

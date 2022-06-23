@@ -1,19 +1,20 @@
-﻿using SamiiProjectOptimal.Additional;
+﻿using NUnit.Allure.Attributes;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMdlWndw
+namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg
 {
-    public partial class TeacherLssnShdlrMdlWndw
+    public partial class AdminLssnShdlrMdlWndwPg
     {
-
         #region TeacherDetailsTab
 
-        public TeacherLssnShdlrMdlWndw SelectAllInstruments()
-        { 
+        [AllureStep("SelectAllInstruments")]
+        public AdminLssnShdlrMdlWndwPg SelectAllInstruments()
+        {
             WaitUntil.ShouldLocate(_ButtonDropDownInstruments);
             ButtonDropDownInstruments.Click();
             WaitUntil.WaitSomeInterval(1);
@@ -24,15 +25,17 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw SelectRecurrenceOnce()
+        [AllureStep("SelectRecurrenceOnce")]
+        public AdminLssnShdlrMdlWndwPg SelectRecurrenceOnce()
         {
-            WaitUntil.ShouldLocate(_ButtonDropDownOnceRecurrence);
-            ButtonDropDownOnceRecurrence.Click();
+            WaitUntil.ShouldLocate(_ButtonDropDownDailyRecurrence);
+            ButtonDropDownDailyRecurrence.Click();
 
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw EnterPriceToStudentsPerGroup()
+        [AllureStep("EnterPriceToStudentsPerGroup")]
+        public AdminLssnShdlrMdlWndwPg EnterPriceToStudentsPerGroup()
         {
             WaitUntil.ShouldLocate(_FieldStudentsPerGroupPrice);
             FieldStudentsPerGroupPrice.SendKeys(RandomGenerateData.RandomPriceInteger(2) + "." + RandomGenerateData.RandomPriceKopeck(2));
@@ -40,7 +43,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw EnterMinPriceToStudentsPerGroup()
+        [AllureStep("EnterMinPriceToStudentsPerGroup")]
+        public AdminLssnShdlrMdlWndwPg EnterMinPriceToStudentsPerGroup()
         {
             WaitUntil.ShouldLocate(_FieldStudentsPerGroupPrice);
             FieldStudentsPerGroupPrice.SendKeys(PriceForLesson.minPrice);
@@ -48,7 +52,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw ClickButtonNext()
+        [AllureStep("ClickButtonNext")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonNext()
         {
             WaitUntil.ShouldLocate(_ButtonNextDetailsTabBeforeSaved);
             ButtonNextDetailsTabBeforeSaved.Click();
@@ -56,7 +61,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw ClickButtonAssignLessonTo()
+        [AllureStep("ClickButtonAssignLessonTo")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonAssignLessonToAfterSaved()
         {
             WaitUntil.ShouldLocate(_ButtonAssignLessonToAfterSaved);
             ButtonAssignLessonToAfterSaved.Click();
@@ -68,7 +74,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 
         #region TeacherLessonShedulerTab
 
-        public TeacherLssnShdlrMdlWndw ClickButtonSaveForTeacher()
+        [AllureStep("ClickButtonSaveForAdmin")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonSaveForAdmin()
         {
             WaitUntil.ShouldLocate(_ButtonSaveForTeacher);
             ButtonSaveForTeacher.Click();
@@ -78,7 +85,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 
         #endregion
 
-        public TeacherLssnShdlrMdlWndw ClickDeleteDtlsTab()
+        [AllureStep("ClickDeleteDtlsTab")]
+        public AdminLssnShdlrMdlWndwPg ClickDeleteDtlsTab()
         {
             WaitUntil.ShouldLocate(_ButtonDeleteDetailsTab);
             ButtonDeleteDetailsTab.Click();
@@ -88,7 +96,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 
         #region AssignStudentsModalWindow
 
-        public TeacherLssnShdlrMdlWndw SelectFirstStudentToAssign()
+        [AllureStep("SelectFirstStudentToAssign")]
+        public AdminLssnShdlrMdlWndwPg SelectFirstStudentToAssign()
         {
             WaitUntil.WaitSomeInterval(5);
             ButtonDropDownStudents.Click();
@@ -98,7 +107,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw ClickButtonAssignStudent()
+        [AllureStep("ClickButtonAssignStudent")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonAssignStudent()
         {
             WaitUntil.ShouldLocate(_ButtonAssignStudents);
             ButtonAssignStudents.Click();
@@ -106,7 +116,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw ClickButtonNextAfterAssignStudent()
+        [AllureStep("ClickButtonNextAfterAssignStudent")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonNextAfterAssignStudent()
         {
             WaitUntil.ShouldLocate(_ButtonNextDetailsTabAfterSaved);
             ButtonNextDetailsTabAfterSaved.Click();
@@ -118,7 +129,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
 
         #region ModalWindowDeleteLesson
 
-        public TeacherLssnShdlrMdlWndw ClickButtonYes()
+        [AllureStep("ClickButtonYes")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonYes()
         {
             WaitUntil.ShouldLocate(_ButtonYesDeleteLessonMdlWndw);
             ButtonYesDeleteLessonMdlWndw.Click();
@@ -126,7 +138,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMd
             return this;
         }
 
-        public TeacherLssnShdlrMdlWndw ClickButtonNo()
+        [AllureStep("ClickButtonNo")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonNo()
         {
             WaitUntil.ShouldLocate(_ButtonNoDeleteLessonMdlWndw);
             ButtonNoDeleteLessonMdlWndw.Click();
