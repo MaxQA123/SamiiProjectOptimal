@@ -15,9 +15,11 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
         [AllureStep("EnterEmailPasswordPayLogInPg")]
         public PayLessonStudent EnterEmailPasswordPayLogInPg()
         {
-            WaitUntil.ShouldLocate(_FieldInputEmailAddressLogForPay);
-            Input.InputFunctionWithClear(FieldInputEmailAddressLogForPay, Credentials.emailStudentOne);
-            Input.InputFunctionWithClear(FieldInputPasswordLogForPay, Credentials.passwordStudentOne);
+            //WaitUntil.WaitSomeInterval(3);
+            //Browser._Driver.SwitchTo().Frame(IframePayModalWndw);
+            WaitUntil.WaitSomeInterval(3);
+            FieldInputEmailAddressLogForPay.SendKeys(Credentials.emailStudentOne);
+            FieldInputPasswordLogForPay.SendKeys(Credentials.passwordStudentOne);
 
             return this;
         }

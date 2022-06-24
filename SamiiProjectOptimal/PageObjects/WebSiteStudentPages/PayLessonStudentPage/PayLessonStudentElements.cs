@@ -12,13 +12,18 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
     {
         #region ModalWindowLogInAsStudent
 
+        public IWebElement FormPayModalWndw => Browser._Driver.FindElement(_FormPayModalWndw);
+        public readonly static By _FormPayModalWndw = By.XPath("//form[@class = 'w-75 position-center ng-valid ng-star-inserted ng-dirty ng-touched']");
+
+        //div[@class = 'modal-content']//input[@id = 'email']
+        //form[@class = 'w-75 position-center ng-valid ng-star-inserted ng-dirty ng-touched']//input[@id = 'email']
         public IWebElement FieldInputEmailAddressLogForPay => Browser._Driver.FindElement(_FieldInputEmailAddressLogForPay);
-        public readonly static By _FieldInputEmailAddressLogForPay = By.XPath("//input[@id = 'email']");
+        public readonly static By _FieldInputEmailAddressLogForPay = By.XPath("//div[@class = 'modal-content']//input[@id = 'email']");
 
         public IWebElement FieldInputPasswordLogForPay => Browser._Driver.FindElement(_FieldInputPasswordLogForPay);
         public readonly static By _FieldInputPasswordLogForPay = By.XPath("//input[@id = 'password']");
 
-        public IWebElement ButtonShowLogForPayy => Browser._Driver.FindElement(_ButtonShowLogForPay);
+        public IWebElement ButtonShowLogForPay => Browser._Driver.FindElement(_ButtonShowLogForPay);
         public readonly static By _ButtonShowLogForPay = By.XPath("//span[@class = 'show']//i");
 
         public IWebElement ButtonLogInLogForPayy => Browser._Driver.FindElement(_ButtonLogInLogForPay);
