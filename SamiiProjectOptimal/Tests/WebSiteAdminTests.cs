@@ -61,11 +61,13 @@ namespace SamiiProjectOptimal.Tests
             Pages.HeaderAdminWebSite
                 .ClickButtonItemLessonSheduler();
             Pages.AdminLessonSheduler
+                .SelectNextDay();
+            Pages.AdminLessonSheduler
                 .ClickTwiceCell();
             Pages.AdminLssnShdlrMdlWndwPg
                 .SelectAllInstruments();
-            //Pages.AdminLssnShdlrMdlWndwPg
-            //    .SelectRecurrenceOnce();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectRecurrenceOnce();
             Pages.AdminLssnShdlrMdlWndwPg
                 .EnterPriceToStudentsPerGroup();
             Pages.AdminLssnShdlrMdlWndwPg
@@ -84,10 +86,48 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNextAfterAssignStudent();
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonSaveForAdmin();
+            Pages.HeaderAdminWebSite
+                .ClickArrowDropDown();
+            Pages.HeaderAdminWebSite
+                .ClickButtonLogout();
+            Thread.Sleep(10000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Admin")]
+        [AllureSubSuite("DeleteLessonAsAdmin")]
+
+        public void DeleteLessonAsAdmin()
+        {
+            Pages.LogInAdmin
+                .EnterEmailPassword();
+            Pages.LogInAdmin
+                .ClickButtonSignIn();
+            Pages.AdminHome
+                .ScrollToPaginationEducatorTbl();
+            Pages.AdminHome
+                .ClickButtonThreeOnPgntnEducator();
+            Pages.AdminHome
+                .ClickButtonDetailsTestTeacher();
+            Pages.EducatorsView
+                .ClickButtonImpersonateEducatorView();
+            Pages.HeaderAdminWebSite
+                .ClickArrowDropDown();
+            Pages.HeaderAdminWebSite
+                .ClickButtonItemLessonSheduler();
+            Pages.AdminLessonSheduler
+                .SelectNextDay();
             Pages.AdminLessonSheduler
                 .ClickOnceCell();
-                
-            Thread.Sleep(10000);
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickDeleteDtlsTab();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonYes();
+            Thread.Sleep(5000);
         }
     }
 }

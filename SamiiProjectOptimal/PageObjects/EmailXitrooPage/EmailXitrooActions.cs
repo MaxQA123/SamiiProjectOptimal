@@ -109,6 +109,30 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;
         }
 
+        #region AssignToLesson
 
+        [AllureStep("OpenWelcomeToSammii")]
+        public EmailXitroo OpenAssignToLesson()
+        {
+            WaitUntil.ElementVisibileAndClickable(By.XPath("//tbody[@id = 'mailList']//th[text() = '1']"), 120);
+            SelectLetterNumberOneNew.Click();
+
+            return this;
+        }
+
+        [AllureStep("ClickLinkHere")]
+        public EmailXitroo ClickLinkHere()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            Browser._Driver.SwitchTo().Frame(IframeXitrooLetter);
+            WaitUntil.WaitSomeInterval(3);
+            WaitUntil.ShouldLocate(_LinkHereFromEmail);
+            LinkHereFromEmail.Click();
+            Browser._Driver.SwitchTo().DefaultContent();
+
+            return this;
+        }
+
+        #endregion
     }
 }

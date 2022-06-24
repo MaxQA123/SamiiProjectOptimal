@@ -10,6 +10,7 @@ using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage;
+using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherConfirmCodePage;
@@ -38,6 +39,7 @@ namespace SamiiProjectOptimal.PageObjects
 
         public static LogInAdmin LogInAdmin => GetPage<LogInAdmin>();
         public static LogInStudent LogInStudent => GetPage<LogInStudent>();
+        public static PayLessonStudent PayLessonStudent => GetPage<PayLessonStudent>();
         public static LogInTeacher LogInTeacher => GetPage<LogInTeacher>();
         public static CreateAccountStudent CreateAccountStudent => GetPage<CreateAccountStudent>();
         public static TeacherCreateAccount TeacherCreateAccount => GetPage<TeacherCreateAccount>();

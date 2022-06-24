@@ -1,0 +1,486 @@
+{
+  "uuid": "07acac77-a545-427f-9c7d-8339fc420a70-tr-0-1002",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetDateNewLesson",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetDateNewLesson",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetDateNewLesson"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "SetDateLesson"
+    }
+  ],
+  "links": [],
+  "name": "SetDateNewLesson",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div _ngcontent-c20=\"\" class=\"click-zone clickable\" triggers=\"keypress:focusout\"></div> is not clickable at point (1177, 493). Other element would receive the click: <div _ngcontent-c5=\"\" class=\"black-overlay ng-star-inserted\" style=\"background-color: rgba(51, 51, 51, 0.8); position: fixed;\">...</div>\n  (Session info: chrome=103.0.5060.53)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.__a$_around_ClickOnceCell_100663543_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\AdminLessonShedulerPage\\AdminLessonShedulerActions.cs:line 32\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.__a$_around_ClickOnceCell_100663543_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.__a$_around_ClickOnceCell_100663543_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.ClickOnceCell() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\AdminLessonShedulerPage\\AdminLessonShedulerElements.cs:line 13\r\n   at SamiiProjectOptimal.Tests.WebSiteAdminTests.SetDateNewLesson() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteAdminTests.cs:line 89"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetDateNewLesson",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <div _ngcontent-c20=\"\" class=\"click-zone clickable\" triggers=\"keypress:focusout\"></div> is not clickable at point (1177, 493). Other element would receive the click: <div _ngcontent-c5=\"\" class=\"black-overlay ng-star-inserted\" style=\"background-color: rgba(51, 51, 51, 0.8); position: fixed;\">...</div>\n  (Session info: chrome=103.0.5060.53)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.__a$_around_ClickOnceCell_100663543_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\AdminLessonShedulerPage\\AdminLessonShedulerActions.cs:line 32\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.__a$_around_ClickOnceCell_100663543_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.__a$_around_ClickOnceCell_100663543_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.ClickOnceCell() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\AdminLessonShedulerPage\\AdminLessonShedulerElements.cs:line 13\r\n   at SamiiProjectOptimal.Tests.WebSiteAdminTests.SetDateNewLesson() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteAdminTests.cs:line 89"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066713830,
+          "stop": 1656066715375
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066715376,
+          "stop": 1656066716508
+        },
+        {
+          "name": "ScrollToPaginationEducatorTbl",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = a9a478eb-e1f0-4591-8409-9ca87d9034e7)"
+                }
+              ],
+              "start": 1656066726139,
+              "stop": 1656066726153
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066716509,
+          "stop": 1656066726153
+        },
+        {
+          "name": "ClickButtonThreeOnPgntnEducator",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066726154,
+          "stop": 1656066727986
+        },
+        {
+          "name": "ClickButtonDetailsTestTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066727987,
+          "stop": 1656066730302
+        },
+        {
+          "name": "ClickButtonImpersonateEducatorView",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066730303,
+          "stop": 1656066734235
+        },
+        {
+          "name": "ClickArrowDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066734236,
+          "stop": 1656066736521
+        },
+        {
+          "name": "ClickButtonItemLessonSheduler",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066736521,
+          "stop": 1656066740017
+        },
+        {
+          "name": "ClickOnceCell",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066740018,
+          "stop": 1656066741354
+        },
+        {
+          "name": "ClickTwiceCell",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066741355,
+          "stop": 1656066752999
+        },
+        {
+          "name": "SelectAllInstruments",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066753000,
+          "stop": 1656066755861
+        },
+        {
+          "name": "SelectRecurrenceOnce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066755861,
+          "stop": 1656066756045
+        },
+        {
+          "name": "EnterPriceToStudentsPerGroup",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "RandomPriceInteger",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "Int32",
+                  "value": "2"
+                }
+              ],
+              "start": 1656066756119,
+              "stop": 1656066756127
+            },
+            {
+              "name": "RandomPriceKopeck",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "Int32",
+                  "value": "2"
+                }
+              ],
+              "start": 1656066756128,
+              "stop": 1656066756129
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066756046,
+          "stop": 1656066756397
+        },
+        {
+          "name": "ClickButtonNext",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066756397,
+          "stop": 1656066756581
+        },
+        {
+          "name": "ClickButtonSaveForAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066756582,
+          "stop": 1656066756861
+        },
+        {
+          "name": "ClickOnceCell",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066756862,
+          "stop": 1656066760080
+        },
+        {
+          "name": "ClickButtonAssignLessonTo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066760080,
+          "stop": 1656066760822
+        },
+        {
+          "name": "SelectFirstStudentToAssign",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066760822,
+          "stop": 1656066769174
+        },
+        {
+          "name": "ClickButtonAssignStudent",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066769175,
+          "stop": 1656066769331
+        },
+        {
+          "name": "ClickButtonNextAfterAssignStudent",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066769332,
+          "stop": 1656066769512
+        },
+        {
+          "name": "ClickButtonSaveForAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066769512,
+          "stop": 1656066769677
+        },
+        {
+          "name": "ClickOnceCell",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "element click intercepted: Element <div _ngcontent-c20=\"\" class=\"click-zone clickable\" triggers=\"keypress:focusout\"></div> is not clickable at point (1177, 493). Other element would receive the click: <div _ngcontent-c5=\"\" class=\"black-overlay ng-star-inserted\" style=\"background-color: rgba(51, 51, 51, 0.8); position: fixed;\">...</div>\n  (Session info: chrome=103.0.5060.53)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.__a$_around_ClickOnceCell_100663543_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\AdminLessonShedulerPage\\AdminLessonShedulerActions.cs:line 32\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage.AdminLessonSheduler.__a$_around_ClickOnceCell_100663543_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656066769677,
+          "stop": 1656066773923
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "de48324aa78e4f94802a75dddaad2f3d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656066711010,
+      "stop": 1656066774456
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656066711009,
+  "stop": 1656066774464
+}

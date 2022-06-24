@@ -18,6 +18,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePa
         public IWebElement ButtonItemLessonSheduler => Browser._Driver.FindElement(_ButtonItemLessonSheduler);
         public readonly static By _ButtonItemLessonSheduler = By.XPath("//div[@class = 'dropdown-menu show']//a[5]");
 
+        public IWebElement ButtonItemLogout => Browser._Driver.FindElement(_ButtonItemLogout);
+        public readonly static By _ButtonItemLogout = By.XPath("//div[@class = 'dropdown-menu show']//a[8]");
+
         #endregion
     }
 }

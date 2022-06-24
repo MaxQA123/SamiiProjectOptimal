@@ -10,9 +10,10 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
 {
     public partial class EmailXitroo
     {
+
         public IWebElement IframeXitrooLetter => Browser._Driver.FindElement(_IframeXitrooLetter);
         public readonly static By _IframeXitrooLetter = By.XPath("//iframe[@id = 'mailContentFrame']");
-        
+
         public IWebElement SelectLetterNumberOneNew => Browser._Driver.FindElement(_SelectLetterNumberOneNew);
         public readonly static By _SelectLetterNumberOneNew = By.XPath("//tbody[@id = 'mailList']//th[text() = '1']");
 
@@ -27,6 +28,9 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
 
         public IWebElement ButtonBackEmail => Browser._Driver.FindElement(_ButtonBackEmail);
         public readonly static By _ButtonBackEmail = By.XPath("//button[@id = 'backButton']");
+
+        public IWebElement LinkHereFromEmail => Browser._Driver.FindElement(_LinkHereFromEmail);
+        public readonly static By _LinkHereFromEmail = By.XPath("//a[@href = 'https://samii-refact.anuitexdevelopment.com/#/lesson/10594/pay']");
 
         #region ForCopyFromXitrooEmailToFieldInputLogInPage
 

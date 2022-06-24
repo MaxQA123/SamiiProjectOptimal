@@ -111,16 +111,21 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Student")]
-        [AllureSubSuite("Demo")]
-
-        public void Demo()
+        [AllureSubSuite("PayForLesson")]
+        public void PayForLesson()
         {
             Pages.EmailXitroo
                 .OpenNewTab();
-            Browser._Driver.Navigate().GoToUrl(TestDataEndPoint.studentProfileSetup);
-            Pages.CreateAccountStudent
-                .EnterFirslastNamePhoneAddress();
-            Thread.Sleep(5000);
+            Browser._Driver.Navigate().GoToUrl(EndPoints.emailStudentStudTestNeww);
+            Pages.EmailXitroo
+                .OpenAssignToLesson();
+            Pages.EmailXitroo
+                .ClickLinkHere();
+            Pages.PayLessonStudent
+                .EnterEmailPasswordPayLogInPg();
+            Pages.PayLessonStudent
+                .ClickButtonLogIn();
+            Thread.Sleep(10000);
         }
     }
 }

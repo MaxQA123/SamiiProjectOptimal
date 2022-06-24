@@ -15,6 +15,7 @@ namespace SamiiProjectOptimal.Additional
         //public const string ServiceXitroo = "https://xitroo.com/#highdarwin@xitroo.com";
         ///#highdarwin@xitroo.com - добавляется если нужно, чтоб почта открывалась с введённой почтой которую нужно открыть
         public const string emailRandomUrlXitroo = "https://xitroo.com";
+        public const string emailStudentStudTestNeww = "https://xitroo.com/#newstud@xitroo.com";
     }
 
     public class Credentials

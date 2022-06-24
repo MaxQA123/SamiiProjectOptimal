@@ -28,11 +28,22 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerP
         public AdminLessonSheduler ClickOnceCell()
         {
             WaitUntil.WaitSomeInterval(3);
+            WaitUntil.ElementIsClickable(CellHalfPastSixPmSecond);
             CellHalfPastSixPmSecond.Click();
 
             return this;
         }
 
         #endregion
+
+        [AllureStep("SelectNextDay")]
+        public AdminLessonSheduler SelectNextDay()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            ButtonArrowRightSelectingDate.Click();
+
+            return this;
+        }
+
     }
 }

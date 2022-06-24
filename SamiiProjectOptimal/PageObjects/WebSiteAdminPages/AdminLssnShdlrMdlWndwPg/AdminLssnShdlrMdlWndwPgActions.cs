@@ -28,8 +28,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
         [AllureStep("SelectRecurrenceOnce")]
         public AdminLssnShdlrMdlWndwPg SelectRecurrenceOnce()
         {
-            WaitUntil.ShouldLocate(_ButtonDropDownDailyRecurrence);
-            ButtonDropDownDailyRecurrence.Click();
+            WaitUntil.ShouldLocate(_ButtonDropDownOnceRecurrence);
+            ButtonDropDownOnceRecurrence.Click();
 
             return this;
         }
@@ -79,6 +79,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
         {
             WaitUntil.ShouldLocate(_ButtonSaveForTeacher);
             ButtonSaveForTeacher.Click();
+            WaitUntil.WaitSomeInterval(10);
 
             return this;
         }

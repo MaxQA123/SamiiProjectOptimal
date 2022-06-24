@@ -28,5 +28,15 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePa
 
             return this;
         }
+
+        [AllureStep("ClickButtonLogout")]
+        public HeaderAdminWebSite ClickButtonLogout()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            WaitUntil.ShouldLocate(_ButtonItemLogout);
+            ButtonItemLogout.Click();
+
+            return this;
+        }
     }
 }
