@@ -30,5 +30,12 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
         public readonly static By _ButtonLogInLogForPay = By.XPath("//form[@class = 'w-75 position-center ng-valid ng-star-inserted ng-dirty ng-touched']//div[3]//button");
 
         #endregion
+
+        #region PageEnrolInALessonTabDetails
+
+        public IWebElement ButtonNextPayLssnStdntDtlsTab => Browser._Driver.FindElement(_ButtonNextPayLssnStdntDtlsTab);
+        public readonly static By _ButtonNextPayLssnStdntDtlsTab = By.XPath("//div[@class = 'd-flex justify-content-between button-area']//button[2]");
+
+        #endregion
     }
 }

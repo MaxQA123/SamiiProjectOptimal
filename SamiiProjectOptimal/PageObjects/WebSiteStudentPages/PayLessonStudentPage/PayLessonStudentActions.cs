@@ -12,14 +12,23 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
     {
         #region ModalWindowLogInAsStudent
 
+        [AllureStep("SwitchOnLogInModalWndw")]
+        public PayLessonStudent SwitchOnLogInModalWndw()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            List<string> tablist = new List<string>(Browser._Driver.WindowHandles);
+            Browser._Driver.SwitchTo().Window(tablist[2]);
+            WaitUntil.WaitSomeInterval(5);
+
+            return this;
+        }
+
         [AllureStep("EnterEmailPasswordPayLogInPg")]
         public PayLessonStudent EnterEmailPasswordPayLogInPg()
         {
-            //WaitUntil.WaitSomeInterval(3);
-            //Browser._Driver.SwitchTo().Frame(IframePayModalWndw);
             WaitUntil.WaitSomeInterval(3);
-            FieldInputEmailAddressLogForPay.SendKeys(Credentials.emailStudentOne);
-            FieldInputPasswordLogForPay.SendKeys(Credentials.passwordStudentOne);
+            Input.InputFunctionWithClear(FieldInputEmailAddressLogForPay, Credentials.emailStudentOne);
+            Input.InputFunctionWithClear(FieldInputPasswordLogForPay, Credentials.passwordStudentOne);
 
             return this;
         }
@@ -31,6 +40,18 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
             ButtonLogInLogForPayy.Click();
 
             return this;
+        }
+
+        #endregion
+
+        #region PageEnrolInALessonTabDetails
+
+        public PayLessonStudent ClickButtonNextPayLssnStdnt()
+        {
+            WaitUntil.ShouldLocate(_ButtonNextPayLssnStdntDtlsTab);
+            ButtonNextPayLssnStdntDtlsTab.Click();
+
+            return this; 
         }
 
         #endregion

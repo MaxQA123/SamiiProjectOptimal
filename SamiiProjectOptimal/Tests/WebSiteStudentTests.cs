@@ -122,9 +122,13 @@ namespace SamiiProjectOptimal.Tests
             Pages.EmailXitroo
                 .ClickLinkHere();
             Pages.PayLessonStudent
+                .SwitchOnLogInModalWndw();
+            Pages.PayLessonStudent
                 .EnterEmailPasswordPayLogInPg();
             Pages.PayLessonStudent
                 .ClickButtonLogIn();
+            Pages.PayLessonStudent
+                .ClickButtonNextPayLssnStdnt();
             Thread.Sleep(10000);
         }
     }
