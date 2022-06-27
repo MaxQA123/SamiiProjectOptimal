@@ -48,12 +48,61 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         public PayLessonStudent ClickButtonNextPayLssnStdnt()
         {
-            WaitUntil.ShouldLocate(_ButtonNextPayLssnStdntDtlsTab);
+            WaitUntil.WaitSomeInterval(3);
+            //WaitUntil.ShouldLocate(_ButtonNextPayLssnStdntDtlsTab);
             ButtonNextPayLssnStdntDtlsTab.Click();
 
             return this; 
         }
 
         #endregion
+
+        #region PageEnrolInALessonTabConfirmation
+
+        public PayLessonStudent SelectInstrumentPianoCnfrmtnTab()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            DropDownMenuLessonInstrumentPiano.Click();
+
+            return this;
+        }
+
+        public PayLessonStudent ClickCheckBoxIAgreeToTheTermsAndConditions()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            CheckBoxIAgreeToTheTermsAndConditions.Click();
+
+            return this;
+        }
+
+        public PayLessonStudent ClickButtonNextPayLssnStdntCnfrmtnTab()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            ButtonNextPayLssnStdntCnfrmtnTab.Click();
+
+            return this;
+        }
+
+        #endregion
+
+        #region PageEnrolInALessonTabPayment
+
+        public PayLessonStudent ClickButtonEnrolTabPayment()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            ButtonEnrolTabPayment.Click();
+
+            return this;
+        }
+
+        #endregion
+
+        public PayLessonStudent ClickButtonConfirmMdlWndwYouveDone()
+        {
+            WaitUntil.ShouldLocate(_ButtonConfirmMdlWndwYouveDone);
+            ButtonConfirmMdlWndwYouveDone.Click();
+
+            return this;
+        }
     }
 }

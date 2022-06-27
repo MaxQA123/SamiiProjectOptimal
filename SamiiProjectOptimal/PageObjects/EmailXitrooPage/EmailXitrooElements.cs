@@ -30,7 +30,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
         public readonly static By _ButtonBackEmail = By.XPath("//button[@id = 'backButton']");
 
         public IWebElement LinkHereFromEmail => Browser._Driver.FindElement(_LinkHereFromEmail);
-        public readonly static By _LinkHereFromEmail = By.XPath("//a[@href = 'https://samii-refact.anuitexdevelopment.com/#/lesson/10594/pay']");
+        public readonly static By _LinkHereFromEmail = By.XPath("//a[text() = 'HERE']");
 
         #region ForCopyFromXitrooEmailToFieldInputLogInPage
 

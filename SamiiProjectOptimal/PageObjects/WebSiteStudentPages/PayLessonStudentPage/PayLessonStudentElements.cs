@@ -37,5 +37,37 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
         public readonly static By _ButtonNextPayLssnStdntDtlsTab = By.XPath("//div[@class = 'd-flex justify-content-between button-area']//button[2]");
 
         #endregion
+
+        #region PageEnrolInALessonTabConfirmation
+
+        public IWebElement DropDownMenuLessonInstrumentPiano => Browser._Driver.FindElement(_DropDownMenuLessonInstrumentPiano);
+        public readonly static By _DropDownMenuLessonInstrumentPiano= By.XPath("//div[@_ngcontent-c6][3]//select[@id = 'instrument']//option[2]");
+
+        public IWebElement CheckBoxIAgreeToTheTermsAndConditions => Browser._Driver.FindElement(_CheckBoxIAgreeToTheTermsAndConditions);
+        public readonly static By _CheckBoxIAgreeToTheTermsAndConditions = By.XPath("//div[@_ngcontent-c6][3]//div[6]//input");
+
+        public IWebElement ButtonNextPayLssnStdntCnfrmtnTab => Browser._Driver.FindElement(_ButtonNextPayLssnStdntCnfrmtnTab);
+        public readonly static By _ButtonNextPayLssnStdntCnfrmtnTab = By.XPath("//div[@_ngcontent-c6][3]//div[7]//button[2]");
+
+        #endregion
+
+        #region PageEnrolInALessonTabPayment
+
+        public IWebElement ButtonEnrolTabPayment => Browser._Driver.FindElement(_ButtonEnrolTabPayment);
+        public readonly static By _ButtonEnrolTabPayment = By.XPath("//button[contains(text(), 'Enrol')]");
+
+        public IWebElement RadioButtonPayForTenLessonsTabPayment => Browser._Driver.FindElement(_RadioButtonPayForTenLessonsTabPayment);
+        public readonly static By _RadioButtonPayForTenLessonsTabPayment = By.XPath("//div[@_ngcontent-c6][4]//div[5]//input");
+
+        public IWebElement RadioButtonSetUpReoccurringTabPayment => Browser._Driver.FindElement(_RadioButtonSetUpReoccurringTabPayment);
+        public readonly static By _RadioButtonSetUpReoccurringTabPayment = By.XPath("//app-booking-payment[@class = 'ng-star-inserted']//div[5]//div[2]//div[2]//input");
+
+        public IWebElement CloseButtonMdlWndwPerLessonDdTabPayment => Browser._Driver.FindElement(_CloseButtonMdlWndwPerLessonDdTabPayment);
+        public readonly static By _CloseButtonMdlWndwPerLessonDdTabPayment = By.XPath("//div[@class = 'time-slot-create-container']//div//button");
+
+        public IWebElement ButtonConfirmMdlWndwYouveDone => Browser._Driver.FindElement(_ButtonConfirmMdlWndwYouveDone);
+        public readonly static By _ButtonConfirmMdlWndwYouveDone = By.XPath("//i[@class = 'fas fa-check']");
+
+        #endregion
     }
 }

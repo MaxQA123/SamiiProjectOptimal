@@ -45,8 +45,7 @@ namespace SamiiProjectOptimal.Tests
         public void SetDateNewLesson()
         {
             Pages.LogInAdmin
-                .EnterEmailPassword();
-            Pages.LogInAdmin
+                .EnterEmailPassword()
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();

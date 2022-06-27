@@ -129,6 +129,16 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogIn();
             Pages.PayLessonStudent
                 .ClickButtonNextPayLssnStdnt();
+            Pages.PayLessonStudent
+                .SelectInstrumentPianoCnfrmtnTab();
+            Pages.PayLessonStudent
+                .ClickCheckBoxIAgreeToTheTermsAndConditions();
+            Pages.PayLessonStudent
+                .ClickButtonNextPayLssnStdntCnfrmtnTab();
+            Pages.PayLessonStudent
+                .ClickButtonEnrolTabPayment();
+            Pages.PayLessonStudent
+                .ClickButtonConfirmMdlWndwYouveDone();
             Thread.Sleep(10000);
         }
     }
