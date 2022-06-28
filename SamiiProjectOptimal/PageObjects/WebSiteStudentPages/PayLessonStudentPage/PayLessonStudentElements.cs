@@ -57,7 +57,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
         public readonly static By _ButtonEnrolTabPayment = By.XPath("//button[contains(text(), 'Enrol')]");
 
         public IWebElement RadioButtonPayForTenLessonsTabPayment => Browser._Driver.FindElement(_RadioButtonPayForTenLessonsTabPayment);
-        public readonly static By _RadioButtonPayForTenLessonsTabPayment = By.XPath("//div[@_ngcontent-c6][4]//div[5]//input");
+        public readonly static By _RadioButtonPayForTenLessonsTabPayment = By.XPath("//label[contains(text(), 'Pay for 10 lessons')]");
 
         public IWebElement RadioButtonSetUpReoccurringTabPayment => Browser._Driver.FindElement(_RadioButtonSetUpReoccurringTabPayment);
         public readonly static By _RadioButtonSetUpReoccurringTabPayment = By.XPath("//app-booking-payment[@class = 'ng-star-inserted']//div[5]//div[2]//div[2]//input");

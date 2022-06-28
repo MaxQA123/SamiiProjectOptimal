@@ -25,7 +25,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerP
         }
 
         [AllureStep("ClickOnceCell")]
-        public AdminLessonSheduler ClickOnceCell()
+        public AdminLessonSheduler ClickOnceCellCellHalfPastSixPmSecond()
         {
             WaitUntil.WaitSomeInterval(3);
             WaitUntil.ElementIsClickable(CellHalfPastSixPmSecond);

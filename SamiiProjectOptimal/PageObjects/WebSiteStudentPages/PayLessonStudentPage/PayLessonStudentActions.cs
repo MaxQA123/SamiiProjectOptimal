@@ -46,6 +46,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         #region PageEnrolInALessonTabDetails
 
+        [AllureStep("ClickButtonNextPayLssnStdnt")]
         public PayLessonStudent ClickButtonNextPayLssnStdnt()
         {
             WaitUntil.WaitSomeInterval(3);
@@ -59,6 +60,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         #region PageEnrolInALessonTabConfirmation
 
+        [AllureStep("SelectInstrumentPianoCnfrmtnTab")]
         public PayLessonStudent SelectInstrumentPianoCnfrmtnTab()
         {
             WaitUntil.WaitSomeInterval(3);
@@ -67,6 +69,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
             return this;
         }
 
+        [AllureStep("ClickCheckBoxIAgreeToTheTermsAndConditions")]
         public PayLessonStudent ClickCheckBoxIAgreeToTheTermsAndConditions()
         {
             WaitUntil.WaitSomeInterval(3);
@@ -75,6 +78,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
             return this;
         }
 
+        [AllureStep("SwitchOnLogInModalWndw")]
         public PayLessonStudent ClickButtonNextPayLssnStdntCnfrmtnTab()
         {
             WaitUntil.WaitSomeInterval(3);
@@ -87,6 +91,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         #region PageEnrolInALessonTabPayment
 
+        [AllureStep("ClickButtonEnrolTabPayment")]
         public PayLessonStudent ClickButtonEnrolTabPayment()
         {
             WaitUntil.WaitSomeInterval(3);
@@ -97,6 +102,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         #endregion
 
+        [AllureStep("ClickButtonConfirmMdlWndwYouveDone")]
         public PayLessonStudent ClickButtonConfirmMdlWndwYouveDone()
         {
             WaitUntil.ShouldLocate(_ButtonConfirmMdlWndwYouveDone);

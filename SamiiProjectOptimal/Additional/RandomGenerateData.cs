@@ -44,5 +44,14 @@ namespace SamiiProjectOptimal.Additional
             return new string(Enumerable.Repeat(chars, size)
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
+
+        [AllureStep("RandomPriceMinInteger")]
+        public static string RandomPriceMinInteger(int size)
+        {
+            Random random = new Random();
+            const string chars = "11";
+            return new string(Enumerable.Repeat(chars, size)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
     }
 }

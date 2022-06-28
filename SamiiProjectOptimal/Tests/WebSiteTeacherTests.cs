@@ -105,7 +105,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
-        [AllureSubSuite("SetDateLesson")]
+        [AllureSubSuite("SetDateLessonByTheTeacher")]
 
         public void SetDateLessonByTheTeacher()
         {

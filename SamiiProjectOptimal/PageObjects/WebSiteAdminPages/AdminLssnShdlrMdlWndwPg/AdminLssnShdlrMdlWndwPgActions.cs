@@ -1,4 +1,5 @@
 ﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,46 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
 {
     public partial class AdminLssnShdlrMdlWndwPg
     {
+        #region ModalWindowLessonBelongsTo
+
+        [AllureStep("ClickButtonMoveStudentsMdlWndwLssnShdlr")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonMoveStudentsMdlWndwLssnShdlr()
+        {
+            WaitUntil.ElementIsClickable(ButtonMoveStudentsMdlWndwLssnShdlr);
+            ButtonMoveStudentsMdlWndwLssnShdlr.Click();
+
+            return this;
+        }
+
+        [AllureStep("ClickButtonSelectAllLessonBelongsTo")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonSelectAllLessonBelongsTo()
+        {
+            WaitUntil.ElementIsClickable(ButtonSelectAllLessonBelongsTo);
+            ButtonSelectAllLessonBelongsTo.Click();
+
+            return this;
+        }
+
+        [AllureStep("ClickButtonMoveOneLessonLessonBelongsTo")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonMoveOneLessonLessonBelongsTo()
+        {
+            WaitUntil.ElementIsClickable(ButtonMoveOneLessonLessonBelongsTo);
+            ButtonMoveOneLessonLessonBelongsTo.Click();
+
+            return this;
+        }
+
+        [AllureStep("ScrollToCellElevenPmPmMdlWndwCalendar")]
+        public AdminLssnShdlrMdlWndwPg ScrollToCellElevenPmPmMdlWndwCalendar()
+        {
+            WaitUntil.ShouldLocate(_CellElevenPmScrollingMdlWndw);
+            Scrolling.ScrollToElement(CellElevenPmScrollingMdlWndw);
+
+            return this;
+        }
+
+        #endregion
+
         #region TeacherDetailsTab
 
         [AllureStep("SelectAllInstruments")]
