@@ -26,7 +26,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Admin")]
         [AllureSubSuite("Login")]
 
-        public void LogInAsAdmin()
+        public void LogIn()
         {
             Pages.LogInAdmin
                 .EnterEmailPassword();
@@ -118,8 +118,13 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDown();
             Pages.HeaderAdminWebSite
                 .ClickButtonItemLessonSheduler();
-            Pages.AdminLessonSheduler
-                .ClickTwiceCell();
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+
+            shedulerLessonPage[29].Click();
+            WaitUntil.WaitSomeInterval(3);
+            shedulerLessonPage[29].Click();
+
             Pages.AdminLssnShdlrMdlWndwPg
                 .SelectAllInstruments();
             Pages.AdminLssnShdlrMdlWndwPg
@@ -130,8 +135,11 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNext();
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonSaveForAdmin();
-            Pages.AdminLessonSheduler
-                .ClickOnceCellCellHalfPastSixPmSecond();
+
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAddotional("Home Studio");
+
+            _shedulerLessonPage[29].Click();
+
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonAssignLessonToAfterSaved();
             Pages.AdminLssnShdlrMdlWndwPg
@@ -146,7 +154,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDown();
             Pages.HeaderAdminWebSite
                 .ClickButtonLogout();
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
         }
 
         [Test]
@@ -180,7 +188,7 @@ namespace SamiiProjectOptimal.Tests
             Pages.AdminLssnShdlrMdlWndwPg
                 .ScrollToCellElevenPmPmMdlWndwCalendar();
 
-            IList<IWebElement> timeline = SearchXpathHelper.SelectorHomeStudioElevenPm("Home Studio");
+            IList<IWebElement> timeline = SearchXpathHelper.SelectorShedulerLessonMdlWndwForMoveLesson("Second");
 
             timeline[47].Click();
             timeline[47].Click();
@@ -201,9 +209,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
-        [AllureSubSuite("DeleteLessonAsAdminForCurrenttDay")]
+        [AllureSubSuite("DeleteLessonAsAdminForCurrentDay")]
 
-        public void DeleteLessonAsAdminForCurrenttDay()
+        public void DeleteLessonAsAdminForCurrentDay()
         {
             Pages.LogInAdmin
                 .EnterEmailPassword();

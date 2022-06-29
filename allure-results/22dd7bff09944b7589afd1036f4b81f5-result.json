@@ -1,0 +1,159 @@
+{
+  "uuid": "2e1dd358-7eb9-4d81-a6bd-c13ad877672f-tr-0-1017",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonByTheTeacher",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetDateLessonByTheTeacher",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetDateLessonByTheTeacher"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Teacher"
+    },
+    {
+      "name": "subSuite",
+      "value": "SetDateLessonByTheTeacher"
+    }
+  ],
+  "links": [],
+  "name": "SetDateLessonByTheTeacher",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "SetDateLessonByTheTeacher"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetDateLessonByTheTeacher",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656495192410,
+          "stop": 1656495193979
+        },
+        {
+          "name": "ClickButtonLogInAsTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656495193980,
+          "stop": 1656495194097
+        },
+        {
+          "name": "RandomPriceInteger",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "2"
+            }
+          ],
+          "start": 1656495217027,
+          "stop": 1656495217031
+        },
+        {
+          "name": "RandomPriceKopeck",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "2"
+            }
+          ],
+          "start": 1656495217031,
+          "stop": 1656495217033
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "957683677eda4396953d1e23b913e213-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656495189435,
+      "stop": 1656495243936
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656495189434,
+  "stop": 1656495243941
+}

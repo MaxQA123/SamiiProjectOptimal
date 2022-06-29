@@ -28,7 +28,7 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Student")]
         [AllureSubSuite("Login")]
-        public void LogInAsStudent()
+        public void LogIn()
         {
             Pages.LogInStudent
                 .EnterEmailPassword();
@@ -43,7 +43,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Student")]
-        [AllureSubSuite("CreateAccount")]
+        [AllureSubSuite("CreateAccountForStudent")]
         public void CreateAccountForStudent()
         {
             Pages.LogInStudent

@@ -5,6 +5,8 @@ using NUnit.Allure.Attributes;
 using SamiiProjectOptimal.Additional;
 using SamiiProjectOptimal.PageObjects;
 using System.Threading;
+using System.Collections.Generic;
+using OpenQA.Selenium;
 
 namespace SamiiProjectOptimal.Tests
 {
@@ -18,7 +20,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
-        [AllureSubSuite("CreateAccount")]
+        [AllureSubSuite("CreateAccountForTeacher")]
         public void CreateAccountForTeacher()
         {
             Pages.LogInTeacher
@@ -90,7 +92,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Teacher")]
         [AllureSubSuite("Login")]
 
-        public void LogInAsTeacher()
+        public void LogIn()
         {
             Pages.LogInTeacher
                 .EnterEamilPassword();
@@ -117,8 +119,13 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDown();
             Pages.HeaderTeacher
                 .ClickButtonItemLessonSheduler();
-            Pages.TeacherLessonSheduler
-                .ClickTwiceCell();
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+
+            shedulerLessonPage[29].Click();
+            WaitUntil.WaitSomeInterval(3);
+            shedulerLessonPage[29].Click();
+
             Pages.TeacherLssnShdlrMdlWndw
                 .SelectAllInstruments();
             Pages.TeacherLssnShdlrMdlWndw
@@ -129,8 +136,11 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNext();
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonSaveForTeacher();
-            Pages.TeacherLessonSheduler
-                .ClickOnceCell();
+
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAddotional("Home Studio");
+
+            _shedulerLessonPage[29].Click();
+
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonAssignLessonTo();
             Pages.TeacherLssnShdlrMdlWndw
