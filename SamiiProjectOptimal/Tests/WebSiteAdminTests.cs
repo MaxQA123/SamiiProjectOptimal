@@ -186,11 +186,11 @@ namespace SamiiProjectOptimal.Tests
             timeline[47].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
-                .SelectAllInstruments()
-                .SelectRecurrenceOnce()
-                .EnterMinPriceToStudentsPerGroup()
-                .ClickButtonNext()
-                .ClickButtonSaveForAdmin();
+                .SelectInstrumentsForMoveLesson()
+                .SelectRecurrenceForMoveLesson()
+                .EnterMinPriceToStudentsPerGroupForMoveLesson()
+                .ClickButtonNextDetailsTabForMoveLesson()
+                .ClickButtonSaveRecourceTabForMoveLesson();
 
             Thread.Sleep(5000);
         }

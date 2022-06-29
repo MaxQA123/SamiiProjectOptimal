@@ -43,8 +43,11 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
         public IWebElement ButtonDropDownInstrumentsForMoveLesson => Browser._Driver.FindElement(_ButtonDropDownInstrumentsForMoveLesson);
         public readonly static By _ButtonDropDownInstrumentsForMoveLesson = By.XPath("//ngb-modal-window[@class = 'modal fade show d-block'][3]//div[@class = 'modal-content']//div[@class = 'lesson-create-details-container']//span");
 
+        public IWebElement CheckBoxSelectAllForMoveLesson => Browser._Driver.FindElement(_CheckBoxSelectAllForMoveLesson);
+        public readonly static By _CheckBoxSelectAllForMoveLesson = By.XPath("//ngb-modal-window[@class = 'modal fade show d-block'][3]//div[@class = 'modal-content']//div[@class = 'lesson-create-details-container']//div[@class = 'd-flex flexwrap-variable'][2]//li");
+        
         public IWebElement ButtonArrowCloseDropDownInstrumentsForMoveLesson => Browser._Driver.FindElement(_ButtonArrowCloseDropDownInstrumentsForMoveLesson);
-        public readonly static By _ButtonArrowCloseDropDownInstrumentsForMoveLesson = By.XPath("//ngb-modal-window[@class = 'modal fade show d-block'][3]//div[@class = 'modal-content']//div[@class = 'lesson-create-details-container']//span[@class = 'dropdown-down']");
+        public readonly static By _ButtonArrowCloseDropDownInstrumentsForMoveLesson = By.XPath("//ngb-modal-window[@class = 'modal fade show d-block'][3]//div[@class = 'modal-content']//div[@class = 'lesson-create-details-container']//span[@class = 'dropdown-up']");
 
         public IWebElement ButtonDropDownOnceRecurrenceForMoveLesson => Browser._Driver.FindElement(_ButtonDropDownOnceRecurrenceForMoveLesson);
         public readonly static By _ButtonDropDownOnceRecurrenceForMoveLesson = By.XPath("//ngb-modal-window[@class = 'modal fade show d-block'][3]//div[@class = 'modal-content']//div[@class = 'lesson-create-details-container']//div[@class = 'd-flex flexwrap-variable'][5]//option[3]");
@@ -54,6 +57,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
 
         public IWebElement ButtonNextDetailsTabForMoveLesson => Browser._Driver.FindElement(_ButtonNextDetailsTabForMoveLesson);
         public readonly static By _ButtonNextDetailsTabForMoveLesson = By.XPath("//ngb-modal-window[@class = 'modal fade show d-block'][3]//div[@class = 'modal-content']//div[@class = 'lesson-create-details-container']//div[@class = 'd-flex justify-content-between pc-markup']//button[3]");
+
+        public IWebElement ButtonSaveRecourceTabForMoveLesson => Browser._Driver.FindElement(_ButtonSaveRecourceTabForMoveLesson);
+        public readonly static By _ButtonSaveRecourceTabForMoveLesson = By.XPath("//ngb-modal-window[@class = 'modal fade show d-block'][3]//div[@class = 'modal-content']//div[@class = 'lesson-create-resources-container']//button[2]");
         
         #endregion
 

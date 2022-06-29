@@ -51,6 +51,59 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
 
         #endregion
 
+        #region ModalWindowLessonSchedulerForMoveLessonOnTheAnyTime
+
+        [AllureStep("SelectInstrumentsForMoveLesson")]
+        public AdminLssnShdlrMdlWndwPg SelectInstrumentsForMoveLesson()
+        {
+            WaitUntil.ShouldLocate(_ButtonDropDownInstrumentsForMoveLesson);
+            ButtonDropDownInstrumentsForMoveLesson.Click();
+            WaitUntil.WaitSomeInterval(1);
+            CheckBoxSelectAllForMoveLesson.Click();
+            WaitUntil.WaitSomeInterval(1);
+            ButtonArrowCloseDropDownInstrumentsForMoveLesson.Click();
+
+            return this;
+        }
+
+        [AllureStep("SelectRecurrenceForMoveLesson")]
+        public AdminLssnShdlrMdlWndwPg SelectRecurrenceForMoveLesson()
+        {
+            WaitUntil.ShouldLocate(_ButtonDropDownOnceRecurrenceForMoveLesson);
+            ButtonDropDownOnceRecurrenceForMoveLesson.Click();
+
+            return this;
+        }
+
+        [AllureStep("EnterMinPriceToStudentsPerGroupForMoveLesson")]
+        public AdminLssnShdlrMdlWndwPg EnterMinPriceToStudentsPerGroupForMoveLesson()
+        {
+            WaitUntil.ShouldLocate(_FieldInputStudentsPerGroupPriceForMoveLesson);
+            FieldInputStudentsPerGroupPriceForMoveLesson.SendKeys(PriceForLesson.minPrice);
+
+            return this;
+        }
+
+        [AllureStep("ClickButtonNextDetailsTabForMoveLesson")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonNextDetailsTabForMoveLesson()
+        {
+            WaitUntil.ShouldLocate(_ButtonNextDetailsTabForMoveLesson);
+            ButtonNextDetailsTabForMoveLesson.Click();
+
+            return this;
+        }
+
+        [AllureStep("ClickButtonSaveRecourceTabForMoveLesson")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonSaveRecourceTabForMoveLesson()
+        {
+            WaitUntil.ShouldLocate(_ButtonSaveRecourceTabForMoveLesson);
+            ButtonSaveRecourceTabForMoveLesson.Click();
+
+            return this;
+        }
+
+        #endregion
+
         #region TeacherDetailsTab
 
         [AllureStep("SelectAllInstruments")]
