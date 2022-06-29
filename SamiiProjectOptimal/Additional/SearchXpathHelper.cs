@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,8 @@ namespace SamiiProjectOptimal.Additional
     public class SearchXpathHelper
     {
         private static IWebElement _element;
+
+        [AllureStep("SelectorShedulerLessonMdlWndwForMoveLesson")]
         public static IList<IWebElement> SelectorShedulerLessonMdlWndwForMoveLesson(string location)
         {
             WaitUntil.WaitSomeInterval(1);
@@ -18,6 +21,7 @@ namespace SamiiProjectOptimal.Additional
             return _element.FindElements(By.XPath($".//span[contains(text(), '{location}')]/ancestor::tr//td"));
         }
 
+        [AllureStep("SelectorShedulerLessonPage")]
         public static IList<IWebElement> SelectorShedulerLessonPage(string locationpage)
         {
             WaitUntil.WaitSomeInterval(10);
@@ -26,7 +30,8 @@ namespace SamiiProjectOptimal.Additional
             return _element.FindElements(By.XPath($".//span[contains(text(), '{locationpage}')]/ancestor::tr//td"));
         }
 
-        public static IList<IWebElement> SelectorShedulerLessonPageAddotional(string _locationpage)
+        [AllureStep("SelectorShedulerLessonPageAdditional")]
+        public static IList<IWebElement> SelectorShedulerLessonPageAdditional(string _locationpage)
         {
             WaitUntil.WaitSomeInterval(10);
             var str = "//div[@class = 'container-fluid']//div[@class = 'timeline-container']//table";

@@ -107,9 +107,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
-        [AllureSubSuite("SetDateLessonByTheTeacher")]
+        [AllureSubSuite("SetDateNewLessonCurrentDay")]
 
-        public void SetDateLessonByTheTeacher()
+        public void SetDateNewLessonCurrentDay()
         {
             Pages.LogInTeacher
                 .EnterEamilPassword();
@@ -123,7 +123,7 @@ namespace SamiiProjectOptimal.Tests
             IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
 
             shedulerLessonPage[29].Click();
-            WaitUntil.WaitSomeInterval(3);
+            WaitUntil.WaitSomeInterval(1);
             shedulerLessonPage[29].Click();
 
             Pages.TeacherLssnShdlrMdlWndw
@@ -137,7 +137,7 @@ namespace SamiiProjectOptimal.Tests
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonSaveForTeacher();
 
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAddotional("Home Studio");
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
             _shedulerLessonPage[29].Click();
 
@@ -160,9 +160,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.comm")]
         [AllureSuite("Teacher")]
-        [AllureSubSuite("DeleteLesson")]
+        [AllureSubSuite("DeleteLessonCurrentDay")]
 
-        public void DeleteLesson()
+        public void DeleteLessonCurrentDay()
         {
             Pages.LogInTeacher
                 .EnterEamilPassword();
@@ -172,8 +172,11 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDown();
             Pages.HeaderTeacher
                 .ClickButtonItemLessonSheduler();
-            Pages.TeacherLessonSheduler
-                .ClickOnceCell();
+
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+
+            _shedulerLessonPage[29].Click();
+
             Pages.TeacherLssnShdlrMdlWndw
                .ClickDeleteDtlsTab();
             Pages.TeacherLssnShdlrMdlWndw

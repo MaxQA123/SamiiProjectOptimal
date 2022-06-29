@@ -1,0 +1,265 @@
+{
+  "uuid": "d849f66c-d77a-4702-95d1-cef05d9341f4-tr-0-1008",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteAdminTests.DeleteLessonAsAdminForCurrentDay",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteAdminTests.DeleteLessonAsAdminForCurrentDay",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteLessonAsAdminForCurrentDay"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "DeleteLessonAsAdminForCurrentDay"
+    }
+  ],
+  "links": [],
+  "name": "DeleteLessonAsAdminForCurrentDay",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 60 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.__a$_around_ClickDeleteDtlsTab_100663555_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\AdminLssnShdlrMdlWndwPg\\AdminLssnShdlrMdlWndwPgActions.cs:line 186\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.__a$_around_ClickDeleteDtlsTab_100663555_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.__a$_around_ClickDeleteDtlsTab_100663555_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.ClickDeleteDtlsTab()\r\n   at SamiiProjectOptimal.Tests.WebSiteAdminTests.DeleteLessonAsAdminForCurrentDay() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteAdminTests.cs:line 234"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "DeleteLessonAsAdminForCurrentDay",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 60 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.__a$_around_ClickDeleteDtlsTab_100663555_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\AdminLssnShdlrMdlWndwPg\\AdminLssnShdlrMdlWndwPgActions.cs:line 186\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.__a$_around_ClickDeleteDtlsTab_100663555_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.__a$_around_ClickDeleteDtlsTab_100663555_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.ClickDeleteDtlsTab()\r\n   at SamiiProjectOptimal.Tests.WebSiteAdminTests.DeleteLessonAsAdminForCurrentDay() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteAdminTests.cs:line 234"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497043848,
+          "stop": 1656497045389
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497045390,
+          "stop": 1656497046650
+        },
+        {
+          "name": "ScrollToPaginationEducatorTbl",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 2ec47ccf-d40e-420e-9d6e-2fa851c2e04f)"
+                }
+              ],
+              "start": 1656497058884,
+              "stop": 1656497058899
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497046651,
+          "stop": 1656497058899
+        },
+        {
+          "name": "ClickButtonThreeOnPgntnEducator",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497058900,
+          "stop": 1656497060906
+        },
+        {
+          "name": "ClickButtonDetailsTestTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497060907,
+          "stop": 1656497063397
+        },
+        {
+          "name": "ClickButtonImpersonateEducatorView",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497063398,
+          "stop": 1656497067463
+        },
+        {
+          "name": "ClickArrowDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497067464,
+          "stop": 1656497069344
+        },
+        {
+          "name": "ClickButtonItemLessonSheduler",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497069344,
+          "stop": 1656497072793
+        },
+        {
+          "name": "ClickOnceCell",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497072794,
+          "stop": 1656497075955
+        },
+        {
+          "name": "ClickDeleteDtlsTab",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 60 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.__a$_around_ClickDeleteDtlsTab_100663555_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\AdminLssnShdlrMdlWndwPg\\AdminLssnShdlrMdlWndwPgActions.cs:line 186\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg.AdminLssnShdlrMdlWndwPg.__a$_around_ClickDeleteDtlsTab_100663555_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497075956,
+          "stop": 1656497136740
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7cd21d70de84473597ae2edc73813b4a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656497038812,
+      "stop": 1656497137432
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656497038804,
+  "stop": 1656497137441
+}

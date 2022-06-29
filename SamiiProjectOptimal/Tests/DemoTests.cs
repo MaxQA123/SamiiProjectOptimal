@@ -80,7 +80,7 @@ namespace SamiiProjectOptimal.Tests
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonSaveForAdmin();
 
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAddotional("Home Studio");
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
             _shedulerLessonPage[29].Click();
 

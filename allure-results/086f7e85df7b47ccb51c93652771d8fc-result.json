@@ -1,0 +1,149 @@
+{
+  "uuid": "a225f2f6-ca2e-414f-b141-71a7c73e73d9-tr-0-1011",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.LogIn",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.LogIn",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LogIn"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "LogIn",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "LogIn"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LogIn",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEmailPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656500989873,
+          "stop": 1656500990688
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656500990688,
+          "stop": 1656500990826
+        },
+        {
+          "name": "ClickArrowDropDownMenu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656500990826,
+          "stop": 1656500992538
+        },
+        {
+          "name": "ClickItemEditProfileDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656500992538,
+          "stop": 1656500992825
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "208ba49b7a9d45afb94a8738dc90e358-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656500986841,
+      "stop": 1656500999872
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656500986839,
+  "stop": 1656500999880
+}

@@ -1,0 +1,260 @@
+{
+  "uuid": "0212f87f-9195-4161-84fa-2bc75519a39d-tr-0-1008",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteAdminTests.DeleteLessonAsAdminForCurrentDay",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteAdminTests.DeleteLessonAsAdminForCurrentDay",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteLessonAsAdminForCurrentDay"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "DeleteLessonAsAdminForCurrentDay"
+    }
+  ],
+  "links": [],
+  "name": "DeleteLessonAsAdminForCurrentDay",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "DeleteLessonAsAdminForCurrentDay"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "DeleteLessonAsAdminForCurrentDay",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497309566,
+          "stop": 1656497311079
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497311080,
+          "stop": 1656497312215
+        },
+        {
+          "name": "ScrollToPaginationEducatorTbl",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 068befe8-0b6c-4ec2-a568-e6ac1c9e3b2e)"
+                }
+              ],
+              "start": 1656497325644,
+              "stop": 1656497325679
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497312217,
+          "stop": 1656497325679
+        },
+        {
+          "name": "ClickButtonThreeOnPgntnEducator",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497325679,
+          "stop": 1656497327646
+        },
+        {
+          "name": "ClickButtonDetailsTestTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497327648,
+          "stop": 1656497329980
+        },
+        {
+          "name": "ClickButtonImpersonateEducatorView",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497329984,
+          "stop": 1656497335213
+        },
+        {
+          "name": "ClickArrowDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497335214,
+          "stop": 1656497337673
+        },
+        {
+          "name": "ClickButtonItemLessonSheduler",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497337673,
+          "stop": 1656497341193
+        },
+        {
+          "name": "ClickDeleteDtlsTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497351559,
+          "stop": 1656497352391
+        },
+        {
+          "name": "ClickButtonYes",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656497352391,
+          "stop": 1656497352642
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c59a2f431d2347eaa415546dddac7e90-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656497305712,
+      "stop": 1656497358311
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656497305710,
+  "stop": 1656497358318
+}

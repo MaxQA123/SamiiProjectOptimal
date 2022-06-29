@@ -32,8 +32,16 @@ namespace SamiiProjectOptimal.Tests
         {
             Pages.LogInStudent
                 .EnterEmailPassword();
+
+            string getEmailFromLogIn = Pages.StudentProfileSetUp.GetEmailFromLogIn();
+
             Pages.LogInStudent
                 .ClickButtonSignIn();
+            Pages.HeaderStudent
+                .ClickArrowDropDownMenu()
+                .ClickItemEditProfileDropDown();
+            Pages.StudentProfileSetUp
+                .VerifyEmailIsRight(getEmailFromLogIn);
             Thread.Sleep(5000);
         }
 
