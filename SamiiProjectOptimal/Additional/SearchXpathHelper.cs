@@ -38,5 +38,14 @@ namespace SamiiProjectOptimal.Additional
             _element = Browser._Driver.FindElement(By.XPath(str));
             return _element.FindElements(By.XPath($".//span[contains(text(), '{_locationpage}')]/ancestor::tr//td"));
         }
+
+        [AllureStep("SelectorShedulerLessonPage")]
+        public static IList<IWebElement> SelectorOnsideRghtCalendarShedulerLessonPage(string locationmonth)
+        {
+            WaitUntil.WaitSomeInterval(10);
+            var str = $"//li[contains(text(), '{locationmonth}')]/ancestor::div/ul[@class = 'days']";
+            _element = Browser._Driver.FindElement(By.XPath(str));
+            return _element.FindElements(By.XPath($".//li"));
+        }
     }
 }

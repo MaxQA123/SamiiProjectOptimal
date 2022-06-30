@@ -47,7 +47,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
         }
 
         [AllureStep("EnterEamilPassword")]
-        public LogInTeacher EnterEamilPassword()
+        public LogInTeacher EnterEmailPassword()
         {
             WaitUntil.ShouldLocate(_FIeldInputEmail);
             FIeldInputEmail.SendKeys(Credentials.emailTeacherOne);

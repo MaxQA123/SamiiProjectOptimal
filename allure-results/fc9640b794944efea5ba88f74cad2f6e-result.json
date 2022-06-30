@@ -1,0 +1,139 @@
+{
+  "uuid": "74e7c04b-bf7b-4fd2-bd96-2cdbc1c43fcf-tr-0-1001",
+  "historyId": "SamiiProjectOptimal.Tests.DemoTests.SelectDateViaCalendarOnSideBar",
+  "fullName": "SamiiProjectOptimal.Tests.DemoTests.SelectDateViaCalendarOnSideBar",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SelectDateViaCalendarOnSideBar"
+    },
+    {
+      "name": "testClass",
+      "value": "DemoTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "SelectDateViaCalendarOnSideBar"
+    }
+  ],
+  "links": [],
+  "name": "SelectDateViaCalendarOnSideBar",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "SelectDateViaCalendarOnSideBar"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SelectDateViaCalendarOnSideBar",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656598024324,
+          "stop": 1656598025982
+        },
+        {
+          "name": "ClickButtonLogInAsTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656598025982,
+          "stop": 1656598026261
+        },
+        {
+          "name": "SelectorShedulerLessonPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "July"
+            }
+          ],
+          "start": 1656598033681,
+          "stop": 1656598043762
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "d5b72a996eda4d78986d61f954dc5daa-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656598019809,
+      "stop": 1656598051049
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656598019808,
+  "stop": 1656598051058
+}

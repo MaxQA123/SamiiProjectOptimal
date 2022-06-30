@@ -25,16 +25,33 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Student")]
-        [AllureSubSuite("Demo")]
+        [AllureSubSuite("SelectDateViaCalendarOnSideBar")]
 
-        public void Demo()
+        public void SelectDateViaCalendarOnSideBar()
         {
-            Pages.EmailXitroo
-                .OpenNewTab();
-            Browser._Driver.Navigate().GoToUrl(TestDataEndPoint.studentProfileSetup);
-            Pages.CreateAccountStudent
-                .EnterFirslastNamePhoneAddress();
-            Thread.Sleep(5000);
+            Pages.LogInTeacher
+                .EnterEmailPassword();
+            Pages.LogInTeacher
+                .ClickButtonLogInAsTeacher();
+            Pages.HeaderTeacher
+                .ClickArrowDropDown()
+                .ClickButtonItemLessonSheduler();
+
+            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("July");
+
+            //shedulerLessonOnSideRight[8].Click();
+
+            foreach (var item in shedulerLessonOnSideRight)
+            {
+                if (item.Text == "27")
+                {
+                    item.Click();
+
+                    break;
+                }
+            }
+
+            Thread.Sleep(10000);
         }
 
         [Test]

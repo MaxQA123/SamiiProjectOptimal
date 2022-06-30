@@ -207,6 +207,8 @@ namespace SamiiProjectOptimal.Tests
                 .EnterMinPriceToStudentsPerGroupForMoveLesson()
                 .ClickButtonNextDetailsTabForMoveLesson()
                 .ClickButtonSaveRecourceTabForMoveLesson();
+            Pages.TeacherLessonSheduler
+                .ClickBtnAwaitingMoveConfirmations();
 
             Thread.Sleep(5000);
         }

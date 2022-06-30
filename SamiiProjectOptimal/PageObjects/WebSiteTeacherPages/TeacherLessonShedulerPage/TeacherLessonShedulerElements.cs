@@ -11,7 +11,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
     public partial class TeacherLessonSheduler
     {
         public IWebElement ButtonAwaitingMoveConfirmations => Browser._Driver.FindElement(_ButtonAwaitingMoveConfirmations);
-        public readonly static By _ButtonAwaitingMoveConfirmations = By.XPath("//div[@class = 'align-self-end ng-star-inserted']//button[1]");
+        public readonly static By _ButtonAwaitingMoveConfirmations = By.XPath("//div[@class = 'align-self-end ng-star-inserted']//button[text() = ' Awaiting Move Confirmations ']");
 
         #region TheDateSelectorAboveTheLessonsScheduler
         public IWebElement ButtonArrowLeftSelectingDate => Browser._Driver.FindElement(_ButtonArrowLeftSelectingDate);
@@ -33,6 +33,16 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
 
         public IWebElement CellHalfPastEightPmHomeStudio => Browser._Driver.FindElement(_CellHalfPastEightPmHomeStudio);
         public readonly static By _CellHalfPastEightPmHomeStudio = By.XPath("//div[@class = 'timeline-container']//td[42]//div[@class = 'click-zone clickable']");
+
+        #endregion
+
+        #region SelectorCalendarWithTheRightSideBar
+
+        public IWebElement ButtonArrowCalendarSideBarTop => Browser._Driver.FindElement(_ButtonArrowCalendarSideBarTop);
+        public readonly static By _ButtonArrowCalendarSideBarTop = By.XPath("//div[@class = 'col-md-3 custom-date-picker ng-star-inserted']//i[@class = 'fas fa-chevron-up']");
+
+        public IWebElement ButtonArrowCalendarSideBarBottom => Browser._Driver.FindElement(_ButtonArrowCalendarSideBarBottom);
+        public readonly static By _ButtonArrowCalendarSideBarBottom = By.XPath("//div[@class = 'col-md-3 custom-date-picker ng-star-inserted']//i[@class = 'fas fa-chevron-down']");
 
         #endregion
     }

@@ -95,7 +95,7 @@ namespace SamiiProjectOptimal.Tests
         public void LogIn()
         {
             Pages.LogInTeacher
-                .EnterEamilPassword();
+                .EnterEmailPassword();
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
             Thread.Sleep(5000);
@@ -112,7 +112,60 @@ namespace SamiiProjectOptimal.Tests
         public void SetDateNewLessonCurrentDay()
         {
             Pages.LogInTeacher
-                .EnterEamilPassword();
+                .EnterEmailPassword();
+            Pages.LogInTeacher
+                .ClickButtonLogInAsTeacher();
+            Pages.HeaderTeacher
+                .ClickArrowDropDown();
+            Pages.HeaderTeacher
+                .ClickButtonItemLessonSheduler();
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+
+            shedulerLessonPage[29].Click();
+            WaitUntil.WaitSomeInterval(1);
+            shedulerLessonPage[29].Click();
+
+            Pages.TeacherLssnShdlrMdlWndw
+                .SelectAllInstruments();
+            Pages.TeacherLssnShdlrMdlWndw
+                .SelectRecurrenceOnce();
+            Pages.TeacherLssnShdlrMdlWndw
+                .EnterPriceToStudentsPerGroup();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonNext();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonSaveForTeacher();
+
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+
+            _shedulerLessonPage[29].Click();
+
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonAssignLessonTo();
+            Pages.TeacherLssnShdlrMdlWndw
+                .SelectFirstStudentToAssign();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonAssignStudent();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonNextAfterAssignStudent();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonSaveForTeacher();
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("SetDateNewLessonNextDay")]
+
+        public void SetDateNewLessonNextDay()
+        {
+            Pages.LogInTeacher
+                .EnterEmailPassword();
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
             Pages.HeaderTeacher
@@ -165,7 +218,7 @@ namespace SamiiProjectOptimal.Tests
         public void DeleteLessonCurrentDay()
         {
             Pages.LogInTeacher
-                .EnterEamilPassword();
+                .EnterEmailPassword();
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
             Pages.HeaderTeacher
