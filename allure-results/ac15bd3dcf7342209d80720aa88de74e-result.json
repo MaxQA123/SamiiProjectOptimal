@@ -1,0 +1,279 @@
+{
+  "uuid": "ef4a0d7d-38dc-48ce-b883-98034bcc5b2c-tr-0-1020",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.MoveDateTimeLessonCurrentDayViaSlctrDays",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.MoveDateTimeLessonCurrentDayViaSlctrDays",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "MoveDateTimeLessonCurrentDayViaSlctrDays"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "MoveDateTimeLessonCurrentDayViaSlctrDays"
+    }
+  ],
+  "links": [],
+  "name": "MoveDateTimeLessonCurrentDayViaSlctrDays",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <td _ngcontent-c18=\"\" class=\"lesson-container ng-star-inserted\">...</td> is not clickable at point (1284, 319). Other element would receive the click: <div _ngcontent-c24=\"\" class=\"d-flex flexwrap-variable\">...</div>\n  (Session info: chrome=103.0.5060.66)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.MoveDateTimeLessonCurrentDayViaSlctrDays() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 259"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "MoveDateTimeLessonCurrentDayViaSlctrDays",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <td _ngcontent-c18=\"\" class=\"lesson-container ng-star-inserted\">...</td> is not clickable at point (1284, 319). Other element would receive the click: <div _ngcontent-c24=\"\" class=\"d-flex flexwrap-variable\">...</div>\n  (Session info: chrome=103.0.5060.66)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.MoveDateTimeLessonCurrentDayViaSlctrDays() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 259"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656681245190,
+          "stop": 1656681246776
+        },
+        {
+          "name": "ClickButtonLogInAsTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656681246777,
+          "stop": 1656681246901
+        },
+        {
+          "name": "ScrollToCellElevenPmShdlrPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = b2294f5f-48c3-4993-9ef8-8181a214ec6b)"
+                }
+              ],
+              "start": 1656681254616,
+              "stop": 1656681254636
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656681252962,
+          "stop": 1656681254636
+        },
+        {
+          "name": "SelectorShedulerLessonPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Home Studio"
+            }
+          ],
+          "start": 1656681254637,
+          "stop": 1656681264789
+        },
+        {
+          "name": "ClickButtonMoveStudentsMdlWndwLssnShdlr",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656681265129,
+          "stop": 1656681268388
+        },
+        {
+          "name": "ClickButtonSelectAllLessonBelongsTo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656681268388,
+          "stop": 1656681268687
+        },
+        {
+          "name": "ClickButtonMoveOneLessonLessonBelongsTo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656681268687,
+          "stop": 1656681269169
+        },
+        {
+          "name": "ScrollToCellElevenPmPmMdlWndwCalendar",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 61be048c-0137-483e-be3a-502ecd76e5c3)"
+                }
+              ],
+              "start": 1656681269296,
+              "stop": 1656681269307
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656681269170,
+          "stop": 1656681269307
+        },
+        {
+          "name": "SelectorShedulerLessonMdlWndwForMoveLesson",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Second"
+            }
+          ],
+          "start": 1656681269308,
+          "stop": 1656681270375
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7c591b22d1ff49a9b7eaf3cd25529584-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656681242416,
+      "stop": 1656681273462
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656681242414,
+  "stop": 1656681273469
+}

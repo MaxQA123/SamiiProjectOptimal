@@ -37,13 +37,13 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDown()
                 .ClickButtonItemLessonSheduler();
 
-            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("July");
+            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
 
             //shedulerLessonOnSideRight[8].Click();
 
             foreach (var item in shedulerLessonOnSideRight)
             {
-                if (item.Text == "27")
+                if (item.Text == "1")
                 {
                     item.Click();
 

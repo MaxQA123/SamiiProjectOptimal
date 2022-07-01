@@ -16,6 +16,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
         [AllureStep("ClickButtonMoveStudentsMdlWndwLssnShdlr")]
         public AdminLssnShdlrMdlWndwPg ClickButtonMoveStudentsMdlWndwLssnShdlr()
         {
+            WaitUntil.WaitSomeInterval(3);
             WaitUntil.ElementIsClickable(ButtonMoveStudentsMdlWndwLssnShdlr);
             ButtonMoveStudentsMdlWndwLssnShdlr.Click();
 

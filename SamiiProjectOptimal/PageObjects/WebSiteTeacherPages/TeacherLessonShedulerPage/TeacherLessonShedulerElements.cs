@@ -45,5 +45,12 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
         public readonly static By _ButtonArrowCalendarSideBarBottom = By.XPath("//div[@class = 'col-md-3 custom-date-picker ng-star-inserted']//i[@class = 'fas fa-chevron-down']");
 
         #endregion
+
+        #region ElementsForScroll
+
+        public IWebElement CellElevenPmLessonShedulerPag => Browser._Driver.FindElement(_CellElevenPmLessonShedulerPage);
+        public readonly static By _CellElevenPmLessonShedulerPage = By.XPath("//div[@class = 'timeline-container']//td[48]//div[@class = 'click-zone clickable']");
+
+        #endregion
     }
 }

@@ -107,9 +107,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
-        [AllureSubSuite("SetDateNewLessonCurrentDay")]
+        [AllureSubSuite("SetNewLessonCurrentDayViaSlctrDays")]
 
-        public void SetDateNewLessonCurrentDay()
+        public void SetNewLessonCurrentDayViaSlctrDays()
         {
             Pages.LogInTeacher
                 .EnterEmailPassword();
@@ -122,9 +122,9 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
 
-            shedulerLessonPage[29].Click();
-            WaitUntil.WaitSomeInterval(1);
-            shedulerLessonPage[29].Click();
+            shedulerLessonPage[43].Click();
+            WaitUntil.WaitSomeInterval(3);
+            shedulerLessonPage[43].Click();
 
             Pages.TeacherLssnShdlrMdlWndw
                 .SelectAllInstruments();
@@ -139,7 +139,7 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
-            _shedulerLessonPage[29].Click();
+            _shedulerLessonPage[43].Click();
 
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonAssignLessonTo();
@@ -160,9 +160,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
-        [AllureSubSuite("SetDateNewLessonNextDay")]
+        [AllureSubSuite("SetNewLessonOnNextDateViaCalendar")]
 
-        public void SetDateNewLessonNextDay()
+        public void SetNewLessonOnNextDateViaCalendar()
         {
             Pages.LogInTeacher
                 .EnterEmailPassword();
@@ -173,11 +173,25 @@ namespace SamiiProjectOptimal.Tests
             Pages.HeaderTeacher
                 .ClickButtonItemLessonSheduler();
 
-            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
 
-            shedulerLessonPage[29].Click();
+            //shedulerLessonOnSideRight[8].Click();
+
+            foreach (var item in shedulerLessonOnSideRight)
+            {
+                if (item.Text == "1")
+                {
+                    item.Click();
+
+                    break;
+                }
+            }
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Third");
+
+            shedulerLessonPage[42].Click();
             WaitUntil.WaitSomeInterval(1);
-            shedulerLessonPage[29].Click();
+            shedulerLessonPage[42].Click();
 
             Pages.TeacherLssnShdlrMdlWndw
                 .SelectAllInstruments();
@@ -190,9 +204,9 @@ namespace SamiiProjectOptimal.Tests
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonSaveForTeacher();
 
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Third");
 
-            _shedulerLessonPage[29].Click();
+            _shedulerLessonPage[42].Click();
 
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonAssignLessonTo();
@@ -211,11 +225,158 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Admin")]
+        [AllureSubSuite("MoveDateTimeLessonCurrentDayViaSlctrDays")]
+
+        public void MoveDateTimeLessonCurrentDayViaSlctrDays()
+        {
+            Pages.LogInTeacher
+                .EnterEmailPassword()
+                .ClickButtonLogInAsTeacher();
+
+            Pages.HeaderTeacher
+                .ClickArrowDropDown()
+                .ClickButtonItemLessonSheduler();
+
+            Pages.TeacherLessonSheduler
+                .ScrollToCellElevenPmShdlrPg();
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+
+            shedulerLessonPage[43].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonMoveStudentsMdlWndwLssnShdlr()
+                .ClickButtonSelectAllLessonBelongsTo()
+                .ClickButtonMoveOneLessonLessonBelongsTo();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ScrollToCellElevenPmPmMdlWndwCalendar();
+
+            IList<IWebElement> timeline = SearchXpathHelper.SelectorShedulerLessonMdlWndwForMoveLesson("Second");
+
+            timeline[46].Click();
+            WaitUntil.WaitSomeInterval(1);
+            timeline[46].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectInstrumentsForMoveLesson()
+                .SelectRecurrenceForMoveLesson()
+                .EnterMinPriceToStudentsPerGroupForMoveLesson()
+                .ClickButtonNextDetailsTabForMoveLesson()
+                .ClickButtonSaveRecourceTabForMoveLesson();
+            Pages.TeacherLessonSheduler
+                .ClickBtnAwaitingMoveConfirmations();
+
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.comm")]
         [AllureSuite("Teacher")]
         [AllureSubSuite("DeleteLessonCurrentDay")]
 
-        public void DeleteLessonCurrentDay()
+        public void DeleteLessonViaSlctrDays()
+        {
+            Pages.LogInTeacher
+               .EnterEmailPassword()
+               .ClickButtonLogInAsTeacher();
+
+            Pages.HeaderTeacher
+                .ClickArrowDropDown()
+                .ClickButtonItemLessonSheduler();
+
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+
+            _shedulerLessonPage[31].Click();
+
+            Pages.TeacherLssnShdlrMdlWndw
+               .ClickDeleteDtlsTab();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonYes();
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Admin")]
+        [AllureSubSuite("MoveDateTimeLessonNextDateViaCalendar")]
+
+        public void MoveDateTimeLessonNextDateViaCalendar()
+        {
+            Pages.LogInAdmin
+                .EnterEmailPassword()
+                .ClickButtonSignIn();
+            Pages.AdminHome
+                .ScrollToPaginationEducatorTbl()
+                .ClickButtonThreeOnPgntnEducator()
+                .ClickButtonDetailsTestTeacher();
+            Pages.EducatorsView
+                .ClickButtonImpersonateEducatorView();
+            Pages.HeaderAdminWebSite
+                .ClickArrowDropDown()
+                .ClickButtonItemLessonSheduler();
+
+            Pages.TeacherLessonSheduler
+                .ScrollToCellElevenPmShdlrPg();
+
+            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
+
+            //shedulerLessonOnSideRight[8].Click();
+
+            foreach (var item in shedulerLessonOnSideRight)
+            {
+                if (item.Text == "1")
+                {
+                    item.Click();
+
+                    break;
+                }
+            }
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Third");
+
+            shedulerLessonPage[42].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonMoveStudentsMdlWndwLssnShdlr()
+                .ClickButtonSelectAllLessonBelongsTo()
+                .ClickButtonMoveOneLessonLessonBelongsTo();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ScrollToCellElevenPmPmMdlWndwCalendar();
+
+            IList<IWebElement> timeline = SearchXpathHelper.SelectorShedulerLessonMdlWndwForMoveLesson("Forth");
+
+            timeline[45].Click();
+            timeline[45].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectInstrumentsForMoveLesson()
+                .SelectRecurrenceForMoveLesson()
+                .EnterMinPriceToStudentsPerGroupForMoveLesson()
+                .ClickButtonNextDetailsTabForMoveLesson()
+                .ClickButtonSaveRecourceTabForMoveLesson();
+            Pages.TeacherLessonSheduler
+                .ClickBtnAwaitingMoveConfirmations();
+
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.comm")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("DeleteLessonCurrentDay")]
+
+        public void DeleteLessonFromNextDateViaCalendar()
         {
             Pages.LogInTeacher
                 .EnterEmailPassword();
@@ -226,7 +387,21 @@ namespace SamiiProjectOptimal.Tests
             Pages.HeaderTeacher
                 .ClickButtonItemLessonSheduler();
 
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
+
+            //shedulerLessonOnSideRight[8].Click();
+
+            foreach (var item in shedulerLessonOnSideRight)
+            {
+                if (item.Text == "1")
+                {
+                    item.Click();
+
+                    break;
+                }
+            }
+
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Third");
 
             _shedulerLessonPage[29].Click();
 

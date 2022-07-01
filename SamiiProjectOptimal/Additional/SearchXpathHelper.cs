@@ -39,7 +39,7 @@ namespace SamiiProjectOptimal.Additional
             return _element.FindElements(By.XPath($".//span[contains(text(), '{_locationpage}')]/ancestor::tr//td"));
         }
 
-        [AllureStep("SelectorShedulerLessonPage")]
+        [AllureStep("SelectorOnsideRghtCalendarShedulerLessonPage")]
         public static IList<IWebElement> SelectorOnsideRghtCalendarShedulerLessonPage(string locationmonth)
         {
             WaitUntil.WaitSomeInterval(10);

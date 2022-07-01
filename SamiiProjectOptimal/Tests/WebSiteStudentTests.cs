@@ -147,7 +147,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonEnrolTabPayment();
             Pages.PayLessonStudent
                 .ClickButtonConfirmMdlWndwYouveDone();
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
         }
     }
 }

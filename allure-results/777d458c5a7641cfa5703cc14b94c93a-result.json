@@ -1,0 +1,235 @@
+{
+  "uuid": "f15f5ff3-411b-4fbc-9e03-41f1b18e403e-tr-0-1005",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetNewLessonOnNextDateViaCalendar",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetNewLessonOnNextDateViaCalendar",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetNewLessonOnNextDateViaCalendar"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "SetNewLessonOnNextDateViaCalendar"
+    }
+  ],
+  "links": [],
+  "name": "SetNewLessonOnNextDateViaCalendar",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 60 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.__a$_around_ClickButtonItemLessonSheduler_100663554_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\HeaderAdminWebSitePage\\HeaderAdminWebSiteActions.cs:line 26\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.__a$_around_ClickButtonItemLessonSheduler_100663554_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.__a$_around_ClickButtonItemLessonSheduler_100663554_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.ClickButtonItemLessonSheduler() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\HeaderAdminWebSitePage\\HeaderAdminWebSiteElements.cs:line 13\r\n   at SamiiProjectOptimal.Tests.WebSiteAdminTests.SetNewLessonOnNextDateViaCalendar() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteAdminTests.cs:line 61"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetNewLessonOnNextDateViaCalendar",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 60 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.__a$_around_ClickButtonItemLessonSheduler_100663554_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\HeaderAdminWebSitePage\\HeaderAdminWebSiteActions.cs:line 26\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.__a$_around_ClickButtonItemLessonSheduler_100663554_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.__a$_around_ClickButtonItemLessonSheduler_100663554_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.ClickButtonItemLessonSheduler() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\HeaderAdminWebSitePage\\HeaderAdminWebSiteElements.cs:line 13\r\n   at SamiiProjectOptimal.Tests.WebSiteAdminTests.SetNewLessonOnNextDateViaCalendar() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteAdminTests.cs:line 61"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672976014,
+          "stop": 1656672977525
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672977525,
+          "stop": 1656672978625
+        },
+        {
+          "name": "ScrollToPaginationEducatorTbl",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 433d6595-7f3d-4d2e-a387-8000f57e5a60)"
+                }
+              ],
+              "start": 1656672987340,
+              "stop": 1656672987353
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672978626,
+          "stop": 1656672987353
+        },
+        {
+          "name": "ClickButtonThreeOnPgntnEducator",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672987353,
+          "stop": 1656672988750
+        },
+        {
+          "name": "ClickButtonDetailsTestTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672988750,
+          "stop": 1656672991075
+        },
+        {
+          "name": "ClickButtonImpersonateEducatorView",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672991077,
+          "stop": 1656672995218
+        },
+        {
+          "name": "ClickArrowDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672995219,
+          "stop": 1656672997070
+        },
+        {
+          "name": "ClickButtonItemLessonSheduler",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 60 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.__a$_around_ClickButtonItemLessonSheduler_100663554_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteAdminPages\\HeaderAdminWebSitePage\\HeaderAdminWebSiteActions.cs:line 26\r\n   at SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage.HeaderAdminWebSite.__a$_around_ClickButtonItemLessonSheduler_100663554_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672997071,
+          "stop": 1656673060678
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "d680df5c77594130981ed898d81c4047-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656672973324,
+      "stop": 1656673061227
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656672973323,
+  "stop": 1656673061235
+}

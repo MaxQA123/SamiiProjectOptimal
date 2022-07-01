@@ -22,7 +22,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePa
         [AllureStep("ClickButtonItemLessonSheduler")]
         public HeaderAdminWebSite ClickButtonItemLessonSheduler()
         {
-            WaitUntil.WaitSomeInterval(3);
+            WaitUntil.WaitSomeInterval(1);
             WaitUntil.ShouldLocate(_ButtonItemLessonSheduler);
             ButtonItemLessonSheduler.Click();
 

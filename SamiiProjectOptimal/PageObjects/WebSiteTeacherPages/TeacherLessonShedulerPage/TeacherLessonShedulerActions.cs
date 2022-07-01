@@ -1,4 +1,5 @@
-﻿using SamiiProjectOptimal.Additional;
+﻿using NUnit.Allure.Attributes;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,10 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
 {
     public partial class TeacherLessonSheduler
     {
+        [AllureStep("ClickBtnAwaitingMoveConfirmations")]
         public TeacherLessonSheduler ClickBtnAwaitingMoveConfirmations()
         {
+            WaitUntil.WaitSomeInterval(3);
             WaitUntil.ElementIsClickable(ButtonAwaitingMoveConfirmations);
             ButtonAwaitingMoveConfirmations.Click();
 
@@ -19,6 +22,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
 
         #region TheDateSelectorAboveTheLessonsScheduler
 
+        [AllureStep("ClickArrowLeft")]
         public TeacherLessonSheduler ClickArrowLeft()
         {
             WaitUntil.WaitSomeInterval(10);
@@ -28,6 +32,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
             return this;
         }
 
+        [AllureStep("ClickArrowRight")]
         public TeacherLessonSheduler ClickArrowRight()
         {
             WaitUntil.WaitSomeInterval(10);
@@ -55,6 +60,19 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
         {
             WaitUntil.WaitSomeInterval(3);
             CellHalfPastEightPmHomeStudio.Click();
+
+            return this;
+        }
+
+        #endregion
+
+        #region ScrollingOnPage
+
+        [AllureStep("ScrollToCellElevenPmShdlrPg")]
+        public TeacherLessonSheduler ScrollToCellElevenPmShdlrPg()
+        {
+            WaitUntil.ShouldLocate(_CellElevenPmLessonShedulerPage);
+            Scrolling.ScrollToElement(CellElevenPmLessonShedulerPag);
 
             return this;
         }

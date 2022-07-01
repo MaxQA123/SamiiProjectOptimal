@@ -1,0 +1,159 @@
+{
+  "uuid": "14239f79-a623-4397-bd9d-d04a990cd121-tr-0-1020",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.DeleteLessonFromNextDateViaCalendar",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.DeleteLessonFromNextDateViaCalendar",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteLessonFromNextDateViaCalendar"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.comm>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Teacher"
+    },
+    {
+      "name": "subSuite",
+      "value": "DeleteLessonCurrentDay"
+    }
+  ],
+  "links": [],
+  "name": "DeleteLessonFromNextDateViaCalendar",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "DeleteLessonFromNextDateViaCalendar"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "DeleteLessonFromNextDateViaCalendar",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672555444,
+          "stop": 1656672557059
+        },
+        {
+          "name": "ClickButtonLogInAsTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656672557060,
+          "stop": 1656672557182
+        },
+        {
+          "name": "SelectorOnsideRghtCalendarShedulerLessonPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "August"
+            }
+          ],
+          "start": 1656672563233,
+          "stop": 1656672573347
+        },
+        {
+          "name": "SelectorShedulerLessonPageAdditional",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Third"
+            }
+          ],
+          "start": 1656672573838,
+          "stop": 1656672583986
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9e4437743932490fafcfa9d31a2bffa3-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656672552622,
+      "stop": 1656672590933
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656672552620,
+  "stop": 1656672590940
+}

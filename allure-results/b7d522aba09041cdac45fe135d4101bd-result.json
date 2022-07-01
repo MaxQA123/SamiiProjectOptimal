@@ -1,0 +1,497 @@
+{
+  "uuid": "32da18ca-ec27-41e0-8ca9-cbe732ff972a-tr-0-1022",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.MoveDateTimeLessonNextDateViaCalendar",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.MoveDateTimeLessonNextDateViaCalendar",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "MoveDateTimeLessonNextDateViaCalendar"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "MoveDateTimeLessonNextDateViaCalendar"
+    }
+  ],
+  "links": [],
+  "name": "MoveDateTimeLessonNextDateViaCalendar",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "MoveDateTimeLessonNextDateViaCalendar"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "MoveDateTimeLessonNextDateViaCalendar",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656682984136,
+          "stop": 1656682985643
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656682985643,
+          "stop": 1656682986759
+        },
+        {
+          "name": "ScrollToPaginationEducatorTbl",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = ae5fa735-52de-49fb-a652-ea0a569826d6)"
+                }
+              ],
+              "start": 1656682996413,
+              "stop": 1656682996425
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656682986760,
+          "stop": 1656682996425
+        },
+        {
+          "name": "ClickButtonThreeOnPgntnEducator",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656682996425,
+          "stop": 1656682998458
+        },
+        {
+          "name": "ClickButtonDetailsTestTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656682998458,
+          "stop": 1656683000766
+        },
+        {
+          "name": "ClickButtonImpersonateEducatorView",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683000768,
+          "stop": 1656683004754
+        },
+        {
+          "name": "ClickArrowDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683004755,
+          "stop": 1656683007253
+        },
+        {
+          "name": "ClickButtonItemLessonSheduler",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683007254,
+          "stop": 1656683008624
+        },
+        {
+          "name": "ScrollToCellElevenPmShdlrPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = f5e36d1b-b419-4346-a8d0-354d752f0709)"
+                }
+              ],
+              "start": 1656683009779,
+              "stop": 1656683009788
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683008626,
+          "stop": 1656683009788
+        },
+        {
+          "name": "SelectorOnsideRghtCalendarShedulerLessonPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "August"
+            }
+          ],
+          "start": 1656683009789,
+          "stop": 1656683019836
+        },
+        {
+          "name": "SelectorShedulerLessonPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Third"
+            }
+          ],
+          "start": 1656683020125,
+          "stop": 1656683030189
+        },
+        {
+          "name": "ClickButtonMoveStudentsMdlWndwLssnShdlr",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683030495,
+          "stop": 1656683033762
+        },
+        {
+          "name": "ClickButtonSelectAllLessonBelongsTo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683033762,
+          "stop": 1656683034026
+        },
+        {
+          "name": "ClickButtonMoveOneLessonLessonBelongsTo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683034026,
+          "stop": 1656683034429
+        },
+        {
+          "name": "ScrollToCellElevenPmPmMdlWndwCalendar",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 94688e5a-91c1-4123-bf36-d26f422b1486)"
+                }
+              ],
+              "start": 1656683034569,
+              "stop": 1656683034580
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683034429,
+          "stop": 1656683034580
+        },
+        {
+          "name": "SelectorShedulerLessonMdlWndwForMoveLesson",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Forth"
+            }
+          ],
+          "start": 1656683034580,
+          "stop": 1656683035619
+        },
+        {
+          "name": "SelectInstrumentsForMoveLesson",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683036644,
+          "stop": 1656683040420
+        },
+        {
+          "name": "SelectRecurrenceForMoveLesson",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683040421,
+          "stop": 1656683040896
+        },
+        {
+          "name": "EnterMinPriceToStudentsPerGroupForMoveLesson",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683040896,
+          "stop": 1656683041350
+        },
+        {
+          "name": "ClickButtonNextDetailsTabForMoveLesson",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683041351,
+          "stop": 1656683041832
+        },
+        {
+          "name": "ClickButtonSaveRecourceTabForMoveLesson",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683041833,
+          "stop": 1656683042261
+        },
+        {
+          "name": "ClickBtnAwaitingMoveConfirmations",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656683042262,
+          "stop": 1656683045499
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "1a61a1f7efd24581bb8b25450ddf9bdd-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656682981254,
+      "stop": 1656683051138
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656682981252,
+  "stop": 1656683051144
+}

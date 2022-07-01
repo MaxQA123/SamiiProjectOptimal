@@ -41,9 +41,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
-        [AllureSubSuite("SetDateNewLessonForNextDay")]
+        [AllureSubSuite("SetNewLessonOnNextDateViaCalendar")]
 
-        public void SetDateNewLessonForNextDay()
+        public void SetNewLessonOnNextDateViaCalendar()
         {
             Pages.LogInAdmin
                 .EnterEmailPassword()
@@ -63,11 +63,25 @@ namespace SamiiProjectOptimal.Tests
             Pages.AdminLessonSheduler
                 .SelectNextDay();
 
+            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
+
+            //shedulerLessonOnSideRight[8].Click();
+
+            foreach (var item in shedulerLessonOnSideRight)
+            {
+                if (item.Text == "1")
+                {
+                    item.Click();
+
+                    break;
+                }
+            }
+
             IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
 
-            shedulerLessonPage[42].Click();
+            shedulerLessonPage[46].Click();
             WaitUntil.WaitSomeInterval(1);
-            shedulerLessonPage[42].Click();
+            shedulerLessonPage[46].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
                 .SelectAllInstruments();
@@ -82,7 +96,7 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
-            _shedulerLessonPage[42].Click();
+            _shedulerLessonPage[46].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonAssignLessonToAfterSaved();
@@ -98,7 +112,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDown();
             Pages.HeaderAdminWebSite
                 .ClickButtonLogout();
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
         }
 
         [Test]
@@ -107,9 +121,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
-        [AllureSubSuite("SetDateNewLessonForCurrentDay")]
+        [AllureSubSuite("SetNewLessonCurrentDayViaSlctrDays")]
 
-        public void SetDateNewLessonForCurrentDay()
+        public void SetNewLessonCurrentDayViaSlctrDays()
         {
             Pages.LogInAdmin
                 .EnterEmailPassword()
@@ -171,9 +185,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
-        [AllureSubSuite("MoveDateTimeLesson")]
+        [AllureSubSuite("MoveDateTimeLessonCurrentDayViaSlctrDays")]
 
-        public void MoveDateTimeLesson()
+        public void MoveDateTimeLessonCurrentDayViaSlctrDays()
         {
             Pages.LogInAdmin
                 .EnterEmailPassword()
@@ -187,8 +201,14 @@ namespace SamiiProjectOptimal.Tests
             Pages.HeaderAdminWebSite
                 .ClickArrowDropDown()
                 .ClickButtonItemLessonSheduler();
-            Pages.AdminLessonSheduler
-                .ClickOnceCellCellHalfPastSixPmSecond();
+
+            Pages.TeacherLessonSheduler
+                .ScrollToCellElevenPmShdlrPg();
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+
+            shedulerLessonPage[43].Click();
+            
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonMoveStudentsMdlWndwLssnShdlr()
                 .ClickButtonSelectAllLessonBelongsTo()
@@ -197,6 +217,74 @@ namespace SamiiProjectOptimal.Tests
                 .ScrollToCellElevenPmPmMdlWndwCalendar();
 
             IList<IWebElement> timeline = SearchXpathHelper.SelectorShedulerLessonMdlWndwForMoveLesson("Second");
+
+            timeline[46].Click();
+            timeline[46].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectInstrumentsForMoveLesson()
+                .SelectRecurrenceForMoveLesson()
+                .EnterMinPriceToStudentsPerGroupForMoveLesson()
+                .ClickButtonNextDetailsTabForMoveLesson()
+                .ClickButtonSaveRecourceTabForMoveLesson();
+            Pages.TeacherLessonSheduler
+                .ClickBtnAwaitingMoveConfirmations();
+
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Admin")]
+        [AllureSubSuite("MoveDateTimeLessonNextDateViaCalendar")]
+
+        public void MoveDateTimeLessonNextDateViaCalendar()
+        {
+            Pages.LogInAdmin
+                .EnterEmailPassword()
+                .ClickButtonSignIn();
+            Pages.AdminHome
+                .ScrollToPaginationEducatorTbl()
+                .ClickButtonThreeOnPgntnEducator()
+                .ClickButtonDetailsTestTeacher();
+            Pages.EducatorsView
+                .ClickButtonImpersonateEducatorView();
+            Pages.HeaderAdminWebSite
+                .ClickArrowDropDown()
+                .ClickButtonItemLessonSheduler();
+
+            Pages.TeacherLessonSheduler
+                .ScrollToCellElevenPmShdlrPg();
+
+            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
+
+            //shedulerLessonOnSideRight[8].Click();
+
+            foreach (var item in shedulerLessonOnSideRight)
+            {
+                if (item.Text == "1")
+                {
+                    item.Click();
+
+                    break;
+                }
+            }
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+
+            shedulerLessonPage[46].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonMoveStudentsMdlWndwLssnShdlr()
+                .ClickButtonSelectAllLessonBelongsTo()
+                .ClickButtonMoveOneLessonLessonBelongsTo();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ScrollToCellElevenPmPmMdlWndwCalendar();
+
+            IList<IWebElement> timeline = SearchXpathHelper.SelectorShedulerLessonMdlWndwForMoveLesson("Forth");
 
             timeline[47].Click();
             timeline[47].Click();
@@ -257,9 +345,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
-        [AllureSubSuite("DeleteLessonAsAdminForNextDay")]
+        [AllureSubSuite("DeleteLessonFromNextDateViaCalendar")]
 
-        public void DeleteLessonAsAdminForNextDay()
+        public void DeleteLessonFromNextDateViaCalendar()
         {
             Pages.LogInAdmin
                 .EnterEmailPassword();
@@ -278,9 +366,23 @@ namespace SamiiProjectOptimal.Tests
             Pages.HeaderAdminWebSite
                 .ClickButtonItemLessonSheduler();
 
+            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
+
+            //shedulerLessonOnSideRight[8].Click();
+
+            foreach (var item in shedulerLessonOnSideRight)
+            {
+                if (item.Text == "1")
+                {
+                    item.Click();
+
+                    break;
+                }
+            }
+
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
-            _shedulerLessonPage[42].Click();
+            _shedulerLessonPage[46].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickDeleteDtlsTab();
