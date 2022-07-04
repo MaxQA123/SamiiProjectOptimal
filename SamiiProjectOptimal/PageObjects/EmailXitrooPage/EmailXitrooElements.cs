@@ -32,6 +32,9 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
         public IWebElement LinkHereFromEmail => Browser._Driver.FindElement(_LinkHereFromEmail);
         public readonly static By _LinkHereFromEmail = By.XPath("//a[text() = 'HERE']");
 
+        public IWebElement ButtonResetPassword => Browser._Driver.FindElement(_ButtonResetPassword);
+        public readonly static By _ButtonResetPassword = By.XPath("//a[contains(text(), ' Reset Password ')]");
+
         #region ForCopyFromXitrooEmailToFieldInputLogInPage
 
         public IWebElement FIeldInputEmailLogInPage => Browser._Driver.FindElement(_FIeldInputEmailLogInPage);

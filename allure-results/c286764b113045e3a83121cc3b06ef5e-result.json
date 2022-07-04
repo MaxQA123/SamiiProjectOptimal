@@ -1,0 +1,298 @@
+{
+  "uuid": "b6896c49-2f36-4aa5-8dae-b9ecd6a64ee5-tr-0-1015",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.ForgotPassword",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.ForgotPassword",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "ForgotPassword"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "ForgotPassword"
+    }
+  ],
+  "links": [],
+  "name": "ForgotPassword",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "ForgotPassword"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "ForgotPassword",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "ClickLinkForgotPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922676720,
+          "stop": 1656922677304
+        },
+        {
+          "name": "EnterEmailForgotPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = f2bf5945-8363-4039-9981-7e6d6d6f324f)"
+                },
+                {
+                  "name": "String",
+                  "value": "elegantchandrasekhar@xitroo.com"
+                }
+              ],
+              "start": 1656922677428,
+              "stop": 1656922677657
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922677305,
+          "stop": 1656922677657
+        },
+        {
+          "name": "ClickButtonSubmitForgotPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922677658,
+          "stop": 1656922677804
+        },
+        {
+          "name": "OpenNewTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922677805,
+          "stop": 1656922677924
+        },
+        {
+          "name": "OpenLetterResetPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922679269,
+          "stop": 1656922739864
+        },
+        {
+          "name": "ClickButtonResetPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922739864,
+          "stop": 1656922743205
+        },
+        {
+          "name": "EnterPsswrdAndConfirmPsswrd",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = dff03d30-3f3d-41c1-b318-86414af72245)"
+                },
+                {
+                  "name": "String",
+                  "value": "1234"
+                }
+              ],
+              "start": 1656922746320,
+              "stop": 1656922746470
+            },
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = d103f745-cc4f-4717-beab-1b4bd5d0bbea)"
+                },
+                {
+                  "name": "String",
+                  "value": "1234"
+                }
+              ],
+              "start": 1656922746490,
+              "stop": 1656922746646
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922743206,
+          "stop": 1656922746646
+        },
+        {
+          "name": "ClickIconShowPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922746648,
+          "stop": 1656922746775
+        },
+        {
+          "name": "ClickButtonSubmitResetPasswordPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656922746776,
+          "stop": 1656922746873
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "75286440ed2c4fbea1ff87ae292f634b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656922673670,
+      "stop": 1656922752488
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656922673669,
+  "stop": 1656922752499
+}

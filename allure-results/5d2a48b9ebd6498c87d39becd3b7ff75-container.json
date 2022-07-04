@@ -1,0 +1,76 @@
+{
+  "uuid": "a399f1e6-c184-4aae-83b0-c3d28d469ee4-tc-0-1011",
+  "name": "SamiiProjectOptimal.Tests.WebSiteStudentTests.ForgotPassword",
+  "children": [
+    "9bcdff17-0092-4e8a-94e6-8210ab82a523-tr-0-1015"
+  ],
+  "befores": [
+    {
+      "name": "DobeforeAllTheTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1656928298109,
+      "stop": 1656928298109
+    },
+    {
+      "name": "SetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1656928298109,
+      "stop": 1656928298109
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEach",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1656928298110,
+      "stop": 1656928298110
+    },
+    {
+      "name": "DoAfterAllTheTests",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1656928298110,
+      "stop": 1656928298110
+    }
+  ],
+  "links": [],
+  "start": 1656928245206,
+  "stop": 1656928298152
+}

@@ -412,5 +412,43 @@ namespace SamiiProjectOptimal.Tests
             Thread.Sleep(5000);
         }
 
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Student")]
+        [AllureSubSuite("ForgotPassword")]
+        public void ForgotPassword()
+        {
+            Pages.GeneralFolderMultirole
+                .ClickLinkForgotPassword();
+            Pages.ForgotPassword
+                .EnterEmailForgotPassword()
+                .ClickButtonSubmitForgotPassword()
+                .OpenNewTab();
+            Browser._Driver.Navigate().GoToUrl(EndPoints.emailUrlForgotPasswordTeacher);
+            Pages.EmailXitroo
+                .OpenLetterResetPassword()
+                .ClickButtonResetPassword();
+            Pages.ForgotPassword
+                .EnterPsswrdAndConfirmPsswrd();
+
+            string password = Pages.ForgotPassword.CopyPasswordFromRstPsswrd();
+
+            Pages.ForgotPassword
+                .ClickIconShowPassword()
+                .ClickButtonSubmitResetPasswordPage();
+            Pages.GeneralFolderMultirole
+                .EnterEmailLogInAfterRstPsswrf();
+
+            Pages.GeneralFolderMultirole
+                .EnterCopiedPasswordFromRstPsswrd(password);
+            Pages.LogInTeacher
+                .ClickButtonLogInAsTeacher();
+
+            Thread.Sleep(5000);
+        }
+
     }
 }

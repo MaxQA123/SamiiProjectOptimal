@@ -1,0 +1,282 @@
+{
+  "uuid": "09663ff5-e9db-4091-9379-3a54b8f84218-tr-0-1016",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.ResetPassword",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.ResetPassword",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "ResetPassword"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "ResetPassword"
+    }
+  ],
+  "links": [],
+  "name": "ResetPassword",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "ResetPassword"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "ResetPassword",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEmailPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656936080973,
+          "stop": 1656936081533
+        },
+        {
+          "name": "EnterPasswordAfterCreateAccount",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656936081533,
+          "stop": 1656936082656
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656936082657,
+          "stop": 1656936082809
+        },
+        {
+          "name": "ClickArrowDropDownMenu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656936082810,
+          "stop": 1656936085894
+        },
+        {
+          "name": "ClickItemSettingsDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656936085895,
+          "stop": 1656936086112
+        },
+        {
+          "name": "EnterCrrntPsswrdPsswrdCnfrPsswrd",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = c657a2e8-3ef0-4f91-9b60-57cda45f7e74)"
+                },
+                {
+                  "name": "String",
+                  "value": "1234"
+                }
+              ],
+              "start": 1656936086200,
+              "stop": 1656936086390
+            },
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = aea2c508-e477-43e1-a2d6-581ddc93f85f)"
+                },
+                {
+                  "name": "String",
+                  "value": "1111"
+                }
+              ],
+              "start": 1656936086414,
+              "stop": 1656936086698
+            },
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = f8757b47-836d-4fa3-94ea-cc7aefa81716)"
+                },
+                {
+                  "name": "String",
+                  "value": "1111"
+                }
+              ],
+              "start": 1656936086765,
+              "stop": 1656936086977
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656936086113,
+          "stop": 1656936086977
+        },
+        {
+          "name": "ClickAllIconShowRstPsswrdPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656936086978,
+          "stop": 1656936089128
+        },
+        {
+          "name": "ClickButtonChangePasswordRstPsswrdPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1656936089129,
+          "stop": 1656936089199
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "3b0da51b05344aff82a90073fea76728-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1656936078126,
+      "stop": 1656936094774
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1656936078125,
+  "stop": 1656936094783
+}

@@ -59,62 +59,42 @@ namespace SamiiProjectOptimal.Tests
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
-        [AllureSuite("Admin")]
-        [AllureSubSuite("SetDateNewLessonForCurrentDay")]
+        [AllureSuite("Student")]
+        [AllureSubSuite("ResetPassword")]
 
-        public void SetDateNewLessonForCurrentDay()
+        public void ResetPasswordDemo()
         {
-            Pages.LogInAdmin
-                .EnterEmailPassword()
+            Pages.LogInStudent
+                .EnterEmail();
+
+            string passwordOld = Pages.LogInStudent.SelectPassword("4");
+
+            Pages.LogInStudent
+                .EnterPasswordResetedPassword(passwordOld);
+
+            Pages.LogInStudent
+                .ClickIconShowEnteredPassword()
                 .ClickButtonSignIn();
-            Pages.AdminHome
-                .ScrollToPaginationEducatorTbl();
-            Pages.AdminHome
-                .ClickButtonThreeOnPgntnEducator();
-            Pages.AdminHome
-                .ClickButtonDetailsTestTeacher();
-            Pages.EducatorsView
-                .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
-                .ClickButtonItemLessonSheduler();
+            Pages.HeaderStudent
+                .ClickArrowDropDownMenu()
+                .ClickItemSettingsDropDown();
+            Pages.ResetPassword
+                .EnterCrrntPsswrdPsswrdCnfrPsswrd()
+                .ClickAllIconShowRstPsswrdPg();
 
-            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+            string passwordResetPasswordPg = Pages.ResetPassword.CopyPasswordResetPasswordPg();
 
-            shedulerLessonPage[29].Click();
-            WaitUntil.WaitSomeInterval(3);
-            shedulerLessonPage[29].Click();
-            
-            Pages.AdminLssnShdlrMdlWndwPg
-                .SelectAllInstruments();
-            Pages.AdminLssnShdlrMdlWndwPg
-                .SelectRecurrenceOnce();
-            Pages.AdminLssnShdlrMdlWndwPg
-                .EnterPriceToStudentsPerGroup();
-            Pages.AdminLssnShdlrMdlWndwPg
-                .ClickButtonNext();
-            Pages.AdminLssnShdlrMdlWndwPg
-                .ClickButtonSaveForAdmin();
+            Pages.ResetPassword
+                .ClickButtonChangePasswordRstPsswrdPg();
+            Pages.HeaderStudent
+                .ClickArrowDropDownMenu()
+                .ClickItemLogoutDropDown();
+            Pages.LogInStudent
+                .EnterEmail()
+                .CopiedPassword(passwordResetPasswordPg)
+                .ClickIconShowEnteredPassword()
+                .ClickButtonSignIn();
 
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
-
-            _shedulerLessonPage[29].Click();
-
-            Pages.AdminLssnShdlrMdlWndwPg
-                .ClickButtonAssignLessonToAfterSaved();
-            Pages.AdminLssnShdlrMdlWndwPg
-                .SelectFirstStudentToAssign();
-            Pages.AdminLssnShdlrMdlWndwPg
-                .ClickButtonAssignStudent();
-            Pages.AdminLssnShdlrMdlWndwPg
-                .ClickButtonNextAfterAssignStudent();
-            Pages.AdminLssnShdlrMdlWndwPg
-                .ClickButtonSaveForAdmin();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
-                .ClickButtonLogout();
             Thread.Sleep(5000);
         }
 

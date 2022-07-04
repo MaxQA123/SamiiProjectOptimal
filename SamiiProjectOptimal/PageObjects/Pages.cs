@@ -1,6 +1,8 @@
 ﻿using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
 using SamiiProjectOptimal.PageObjects.EmailXitrooPage;
+using SamiiProjectOptimal.PageObjects.ForgotPasswordPage;
+using SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage;
@@ -13,6 +15,7 @@ using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.EditProfilePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.Header;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage;
+using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ResetPasswordPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherConfirmCodePage;
@@ -59,6 +62,8 @@ namespace SamiiProjectOptimal.PageObjects
         public static Scrolling Scrolling => GetPage<Scrolling>();
         public static EducatorsView EducatorsView => GetPage<EducatorsView>();
         public static StudentProfileSetUp StudentProfileSetUp => GetPage<StudentProfileSetUp>();
-
+        public static GeneralFolderMultirole GeneralFolderMultirole => GetPage<GeneralFolderMultirole>();
+        public static ForgotPassword ForgotPassword => GetPage<ForgotPassword>();
+        public static ResetPassword ResetPassword => GetPage<ResetPassword>();
     }
 }

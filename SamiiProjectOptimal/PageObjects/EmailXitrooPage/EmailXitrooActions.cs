@@ -39,6 +39,28 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
             return this;
         }
 
+        [AllureStep("OpenLetterResetPassword")]
+        public EmailXitroo OpenLetterResetPassword()
+        {
+            WaitUntil.WaitSomeInterval(30);
+            WaitUntil.ElementIsClickable(SelectLetterNumberOneNew);
+            SelectLetterNumberOneNew.Click();
+
+            return this;
+        }
+
+        [AllureStep("ClickButtonResetPassword")]
+        public EmailXitroo ClickButtonResetPassword()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            Browser._Driver.SwitchTo().Frame(IframeXitrooLetter);
+            WaitUntil.ElementIsClickable(ButtonResetPassword);
+            ButtonResetPassword.Click();
+            Browser._Driver.SwitchTo().DefaultContent();
+
+            return this;
+        }
+
         [AllureStep("CopyVerificationCode")]
         public string CopyVerificationCode()
         {

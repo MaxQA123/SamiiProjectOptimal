@@ -149,5 +149,80 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonConfirmMdlWndwYouveDone();
             Thread.Sleep(5000);
         }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Student")]
+        [AllureSubSuite("ForgotPassword")]
+        public void ForgotPassword()
+        {
+            Pages.GeneralFolderMultirole
+                .ClickLinkForgotPassword();
+            Pages.ForgotPassword
+                .EnterEmailForgotPassword()
+                .ClickButtonSubmitForgotPassword()
+                .OpenNewTab();
+            Browser._Driver.Navigate().GoToUrl(EndPoints.emailUrlForgotPasswordStudent);
+            Pages.EmailXitroo
+                .OpenLetterResetPassword()
+                .ClickButtonResetPassword();
+            Pages.ForgotPassword
+                .EnterPsswrdAndConfirmPsswrd();
+
+            string password = Pages.ForgotPassword.CopyPasswordFromRstPsswrd();
+
+            Pages.ForgotPassword
+                .ClickIconShowPassword()
+                .ClickButtonSubmitResetPasswordPage();
+            Pages.GeneralFolderMultirole
+                .EnterEmailLogInAfterRstPsswrf();
+
+            Pages.GeneralFolderMultirole
+                .EnterCopiedPasswordFromRstPsswrd(password);
+            Pages.LogInStudent
+                .ClickButtonSignIn();
+                
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Student")]
+        [AllureSubSuite("ResetPassword")]
+
+        public void ResetPassword()
+        {
+            Pages.LogInStudent
+                .EnterEmailPassword()
+                .ClickIconShowEnteredPassword()
+                .ClickButtonSignIn();
+            Pages.HeaderStudent
+                .ClickArrowDropDownMenu()
+                .ClickItemSettingsDropDown();
+            Pages.ResetPassword
+                .EnterCrrntPsswrdPsswrdCnfrPsswrd()
+                .ClickAllIconShowRstPsswrdPg();
+
+            string passwordResetPasswordPg = Pages.ResetPassword.CopyPasswordResetPasswordPg();
+
+            Pages.ResetPassword
+                .ClickButtonChangePasswordRstPsswrdPg();
+            Pages.HeaderStudent
+                .ClickArrowDropDownMenu()
+                .ClickItemLogoutDropDown();
+            Pages.LogInStudent
+                .EnterEmail()
+                .CopiedPassword(passwordResetPasswordPg)
+                .ClickIconShowEnteredPassword()
+                .ClickButtonSignIn();
+
+            Thread.Sleep(5000);
+        }
     }
 }

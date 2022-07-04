@@ -16,6 +16,10 @@ namespace SamiiProjectOptimal.Additional
         ///#highdarwin@xitroo.com - добавляется если нужно, чтоб почта открывалась с введённой почтой которую нужно открыть
         public const string emailRandomUrlXitroo = "https://xitroo.com";
         public const string emailStudentStudTestNeww = "https://xitroo.com/#newstud@xitroo.com";
+
+        public const string emailUrlForgotPasswordStudent = "https://xitroo.com/#elegantchandrasekhar@xitroo.com";
+        public const string emailUrlForgotPasswordTeacher = "https://xitroo.com/#testteach@xitroo.com1";
+        public const string emailUrlForgotPasswordAdmin = "";
     }
 
     public class Credentials
@@ -31,6 +35,9 @@ namespace SamiiProjectOptimal.Additional
 
         public const string emailAdmin = "admin@admin.com1";
         public const string passwordAdmin = "1111";
+
+        public const string emailForgotPassword = "elegantchandrasekhar@xitroo.com";
+        public const string passwordForChange = "1234";
     }
 
     public class CountryCode
