@@ -64,16 +64,15 @@ namespace SamiiProjectOptimal.Tests
             Thread.Sleep(5000);
         }
 
-        //Cycles via lambda and LINQ
         [Test]
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Student")]
-        [AllureSubSuite("ResetPassword")]
+        [AllureSubSuite("ResetPasswordViaLambdaLinq")]
 
-        public void ResetPasswordSecond()
+        public void ResetPasswordViaLambdaLinq()
         {
             Pages.LogInStudent
                 .EnterEmail();
@@ -115,6 +114,49 @@ namespace SamiiProjectOptimal.Tests
                 .CopiedPassword(passwordResetPasswordPg)
                 .ClickIconShowEnteredPassword()
                 .ClickButtonSignIn();
+
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("ForgotPasswordViaCycle")]
+        public void ForgotPasswordViaCycle()
+        {
+            Pages.LogInTeacher
+                .EnterEmail();
+
+            string passwordWorking = Pages.CycleForResetPassword.SelectPasswordViaCycle("1");
+
+            Pages.CycleForResetPassword
+                .EnterCurrentPasswordForLogInPage(passwordWorking);
+
+            Pages.LogInStudent
+                .ClickIconShowEnteredPassword();
+            Pages.LogInTeacher
+                .ClickButtonLogIn();
+            Pages.HeaderTeacher
+                .ClickArrowDropDown()
+                .ClickButtonItemProfileSettings();
+            Pages.TeacherProfileSetUp
+                .ClickTabPasswordTchrPrflStp();
+
+            string passwordAWorking = Pages.CycleForResetPassword.SelectPasswordViaCycle("1");
+
+            Pages.CycleForResetPassword
+                .EnterCurrentPasswordForTchrPrflStp(passwordAWorking);
+
+            string passwordNew = Pages.CycleForResetPassword.SelectPasswordViaCycle("4");
+
+            Pages.CycleForResetPassword
+                .EnterPasswordConfirmPsswrdForTchrPrflStp(passwordNew);
+
+            Pages.TeacherProfileSetUp
+                .ClickBothIconShowTchrPrflStp();
 
             Thread.Sleep(5000);
         }

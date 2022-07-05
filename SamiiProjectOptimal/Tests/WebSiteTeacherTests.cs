@@ -424,10 +424,10 @@ namespace SamiiProjectOptimal.Tests
             Pages.LogInTeacher
                 .EnterEmail();
 
-            string passwordWorking = Pages.CycleForResetPassword.SelectPasswordAlternativeway("4");
+            string passwordWorking = Pages.CycleForResetPassword.SelectPasswordViaCycle("1");
 
             Pages.CycleForResetPassword
-                .EnterCurrentPasswordForTchrPrflStp(passwordWorking);
+                .EnterCurrentPasswordForLogInPage(passwordWorking);
 
             Pages.LogInStudent
                 .ClickIconShowEnteredPassword();
@@ -438,6 +438,36 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonItemProfileSettings();
             Pages.TeacherProfileSetUp
                 .ClickTabPasswordTchrPrflStp();
+
+            string passwordAWorking = Pages.CycleForResetPassword.SelectPasswordViaCycle("1");
+
+            Pages.CycleForResetPassword
+                .EnterCurrentPasswordForTchrPrflStp(passwordAWorking);
+
+            string passwordNew = Pages.CycleForResetPassword.SelectPasswordViaCycle("4");
+
+            Pages.CycleForResetPassword
+                .EnterPasswordConfirmPsswrdForTchrPrflStp(passwordNew);
+
+            Pages.TeacherProfileSetUp
+                .ClickBothIconShowTchrPrflStp();
+
+            string copyNewPassword = Pages.TeacherProfileSetUp.CopyPasswordTabAvlbRsrcsTchrPrflStp();
+
+            Pages.TeacherProfileSetUp
+                .ClickTabAvailableResourcesTchrPrflStp()
+                .ClickButtonCompleteAvlbRsrcsTchrPrflStp();
+            Pages.HeaderStudent
+                .ClickArrowDropDownMenu()
+                .ClickItemLogoutDropDown();
+            Pages.LogInTeacher
+                .EnterEmail();
+            Pages.GeneralFolderMultirole
+                .EnterCopiedPasswordFromTabAvlbRsrcsTchrPrflStp(copyNewPassword);
+            Pages.LogInStudent
+                .ClickIconShowEnteredPassword();
+            Pages.LogInTeacher
+                .ClickButtonLogIn();
 
             Thread.Sleep(5000);
         }

@@ -10,7 +10,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherProfileSetU
 {
     public partial class TeacherProfileSetUp
     {
-        [AllureStep("ClickBtnAwaitingMoveConfirmations")]
+        [AllureStep("ClickTabPasswordTchrPrflStp")]
         public TeacherProfileSetUp ClickTabPasswordTchrPrflStp()
         {
             WaitUntil.WaitSomeInterval(1);
@@ -19,15 +19,37 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherProfileSetU
             return this;
         }
 
+        [AllureStep("ClickTabAvailableResourcesTchrPrflStp")]
+        public TeacherProfileSetUp ClickTabAvailableResourcesTchrPrflStp()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            TabAvailableResourcesTchrPrflStp.Click();
+
+            return this;
+        }
+
         #region TabPassword
 
         [AllureStep("ClickBothIconShow")]
-        public TeacherProfileSetUp ClickBothIconShow()
+        public TeacherProfileSetUp ClickBothIconShowTchrPrflStp()
         {
             WaitUntil.WaitSomeInterval(1);
             IconShowCurrentPsswrdTabPsswrdTchrPrflStp.Click();
             WaitUntil.WaitSomeInterval(1);
             IconShowPsswrdTabPsswrdTchrPrflStp.Click();
+
+            return this;
+        }
+
+        #endregion
+
+        #region TabAvailableResources
+
+        [AllureStep("ClickButtonCompleteAvlbRsrcsTchrPrflStp")]
+        public TeacherProfileSetUp ClickButtonCompleteAvlbRsrcsTchrPrflStp()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            ButtonCompleteAvlbRsrcsTchrPrflStp.Click();
 
             return this;
         }

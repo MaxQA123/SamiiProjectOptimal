@@ -40,6 +40,15 @@ namespace SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage
             return this;
         }
 
+        [AllureStep("EnterCopiedPasswordFromTabAvlbRsrcsTchrPrflStp")]
+        public GeneralFolderMultirole EnterCopiedPasswordFromTabAvlbRsrcsTchrPrflStp(string password)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            FIeldInputPasswordLogInPg.SendKeys(password);
+
+            return this;
+        }
+
         #endregion
     }
 }

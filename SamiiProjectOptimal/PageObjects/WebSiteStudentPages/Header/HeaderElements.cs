@@ -31,7 +31,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.Header
         public readonly static By _ItemMessengerDropDown = By.XPath("//div[@class = 'dropdown-menu show']//a[@href= '#/messenger']");
 
         public IWebElement ItemLogoutDropDown => Browser._Driver.FindElement(_ItemLogoutDropDown);
-        public readonly static By _ItemLogoutDropDown = By.XPath("//div[@class = 'dropdown-menu show']//a[text()= 'Logout']");
+        public readonly static By _ItemLogoutDropDown = By.XPath("//div[@class = 'dropdown-menu show']//a[text() = 'Logout']");
 
         #endregion
     }

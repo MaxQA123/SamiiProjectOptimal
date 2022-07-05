@@ -25,6 +25,8 @@ namespace SamiiProjectOptimal.Additional
 
         #endregion
 
+        #region ElementsForTeacher
+
         public IWebElement FIeldInputCurrentPasswordTabPsswrd => Browser._Driver.FindElement(_FIeldInputCurrentPasswordTabPsswrd);
         public readonly static By _FIeldInputCurrentPasswordTabPsswrd = By.XPath("//div[@class = 'change-password-teacher']//input[@id = 'oldPassword']");
 
@@ -34,11 +36,10 @@ namespace SamiiProjectOptimal.Additional
         public IWebElement FIeldInputConfirmPasswordTabPsswrd => Browser._Driver.FindElement(_FIeldInputConfirmPasswordTabPsswrd);
         public readonly static By _FIeldInputConfirmPasswordTabPsswrd = By.XPath("//div[@class = 'change-password-teacher']//input[@id = 'confirm-password']");
 
-
-        #region ElementsForTeacher
-
-
         #endregion
+
+        #region SelectingDataViaLambdaAndLINQ
+
         [AllureStep("SelectPassword")]
         public string SelectPassword(string passwordEnding)
         {
@@ -78,27 +79,52 @@ namespace SamiiProjectOptimal.Additional
             return this;
         }
 
-        [AllureStep("SelectPasswordAlternativeWay")]
-        public string SelectPasswordAlternativeway(string passEnd)
+        #endregion
+
+        #region SelectingDataViaCycle
+
+        [AllureStep("SelectPasswordViaCycle")]
+        public string SelectPasswordViaCycle(string passEnd)
         {
             string[] password = { "1111", "1234" };
 
             var selectedPassword = (from p in password
                                    where p.EndsWith(passEnd)
-                                   && p.
                                    select p).ToList();
 
                 return selectedPassword[0];
         }
 
         [AllureStep("EnterCurrentPasswordForTchrPrflStp")]
-        public CycleForResetPassword EnterCurrentPasswordForTchrPrflStp(string passEnd)
+        public CycleForResetPassword EnterCurrentPasswordForLogInPage(string passEnd)
         {
             WaitUntil.WaitSomeInterval(1);
             Input.InputFunctionWithClear(FIeldInputPassword, passEnd);
 
             return this;
         }
+
+        [AllureStep("EnterCurrentPasswordForTchrPrflStp")]
+        public CycleForResetPassword EnterCurrentPasswordForTchrPrflStp(string passEnd)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            Input.InputFunctionWithClear(FIeldInputCurrentPasswordTabPsswrd, passEnd);
+
+            return this;
+        }
+
+        [AllureStep("EnterCurrentPasswordForTchrPrflStp")]
+        public CycleForResetPassword EnterPasswordConfirmPsswrdForTchrPrflStp(string passEnd)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            Input.InputFunctionWithClear(FIeldInputPasswordTabPsswrd, passEnd);
+            WaitUntil.WaitSomeInterval(1);
+            Input.InputFunctionWithClear(FieldInputConfirmPasswordRstPsswrdPg, passEnd);
+
+            return this;
+        }
+
+        #endregion
 
     }
 }

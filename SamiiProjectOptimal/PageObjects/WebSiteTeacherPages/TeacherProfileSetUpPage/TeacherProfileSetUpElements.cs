@@ -24,11 +24,24 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherProfileSetU
 
         #region TabPassword
 
+        public IWebElement FieldInputConfirmPasswordRstPsswrdPg => Browser._Driver.FindElement(_FieldInputConfirmPasswordRstPsswrdPg);
+        public readonly static By _FieldInputConfirmPasswordRstPsswrdPg = By.XPath("//input[@id= 'confirm-password']");
+
         public IWebElement IconShowCurrentPsswrdTabPsswrdTchrPrflStp => Browser._Driver.FindElement(_IconShowCurrentPsswrdTabPsswrdTchrPrflStp);
-        public readonly static By _IconShowCurrentPsswrdTabPsswrdTchrPrflStp = By.XPath("//ul[@role = 'tablist']//a[@id = 'setup']");
+        public readonly static By _IconShowCurrentPsswrdTabPsswrdTchrPrflStp = By.XPath("//div[@class = 'change-password-teacher']//i[@class = 'fas fa-eye']");
 
         public IWebElement IconShowPsswrdTabPsswrdTchrPrflStp => Browser._Driver.FindElement(_IconShowPsswrdTabPsswrdTchrPrflStp);
-        public readonly static By _IconShowPsswrdTabPsswrdTchrPrflStp = By.XPath("//ul[@role = 'tablist']//a[@id = 'setup']");
+        public readonly static By _IconShowPsswrdTabPsswrdTchrPrflStp = By.XPath("//div[@class = 'change-password-teacher']//div[@formgroupname = 'passwords']//i[@class = 'fas fa-eye']");
+
+        #endregion
+
+        #region TabAvailableResources
+
+        public IWebElement ButtonPreviousStepAvlbRsrcsTchrPrflStp => Browser._Driver.FindElement(_ButtonPreviousStepAvlbRsrcsTchrPrflStp);
+        public readonly static By _ButtonPreviousStepAvlbRsrcsTchrPrflStp = By.XPath("//div[@id = 'resources-panel']//button[contains(text(),  ' Previous Step')]");
+
+        public IWebElement ButtonCompleteAvlbRsrcsTchrPrflStp => Browser._Driver.FindElement(_ButtonCompleteAvlbRsrcsTchrPrflStp);
+        public readonly static By _ButtonCompleteAvlbRsrcsTchrPrflStp = By.XPath("//div[@id = 'resources-panel']//button[contains(text(),  'Complete ')]");
 
         #endregion
     }
