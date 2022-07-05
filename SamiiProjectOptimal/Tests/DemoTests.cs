@@ -23,18 +23,20 @@ namespace SamiiProjectOptimal.Tests
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
-        [Author("Maksim", "maxqatesting390@gmail.com")]
-        [AllureSuite("Student")]
-        [AllureSubSuite("SelectDateViaCalendarOnSideBar")]
+        [Author("Maksim", "maxqatesting390@gmail.comm")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("DeleteLessonCurrentDay")]
 
-        public void SelectDateViaCalendarOnSideBar()
+        //Classic the cycles
+        public void DeleteLessonFromNextDateViaCalendar()
         {
             Pages.LogInTeacher
                 .EnterEmailPassword();
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
             Pages.HeaderTeacher
-                .ClickArrowDropDown()
+                .ClickArrowDropDown();
+            Pages.HeaderTeacher
                 .ClickButtonItemLessonSheduler();
 
             IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
@@ -51,9 +53,18 @@ namespace SamiiProjectOptimal.Tests
                 }
             }
 
-            Thread.Sleep(10000);
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Third");
+
+            _shedulerLessonPage[29].Click();
+
+            Pages.TeacherLssnShdlrMdlWndw
+               .ClickDeleteDtlsTab();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonYes();
+            Thread.Sleep(5000);
         }
 
+        //Cycles via lambda and LINQ
         [Test]
         [AllureTag("Regression")]
         [AllureOwner("Maksim Perevalov")]
@@ -62,15 +73,15 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Student")]
         [AllureSubSuite("ResetPassword")]
 
-        public void ResetPasswordDemo()
+        public void ResetPasswordSecond()
         {
             Pages.LogInStudent
                 .EnterEmail();
 
-            string passwordOld = Pages.LogInStudent.SelectPassword("4");
+            string passwordWorking = Pages.CycleForResetPassword.SelectPassword("4");
 
-            Pages.LogInStudent
-                .EnterPasswordResetedPassword(passwordOld);
+            Pages.CycleForResetPassword
+                .EnterPasswordHowLogIn(passwordWorking);
 
             Pages.LogInStudent
                 .ClickIconShowEnteredPassword()
@@ -78,8 +89,18 @@ namespace SamiiProjectOptimal.Tests
             Pages.HeaderStudent
                 .ClickArrowDropDownMenu()
                 .ClickItemSettingsDropDown();
+
+            string passwordAWorking = Pages.CycleForResetPassword.SelectPassword("4");
+
+            Pages.CycleForResetPassword
+                .EnterPasswordHowLogIn(passwordAWorking);
+
+            string passwordNew = Pages.CycleForResetPassword.SelectPassword("1");
+
+            Pages.CycleForResetPassword
+                .EnterNewPasswordForResetedPassword(passwordNew);
+
             Pages.ResetPassword
-                .EnterCrrntPsswrdPsswrdCnfrPsswrd()
                 .ClickAllIconShowRstPsswrdPg();
 
             string passwordResetPasswordPg = Pages.ResetPassword.CopyPasswordResetPasswordPg();

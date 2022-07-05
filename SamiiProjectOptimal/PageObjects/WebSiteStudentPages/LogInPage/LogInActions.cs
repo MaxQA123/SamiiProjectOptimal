@@ -38,26 +38,6 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
             return this;
         }
 
-        [AllureStep("SelectPassword")]
-        public string SelectPassword(string passwordEnding)
-        {
-            string[] password = { "1111", "1234" };
-
-            var passwordNew = password.Where(x => x.EndsWith(passwordEnding)).ToList();
-            string passwordDrop = passwordNew[0];
-
-            return passwordDrop;
-        }
-
-        [AllureStep("EnterPasswordResetedPassword")]
-        public LogInStudent EnterPasswordResetedPassword(string pass)
-        {
-            WaitUntil.WaitSomeInterval(1);
-            FIeldInputPassword.SendKeys(pass);
-
-            return this;
-        }
-
         [AllureStep("EnterPasswordAfterCreateAccount")]
         public LogInStudent EnterEmailPasswordAfterCreateAccount()
         {

@@ -226,7 +226,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
-        [AllureSuite("Admin")]
+        [AllureSuite("Teacher")]
         [AllureSubSuite("MoveDateTimeLessonCurrentDayViaSlctrDays")]
 
         public void MoveDateTimeLessonCurrentDayViaSlctrDays()
@@ -305,7 +305,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
-        [AllureSuite("Admin")]
+        [AllureSuite("Teacher")]
         [AllureSubSuite("MoveDateTimeLessonNextDateViaCalendar")]
 
         public void MoveDateTimeLessonNextDateViaCalendar()
@@ -417,35 +417,27 @@ namespace SamiiProjectOptimal.Tests
         [AllureOwner("Maksim Perevalov")]
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
-        [AllureSuite("Student")]
+        [AllureSuite("Teacher")]
         [AllureSubSuite("ForgotPassword")]
         public void ForgotPassword()
         {
-            Pages.GeneralFolderMultirole
-                .ClickLinkForgotPassword();
-            Pages.ForgotPassword
-                .EnterEmailForgotPassword()
-                .ClickButtonSubmitForgotPassword()
-                .OpenNewTab();
-            Browser._Driver.Navigate().GoToUrl(EndPoints.emailUrlForgotPasswordTeacher);
-            Pages.EmailXitroo
-                .OpenLetterResetPassword()
-                .ClickButtonResetPassword();
-            Pages.ForgotPassword
-                .EnterPsswrdAndConfirmPsswrd();
-
-            string password = Pages.ForgotPassword.CopyPasswordFromRstPsswrd();
-
-            Pages.ForgotPassword
-                .ClickIconShowPassword()
-                .ClickButtonSubmitResetPasswordPage();
-            Pages.GeneralFolderMultirole
-                .EnterEmailLogInAfterRstPsswrf();
-
-            Pages.GeneralFolderMultirole
-                .EnterCopiedPasswordFromRstPsswrd(password);
             Pages.LogInTeacher
-                .ClickButtonLogInAsTeacher();
+                .EnterEmail();
+
+            string passwordWorking = Pages.CycleForResetPassword.SelectPasswordAlternativeway("4");
+
+            Pages.CycleForResetPassword
+                .EnterCurrentPasswordForTchrPrflStp(passwordWorking);
+
+            Pages.LogInStudent
+                .ClickIconShowEnteredPassword();
+            Pages.LogInTeacher
+                .ClickButtonLogIn();
+            Pages.HeaderTeacher
+                .ClickArrowDropDown()
+                .ClickButtonItemProfileSettings();
+            Pages.TeacherProfileSetUp
+                .ClickTabPasswordTchrPrflStp();
 
             Thread.Sleep(5000);
         }

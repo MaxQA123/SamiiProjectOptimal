@@ -1,4 +1,5 @@
-﻿using SamiiProjectOptimal.Additional;
+﻿using NUnit.Allure.Attributes;
+using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage
 {
     public partial class HeaderTeacher
     {
+        [AllureStep("ClickArrowDropDown")]
         public HeaderTeacher ClickArrowDropDown()
         {
             WaitUntil.ShouldLocate(_ArrowDropDownMenu);
@@ -19,6 +21,16 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage
 
         #region DropDownMenu
 
+        [AllureStep("ClickButtonItemProfileSettings")]
+        public HeaderTeacher ClickButtonItemProfileSettings()
+        {
+            WaitUntil.ShouldLocate(_ButtonItemProfileSettings);
+            ButtonItemProfileSettings.Click();
+
+            return this;
+        }
+
+        [AllureStep("ClickButtonItemLessonSheduler")]
         public HeaderTeacher ClickButtonItemLessonSheduler()
         {
             WaitUntil.ShouldLocate(_ButtonItemLessonSheduler);

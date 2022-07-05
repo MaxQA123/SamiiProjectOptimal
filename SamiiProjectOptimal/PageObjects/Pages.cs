@@ -22,6 +22,7 @@ using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherConfirmCodePage
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccountPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedulerPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLssnShdlrMdlWndw;
+using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherProfileSetUpPage;
 using SeleniumExtras.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -65,5 +66,7 @@ namespace SamiiProjectOptimal.PageObjects
         public static GeneralFolderMultirole GeneralFolderMultirole => GetPage<GeneralFolderMultirole>();
         public static ForgotPassword ForgotPassword => GetPage<ForgotPassword>();
         public static ResetPassword ResetPassword => GetPage<ResetPassword>();
+        public static CycleForResetPassword CycleForResetPassword => GetPage<CycleForResetPassword>();
+        public static TeacherProfileSetUp TeacherProfileSetUp => GetPage<TeacherProfileSetUp>();
     }
 }

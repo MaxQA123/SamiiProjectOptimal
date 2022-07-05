@@ -15,8 +15,11 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage
 
         #region DropDownMenu
 
+        public IWebElement ButtonItemProfileSettings => Browser._Driver.FindElement(_ButtonItemProfileSettings);
+        public readonly static By _ButtonItemProfileSettings = By.XPath("//div[@class = 'dropdown-menu show']//a[@href = '#/teacher/profile/create/step/setup']");
+
         public IWebElement ButtonItemLessonSheduler => Browser._Driver.FindElement(_ButtonItemLessonSheduler);
-        public readonly static By _ButtonItemLessonSheduler = By.XPath("//div[@class = 'dropdown-menu show']//a[5]");
+        public readonly static By _ButtonItemLessonSheduler = By.XPath("//div[@class = 'dropdown-menu show']//a[@href = '#/lesson/dashboard']");
 
         #endregion
     }

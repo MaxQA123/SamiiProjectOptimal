@@ -57,6 +57,15 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
             return this;
         }
 
+        [AllureStep("EnterEamil")]
+        public LogInTeacher EnterEmail()
+        {
+            WaitUntil.ShouldLocate(_FIeldInputEmail);
+            FIeldInputEmail.SendKeys(Credentials.emailTeacherOne);
+
+            return this;
+        }
+
         [AllureStep("ClickButtonLogInAsTeacher")]
         public LogInTeacher ClickButtonLogInAsTeacher()
         {

@@ -199,14 +199,31 @@ namespace SamiiProjectOptimal.Tests
         public void ResetPassword()
         {
             Pages.LogInStudent
-                .EnterEmailPassword()
+                .EnterEmail();
+
+            string passwordWorking = Pages.CycleForResetPassword.SelectPassword("4");
+
+            Pages.CycleForResetPassword
+                .EnterPasswordForLogIn(passwordWorking);
+
+            Pages.LogInStudent
                 .ClickIconShowEnteredPassword()
                 .ClickButtonSignIn();
             Pages.HeaderStudent
                 .ClickArrowDropDownMenu()
                 .ClickItemSettingsDropDown();
+
+            string passwordAWorking = Pages.CycleForResetPassword.SelectPassword("4");
+
+            Pages.CycleForResetPassword
+                .EnterPasswordHowLogIn(passwordAWorking);
+
+            string passwordNew = Pages.CycleForResetPassword.SelectPassword("1");
+
+            Pages.CycleForResetPassword
+                .EnterNewPasswordForResetedPassword(passwordNew);
+
             Pages.ResetPassword
-                .EnterCrrntPsswrdPsswrdCnfrPsswrd()
                 .ClickAllIconShowRstPsswrdPg();
 
             string passwordResetPasswordPg = Pages.ResetPassword.CopyPasswordResetPasswordPg();
@@ -224,5 +241,6 @@ namespace SamiiProjectOptimal.Tests
 
             Thread.Sleep(5000);
         }
+
     }
 }
