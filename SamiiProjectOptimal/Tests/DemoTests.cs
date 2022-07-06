@@ -161,5 +161,81 @@ namespace SamiiProjectOptimal.Tests
             Thread.Sleep(5000);
         }
 
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Admin")]
+        [AllureSubSuite("SetNewLessonCurrentDayViaSlctrDays")]
+
+        public void SetNewLessonCurrentDayViaSlctrDays()
+        {
+            Pages.LogInAdmin
+                .EnterEmailPassword()
+                .ClickButtonSignIn();
+            Pages.AdminHome
+                .ScrollToPaginationEducatorTbl();
+            Pages.AdminHome
+                .ClickButtonThreeOnPgntnEducator();
+            Pages.AdminHome
+                .ClickButtonDetailsTestTeacher();
+            Pages.EducatorsView
+                .ClickButtonImpersonateEducatorView();
+            Pages.HeaderAdminWebSite
+                .ClickArrowDropDown();
+            Pages.HeaderAdminWebSite
+                .ClickButtonItemLessonSheduler();
+
+            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
+
+            shedulerLessonPage[44].Click();
+            WaitUntil.WaitSomeInterval(1);
+            shedulerLessonPage[44].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectAllInstruments();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectRecurrenceOnce();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .EnterPriceToStudentsPerGroup();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonNext();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonSaveForAdmin();
+
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+
+            _shedulerLessonPage[44].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonAssignLessonToAfterSaved();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectFirstStudentToAssign();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonAssignStudent();
+
+            string getTitle = Pages.AdminLssnShdlrMdlWndwPg.GetTitle();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonNextAfterAssignStudent();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonSaveForAdmin();
+
+            IList<IWebElement> _shedulerLessonPageA = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+
+            _shedulerLessonPageA[44].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .VerifySetLesson(getTitle)
+                .ClickButtonCloseViaCross();
+
+            Pages.HeaderAdminWebSite
+                .ClickArrowDropDown();
+            Pages.HeaderAdminWebSite
+                .ClickButtonLogout();
+            Thread.Sleep(5000);
+        }
+
     }
 }

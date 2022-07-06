@@ -19,8 +19,11 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
         public IWebElement TabResources => Browser._Driver.FindElement(_TabResources);
         public readonly static By _TabResources = By.XPath("//button[@class = 'btn-clear']");
 
-        #region ModalWindowLessonBelongsTo
+        public IWebElement ButtonCloseViaCross => Browser._Driver.FindElement(_ButtonCloseViaCross);
+        public readonly static By _ButtonCloseViaCross = By.XPath("//button[@class = 'btn close-box']");
         
+        #region ModalWindowLessonBelongsTo
+
         public IWebElement ButtonSelectAllLessonBelongsTo => Browser._Driver.FindElement(_ButtonSelectAllLessonBelongsTo);
         public readonly static By _ButtonSelectAllLessonBelongsTo = By.XPath("//div[@class = 'lesson-create-container']//button");
 
@@ -60,10 +63,13 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
 
         public IWebElement ButtonSaveRecourceTabForMoveLesson => Browser._Driver.FindElement(_ButtonSaveRecourceTabForMoveLesson);
         public readonly static By _ButtonSaveRecourceTabForMoveLesson = By.XPath("//ngb-modal-window[@class = 'modal fade show d-block'][3]//div[@class = 'modal-content']//div[@class = 'lesson-create-resources-container']//button[2]");
-        
+
         #endregion
 
         #region TeacherDetailsTab
+
+        public IWebElement FieldTitleTeacherDetailsTab => Browser._Driver.FindElement(_FieldTitleTeacherDetailsTab);
+        public readonly static By _FieldTitleTeacherDetailsTab = By.XPath("//input[@name = 'title']");
 
         public IWebElement ButtonDropDownInstruments => Browser._Driver.FindElement(_ButtonDropDownInstruments);
         public readonly static By _ButtonDropDownInstruments = By.XPath("//span[@class = 'dropdown-btn']//span");

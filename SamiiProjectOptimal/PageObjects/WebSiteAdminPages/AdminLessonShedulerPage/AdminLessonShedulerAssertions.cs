@@ -1,4 +1,7 @@
-﻿using System;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
+using SamiiProjectOptimal.Additional;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +11,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerP
 {
     public partial class AdminLessonSheduler
     {
+
+        
     }
 }

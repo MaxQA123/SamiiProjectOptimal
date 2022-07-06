@@ -148,9 +148,9 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
 
-            shedulerLessonPage[29].Click();
+            shedulerLessonPage[44].Click();
             WaitUntil.WaitSomeInterval(1);
-            shedulerLessonPage[29].Click();
+            shedulerLessonPage[44].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
                 .SelectAllInstruments();
@@ -165,7 +165,7 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
-            _shedulerLessonPage[29].Click();
+            _shedulerLessonPage[44].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonAssignLessonToAfterSaved();
@@ -173,10 +173,22 @@ namespace SamiiProjectOptimal.Tests
                 .SelectFirstStudentToAssign();
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonAssignStudent();
+
+            string getTitle = Pages.AdminLssnShdlrMdlWndwPg.GetTitle();
+
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonNextAfterAssignStudent();
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonSaveForAdmin();
+
+            IList<IWebElement> _shedulerLessonPageA = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+
+            _shedulerLessonPageA[44].Click();
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .VerifySetLesson(getTitle)
+                .ClickButtonCloseViaCross();
+
             Pages.HeaderAdminWebSite
                 .ClickArrowDropDown();
             Pages.HeaderAdminWebSite

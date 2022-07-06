@@ -21,5 +21,15 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher
 
         public IWebElement ButtonLogIn => Browser._Driver.FindElement(_ButtonLogIn);
         public readonly static By _ButtonLogIn = By.XPath("//button[@type = 'submit']");
+
+        #region ElementsForAssertions
+
+        public IWebElement FieldInputEmailTabSetupTchrPrflStp => Browser._Driver.FindElement(_FieldInputEmailTabSetupTchrPrflStp);
+        public readonly static By _FieldInputEmailTabSetupTchrPrflStp = By.XPath("//input[@name = 'email']");
+
+        public IWebElement FieldInputFirstNameTabSetupTchrPrflStp => Browser._Driver.FindElement(_FieldInputFirstNameTabSetupTchrPrflStp);
+        public readonly static By _FieldInputFirstNameTabSetupTchrPrflStp = By.XPath("//input[@name = 'firstName']");
+
+        #endregion
     }
 }

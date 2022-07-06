@@ -1,0 +1,184 @@
+{
+  "uuid": "0d17198f-e18e-4cb5-ae24-3d429cbbe4aa-tr-0-1013",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.LogIn",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.LogIn",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LogIn"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "LogIn",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "LogIn"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LogIn",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEmailPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657108782887,
+          "stop": 1657108783300
+        },
+        {
+          "name": "GetEmailFromLogIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657108783301,
+          "stop": 1657108784363
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657108784364,
+          "stop": 1657108784524
+        },
+        {
+          "name": "ClickArrowDropDownMenu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657108784525,
+          "stop": 1657108787723
+        },
+        {
+          "name": "ClickItemEditProfileDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657108787724,
+          "stop": 1657108789390
+        },
+        {
+          "name": "VerifyEmailIsRight",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "newstud@xitroo.com"
+            }
+          ],
+          "start": 1657108789391,
+          "stop": 1657108792571
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "198f5f4868874666bbe0debc35844d6e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1657108779762,
+      "stop": 1657108798988
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1657108779760,
+  "stop": 1657108798996
+}

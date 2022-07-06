@@ -17,7 +17,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
         public LogInStudent EnterEmailPassword()
         {
             FIeldInputEmail.SendKeys(Credentials.emailStudentOne);
-            FIeldInputPassword.SendKeys(Credentials.passwordForChange);
+            FIeldInputPassword.SendKeys(Credentials.passwordStudentOne);
 
             return this;
         }

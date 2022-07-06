@@ -18,5 +18,6 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherProfileSetU
 
             return passwordFromTabPasswordTchrPrflStp;
         }
+
     }
 }

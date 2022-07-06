@@ -165,6 +165,15 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
             return this;
         }
 
+        [AllureStep("ClickButtonCloseViaCross")]
+        public AdminLssnShdlrMdlWndwPg ClickButtonCloseViaCross()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            ButtonCloseViaCross.Click();
+
+            return this;
+        }
+
         #endregion
 
         #region TeacherLessonShedulerTab

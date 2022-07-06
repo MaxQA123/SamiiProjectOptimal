@@ -1,0 +1,561 @@
+{
+  "uuid": "39632787-d9c0-4c78-b286-6d904bb91a71-tr-0-1008",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetNewLessonCurrentDayViaSlctrDays",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteAdminTests.SetNewLessonCurrentDayViaSlctrDays",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "SetNewLessonCurrentDayViaSlctrDays"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "SetNewLessonCurrentDayViaSlctrDays"
+    }
+  ],
+  "links": [],
+  "name": "SetNewLessonCurrentDayViaSlctrDays",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "SetNewLessonCurrentDayViaSlctrDays"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "SetNewLessonCurrentDayViaSlctrDays",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118946559,
+          "stop": 1657118948068
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118948068,
+          "stop": 1657118949180
+        },
+        {
+          "name": "ScrollToPaginationEducatorTbl",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 604b5ac3-bd40-4329-9665-156740411593)"
+                }
+              ],
+              "start": 1657118959028,
+              "stop": 1657118959043
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118949181,
+          "stop": 1657118959043
+        },
+        {
+          "name": "ClickButtonThreeOnPgntnEducator",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118959043,
+          "stop": 1657118961298
+        },
+        {
+          "name": "ClickButtonDetailsTestTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118961298,
+          "stop": 1657118963608
+        },
+        {
+          "name": "ClickButtonImpersonateEducatorView",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118963609,
+          "stop": 1657118969011
+        },
+        {
+          "name": "ClickArrowDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118969012,
+          "stop": 1657118970476
+        },
+        {
+          "name": "ClickButtonItemLessonSheduler",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118970477,
+          "stop": 1657118971926
+        },
+        {
+          "name": "SelectorShedulerLessonPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Home Studio"
+            }
+          ],
+          "start": 1657118971927,
+          "stop": 1657118981996
+        },
+        {
+          "name": "SelectAllInstruments",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118983361,
+          "stop": 1657118986285
+        },
+        {
+          "name": "SelectRecurrenceOnce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118986286,
+          "stop": 1657118986425
+        },
+        {
+          "name": "EnterPriceToStudentsPerGroup",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "RandomPriceInteger",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "Int32",
+                  "value": "2"
+                }
+              ],
+              "start": 1657118986490,
+              "stop": 1657118986494
+            },
+            {
+              "name": "RandomPriceKopeck",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "Int32",
+                  "value": "2"
+                }
+              ],
+              "start": 1657118986495,
+              "stop": 1657118986495
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118986426,
+          "stop": 1657118986749
+        },
+        {
+          "name": "ClickButtonNext",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118986749,
+          "stop": 1657118986928
+        },
+        {
+          "name": "ClickButtonSaveForAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657118986929,
+          "stop": 1657118997173
+        },
+        {
+          "name": "SelectorShedulerLessonPageAdditional",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Home Studio"
+            }
+          ],
+          "start": 1657118997174,
+          "stop": 1657119007219
+        },
+        {
+          "name": "ClickButtonAssignLessonTo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119007422,
+          "stop": 1657119008150
+        },
+        {
+          "name": "SelectFirstStudentToAssign",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119008152,
+          "stop": 1657119016505
+        },
+        {
+          "name": "ClickButtonAssignStudent",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119016505,
+          "stop": 1657119016672
+        },
+        {
+          "name": "GetTitle",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119016672,
+          "stop": 1657119017740
+        },
+        {
+          "name": "ClickButtonNextAfterAssignStudent",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119017740,
+          "stop": 1657119017902
+        },
+        {
+          "name": "ClickButtonSaveForAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119017902,
+          "stop": 1657119028141
+        },
+        {
+          "name": "SelectorShedulerLessonPageAdditional",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Home Studio"
+            }
+          ],
+          "start": 1657119028142,
+          "stop": 1657119038206
+        },
+        {
+          "name": "VerifySetLesson",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Piano Accordion, Singing, Piano, Harpsichord - @Home Studio (Single)"
+            }
+          ],
+          "start": 1657119038564,
+          "stop": 1657119039650
+        },
+        {
+          "name": "ClickButtonCloseViaCross",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119039650,
+          "stop": 1657119040792
+        },
+        {
+          "name": "ClickArrowDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119040792,
+          "stop": 1657119041619
+        },
+        {
+          "name": "ClickButtonLogout",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657119041621,
+          "stop": 1657119042824
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dcaf035462214f19b4f131d90e411dcc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1657118943479,
+      "stop": 1657119048410
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1657118943478,
+  "stop": 1657119048419
+}

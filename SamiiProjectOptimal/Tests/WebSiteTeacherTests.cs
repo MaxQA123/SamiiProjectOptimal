@@ -96,8 +96,16 @@ namespace SamiiProjectOptimal.Tests
         {
             Pages.LogInTeacher
                 .EnterEmailPassword();
+
+            string getEmailLogIn = Pages.LogInTeacher.GetEmailFromlogIn();
+
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
+            Pages.HeaderTeacher
+                .ClickArrowDropDown()
+                .ClickButtonItemProfileSettings();
+            Pages.LogInTeacher
+                .VerifyByEmail(getEmailLogIn);
             Thread.Sleep(5000);
         }
 
