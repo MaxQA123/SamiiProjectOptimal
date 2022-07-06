@@ -32,7 +32,12 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPassword();
             Pages.LogInAdmin
                 .ClickButtonSignIn();
-            Thread.Sleep(10000);
+
+            string nameAdminForCompare = Pages.AdminHome.GetNameAdminFromAdminPage();
+
+            Pages.AdminHome
+                .VerifyCurrentNameAdmin(nameAdminForCompare);
+            Thread.Sleep(5000);
         }
 
         [Test]

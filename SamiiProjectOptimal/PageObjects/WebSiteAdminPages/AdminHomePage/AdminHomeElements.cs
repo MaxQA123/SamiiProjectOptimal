@@ -10,6 +10,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage
 {
     public partial class AdminHome
     {
+        public IWebElement CurrentNameAdmin => Browser._Driver.FindElement(_CurrentNameAdmin);
+        public readonly static By _CurrentNameAdmin = By.XPath("//li[text() = ' Pete Barter']");
+
         #region PaginationsForTables
 
         public IWebElement PaginationForTableEducator => Browser._Driver.FindElement(_PaginationForTableEducator);
