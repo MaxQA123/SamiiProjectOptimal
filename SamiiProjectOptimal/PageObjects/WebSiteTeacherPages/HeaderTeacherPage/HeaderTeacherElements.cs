@@ -21,6 +21,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage
         public IWebElement ButtonItemLessonSheduler => Browser._Driver.FindElement(_ButtonItemLessonSheduler);
         public readonly static By _ButtonItemLessonSheduler = By.XPath("//div[@class = 'dropdown-menu show']//a[@href = '#/lesson/dashboard']");
 
+        public IWebElement ItemLogoutDropDown => Browser._Driver.FindElement(_ItemLogoutDropDown);
+        public readonly static By _ItemLogoutDropDown = By.XPath("//div[@class = 'dropdown-menu show']//a[text() = 'Logout']");
+
         #endregion
     }
 }

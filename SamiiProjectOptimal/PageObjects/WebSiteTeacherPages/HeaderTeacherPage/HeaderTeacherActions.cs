@@ -39,6 +39,15 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage
             return this;
         }
 
+        [AllureStep("ClickItemLogoutDropDown")]
+        public HeaderTeacher ClickItemLogoutDropDown()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            ItemLogoutDropDown.Click();
+
+            return this;
+        }
+
         #endregion
     }
 }

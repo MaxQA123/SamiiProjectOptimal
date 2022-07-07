@@ -15,7 +15,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
         public string GetTitle()
         {
             WaitUntil.WaitSomeInterval(1);
-            string getTitleExpected = Browser._Driver.FindElement(_FieldTitleTeacherDetailsTab).GetAttribute("value");
+            string getTitleExpected = Browser._Driver.FindElement(_FieldTitleAdminDetailsTab).GetAttribute("value");
             string getTitleFromModalWndw = getTitleExpected.ToString();
 
             return getTitleFromModalWndw;
@@ -25,7 +25,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
         public AdminLssnShdlrMdlWndwPg VerifySetLesson(string getTitleFromModalWndw)
         {
             WaitUntil.WaitSomeInterval(1);
-            string getTitleActual = FieldTitleTeacherDetailsTab.GetAttribute("value");
+            string getTitleActual = FieldTitleAdminDetailsTab.GetAttribute("value");
 
             Assert.AreEqual(getTitleFromModalWndw, getTitleActual);
 

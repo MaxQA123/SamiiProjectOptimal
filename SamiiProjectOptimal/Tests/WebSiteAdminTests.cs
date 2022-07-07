@@ -126,9 +126,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
-        [AllureSubSuite("SetNewLessonCurrentDayViaSlctrDays")]
+        [AllureSubSuite("SetNewLessonCurrentDay")]
 
-        public void SetNewLessonCurrentDayViaSlctrDays()
+        public void SetNewLessonCurrentDay()
         {
             Pages.LogInAdmin
                 .EnterEmailPassword()
@@ -148,9 +148,9 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
 
-            shedulerLessonPage[44].Click();
+            shedulerLessonPage[43].Click();
             WaitUntil.WaitSomeInterval(1);
-            shedulerLessonPage[44].Click();
+            shedulerLessonPage[43].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
                 .SelectAllInstruments();
@@ -165,7 +165,7 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
-            _shedulerLessonPage[44].Click();
+            _shedulerLessonPage[43].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonAssignLessonToAfterSaved();
@@ -183,7 +183,7 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> _shedulerLessonPageA = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
-            _shedulerLessonPageA[44].Click();
+            _shedulerLessonPageA[43].Click();
 
             Pages.AdminLssnShdlrMdlWndwPg
                 .VerifySetLesson(getTitle)
@@ -324,9 +324,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
-        [AllureSubSuite("DeleteLessonAsAdminForCurrentDay")]
+        [AllureSubSuite("DeleteLessonForCurrentDay")]
 
-        public void DeleteLessonAsAdminForCurrentDay()
+        public void DeleteLessonForCurrentDay()
         {
             Pages.LogInAdmin
                 .EnterEmailPassword();

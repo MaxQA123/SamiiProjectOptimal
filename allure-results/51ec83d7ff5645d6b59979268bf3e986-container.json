@@ -1,0 +1,76 @@
+{
+  "uuid": "95fe7186-d62e-470d-b50b-b23d5cb65009-tc-0-1019",
+  "name": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.SetNewLessonCurrentDayViaSlctrDays",
+  "children": [
+    "37cc60e5-0087-45bd-a4c4-7924d999f8a2-tr-0-1022"
+  ],
+  "befores": [
+    {
+      "name": "DobeforeAllTheTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1657187403047,
+      "stop": 1657187403047
+    },
+    {
+      "name": "SetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1657187403047,
+      "stop": 1657187403047
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEach",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1657187403047,
+      "stop": 1657187403047
+    },
+    {
+      "name": "DoAfterAllTheTests",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1657187403047,
+      "stop": 1657187403047
+    }
+  ],
+  "links": [],
+  "start": 1657187331902,
+  "stop": 1657187403091
+}

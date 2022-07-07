@@ -1,4 +1,5 @@
 ﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -78,5 +79,24 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
         }
 
         #endregion
+
+        public TeacherLessonSheduler OpenPopUpForCreatelesson(int timeSlot, string location)
+        {
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional(location);
+
+            _shedulerLessonPage[timeSlot].Click();
+            _shedulerLessonPage[timeSlot].Click();
+
+            return this;
+        }
+
+        public TeacherLessonSheduler OpenPopUpForDeletelesson(int timeSlot, string location)
+        {
+            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional(location);
+
+            _shedulerLessonPage[timeSlot].Click();
+
+            return this;
+        }
     }
 }

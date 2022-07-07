@@ -1,0 +1,288 @@
+{
+  "uuid": "b7442b13-3743-4d87-9918-1d86c390e100-tr-0-1005",
+  "historyId": "SamiiProjectOptimal.Tests.DemoTests.DemoDeleteLessonForCurrentDay",
+  "fullName": "SamiiProjectOptimal.Tests.DemoTests.DemoDeleteLessonForCurrentDay",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "DemoDeleteLessonForCurrentDay"
+    },
+    {
+      "name": "testClass",
+      "value": "DemoTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.comm>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Teacher"
+    },
+    {
+      "name": "subSuite",
+      "value": "DemoDeleteLessonCurrentDay"
+    }
+  ],
+  "links": [],
+  "name": "DemoDeleteLessonForCurrentDay",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=103.0.5060.114)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebElement.FindElement(By by)\r\n   at SamiiProjectOptimal.Tests.DemoTests.DemoDeleteLessonForCurrentDay() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\DemoTests.cs:line 274"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "DemoDeleteLessonForCurrentDay",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=103.0.5060.114)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebElement.FindElement(By by)\r\n   at SamiiProjectOptimal.Tests.DemoTests.DemoDeleteLessonForCurrentDay() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\DemoTests.cs:line 274"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199473709,
+          "stop": 1657199475731
+        },
+        {
+          "name": "ClickButtonLogInAsTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199475732,
+          "stop": 1657199475948
+        },
+        {
+          "name": "ClickArrowDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199475949,
+          "stop": 1657199483475
+        },
+        {
+          "name": "ClickButtonItemLessonSheduler",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199483476,
+          "stop": 1657199484511
+        },
+        {
+          "name": "SelectorShedulerLessonPageAdditional",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Home Studio"
+            }
+          ],
+          "start": 1657199484513,
+          "stop": 1657199494611
+        },
+        {
+          "name": "SelectAllInstruments",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199495706,
+          "stop": 1657199499457
+        },
+        {
+          "name": "SelectRecurrenceOnce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199499458,
+          "stop": 1657199499786
+        },
+        {
+          "name": "EnterPriceToStudentsPerGroup",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "RandomPriceInteger",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "Int32",
+                  "value": "2"
+                }
+              ],
+              "start": 1657199500058,
+              "stop": 1657199500066
+            },
+            {
+              "name": "RandomPriceKopeck",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "Int32",
+                  "value": "2"
+                }
+              ],
+              "start": 1657199500066,
+              "stop": 1657199500067
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199499788,
+          "stop": 1657199500955
+        },
+        {
+          "name": "ClickButtonNext",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199500956,
+          "stop": 1657199501959
+        },
+        {
+          "name": "ClickButtonSaveForAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1657199501960,
+          "stop": 1657199513062
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "473f990935964a55ac3446e431f23d2b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1657199467527,
+      "stop": 1657199514279
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1657199467524,
+  "stop": 1657199514288
+}

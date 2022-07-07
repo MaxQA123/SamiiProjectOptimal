@@ -115,9 +115,9 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
-        [AllureSubSuite("SetNewLessonCurrentDayViaSlctrDays")]
+        [AllureSubSuite("SetNewLessonCurrentDay")]
 
-        public void SetNewLessonCurrentDayViaSlctrDays()
+        public void SetNewLessonCurrentDay()
         {
             Pages.LogInTeacher
                 .EnterEmailPassword();
@@ -130,9 +130,9 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
 
-            shedulerLessonPage[43].Click();
+            shedulerLessonPage[44].Click();
             WaitUntil.WaitSomeInterval(3);
-            shedulerLessonPage[43].Click();
+            shedulerLessonPage[44].Click();
 
             Pages.TeacherLssnShdlrMdlWndw
                 .SelectAllInstruments();
@@ -140,6 +140,9 @@ namespace SamiiProjectOptimal.Tests
                 .SelectRecurrenceOnce();
             Pages.TeacherLssnShdlrMdlWndw
                 .EnterPriceToStudentsPerGroup();
+
+            string getTitleForCompare = Pages.TeacherLssnShdlrMdlWndw.GetTitle();
+
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonNext();
             Pages.TeacherLssnShdlrMdlWndw
@@ -147,7 +150,7 @@ namespace SamiiProjectOptimal.Tests
 
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
 
-            _shedulerLessonPage[43].Click();
+            _shedulerLessonPage[44].Click();
 
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonAssignLessonTo();
@@ -159,6 +162,19 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNextAfterAssignStudent();
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonSaveForTeacher();
+
+            IList<IWebElement> _shedulerLessonPageA = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
+
+            _shedulerLessonPageA[44].Click();
+
+            Pages.TeacherLssnShdlrMdlWndw
+                .VerifyTitle(getTitleForCompare);
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonCloseViaCross();
+            Pages.HeaderTeacher
+                .ClickArrowDropDown()
+                .ClickItemLogoutDropDown();
+
             Thread.Sleep(5000);
         }
 
@@ -287,7 +303,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Teacher")]
         [AllureSubSuite("DeleteLessonCurrentDay")]
 
-        public void DeleteLessonViaSlctrDays()
+        public void DeleteLessonForCurrentDay()
         {
             Pages.LogInTeacher
                .EnterEmailPassword()

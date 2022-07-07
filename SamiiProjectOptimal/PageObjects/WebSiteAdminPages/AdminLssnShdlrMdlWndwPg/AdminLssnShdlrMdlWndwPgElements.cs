@@ -68,8 +68,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWnd
 
         #region TeacherDetailsTab
 
-        public IWebElement FieldTitleTeacherDetailsTab => Browser._Driver.FindElement(_FieldTitleTeacherDetailsTab);
-        public readonly static By _FieldTitleTeacherDetailsTab = By.XPath("//input[@name = 'title']");
+        public IWebElement FieldTitleAdminDetailsTab => Browser._Driver.FindElement(_FieldTitleAdminDetailsTab);
+        public readonly static By _FieldTitleAdminDetailsTab = By.XPath("//input[@name = 'title']");
 
         public IWebElement ButtonDropDownInstruments => Browser._Driver.FindElement(_ButtonDropDownInstruments);
         public readonly static By _ButtonDropDownInstruments = By.XPath("//span[@class = 'dropdown-btn']//span");

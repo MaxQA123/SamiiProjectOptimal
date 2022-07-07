@@ -237,5 +237,52 @@ namespace SamiiProjectOptimal.Tests
             Thread.Sleep(5000);
         }
 
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.comm")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("DemoDeleteLessonCurrentDay")]
+
+        public void DemoDeleteLessonForCurrentDay()
+        {
+            Pages.LogInTeacher
+               .EnterEmailPassword()
+               .ClickButtonLogInAsTeacher();
+
+            Pages.HeaderTeacher
+                .ClickArrowDropDown()
+                .ClickButtonItemLessonSheduler();
+
+            Pages.TeacherLessonSheduler
+                .OpenPopUpForCreatelesson(TimeSlots.timeSlot_21_00, "Home Studio");
+
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectAllInstruments();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .SelectRecurrenceOnce();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .EnterPriceToStudentsPerGroup();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonNext();
+            Pages.AdminLssnShdlrMdlWndwPg
+                .ClickButtonSaveForAdmin();
+
+            string time = Pages.TeacherLessonSheduler.GetTime(TimeSlots.timeSlot_21_00, "Home Studio");
+
+            Pages.TeacherLessonSheduler
+                .OpenPopUpForDeletelesson(TimeSlots.timeSlot_21_00, "Home Studio");
+
+            Pages.TeacherLssnShdlrMdlWndw
+               .ClickDeleteDtlsTab();
+            Pages.TeacherLssnShdlrMdlWndw
+                .ClickButtonYes();
+            Pages.TeacherLessonSheduler
+                .VerifyDeletelesson(time);
+
+            Thread.Sleep(5000);
+        }
+
     }
 }
