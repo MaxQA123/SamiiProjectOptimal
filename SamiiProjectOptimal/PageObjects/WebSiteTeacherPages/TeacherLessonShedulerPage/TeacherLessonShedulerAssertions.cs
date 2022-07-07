@@ -22,6 +22,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
             return this;
         }
 
+        [AllureStep("GetTime")]
         public string GetTime(int timeSlot, string location)
         {
             WaitUntil.WaitSomeInterval(1);

@@ -47,6 +47,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
 
         #region CellsOnTheLessonScheduler
 
+        [AllureStep("ClickTwiceCell")]
         public TeacherLessonSheduler ClickTwiceCell()
         {
             WaitUntil.WaitSomeInterval(10);
@@ -57,6 +58,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
             return this;
         }
 
+        [AllureStep("ClickOnceCell")]
         public TeacherLessonSheduler ClickOnceCell()
         {
             WaitUntil.WaitSomeInterval(3);
@@ -80,6 +82,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
 
         #endregion
 
+        [AllureStep("OpenPopUpForCreatelesson")]
         public TeacherLessonSheduler OpenPopUpForCreatelesson(int timeSlot, string location)
         {
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional(location);
@@ -90,6 +93,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherLessonShedu
             return this;
         }
 
+        [AllureStep("OpenPopUpForDeletelesson")]
         public TeacherLessonSheduler OpenPopUpForDeletelesson(int timeSlot, string location)
         {
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional(location);
