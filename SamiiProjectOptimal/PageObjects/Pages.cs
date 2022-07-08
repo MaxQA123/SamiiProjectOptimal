@@ -29,6 +29,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static SamiiProjectOptimal.Additional.Input;
 
 namespace SamiiProjectOptimal.PageObjects
 {
@@ -68,5 +69,6 @@ namespace SamiiProjectOptimal.PageObjects
         public static ResetPassword ResetPassword => GetPage<ResetPassword>();
         public static CycleForResetPassword CycleForResetPassword => GetPage<CycleForResetPassword>();
         public static TeacherProfileSetUp TeacherProfileSetUp => GetPage<TeacherProfileSetUp>();
+        public static Click Click => GetPage<Click>();
     }
 }
