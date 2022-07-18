@@ -21,6 +21,14 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
         [AllureSubSuite("CreateAccountForTeacher")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully create a new account.
+        //Comment: 
+        //Path to cheking's: 
+
         public void CreateAccountForTeacher()
         {
             Pages.LogInTeacher
@@ -81,6 +89,8 @@ namespace SamiiProjectOptimal.Tests
             //    .CkickOnCheckBoxShowLessonPriceRange();
             Pages.TeacherCreateAccount
                 .ClickButtonNextStep();
+            KeyBoardActions.ClickEnterButton();
+
             Thread.Sleep(5000);
         }
 
@@ -91,6 +101,13 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
         [AllureSubSuite("Login")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully LogIn as teacher.
+        //Comment: 
+        //Path to cheking's: 
 
         public void LogIn()
         {
@@ -116,6 +133,13 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
         [AllureSubSuite("SetNewLessonCurrentDay")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully set a new lesson on the current day.
+        //Comment: 
+        //Path to cheking's: 
 
         public void SetNewLessonCurrentDay()
         {
@@ -194,6 +218,13 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Teacher")]
         [AllureSubSuite("SetNewLessonOnNextDateViaCalendar")]
 
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully create a new account via the calendar with right.
+        //Comment: 
+        //Path to cheking's: 
+
         public void SetNewLessonOnNextDateViaCalendar()
         {
             Pages.LogInTeacher
@@ -261,6 +292,13 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Teacher")]
         [AllureSubSuite("MoveDateTimeLessonCurrentDayViaSlctrDays")]
 
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully move a new lesson on a current day via the table time.
+        //Comment: 
+        //Path to cheking's: SetNewLessonCurrentDay > MoveDateTimeLessonCurrentDayViaSlctrDays
+
         public void MoveDateTimeLessonCurrentDayViaSlctrDays()
         {
             Pages.LogInTeacher
@@ -311,6 +349,13 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
         [AllureSubSuite("MoveDateTimeLessonNextDateViaCalendar")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully move a new lesson on a current day via the calindar with right.
+        //Comment: 
+        //Path to cheking's: SetNewLessonOnNextDateViaCalendar > MoveDateTimeLessonNextDateViaCalendar
 
         public void MoveDateTimeLessonNextDateViaCalendar()
         {
@@ -380,6 +425,13 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Teacher")]
         [AllureSubSuite("DeleteLessonCurrentDay")]
 
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully delete a lessin from the a current day.
+        //Comment: 
+        //Path to cheking's: 
+
         public void ADeleteLessonForCurrentDay()
         {
             Pages.LogInTeacher
@@ -426,6 +478,14 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
         [AllureSubSuite("ForgotPassword")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully changing a password for the user in the role teacher.
+        //Comment: 
+        //Path to cheking's: 
+
         public void ForgotPassword()
         {
             Pages.LogInTeacher

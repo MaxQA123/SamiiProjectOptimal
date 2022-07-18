@@ -1,8 +1,8 @@
 {
-  "uuid": "65ebfdd1-4818-4133-9f7d-31ec827bedf9-tc-0-1012",
-  "name": "SamiiProjectOptimal.Tests.WebSiteStudentTests.LogIn",
+  "uuid": "b0f45e45-1563-420f-85f2-4205eb20ce93-tc-0-1022",
+  "name": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.LogIn",
   "children": [
-    "c68a302e-071c-4410-855a-1fbf25196397-tr-0-1013"
+    "339c0c12-ff4c-40e4-be9d-2d8ca9eb75fd-tr-0-1024"
   ],
   "befores": [
     {
@@ -17,8 +17,8 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1657108663554,
-      "stop": 1657108663554
+      "start": 1658143727935,
+      "stop": 1658143727935
     },
     {
       "name": "SetUp",
@@ -32,8 +32,8 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1657108663555,
-      "stop": 1657108663555
+      "start": 1658143727935,
+      "stop": 1658143727935
     }
   ],
   "afters": [
@@ -49,8 +49,8 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1657108663555,
-      "stop": 1657108663555
+      "start": 1658143727935,
+      "stop": 1658143727935
     },
     {
       "name": "DoAfterAllTheTests",
@@ -66,11 +66,11 @@
       "steps": [],
       "attachments": [],
       "parameters": [],
-      "start": 1657108663555,
-      "stop": 1657108663555
+      "start": 1658143727935,
+      "stop": 1658143727935
     }
   ],
   "links": [],
-  "start": 1657108654874,
-  "stop": 1657108663601
+  "start": 1658143665700,
+  "stop": 1658143727999
 }

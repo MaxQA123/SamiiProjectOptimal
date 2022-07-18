@@ -26,6 +26,14 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Admin")]
         [AllureSubSuite("Login")]
 
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully LogIn as admin.
+        //Comment: 
+        //Path to cheking's: 
+
+
         public void LogIn()
         {
             Pages.LogInAdmin
@@ -47,6 +55,13 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
         [AllureSubSuite("SetNewLessonOnNextDateViaCalendar")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully set a new lesson on the next date via calendar with right.
+        //Comment: 
+        //Path to cheking's: 
 
         public void SetNewLessonOnNextDateViaCalendar()
         {
@@ -128,6 +143,13 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Admin")]
         [AllureSubSuite("SetNewLessonCurrentDay")]
 
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully set a new lesson on a current day via the table time.
+        //Comment: 
+        //Path to cheking's: 
+
         public void SetNewLessonCurrentDay()
         {
             Pages.LogInAdmin
@@ -204,6 +226,13 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Admin")]
         [AllureSubSuite("MoveDateTimeLessonCurrentDayViaSlctrDays")]
 
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully move a new lesson on a current day via the table time.
+        //Comment: 
+        //Path to cheking's: SetNewLessonCurrentDay > MoveDateTimeLessonCurrentDayViaSlctrDays
+
         public void MoveDateTimeLessonCurrentDayViaSlctrDays()
         {
             Pages.LogInAdmin
@@ -257,6 +286,13 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
         [AllureSubSuite("MoveDateTimeLessonNextDateViaCalendar")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully move a new lesson on a current day via the calindar with right.
+        //Comment: 
+        //Path to cheking's: SetNewLessonOnNextDateViaCalendar > MoveDateTimeLessonNextDateViaCalendar
 
         public void MoveDateTimeLessonNextDateViaCalendar()
         {
@@ -326,6 +362,13 @@ namespace SamiiProjectOptimal.Tests
         [AllureSuite("Admin")]
         [AllureSubSuite("DeleteLessonForCurrentDay")]
 
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully delete a lesson from the current day.
+        //Comment: 
+        //Path to cheking's: 
+
         public void DeleteLessonForCurrentDay()
         {
             Pages.LogInAdmin
@@ -363,6 +406,13 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Admin")]
         [AllureSubSuite("DeleteLessonFromNextDateViaCalendar")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully deleted a lesson for the does't current day.
+        //Comment: 
+        //Path to cheking's: 
 
         public void DeleteLessonFromNextDateViaCalendar()
         {
