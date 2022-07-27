@@ -52,6 +52,17 @@ namespace SamiiProjectOptimal.Additional
             return this;
         }
 
+        [AllureStep("SelectUserOnMessengerPage")]
+        public Click SelectUserOnMessengerPage(int numberUser, string locationUserInList)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberUser = SearchXpathHelper.SelectorUsersOnMessengerPage(locationUserInList);
+
+            _numberUser[numberUser].Click();
+
+            return this;
+        }
+
     }
 
     public class KeyBoardActions

@@ -3,6 +3,8 @@ using SamiiProjectOptimal.Additional;
 using SamiiProjectOptimal.PageObjects.EmailXitrooPage;
 using SamiiProjectOptimal.PageObjects.ForgotPasswordPage;
 using SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage;
+using SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralFolderHeaderPage;
+using SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage;
@@ -70,5 +72,7 @@ namespace SamiiProjectOptimal.PageObjects
         public static CycleForResetPassword CycleForResetPassword => GetPage<CycleForResetPassword>();
         public static TeacherProfileSetUp TeacherProfileSetUp => GetPage<TeacherProfileSetUp>();
         public static Click Click => GetPage<Click>();
+        public static GeneralHeader GeneralHeader => GetPage<GeneralHeader>();
+        public static GeneralMessenger GeneralMessenger => GetPage<GeneralMessenger>();
     }
 }

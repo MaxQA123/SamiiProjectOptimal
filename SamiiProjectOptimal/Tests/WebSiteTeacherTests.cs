@@ -539,5 +539,51 @@ namespace SamiiProjectOptimal.Tests
             Thread.Sleep(5000);
         }
 
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("SentMessageViaIcinHeader")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully has written and sent the message to the student.
+        //Comment: 
+        //Path to cheking's: 
+
+        public void TeacherSentMessageViaIconHeader()
+        {
+            Pages.LogInTeacher
+                .EnterEmailPassword()
+                .ClickButtonLogInAsTeacher();
+            Pages.GeneralHeader
+                .ClickIconMessageHeader();
+            Pages.Click
+                .SelectUserOnMessengerPage(ListOfUsersMessengerPage.secondUser, "");
+            Pages.GeneralMessenger
+                .EnterMessageOnMessengerPage();
+
+            string getTextMessageForCompare = Pages.GeneralMessenger.GetTextMessage();
+
+            Pages.GeneralMessenger
+                .ClickButtonArrowSendMessageOnMessengerPg();
+            Pages.HeaderStudent
+                .ClickArrowDropDownMenu()
+                .ClickItemLogoutDropDown();
+            Pages.LogInStudent
+                .EnterEmailPassword()
+                .ClickButtonSignIn();
+            Pages.GeneralHeader
+                .ClickIconMessageHeader();
+            Pages.Click.SelectUserOnMessengerPage(ListOfUsersMessengerPage.firstUser, "");
+            Pages.GeneralMessenger
+                .VerifyTextMessage(getTextMessageForCompare);
+
+            Thread.Sleep(5000);
+        }
+
     }
 }

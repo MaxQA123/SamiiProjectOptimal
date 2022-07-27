@@ -24,7 +24,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.Header
         [AllureStep("ClickItemEditProfileDropDown")]
         public HeaderStudent ClickItemEditProfileDropDown()
         {
-            WaitUntil.ShouldLocate(_ItemEditProfileDropDown);
+            WaitUntil.WaitSomeInterval(5);
             ItemEditProfileDropDown.Click();
             WaitUntil.WaitSomeInterval(1);
 

@@ -1,0 +1,394 @@
+{
+  "uuid": "4b405d1b-e002-41fa-a273-0768901f539e-tr-0-1022",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.StudentSentMessageViaIconHeader",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.StudentSentMessageViaIconHeader",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "StudentSentMessageViaIconHeader"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "SentMessageViaIcinHeader"
+    }
+  ],
+  "links": [],
+  "name": "StudentSentMessageViaIconHeader",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@_ngcontent-c9][490]//p[@style = 'overflow-wrap: break-word;']//div\"}\n  (Session info: chrome=103.0.5060.134)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.get_LastStringMessageInListMessengerPg() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerElements.cs:line 19\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_o(String getTextInjectedExpexted) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerAssertions.cs:line 28\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.VerifyTextMessage(String getTextInjectedExpexted)\r\n   at SamiiProjectOptimal.Tests.WebSiteStudentTests.StudentSentMessageViaIconHeader() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteStudentTests.cs:line 286"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "StudentSentMessageViaIconHeader",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@_ngcontent-c9][490]//p[@style = 'overflow-wrap: break-word;']//div\"}\n  (Session info: chrome=103.0.5060.134)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.get_LastStringMessageInListMessengerPg() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerElements.cs:line 19\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_o(String getTextInjectedExpexted) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerAssertions.cs:line 28\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.VerifyTextMessage(String getTextInjectedExpexted)\r\n   at SamiiProjectOptimal.Tests.WebSiteStudentTests.StudentSentMessageViaIconHeader() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteStudentTests.cs:line 286"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEmailPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927825929,
+          "stop": 1658927827480
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927827481,
+          "stop": 1658927828671
+        },
+        {
+          "name": "ClickIconMessageHeader",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927828671,
+          "stop": 1658927834244
+        },
+        {
+          "name": "SelectUserOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorUsersOnMessengerPage",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1658927835260,
+              "stop": 1658927836318
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "0"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1658927834246,
+          "stop": 1658927843119
+        },
+        {
+          "name": "EnterMessageOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = da21ef7e-0e3d-4e2e-bbdb-423defc137f9)"
+                },
+                {
+                  "name": "String",
+                  "value": "Eligendi eum voluptatibus aliquid."
+                }
+              ],
+              "start": 1658927845322,
+              "stop": 1658927852175
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927843120,
+          "stop": 1658927852175
+        },
+        {
+          "name": "GetTextMessage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927852175,
+          "stop": 1658927853832
+        },
+        {
+          "name": "ClickButtonArrowSendMessageOnMessengerPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927853833,
+          "stop": 1658927856197
+        },
+        {
+          "name": "ClickArrowDropDownMenu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927856199,
+          "stop": 1658927860754
+        },
+        {
+          "name": "ClickItemLogoutDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927860755,
+          "stop": 1658927862989
+        },
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927862992,
+          "stop": 1658927864389
+        },
+        {
+          "name": "ClickButtonLogInAsTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927864389,
+          "stop": 1658927864495
+        },
+        {
+          "name": "ClickIconMessageHeader",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658927864495,
+          "stop": 1658927869920
+        },
+        {
+          "name": "SelectUserOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorUsersOnMessengerPage",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1658927870929,
+              "stop": 1658927871974
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "1"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1658927869921,
+          "stop": 1658927873318
+        },
+        {
+          "name": "VerifyTextMessage",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@_ngcontent-c9][490]//p[@style = 'overflow-wrap: break-word;']//div\"}\n  (Session info: chrome=103.0.5060.134)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.get_LastStringMessageInListMessengerPg() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerElements.cs:line 19\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_o(String getTextInjectedExpexted) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerAssertions.cs:line 28\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Eligendi eum voluptatibus aliquid."
+            }
+          ],
+          "start": 1658927878320,
+          "stop": 1658927879410
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "778bf90aab5d4994acdbcede7a785dae-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1658927822965,
+      "stop": 1658927879978
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1658927822964,
+  "stop": 1658927879986
+}

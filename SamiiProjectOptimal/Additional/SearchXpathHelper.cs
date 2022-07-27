@@ -47,5 +47,14 @@ namespace SamiiProjectOptimal.Additional
             _element = Browser._Driver.FindElement(By.XPath(str));
             return _element.FindElements(By.XPath($".//li"));
         }
+
+        [AllureStep("SelectorUsersOnMessengerPage")]
+        public static IList<IWebElement> SelectorUsersOnMessengerPage(string locationUser)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            var str = "//div[@class = 'inbox_people']";
+            _element = Browser._Driver.FindElement(By.XPath(str));
+            return _element.FindElements(By.XPath($".//div[@class = 'chat_people ng-star-inserted']//h5[contains(text(), '{locationUser}')]"));
+        }
     }
 }

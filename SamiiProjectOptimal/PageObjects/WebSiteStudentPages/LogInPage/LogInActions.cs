@@ -16,7 +16,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
         [AllureStep("EnterEmailPassword")]
         public LogInStudent EnterEmailPassword()
         {
+            WaitUntil.ElementIsClickable(FIeldInputEmail);
             FIeldInputEmail.SendKeys(Credentials.emailStudentOne);
+            WaitUntil.WaitSomeInterval(1);
             FIeldInputPassword.SendKeys(Credentials.passwordStudentOne);
 
             return this;
@@ -59,7 +61,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
         [AllureStep("ClickButtonSignIn")]
         public LogInStudent ClickButtonSignIn()
         {
-            WaitUntil.ElementIsClickable(ButtonLogIn);
+            WaitUntil.WaitSomeInterval(1);
             ButtonLogIn.Click();
 
             return this;

@@ -111,4 +111,12 @@ namespace SamiiProjectOptimal.Additional
         public const int timeSlot_23_00 = 46;
         public const int timeSlot_23_30 = 47;
     }
+
+    public class ListOfUsersMessengerPage
+    {
+        public const int firstUser = 0;
+        public const int secondUser = 1;
+        public const int thirdtUser = 2;
+
+    }
 }
