@@ -1,0 +1,389 @@
+{
+  "uuid": "e6749232-8020-4ae4-8554-68377e4862f8-tr-0-1032",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.TeacherSentMessageViaIconHeader",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.TeacherSentMessageViaIconHeader",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TeacherSentMessageViaIconHeader"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Teacher"
+    },
+    {
+      "name": "subSuite",
+      "value": "SentMessageViaIcinHeader"
+    }
+  ],
+  "links": [],
+  "name": "TeacherSentMessageViaIconHeader",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TeacherSentMessageViaIconHeader"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "TeacherSentMessageViaIconHeader",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988673845,
+          "stop": 1658988675433
+        },
+        {
+          "name": "ClickButtonLogInAsTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988675433,
+          "stop": 1658988675563
+        },
+        {
+          "name": "ClickIconMessageHeader",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988675564,
+          "stop": 1658988681617
+        },
+        {
+          "name": "SelectUserOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorUsersOnMessengerPage",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1658988682633,
+              "stop": 1658988683694
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "1"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1658988681619,
+          "stop": 1658988685591
+        },
+        {
+          "name": "EnterMessageOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 491ef8fb-558c-466a-960d-5d99dbe16aea)"
+                },
+                {
+                  "name": "String",
+                  "value": "I am fine! (12345) How are you?"
+                }
+              ],
+              "start": 1658988686708,
+              "stop": 1658988688030
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988685592,
+          "stop": 1658988688030
+        },
+        {
+          "name": "GetTextMessage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988688031,
+          "stop": 1658988689094
+        },
+        {
+          "name": "ClickButtonArrowSendMessageOnMessengerPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988689094,
+          "stop": 1658988690412
+        },
+        {
+          "name": "ClickArrowDropDownMenu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988690413,
+          "stop": 1658988693554
+        },
+        {
+          "name": "ClickItemLogoutDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988693555,
+          "stop": 1658988694662
+        },
+        {
+          "name": "EnterEmailPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988694663,
+          "stop": 1658988698943
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988698943,
+          "stop": 1658988700021
+        },
+        {
+          "name": "ClickIconMessageHeader",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988700021,
+          "stop": 1658988705193
+        },
+        {
+          "name": "SelectUserOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorUsersOnMessengerPage",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1658988706212,
+              "stop": 1658988707247
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "0"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1658988705194,
+          "stop": 1658988710000
+        },
+        {
+          "name": "VerifyTextMessage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "I am fine! (12345) How are you?"
+            }
+          ],
+          "start": 1658988710001,
+          "stop": 1658988711755
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c41d6661869c462eb05479645aec8d11-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1658988671072,
+      "stop": 1658988717289
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1658988671070,
+  "stop": 1658988717296
+}

@@ -117,6 +117,11 @@ namespace SamiiProjectOptimal.Additional
         public const int firstUser = 0;
         public const int secondUser = 1;
         public const int thirdtUser = 2;
+    }
 
+    public class TestData
+    {
+        //WARNING!!!//If change the message for this variable then need this message copy and paste in the elements XPath.
+        public const string messageForMessenger = "I am Admin! Do you fine?";
     }
 }

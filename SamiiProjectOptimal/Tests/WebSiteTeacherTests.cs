@@ -545,7 +545,7 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Teacher")]
-        [AllureSubSuite("SentMessageViaIcinHeader")]
+        [AllureSubSuite("SentMessageViaIconHeader")]
 
         //Date of publication:
         //Version\Build:

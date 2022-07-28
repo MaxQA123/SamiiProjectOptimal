@@ -25,9 +25,9 @@ namespace SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMess
         public GeneralMessenger VerifyTextMessage(string getTextInjectedExpexted)
         {
             WaitUntil.WaitSomeInterval(1);
-            string getTextDisplayed = LastStringMessageInListMessengerPg.Text;
+            string getTextDisplayed = LastStringMessageViaTextInListMessengerPg.Text;
 
-            Assert.AreEqual(getTextInjectedExpexted, getTextDisplayed);
+            Assert.AreEqual(getTextInjectedExpexted, getTextDisplayed, "The message which been sent doesn't match the message which been taken.");
 
             return this;
 

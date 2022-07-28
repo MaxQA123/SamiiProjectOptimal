@@ -15,7 +15,7 @@ namespace SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMess
         public GeneralMessenger EnterMessageOnMessengerPage()
         {
             WaitUntil.WaitSomeInterval(1);
-            Input.InputFunctionWithClear(FieldInputMessageOnMessengerPg, Lorem.Sentence());
+            Input.InputFunctionWithClear(FieldInputMessageOnMessengerPg, TestData.messageForMessenger);
 
             return this;
         }

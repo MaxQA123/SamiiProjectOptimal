@@ -1,0 +1,394 @@
+{
+  "uuid": "ff911336-082b-4c32-bf0c-23bdd8941162-tr-0-1032",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.TeacherSentMessageViaIconHeader",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.TeacherSentMessageViaIconHeader",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TeacherSentMessageViaIconHeader"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Teacher"
+    },
+    {
+      "name": "subSuite",
+      "value": "SentMessageViaIcinHeader"
+    }
+  ],
+  "links": [],
+  "name": "TeacherSentMessageViaIconHeader",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  String lengths are both 31. Strings differ at index 0.\r\n  Expected: \"I am fine! (12345) How are you?\"\r\n  But was:  \"Hello! 1234567890 <How are you?\"\r\n  -----------^\r\n",
+    "trace": "   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_o(String getTextInjectedExpexted) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerAssertions.cs:line 30\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.VerifyTextMessage(String getTextInjectedExpexted)\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.TeacherSentMessageViaIconHeader() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 582\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "TeacherSentMessageViaIconHeader",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  String lengths are both 31. Strings differ at index 0.\r\n  Expected: \"I am fine! (12345) How are you?\"\r\n  But was:  \"Hello! 1234567890 <How are you?\"\r\n  -----------^\r\n",
+        "trace": "   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_o(String getTextInjectedExpexted) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerAssertions.cs:line 30\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.VerifyTextMessage(String getTextInjectedExpexted)\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.TeacherSentMessageViaIconHeader() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 582\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988384042,
+          "stop": 1658988385655
+        },
+        {
+          "name": "ClickButtonLogInAsTeacher",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988385655,
+          "stop": 1658988385769
+        },
+        {
+          "name": "ClickIconMessageHeader",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988385770,
+          "stop": 1658988392489
+        },
+        {
+          "name": "SelectUserOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorUsersOnMessengerPage",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1658988393505,
+              "stop": 1658988394541
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "1"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1658988392491,
+          "stop": 1658988398246
+        },
+        {
+          "name": "EnterMessageOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 6ae845fb-66f2-413f-9be4-35f2f46ee25c)"
+                },
+                {
+                  "name": "String",
+                  "value": "I am fine! (12345) How are you?"
+                }
+              ],
+              "start": 1658988399849,
+              "stop": 1658988402545
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988398247,
+          "stop": 1658988402545
+        },
+        {
+          "name": "GetTextMessage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988402546,
+          "stop": 1658988403675
+        },
+        {
+          "name": "ClickButtonArrowSendMessageOnMessengerPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988403676,
+          "stop": 1658988404870
+        },
+        {
+          "name": "ClickArrowDropDownMenu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988404871,
+          "stop": 1658988407995
+        },
+        {
+          "name": "ClickItemLogoutDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988407996,
+          "stop": 1658988409116
+        },
+        {
+          "name": "EnterEmailPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988409116,
+          "stop": 1658988413461
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988413462,
+          "stop": 1658988414545
+        },
+        {
+          "name": "ClickIconMessageHeader",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1658988414545,
+          "stop": 1658988419727
+        },
+        {
+          "name": "SelectUserOnMessengerPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorUsersOnMessengerPage",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1658988420734,
+              "stop": 1658988421769
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "0"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1658988419727,
+          "stop": 1658988424573
+        },
+        {
+          "name": "VerifyTextMessage",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  String lengths are both 31. Strings differ at index 0.\r\n  Expected: \"I am fine! (12345) How are you?\"\r\n  But was:  \"Hello! 1234567890 <How are you?\"\r\n  -----------^\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message)\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)\r\n   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual)\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_o(String getTextInjectedExpexted) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\GeneralFolderMultirolePage\\GeneralMessengerPage\\GeneralMessengerAssertions.cs:line 30\r\n   at SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage.GeneralMessenger.__a$_around_VerifyTextMessage_100663748_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "I am fine! (12345) How are you?"
+            }
+          ],
+          "start": 1658988424573,
+          "stop": 1658988426286
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9054febd8b8948239901eee93806f00c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1658988381275,
+      "stop": 1658988426937
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1658988381274,
+  "stop": 1658988426945
+}

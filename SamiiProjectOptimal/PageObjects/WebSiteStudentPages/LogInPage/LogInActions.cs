@@ -16,6 +16,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages
         [AllureStep("EnterEmailPassword")]
         public LogInStudent EnterEmailPassword()
         {
+            WaitUntil.WaitSomeInterval(3);
             WaitUntil.ElementIsClickable(FIeldInputEmail);
             FIeldInputEmail.SendKeys(Credentials.emailStudentOne);
             WaitUntil.WaitSomeInterval(1);
