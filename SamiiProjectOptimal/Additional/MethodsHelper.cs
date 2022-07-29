@@ -27,6 +27,8 @@ namespace SamiiProjectOptimal.Additional
         }
     }
 
+    #region MethodsForSearchXPathHelper
+
     public class Click
     {
         [AllureStep("ClickTwiceOnLessonPage")]
@@ -63,7 +65,20 @@ namespace SamiiProjectOptimal.Additional
             return this;
         }
 
+        [AllureStep("SelectItemBadgesEdtPrflPg")]
+        public Click SelectItemBadgesEdtPrflPg(int numberItem, string locationItemBadges)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorItemBadgesEdtPrflPg(locationItemBadges);
+
+            _numberItem[numberItem].Click();
+
+            return this;
+        }
+
     }
+
+    #endregion
 
     public class KeyBoardActions
     {

@@ -18,6 +18,7 @@ using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.EditProfilePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.Header;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ResetPasswordPage;
+using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherConfirmCodePage;
@@ -74,5 +75,6 @@ namespace SamiiProjectOptimal.PageObjects
         public static Click Click => GetPage<Click>();
         public static GeneralHeader GeneralHeader => GetPage<GeneralHeader>();
         public static GeneralMessenger GeneralMessenger => GetPage<GeneralMessenger>();
+        public static EditProfile EditProfile => GetPage<EditProfile>();
     }
 }

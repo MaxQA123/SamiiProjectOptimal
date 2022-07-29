@@ -585,5 +585,42 @@ namespace SamiiProjectOptimal.Tests
             Thread.Sleep(5000);
         }
 
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Teacher")]
+        [AllureSubSuite("EditProfile")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: in progress.
+        //This test case is doing checking: The successfully has edited the profile teachert.
+        //Comment: 
+        //Path to cheking's: 
+
+        public void EditProfile()
+        {
+            Pages.LogInTeacher
+                .EnterEmailPassword()
+                .ClickButtonLogIn();
+            Pages.EditProfile
+                .ClickIconEditBadgesEdtPrfPg();
+            Pages.Click
+                .SelectItemBadgesEdtPrflPg(ListItemBadges.internationalTourningMusician, "");
+            Pages.EditProfile
+                .ClickButtonArrowWithRightBadgesEdtPrfPg();
+            Pages.Click
+                .SelectItemBadgesEdtPrflPg(ListItemBadges.twelveYearsOfTeaching, "");
+            Pages.EditProfile
+                .ClickIconConfirmEditBadgesEdtPrfPg()
+                .ClickIconEditIntroductionEdtPrfPg()
+                .EnterTextInFieldInputEditIntroductionEdtPrfPg()
+                .ClickIconConfirmIntroductionBadgesEdtPrfPg()
+                .ClickIconEditLocationEdtPrfPg();
+
+            Thread.Sleep(5000);
+        }
     }
 }

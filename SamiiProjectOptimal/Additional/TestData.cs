@@ -123,5 +123,22 @@ namespace SamiiProjectOptimal.Additional
     {
         //WARNING!!!//If change the message for this variable then need this message copy and paste in the elements XPath.
         public const string messageForMessenger = "I am Admin! Do you fine?";
+        public const string textIntroductionEditProfileVarOne = "Thank you for visiting. To get started have a look at my profile. View my videos, pictures and testimonials. The good thing about SAMii is you can book directly into my available lesson time slots based on the day and time that work well for you. Another cool feature is that secure payments are made easy for both of us. Let's get started by clicking the Enrol button now and I look forward to inspiring the next generation of musicians.";
+        public const string textIntroductionEditProfileVarTwo = "Thank you for visiting. To get started have a look at my profile. View my videos, pictures and testimonials. The good thing about SAMii is you can book directly into my available lesson time slots based on the day and time that work well for you. Another cool feature is that secure payments are made easy for both of us. Let's get started by clicking the Enrol button now and I look forward to inspiring the next generation of musicians. (1234567890)%#@!?&";
+    }
+
+    public class ListItemBadges
+    {
+        public const int childSafeVerification = 0;
+        public const int students20PerWeek = 1;
+        public const int accreditedEducator = 2;
+        public const int reliable = 3;
+        public const int interstateTouringMusician = 4;
+        public const int internationalTourningMusician = 5;
+        public const int studioRecordingArtist = 6;
+        public const int tenYearsOfTeaching = 7;
+        public const int accretedPerformer = 8;
+        public const int twelveYearsOfTeaching = 9;
+        public const int onlineLearning = 10;
     }
 }

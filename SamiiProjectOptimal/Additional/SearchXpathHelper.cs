@@ -56,5 +56,14 @@ namespace SamiiProjectOptimal.Additional
             _element = Browser._Driver.FindElement(By.XPath(str));
             return _element.FindElements(By.XPath($".//div[@class = 'chat_people ng-star-inserted']//h5[contains(text(), '{locationUser}')]"));
         }
+
+        [AllureStep("SelectorItemBadgesEdtPrflPg")]
+        public static IList<IWebElement> SelectorItemBadgesEdtPrflPg(string locationItemBadges)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            var str = "//div[@class = 'slick-list draggable']//div[@class = 'slick-track']";
+            _element = Browser._Driver.FindElement(By.XPath(str));
+            return _element.FindElements(By.XPath($".//div[contains(@class, '{locationItemBadges}')]"));
+        }
     }
 }
