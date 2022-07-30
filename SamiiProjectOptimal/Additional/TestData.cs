@@ -16,6 +16,7 @@ namespace SamiiProjectOptimal.Additional
         ///#highdarwin@xitroo.com - добавляется если нужно, чтоб почта открывалась с введённой почтой которую нужно открыть
         public const string emailRandomUrlXitroo = "https://xitroo.com";
         public const string emailStudentStudTestNeww = "https://xitroo.com/#newstud@xitroo.com";
+        public const string emailParentStudTestNeww = "https://xitroo.com/#testparent@xitroo.com";
 
         public const string emailUrlForgotPasswordStudent = "https://xitroo.com/#elegantchandrasekhar@xitroo.com";
         public const string emailUrlForgotPasswordTeacher = "https://xitroo.com/#testteach@xitroo.com1";
@@ -35,6 +36,9 @@ namespace SamiiProjectOptimal.Additional
 
         public const string emailAdmin = "admin@admin.com1";
         public const string passwordAdmin = "1111";
+
+        public const string emailParent = "testparent@xitroo.com";
+        public const string passwordParent = "1111";
 
         public const string emailForgotPassword = "elegantchandrasekhar@xitroo.com";
         public const string passwordForChange = "1234";
@@ -140,5 +144,12 @@ namespace SamiiProjectOptimal.Additional
         public const int accretedPerformer = 8;
         public const int twelveYearsOfTeaching = 9;
         public const int onlineLearning = 10;
+    }
+
+    public class ListInstrumentForConfirmationtabPayPg
+    {
+        public const int pianoAccordion = 0;
+        public const int singing = 1;
+        public const int piano = 2;
     }
 }

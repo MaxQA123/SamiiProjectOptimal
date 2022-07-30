@@ -1,0 +1,76 @@
+{
+  "uuid": "42330781-d3a3-42b2-ae46-4654419fc4cd-tc-0-1017",
+  "name": "SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForAllLessonExceptOnce",
+  "children": [
+    "7c94443e-8ae5-4a24-8ec9-4092967ce763-tr-0-1021"
+  ],
+  "befores": [
+    {
+      "name": "DobeforeAllTheTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1659100832029,
+      "stop": 1659100832029
+    },
+    {
+      "name": "SetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1659100832030,
+      "stop": 1659100832030
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEach",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1659100832030,
+      "stop": 1659100832030
+    },
+    {
+      "name": "DoAfterAllTheTests",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1659100832030,
+      "stop": 1659100832030
+    }
+  ],
+  "links": [],
+  "start": 1659100780029,
+  "stop": 1659100832076
+}

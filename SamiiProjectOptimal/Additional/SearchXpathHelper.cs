@@ -65,5 +65,14 @@ namespace SamiiProjectOptimal.Additional
             _element = Browser._Driver.FindElement(By.XPath(str));
             return _element.FindElements(By.XPath($".//div[contains(@class, '{locationItemBadges}')]"));
         }
+
+        [AllureStep("SelectorInstrumentConfirmationtabPayPg")]
+        public static IList<IWebElement> SelectorInstrumentConfirmationtabPayPg(string locationIInstrument)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            var str = "//select[@id = 'instrument']";
+            _element = Browser._Driver.FindElement(By.XPath(str));
+            return _element.FindElements(By.XPath($".//option[contains(text(), '{locationIInstrument}')]"));
+        }
     }
 }

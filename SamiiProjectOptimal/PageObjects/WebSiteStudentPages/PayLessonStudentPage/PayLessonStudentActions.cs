@@ -60,15 +60,6 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         #region PageEnrolInALessonTabConfirmation
 
-        [AllureStep("SelectInstrumentPianoCnfrmtnTab")]
-        public PayLessonStudent SelectInstrumentPianoCnfrmtnTab()
-        {
-            WaitUntil.WaitSomeInterval(3);
-            DropDownMenuLessonInstrumentPiano.Click();
-
-            return this;
-        }
-
         [AllureStep("ClickCheckBoxIAgreeToTheTermsAndConditions")]
         public PayLessonStudent ClickCheckBoxIAgreeToTheTermsAndConditions()
         {
@@ -91,10 +82,29 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         #region PageEnrolInALessonTabPayment
 
+        [AllureStep("SelectRadioButtonPayForTenLessonsTabPayment")]
+        public PayLessonStudent SelectRadioButtonPayForTenLessonsTabPayment()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            WaitUntil.ElementIsClickable(RadioButtonPayForTenLessonsTabPayment);
+            RadioButtonPayForTenLessonsTabPayment.Click();
+
+            return this;
+        }
+
+        [AllureStep("ClickButtonCloseMdlWndwPerLessonDdTabPayment")]
+        public PayLessonStudent ClickButtonCloseMdlWndwPerLessonDdTabPayment()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            ButtonCloseMdlWndwPerLessonDdTabPayment.Click();
+
+            return this;
+        }
+
         [AllureStep("ClickButtonEnrolTabPayment")]
         public PayLessonStudent ClickButtonEnrolTabPayment()
         {
-            WaitUntil.WaitSomeInterval(3);
+            WaitUntil.WaitSomeInterval(1);
             ButtonEnrolTabPayment.Click();
 
             return this;

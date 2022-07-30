@@ -11,6 +11,8 @@ using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.EducatorsViewPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage;
+using SamiiProjectOptimal.PageObjects.WebSiteParentPages.LogInPage;
+using SamiiProjectOptimal.PageObjects.WebSiteParentPages.PayLessonParentPage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage;
@@ -76,5 +78,7 @@ namespace SamiiProjectOptimal.PageObjects
         public static GeneralHeader GeneralHeader => GetPage<GeneralHeader>();
         public static GeneralMessenger GeneralMessenger => GetPage<GeneralMessenger>();
         public static EditProfile EditProfile => GetPage<EditProfile>();
+        public static PayLessonParent PayLessonParent => GetPage<PayLessonParent>();
+        public static LogInParent LogInParent => GetPage<LogInParent>();
     }
 }

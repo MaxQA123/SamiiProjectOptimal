@@ -1,0 +1,348 @@
+{
+  "uuid": "7c94443e-8ae5-4a24-8ec9-4092967ce763-tr-0-1021",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForAllLessonExceptOnce",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForAllLessonExceptOnce",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PayForAllLessonExceptOnce"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "PayForLesson"
+    }
+  ],
+  "links": [],
+  "name": "PayForAllLessonExceptOnce",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "PayForAllLessonExceptOnce"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PayForAllLessonExceptOnce",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "OpenNewTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100783191,
+          "stop": 1659100783342
+        },
+        {
+          "name": "OpenWelcomeToSammii",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100784312,
+          "stop": 1659100786024
+        },
+        {
+          "name": "ClickLinkHere",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100786024,
+          "stop": 1659100792369
+        },
+        {
+          "name": "SwitchOnLogInModalWndw",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100792371,
+          "stop": 1659100800419
+        },
+        {
+          "name": "EnterEmailPasswordPayLogInPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 64c4dfec-00be-4ca5-a105-781999afdb15)"
+                },
+                {
+                  "name": "String",
+                  "value": "newstud@xitroo.com"
+                }
+              ],
+              "start": 1659100803511,
+              "stop": 1659100803736
+            },
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 5f675ff6-f9c7-410f-b21a-9a7620a9fdec)"
+                },
+                {
+                  "name": "String",
+                  "value": "1111"
+                }
+              ],
+              "start": 1659100803754,
+              "stop": 1659100803935
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100800419,
+          "stop": 1659100803935
+        },
+        {
+          "name": "ClickButtonLogIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100803936,
+          "stop": 1659100804067
+        },
+        {
+          "name": "ClickButtonNextPayLssnStdnt",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100804068,
+          "stop": 1659100807186
+        },
+        {
+          "name": "SelectInstrumentPianoCnfrmtnTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100807187,
+          "stop": 1659100810263
+        },
+        {
+          "name": "ClickCheckBoxIAgreeToTheTermsAndConditions",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100810264,
+          "stop": 1659100813350
+        },
+        {
+          "name": "SwitchOnLogInModalWndw",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100813351,
+          "stop": 1659100816466
+        },
+        {
+          "name": "SelectRadioButtonPayForTenLessonsTabPayment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100816467,
+          "stop": 1659100819619
+        },
+        {
+          "name": "ClickButtonCloseMdlWndwPerLessonDdTabPayment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100819619,
+          "stop": 1659100820703
+        },
+        {
+          "name": "ClickButtonEnrolTabPayment",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100820704,
+          "stop": 1659100821812
+        },
+        {
+          "name": "ClickButtonConfirmMdlWndwYouveDone",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659100821813,
+          "stop": 1659100826429
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "74972733eb424ebb898c9320de79fe8a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1659100780038,
+      "stop": 1659100832034
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1659100780036,
+  "stop": 1659100832042
+}

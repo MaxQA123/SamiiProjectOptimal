@@ -76,6 +76,17 @@ namespace SamiiProjectOptimal.Additional
             return this;
         }
 
+        [AllureStep("SelectInstrumentConfirmationtabPayPg")]
+        public Click SelectInstrumentConfirmationtabPayPg(int numberItem, string locationInstrument)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorInstrumentConfirmationtabPayPg(locationInstrument);
+
+            _numberItem[numberItem].Click();
+
+            return this;
+        }
+
     }
 
     #endregion

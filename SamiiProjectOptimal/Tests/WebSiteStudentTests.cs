@@ -120,7 +120,7 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Student")]
         [AllureSubSuite("PayForLesson")]
-        public void PayForLesson()
+        public void PayForOnceLesson()
         {
             Pages.EmailXitroo
                 .OpenNewTab();
@@ -137,12 +137,49 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogIn();
             Pages.PayLessonStudent
                 .ClickButtonNextPayLssnStdnt();
-            Pages.PayLessonStudent
-                .SelectInstrumentPianoCnfrmtnTab();
+            Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions();
             Pages.PayLessonStudent
                 .ClickButtonNextPayLssnStdntCnfrmtnTab();
+            Pages.PayLessonStudent
+                .ClickButtonEnrolTabPayment();
+            Pages.PayLessonStudent
+                .ClickButtonConfirmMdlWndwYouveDone();
+            Thread.Sleep(5000);
+        }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Student")]
+        [AllureSubSuite("PayForAllLessonExceptOnce")]
+        public void PayForAllLessonExceptOnce()
+        {
+            Pages.EmailXitroo
+                .OpenNewTab();
+            Browser._Driver.Navigate().GoToUrl(EndPoints.emailStudentStudTestNeww);
+            Pages.EmailXitroo
+                .OpenAssignToLesson();
+            Pages.EmailXitroo
+                .ClickLinkHere();
+            Pages.PayLessonStudent
+                .SwitchOnLogInModalWndw();
+            Pages.PayLessonStudent
+                .EnterEmailPasswordPayLogInPg();
+            Pages.PayLessonStudent
+                .ClickButtonLogIn();
+            Pages.PayLessonStudent
+                .ClickButtonNextPayLssnStdnt();
+            Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
+            Pages.PayLessonStudent
+                .ClickCheckBoxIAgreeToTheTermsAndConditions();
+            Pages.PayLessonStudent
+                .ClickButtonNextPayLssnStdntCnfrmtnTab()
+                .SelectRadioButtonPayForTenLessonsTabPayment()
+                .ClickButtonCloseMdlWndwPerLessonDdTabPayment();
             Pages.PayLessonStudent
                 .ClickButtonEnrolTabPayment();
             Pages.PayLessonStudent
