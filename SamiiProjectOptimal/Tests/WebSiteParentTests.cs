@@ -26,6 +26,14 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Parent")]
         [AllureSubSuite("PayForOnceLesson")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully payid for the lesson.
+        //Comment: 
+        //Path to cheking's: 
+
         public void PayForOnceLesson()
         {
             Pages.EmailXitroo
@@ -61,6 +69,14 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Parent")]
         [AllureSubSuite("PayForAllLessonExceptOnce")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully payid for the lesson.
+        //Comment: 
+        //Path to cheking's: 
+
         public void PayForAllLessonExceptOnce()
         {
             Pages.EmailXitroo
@@ -98,6 +114,14 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Parent")]
         [AllureSubSuite("CreateAccountForParent")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully created an account for the parent.
+        //Comment: 
+        //Path to cheking's: 
+
         public void CreateAccountForParent()
         {
             Pages.LogInStudent
@@ -152,6 +176,13 @@ namespace SamiiProjectOptimal.Tests
                 .UploadImage();
             Pages.CreateAccountStudent
                 .ClickButtonDone();
+            Pages.ParentCreateAccount
+                .EnterFieldInputParentDateOfBirth()
+                .EnterFirstLastNameParentStudentDetails();
+            Scrolling.ScrollToDownWebPage();
+            Pages.ParentCreateAccount
+                .EnterFieldInputParentDateOfBirth()
+                .EnterFieldInputParentStudentDetailsDateOfBirth();
             Pages.CreateAccountStudent
                 .ClickNextButton();
             Pages.CreateAccountStudent

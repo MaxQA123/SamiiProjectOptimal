@@ -21,7 +21,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePa
         public ConfirmationCodeStudent ClickNextButton()
         {
             
-            WaitUntil.ShouldLocate(_ButtonNextConfirmCode);
+            WaitUntil.WaitSomeInterval(2);
             ButtonNextConfirmCode.Click();
 
             return this;   

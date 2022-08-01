@@ -83,7 +83,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccou
 
         public TeacherCreateAccount EnterForTeacherDateOfBirth()
         {
-            Input.InputFunctionWithClear(FieldInputTeacherDateOfBirth, "15/04/1985");
+            Input.InputFunctionWithClear(FieldInputTeacherDateOfBirth, TestData.teacherDateOfBirth);
 
             return this;
         }

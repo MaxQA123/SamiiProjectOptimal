@@ -14,6 +14,6 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePa
         public readonly static By _FieldInputConfirmCode = By.XPath("//input[@formcontrolname = 'code']");
 
         public IWebElement ButtonNextConfirmCode => Browser._Driver.FindElement(_ButtonNextConfirmCode);
-        public readonly static By _ButtonNextConfirmCode = By.XPath("//button[@class = 'btn btn-grey marging-5']");
+        public readonly static By _ButtonNextConfirmCode = By.XPath("//button[text() = ' Next ']");
     }
 }

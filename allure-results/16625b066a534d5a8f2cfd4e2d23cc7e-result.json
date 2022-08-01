@@ -1,0 +1,222 @@
+{
+  "uuid": "d393e8d7-3f1e-448b-a356-862b17c203d4-tr-0-1020",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteParentTests.CreateAccountForParent",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteParentTests.CreateAccountForParent",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateAccountForParent"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteParentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Parent"
+    },
+    {
+      "name": "subSuite",
+      "value": "CreateAccountForParent"
+    }
+  ],
+  "links": [],
+  "name": "CreateAccountForParent",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 60 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage.ConfirmationCodeStudent.ClickNextButton() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\ConfirmationCodePage\\ConfirmationCodeActions.cs:line 24\r\n   at SamiiProjectOptimal.Tests.WebSiteParentTests.CreateAccountForParent() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteParentTests.cs:line 128"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CreateAccountForParent",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 60 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ShouldLocate(By location) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 16\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage.ConfirmationCodeStudent.ClickNextButton() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\ConfirmationCodePage\\ConfirmationCodeActions.cs:line 24\r\n   at SamiiProjectOptimal.Tests.WebSiteParentTests.CreateAccountForParent() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteParentTests.cs:line 128"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "ClickLinkCreateAnAccount",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659348481491,
+          "stop": 1659348481777
+        },
+        {
+          "name": "RandomEmail",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "6"
+            }
+          ],
+          "start": 1659348481897,
+          "stop": 1659348481901
+        },
+        {
+          "name": "OpenNewTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659348485517,
+          "stop": 1659348485677
+        },
+        {
+          "name": "EnterEmail",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "ehcrvs@xitroo.com"
+            }
+          ],
+          "start": 1659348487861,
+          "stop": 1659348491199
+        },
+        {
+          "name": "ClickSearchButton",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659348491199,
+          "stop": 1659348496610
+        },
+        {
+          "name": "OpenWelcomeToSammii",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659348496611,
+          "stop": 1659348497246
+        },
+        {
+          "name": "CopyVerificationCode",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659348497246,
+          "stop": 1659348502425
+        },
+        {
+          "name": "CloseNewTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659348502426,
+          "stop": 1659348502463
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9710074ad2a24e9abc934fcc45aeead8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1659348478417,
+      "stop": 1659348563830
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1659348478416,
+  "stop": 1659348563837
+}

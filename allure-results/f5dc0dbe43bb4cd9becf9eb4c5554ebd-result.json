@@ -1,0 +1,526 @@
+{
+  "uuid": "7960e93d-23f4-4868-8d64-f2018e9bc1a9-tr-0-1020",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteParentTests.CreateAccountForParent",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteParentTests.CreateAccountForParent",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateAccountForParent"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteParentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Parent"
+    },
+    {
+      "name": "subSuite",
+      "value": "CreateAccountForParent"
+    }
+  ],
+  "links": [],
+  "name": "CreateAccountForParent",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ElementIsClickable(IWebElement element, Int32 seconds) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 21\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage.CreateAccountStudent.ClickNextButton() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\CreateAccountPage\\CreateAccountActions.cs:line 63\r\n   at SamiiProjectOptimal.Tests.WebSiteParentTests.CreateAccountForParent() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteParentTests.cs:line 163"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CreateAccountForParent",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at SamiiProjectOptimal.Additional.WaitUntil.ElementIsClickable(IWebElement element, Int32 seconds) in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Additional\\WaitUntil.cs:line 21\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage.CreateAccountStudent.ClickNextButton() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\CreateAccountPage\\CreateAccountActions.cs:line 63\r\n   at SamiiProjectOptimal.Tests.WebSiteParentTests.CreateAccountForParent() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteParentTests.cs:line 163"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "ClickLinkCreateAnAccount",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350008188,
+          "stop": 1659350008531
+        },
+        {
+          "name": "RandomEmail",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "6"
+            }
+          ],
+          "start": 1659350008631,
+          "stop": 1659350008635
+        },
+        {
+          "name": "OpenNewTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350012579,
+          "stop": 1659350012697
+        },
+        {
+          "name": "EnterEmail",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "rxyhvp@xitroo.com"
+            }
+          ],
+          "start": 1659350013626,
+          "stop": 1659350016889
+        },
+        {
+          "name": "ClickSearchButton",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350016890,
+          "stop": 1659350021726
+        },
+        {
+          "name": "OpenWelcomeToSammii",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350021726,
+          "stop": 1659350022515
+        },
+        {
+          "name": "CopyVerificationCode",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350022517,
+          "stop": 1659350027701
+        },
+        {
+          "name": "CloseNewTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350027702,
+          "stop": 1659350027730
+        },
+        {
+          "name": "SwitchTabEmailXitroo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350030129,
+          "stop": 1659350035178
+        },
+        {
+          "name": "ClickButtonBack",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350035178,
+          "stop": 1659350036502
+        },
+        {
+          "name": "CopyEmailPgXitroo",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350036503,
+          "stop": 1659350036640
+        },
+        {
+          "name": "SwitchOnLogInPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350036641,
+          "stop": 1659350039709
+        },
+        {
+          "name": "EnterRepeatEmail",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "rxyhvp@xitroo.com"
+            }
+          ],
+          "start": 1659350039709,
+          "stop": 1659350039990
+        },
+        {
+          "name": "EnterPasswordAfterCreateAccount",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350039991,
+          "stop": 1659350040158
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350040158,
+          "stop": 1659350041278
+        },
+        {
+          "name": "SelectRoleParent",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350041283,
+          "stop": 1659350044455
+        },
+        {
+          "name": "RandomPhoneNumber",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "10"
+            }
+          ],
+          "start": 1659350047679,
+          "stop": 1659350047681
+        },
+        {
+          "name": "EnterFieldInputParentDateOfBirth",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 354ad3b3-2f31-44c7-a55e-87120ae76263)"
+                },
+                {
+                  "name": "String",
+                  "value": "01/17/1990"
+                }
+              ],
+              "start": 1659350059257,
+              "stop": 1659350059448
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350058204,
+          "stop": 1659350059448
+        },
+        {
+          "name": "EnterFirstLastNameParentStudentDetails",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = b2e47cfa-78ed-4acf-b944-f90ff87bf2a0)"
+                },
+                {
+                  "name": "String",
+                  "value": "Kyla"
+                }
+              ],
+              "start": 1659350062500,
+              "stop": 1659350062687
+            },
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 55ea081e-a084-4f7b-abf9-a258e45da0a5)"
+                },
+                {
+                  "name": "String",
+                  "value": "Willms"
+                }
+              ],
+              "start": 1659350063725,
+              "stop": 1659350063919
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350059449,
+          "stop": 1659350063919
+        },
+        {
+          "name": "ScrollToDownWebPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350063919,
+          "stop": 1659350063975
+        },
+        {
+          "name": "EnterFieldInputParentStudentDetailsDateOfBirth",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 354ad3b3-2f31-44c7-a55e-87120ae76263)"
+                },
+                {
+                  "name": "String",
+                  "value": "01/17/1990"
+                }
+              ],
+              "start": 1659350065006,
+              "stop": 1659350065221
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659350063976,
+          "stop": 1659350065221
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "1e70b1187783444784c718043d7e9280-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1659350005024,
+      "stop": 1659350077306
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1659350005019,
+  "stop": 1659350077315
+}

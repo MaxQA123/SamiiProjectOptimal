@@ -76,6 +76,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
         [AllureStep("EnterEmail")]
         public EmailXitroo EnterEmail(string _email)
         {
+            WaitUntil.WaitSomeInterval(3);
             WaitUntil.ShouldLocate(_FieldInputEmail);
             FieldInputEmail.SendKeys(_email);
 
@@ -85,6 +86,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
         [AllureStep("ClickSearchButton")]
         public EmailXitroo ClickSearchButton()
         {
+            WaitUntil.WaitSomeInterval(1);
             WaitUntil.ShouldLocate(_ButtonSearchEmail);
             ButtonSearchEmail.Click();
 
@@ -96,6 +98,7 @@ namespace SamiiProjectOptimal.PageObjects.EmailXitrooPage
         [AllureStep("ClickButtonBack")]
         public EmailXitroo ClickButtonBack()
         {
+            WaitUntil.WaitSomeInterval(1);
             WaitUntil.ShouldLocate(_ButtonBackEmail);
             ButtonBackEmail.Click();
 

@@ -129,6 +129,9 @@ namespace SamiiProjectOptimal.Additional
         public const string messageForMessenger = "I am Admin! Do you fine?";
         public const string textIntroductionEditProfileVarOne = "Thank you for visiting. To get started have a look at my profile. View my videos, pictures and testimonials. The good thing about SAMii is you can book directly into my available lesson time slots based on the day and time that work well for you. Another cool feature is that secure payments are made easy for both of us. Let's get started by clicking the Enrol button now and I look forward to inspiring the next generation of musicians.";
         public const string textIntroductionEditProfileVarTwo = "Thank you for visiting. To get started have a look at my profile. View my videos, pictures and testimonials. The good thing about SAMii is you can book directly into my available lesson time slots based on the day and time that work well for you. Another cool feature is that secure payments are made easy for both of us. Let's get started by clicking the Enrol button now and I look forward to inspiring the next generation of musicians. (1234567890)%#@!?&";
+        public const string teacherDateOfBirth = "15/04/1985";
+        public const string studentDateOfBirth = "12/30/2009";
+        public const string parentDateOfBirth = "01/17/1990";
     }
 
     public class ListItemBadges
