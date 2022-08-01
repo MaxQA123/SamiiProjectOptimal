@@ -75,8 +75,8 @@ namespace SamiiProjectOptimal.Tests
                 .EnterPassword();
             Pages.LogInTeacher
                 .ClickButtonLogIn();
-            Pages.TeacherCreateAccount
-                .ClickButtonTeacher();
+            Pages.Click
+                .SelectRoleOnCreateAccountPage(ListRolesCreateAccountpagePg.teacher, "");
             Pages.TeacherCreateAccount
                 .EnterFirstLastNameAddressPhone();
             Pages.TeacherCreateAccount
@@ -89,7 +89,7 @@ namespace SamiiProjectOptimal.Tests
             //    .CkickOnCheckBoxShowLessonPriceRange();
             Pages.TeacherCreateAccount
                 .ClickButtonNextStep();
-            KeyBoardActions.ClickEnterButton();
+            //KeyBoardActions.ClickEnterButton();
 
             Thread.Sleep(5000);
         }

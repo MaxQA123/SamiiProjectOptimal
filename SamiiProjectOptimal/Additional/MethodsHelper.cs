@@ -87,6 +87,17 @@ namespace SamiiProjectOptimal.Additional
             return this;
         }
 
+        [AllureStep("SelectRoleOnCreateaccountPage")]
+        public Click SelectRoleOnCreateAccountPage(int numberItem, string locationRole)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorRoleOnCreateaccountPage(locationRole);
+
+            _numberItem[numberItem].Click();
+
+            return this;
+        }
+
     }
 
     #endregion

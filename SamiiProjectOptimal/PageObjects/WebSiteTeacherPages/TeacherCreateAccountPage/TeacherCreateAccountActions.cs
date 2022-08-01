@@ -47,14 +47,6 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccou
             return email;
         }
 
-        public TeacherCreateAccount ClickButtonTeacher()
-        {
-            WaitUntil.ShouldLocate(_ButtonSelectRoleTeacher);
-            ButtonSelectRoleTeacher.Click();
-
-            return this;
-        }
-
         #region TeacherProfileSetupAdministratorTab
 
         public TeacherCreateAccount EnterFirstLastNameAddressPhone()

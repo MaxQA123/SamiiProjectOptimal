@@ -25,16 +25,6 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccou
         public IWebElement IconShowPassword => Browser._Driver.FindElement(_IconShowPassword);
         public readonly static By _IconShowPassword = By.XPath("//i[@class = 'fas fa-eye']");
 
-        #region ContinueRegistrationAfterConfirmEmail
-
-        public IWebElement ButtonSelectRoleTeacher => Browser._Driver.FindElement(_ButtonSelectRoleTeacher);
-        public readonly static By _ButtonSelectRoleTeacher = By.XPath("//div[@class = 'container']//div[1]//div[1]//div");
-
-        public IWebElement ButtonSelectRoleStudent => Browser._Driver.FindElement(_ButtonSelectRoleStudent);
-        public readonly static By _ButtonSelectRoleStudent = By.XPath("//div[@class = 'container']//div[1]//div[2]//div");
-
-        #endregion
-
         #region TeacherProfileSetupAdministratorTab
 
         public IWebElement FieldInputTeacherFirstName => Browser._Driver.FindElement(_FieldInputTeacherFirstName);

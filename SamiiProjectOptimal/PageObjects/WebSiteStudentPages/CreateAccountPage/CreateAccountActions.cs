@@ -32,18 +32,6 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage
             return this;
         }
 
-        #region ContinueRegistrationAfterConfirmEmail
-
-        public CreateAccountStudent ClickButtonRoleStudent()
-        {
-            WaitUntil.ShouldLocate(_ButtonSelectRoleStudent);
-            ButtonSelectRoleStudent.Click();
-
-            return this;
-        }
-
-        #endregion
-
         #region StudentProfileSetupAdministratorTab
 
         public CreateAccountStudent EnterFirslastNamePhoneAddress()
@@ -71,6 +59,7 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage
 
         public CreateAccountStudent ClickNextButton()
         {
+            WaitUntil.WaitSomeInterval(1);
             WaitUntil.ElementIsClickable(ButtonNextCrtPrfl);
             ButtonNextCrtPrfl.Click();
 

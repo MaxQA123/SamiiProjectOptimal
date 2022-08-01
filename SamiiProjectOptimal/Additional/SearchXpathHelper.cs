@@ -74,5 +74,14 @@ namespace SamiiProjectOptimal.Additional
             _element = Browser._Driver.FindElement(By.XPath(str));
             return _element.FindElements(By.XPath($".//option[contains(text(), '{locationIInstrument}')]"));
         }
+
+        [AllureStep("SelectorRoleOnCreateaccountPage")]
+        public static IList<IWebElement> SelectorRoleOnCreateaccountPage(string locationRole)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            var str = "//div[@class = 'container']";
+            _element = Browser._Driver.FindElement(By.XPath(str));
+            return _element.FindElements(By.XPath($".//div[contains(text(), '{locationRole}')]"));
+        }
     }
 }

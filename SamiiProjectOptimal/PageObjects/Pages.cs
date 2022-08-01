@@ -3,6 +3,7 @@ using SamiiProjectOptimal.Additional;
 using SamiiProjectOptimal.PageObjects.EmailXitrooPage;
 using SamiiProjectOptimal.PageObjects.ForgotPasswordPage;
 using SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage;
+using SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralCreateAccountPage;
 using SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralFolderHeaderPage;
 using SamiiProjectOptimal.PageObjects.GeneralFolderMultirolePage.GeneralMessengerPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages;
@@ -80,5 +81,6 @@ namespace SamiiProjectOptimal.PageObjects
         public static EditProfile EditProfile => GetPage<EditProfile>();
         public static PayLessonParent PayLessonParent => GetPage<PayLessonParent>();
         public static LogInParent LogInParent => GetPage<LogInParent>();
+        public static GeneralCreateAccount GeneralCreateAccount => GetPage<GeneralCreateAccount>();
     }
 }

@@ -152,4 +152,12 @@ namespace SamiiProjectOptimal.Additional
         public const int singing = 1;
         public const int piano = 2;
     }
+
+    public class ListRolesCreateAccountpagePg
+    {
+        public const int student = 0;
+        public const int teacher = 1;
+        public const int parent = 1;
+
+    }
 }

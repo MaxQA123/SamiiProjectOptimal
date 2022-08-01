@@ -98,8 +98,8 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPasswordAfterCreateAccount();
             Pages.LogInStudent
                 .ClickButtonSignIn();
-            Pages.CreateAccountStudent
-                .ClickButtonRoleStudent();
+            Pages.Click
+                .SelectRoleOnCreateAccountPage(ListRolesCreateAccountpagePg.student, "");
             Pages.CreateAccountStudent
                 .EnterFirslastNamePhoneAddress();
             Pages.CreateAccountStudent

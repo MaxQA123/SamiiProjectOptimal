@@ -90,5 +90,74 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonConfirmMdlWndwYouveDone();
             Thread.Sleep(5000);
         }
+
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Parent")]
+        [AllureSubSuite("CreateAccountForParent")]
+        public void CreateAccountForParent()
+        {
+            Pages.LogInStudent
+                .ClickLinkCreateAnAccount();
+            Pages.CreateAccountStudent
+                .EnterEmailPasswordCnfrmPsswrd();
+
+            string email = Pages.TeacherCreateAccount.CopyEmailFromCrtAccntPg();
+
+            Pages.CreateAccountStudent
+                .ClickSignUpButtonCrtAccnt();
+            Pages.EmailXitroo
+                .OpenNewTab();
+            Browser._Driver.Navigate().GoToUrl(EndPoints.emailRandomUrlXitroo);
+            Pages.EmailXitroo
+                .EnterEmail(email);
+            Pages.EmailXitroo
+                .ClickSearchButton();
+            Pages.EmailXitroo
+                .OpenWelcomeToSammii();
+
+            string verificationCode = Pages.EmailXitroo.CopyVerificationCode();
+
+            Pages.EmailXitroo
+                .CloseNewTab();
+            Pages.ConfirmationCodeStudent
+                .EnterDataVerify(verificationCode);
+            Pages.ConfirmationCodeStudent
+                .ClickNextButton();
+
+            Pages.LogInTeacher
+                .SwitchTabEmailXitroo();
+            Pages.EmailXitroo
+                .ClickButtonBack();
+
+            string _email = Pages.EmailXitroo.CopyEmailPgXitroo();
+
+            Pages.EmailXitroo
+                .SwitchOnLogInPage();
+            Pages.EmailXitroo
+                .EnterRepeatEmail(_email);
+
+            Pages.LogInStudent
+                .EnterEmailPasswordAfterCreateAccount();
+            Pages.LogInStudent
+                .ClickButtonSignIn();
+            Pages.GeneralCreateAccount
+                .SelectRoleParent();
+            Pages.CreateAccountStudent
+                .EnterFirslastNamePhoneAddress();
+            Pages.CreateAccountStudent
+                .UploadImage();
+            Pages.CreateAccountStudent
+                .ClickButtonDone();
+            Pages.CreateAccountStudent
+                .ClickNextButton();
+            Pages.CreateAccountStudent
+                .ClickCompleteButton();
+
+            Thread.Sleep(5000);
+        }
     }
 }
