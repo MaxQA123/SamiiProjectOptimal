@@ -118,8 +118,8 @@ namespace SamiiProjectOptimal.Tests
 
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemProfileSettings();
             Pages.LogInTeacher
                 .VerifyByEmail(getEmailLogIn);
@@ -147,9 +147,8 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPassword();
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
-            Pages.HeaderTeacher
-                .ClickArrowDropDown();
-            Pages.HeaderTeacher
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             Pages.Click
@@ -203,9 +202,9 @@ namespace SamiiProjectOptimal.Tests
                 .VerifyTitle(getTitleForCompare);
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonCloseViaCross();
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
-                .ClickItemLogoutDropDown();
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
+                .ClickItemTeacherEditProfileDropDown();
 
             Thread.Sleep(5000);
         }
@@ -231,9 +230,8 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPassword();
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
-            Pages.HeaderTeacher
-                .ClickArrowDropDown();
-            Pages.HeaderTeacher
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
@@ -305,8 +303,8 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPassword()
                 .ClickButtonLogInAsTeacher();
 
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             Pages.TeacherLessonSheduler
@@ -368,8 +366,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             Pages.TeacherLessonSheduler
@@ -438,8 +436,8 @@ namespace SamiiProjectOptimal.Tests
                .EnterEmailPassword()
                .ClickButtonLogInAsTeacher();
 
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             Pages.TeacherLessonSheduler
@@ -500,8 +498,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickIconShowEnteredPassword();
             Pages.LogInTeacher
                 .ClickButtonLogIn();
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemProfileSettings();
             Pages.TeacherProfileSetUp
                 .ClickTabPasswordTchrPrflStp();
@@ -524,7 +522,7 @@ namespace SamiiProjectOptimal.Tests
             Pages.TeacherProfileSetUp
                 .ClickTabAvailableResourcesTchrPrflStp()
                 .ClickButtonCompleteAvlbRsrcsTchrPrflStp();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
                 .ClickItemLogoutDropDown();
             Pages.LogInTeacher
@@ -570,7 +568,7 @@ namespace SamiiProjectOptimal.Tests
 
             Pages.GeneralMessenger
                 .ClickButtonArrowSendMessageOnMessengerPg();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
                 .ClickItemLogoutDropDown();
             Pages.LogInStudent

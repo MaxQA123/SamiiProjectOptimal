@@ -1,0 +1,184 @@
+{
+  "uuid": "cedd68e0-83d1-4c65-9cb3-13c117d6c9b1-tr-0-1018",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteParentTests.LogInParent",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteParentTests.LogInParent",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LogInParent"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteParentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Parent"
+    },
+    {
+      "name": "subSuite",
+      "value": "LogIn"
+    }
+  ],
+  "links": [],
+  "name": "LogInParent",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "LogInParent"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LogInParent",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEmailPasswordForParent",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659421009892,
+          "stop": 1659421014475
+        },
+        {
+          "name": "GetEmailFromLogIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659421014477,
+          "stop": 1659421015510
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659421015510,
+          "stop": 1659421016621
+        },
+        {
+          "name": "ClickArrowDropDownMenu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659421016622,
+          "stop": 1659421019724
+        },
+        {
+          "name": "ClickItemParentEditProfileDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659421019725,
+          "stop": 1659421021072
+        },
+        {
+          "name": "VerifyParentEamail",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "testparent@xitroo.com"
+            }
+          ],
+          "start": 1659421021073,
+          "stop": 1659421022167
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "fbdb9f1427d44138bf5aead5d7dbd4c5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1659421007059,
+      "stop": 1659421027691
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1659421007058,
+  "stop": 1659421027699
+}

@@ -11,19 +11,17 @@ using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLessonShedulerPage;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminLssnShdlrMdlWndwPg;
 using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.EducatorsViewPage;
-using SamiiProjectOptimal.PageObjects.WebSiteAdminPages.HeaderAdminWebSitePage;
 using SamiiProjectOptimal.PageObjects.WebSiteParentPages.CreateAccountPage;
 using SamiiProjectOptimal.PageObjects.WebSiteParentPages.LogInPage;
 using SamiiProjectOptimal.PageObjects.WebSiteParentPages.PayLessonParentPage;
+using SamiiProjectOptimal.PageObjects.WebSiteParentPages.ProfileSetUpPage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ConfirmationCodePage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.CreateAccountPage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.EditProfilePage;
-using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.Header;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage;
 using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.ResetPasswordPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage;
-using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.HeaderTeacherPage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.LogInTeacher;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherConfirmCodePage;
 using SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccountPage;
@@ -60,9 +58,6 @@ namespace SamiiProjectOptimal.PageObjects
         public static EmailXitroo EmailXitroo => GetPage<EmailXitroo>();
         public static ConfirmationCodeStudent ConfirmationCodeStudent => GetPage<ConfirmationCodeStudent>();
         public static TeacherConfirmCode TeacherConfirmCode => GetPage<TeacherConfirmCode>();
-        public static HeaderTeacher HeaderTeacher => GetPage<HeaderTeacher>();
-        public static HeaderAdminWebSite HeaderAdminWebSite => GetPage<HeaderAdminWebSite>();
-        public static HeaderStudent HeaderStudent => GetPage<HeaderStudent>();
         public static TeacherLessonSheduler TeacherLessonSheduler => GetPage<TeacherLessonSheduler>();
         public static AdminLessonSheduler AdminLessonSheduler => GetPage<AdminLessonSheduler>();
         public static TeacherLssnShdlrMdlWndw TeacherLssnShdlrMdlWndw => GetPage<TeacherLssnShdlrMdlWndw>();
@@ -84,5 +79,6 @@ namespace SamiiProjectOptimal.PageObjects
         public static LogInParent LogInParent => GetPage<LogInParent>();
         public static GeneralCreateAccount GeneralCreateAccount => GetPage<GeneralCreateAccount>();
         public static ParentCreateAccount ParentCreateAccount => GetPage<ParentCreateAccount>();
+        public static ParentProfileSetUp ParentProfileSetUp => GetPage<ParentProfileSetUp>();
     }
 }

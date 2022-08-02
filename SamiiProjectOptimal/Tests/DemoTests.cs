@@ -34,9 +34,9 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPassword();
             Pages.LogInTeacher
                 .ClickButtonLogInAsTeacher();
-            Pages.HeaderTeacher
-                .ClickArrowDropDown();
-            Pages.HeaderTeacher
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu();
+            Pages.GeneralHeader
                 .ClickButtonItemLessonSheduler();
 
             IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
@@ -78,8 +78,8 @@ namespace SamiiProjectOptimal.Tests
                .EnterEmailPassword()
                .ClickButtonLogInAsTeacher();
 
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             Pages.TeacherLessonSheduler
@@ -125,8 +125,8 @@ namespace SamiiProjectOptimal.Tests
                .EnterEmailPassword()
                .ClickButtonLogInAsTeacher();
 
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             Pages.Click
@@ -172,8 +172,8 @@ namespace SamiiProjectOptimal.Tests
                .EnterEmailPassword()
                .ClickButtonLogInAsTeacher();
 
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
@@ -208,7 +208,7 @@ namespace SamiiProjectOptimal.Tests
             Pages.LogInStudent
                 .ClickIconShowEnteredPassword()
                 .ClickButtonSignIn();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
                 .ClickItemSettingsDropDown();
 
@@ -229,7 +229,7 @@ namespace SamiiProjectOptimal.Tests
 
             Pages.ResetPassword
                 .ClickButtonChangePasswordRstPsswrdPg();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
                 .ClickItemLogoutDropDown();
             Pages.LogInStudent
@@ -262,8 +262,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickIconShowEnteredPassword();
             Pages.LogInTeacher
                 .ClickButtonLogIn();
-            Pages.HeaderTeacher
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemProfileSettings();
             Pages.TeacherProfileSetUp
                 .ClickTabPasswordTchrPrflStp();
@@ -305,9 +305,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
@@ -353,10 +352,10 @@ namespace SamiiProjectOptimal.Tests
                 .VerifySetLesson(getTitle)
                 .ClickButtonCloseViaCross();
 
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
-                .ClickButtonLogout();
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
+                .ClickItemLogoutDropDown();
+
             Thread.Sleep(5000);
         }
 

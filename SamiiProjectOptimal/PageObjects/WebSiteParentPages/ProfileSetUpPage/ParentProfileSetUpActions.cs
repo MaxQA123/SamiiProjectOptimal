@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.Header
+namespace SamiiProjectOptimal.PageObjects.WebSiteParentPages.ProfileSetUpPage
 {
-    public partial class HeaderStudent
+    public partial class ParentProfileSetUp
     {
     }
 }

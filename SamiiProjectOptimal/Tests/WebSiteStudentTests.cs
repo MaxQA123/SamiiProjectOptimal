@@ -37,9 +37,9 @@ namespace SamiiProjectOptimal.Tests
 
             Pages.LogInStudent
                 .ClickButtonSignIn();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
-                .ClickItemEditProfileDropDown();
+                .ClickItemStudentEditProfileDropDown();
             Pages.StudentProfileSetUp
                 .VerifyEmailIsRight(getEmailFromLogIn);
             Thread.Sleep(5000);
@@ -246,9 +246,9 @@ namespace SamiiProjectOptimal.Tests
             Pages.LogInStudent
                 .ClickIconShowEnteredPassword()
                 .ClickButtonSignIn();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
-                .ClickItemSettingsDropDown();
+                .ClickItemStudentEditProfileDropDown();
 
             string passwordAWorking = Pages.CycleForResetPassword.SelectPassword("4");
 
@@ -267,9 +267,9 @@ namespace SamiiProjectOptimal.Tests
 
             Pages.ResetPassword
                 .ClickButtonChangePasswordRstPsswrdPg();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
-                .ClickItemLogoutDropDown();
+                .ClickItemStudentEditProfileDropDown();
             Pages.LogInStudent
                 .EnterEmail()
                 .CopiedPassword(passwordResetPasswordPg)
@@ -310,9 +310,9 @@ namespace SamiiProjectOptimal.Tests
 
             Pages.GeneralMessenger
                 .ClickButtonArrowSendMessageOnMessengerPg();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
-                .ClickItemLogoutDropDown();
+                .ClickItemStudentEditProfileDropDown();
             Pages.LogInTeacher
                 .EnterEmailPassword()
                 .ClickButtonLogInAsTeacher();

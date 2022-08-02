@@ -25,6 +25,38 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Parent")]
+        [AllureSubSuite("LogIn")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully payid for the lesson.
+        //Comment: 
+        //Path to cheking's: 
+
+        public void LogInParent()
+        {
+            Pages.LogInParent
+                .EnterEmailPasswordForParent();
+
+            string getEmailForCompare = Pages.ParentProfileSetUp.GetEmailFromLogIn();
+
+            Pages.LogInParent
+                .ClickButtonLogIn();
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
+                .ClickItemParentEditProfileDropDown();
+            Pages.ParentProfileSetUp
+                .VerifyParentEamail(getEmailForCompare);
+
+            Thread.Sleep(5000);
+        }
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("Parent")]
         [AllureSubSuite("PayForOnceLesson")]
 
         //Date of publication:

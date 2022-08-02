@@ -76,9 +76,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
             Pages.AdminLessonSheduler
                 .SelectNextDay();
@@ -128,10 +127,10 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNextAfterAssignStudent();
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonSaveForAdmin();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
-                .ClickButtonLogout();
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
+                .ClickItemLogoutDropDown();
+
             Thread.Sleep(5000);
         }
 
@@ -163,9 +162,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
@@ -211,10 +209,10 @@ namespace SamiiProjectOptimal.Tests
                 .VerifySetLesson(getTitle)
                 .ClickButtonCloseViaCross();
 
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
-                .ClickButtonLogout();
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
+                .ClickItemLogoutDropDown();
+
             Thread.Sleep(5000);
         }
 
@@ -244,8 +242,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             Pages.TeacherLessonSheduler
@@ -305,8 +303,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown()
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             Pages.TeacherLessonSheduler
@@ -383,9 +381,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
@@ -396,6 +393,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickDeleteDtlsTab();
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonYes();
+
             Thread.Sleep(5000);
         }
 
@@ -428,9 +426,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();
-            Pages.HeaderAdminWebSite
-                .ClickArrowDropDown();
-            Pages.HeaderAdminWebSite
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
             IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
@@ -496,7 +493,7 @@ namespace SamiiProjectOptimal.Tests
 
             Pages.GeneralMessenger
                 .ClickButtonArrowSendMessageOnMessengerPg();
-            Pages.HeaderStudent
+            Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
                 .ClickItemLogoutDropDown();
             Pages.LogInStudent

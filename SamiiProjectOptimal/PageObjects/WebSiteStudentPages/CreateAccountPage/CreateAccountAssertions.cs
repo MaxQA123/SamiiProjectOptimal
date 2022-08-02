@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
-using SamiiProjectOptimal.PageObjects.WebSiteStudentPages.Header;
 using System;
 using System.Collections.Generic;
 using System.Linq;
