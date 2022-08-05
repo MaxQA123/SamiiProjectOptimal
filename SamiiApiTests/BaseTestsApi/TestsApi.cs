@@ -74,7 +74,7 @@ namespace SamiiApiTests.BaseTestsApi
 
         //Date of publication:
         //Version\Build:
-        //Willingness for testing: in progress.
+        //Willingness for testing: Done.
         //This test case is doing checking: The successfully creating the user student.
         //Comment: 
         //Path to cheking's: 
@@ -88,6 +88,25 @@ namespace SamiiApiTests.BaseTestsApi
             CreateAccountApi.VerifyingSignedUpUser(response);
         }
 
+        [Test]
+        [AllureTag("Regression")]
+        [AllureOwner("Maksim Perevalov")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [Author("Maksim", "maxqatesting390@gmail.com")]
+        [AllureSuite("TeacherProfileSetUp")]
+        [AllureSubSuite("ChangeLastNameForTeacher")]
+
+        //Date of publication:
+        //Version\Build:
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully changing of the last name of the teacher.
+        //Comment: 
+        //Path to cheking's: 
+
+        public void ChangeLastNameForTeacher()
+        {
+
+        }
         //public void SignUpStudent()
         //{
         //    var randomData = CreateAccountApi.UserRandomForCreateStudent();
@@ -95,7 +114,6 @@ namespace SamiiApiTests.BaseTestsApi
         //    var payload = CreateAccountApi.CreatePayload(randomData.EmailAddress, randomData.Password, randomData.ConfirmPassword);
 
         //    var response = ResponseTestsData.responseForSignUpStudent;
-        //    //var response = CreateAccountApi.ExecuteSignUp(payload);
 
         //    CreateAccountApi.VerifyingSignedUpUser(response, payload);
         //}

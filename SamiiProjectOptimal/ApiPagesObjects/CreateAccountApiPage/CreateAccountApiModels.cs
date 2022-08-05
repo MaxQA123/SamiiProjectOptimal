@@ -18,5 +18,4 @@ namespace SamiiProjectOptimal.ApiPagesObjects.CreateAccountApiPage
         public long Result { get; set; }
         public string Message { get; set; }
     }
-
 }
