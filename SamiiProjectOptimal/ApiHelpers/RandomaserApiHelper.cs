@@ -8,9 +8,24 @@ namespace SamiiProjectOptimal.ApiHelpers
 {
     public class Randomaser
     {
-        public static string RandomEmail()
+        public static string RandomFullEmailApi()
         {
-            string email = "qatester" + DateTime.Now.ToString("yyyy-MM-d-hh-mm") + "@xitroo.com";
+            string email = "qatester" + DateTime.Now.ToString("yyyy-MM-d-hh-mm-ss") + "@xitroo.com";
+
+            return email;
+        }
+
+        public static string RandomEmailBeforeDomen()
+        {
+            Random random = new Random();
+            const string chars = "qwertyuiopasdfghjklzxcvbnm";
+            return new string(Enumerable.Repeat(chars, 5)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
+        public static string RandomFullEmailApiA()
+        {
+            string email = RandomEmailBeforeDomen() + "@xitroo.com";
 
             return email;
         }

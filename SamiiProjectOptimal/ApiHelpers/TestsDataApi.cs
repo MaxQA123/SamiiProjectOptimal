@@ -1,4 +1,5 @@
 ﻿using RimuTec.Faker;
+using SamiiProjectOptimal.ApiPagesObjects.CreateAccountApiPage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,14 +20,19 @@ namespace SamiiProjectOptimal.ApiHelpers
         public const string emailForLogInParent = "testparent@xitroo.com";
 
         public const string password = "1111";
+        public const long passwordLong = 1111;
     }
 
-    //public class TestDataUserWebSite
+    public class ResponseTestsData
+    {
+        public const string responseForSignUpStudent = "Account created";
+    }
+
+    //public class TestDataForCreatingUsers
     //{
-    //    public static string firstNameForCreating = DataForLogIn.UserLogIn()
-    //    public static string lastNameForCreating = DataForCreateUserWebSiteRaffle.UserRandom().Surname;
-    //    public static string passwordForCreating = DataForCreateUserWebSiteRaffle.UserRandom().Password;
-    //    public static string emailForCreating = DataForCreateUserWebSiteRaffle.UserRandom().Email;
+    //    public static string emailForCreating = CreateAccountApi.UserRandomForCreateStudent().EmailAddress;
+    //    public static long passwordForCreating = CreateAccountApi.UserRandomForCreateStudent().Password;
+    //    public static long confirmPasswordForCreating = CreateAccountApi.UserRandomForCreateStudent().ConfirmPassword;
     //}
 
     //public class CredentialsAdminCms

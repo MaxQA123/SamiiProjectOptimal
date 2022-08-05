@@ -20,18 +20,34 @@ namespace SamiiProjectOptimal.ApiPagesObjects
             return payload;
         }
 
-        public static ResponseLogIn ExecuteLogIn(string email, string password)
+        public static RequestLogIn UserConstData()
+        {
+            var payload = new RequestLogIn();
+            payload.Email = CredentialsApi.emailForLogInAdmin;
+            payload.Password = 1111;
+
+            return payload;
+        }
+
+        // public static ResponseLogIn ExecuteLogIn(string email, string password)
+        public static ResponseLogIn ExecuteLogIn(string payload)
         {
             var restClient = new RestClient(EndPointsApi.apiHost);
 
             var restRequest = new RestRequest("//public/login", Method.Post);
             restRequest.AddHeaders(Headers.HeadersCommon());
 
-            restRequest.AddJsonBody(GetUserData(email, password));
+            restRequest.AddJsonBody(payload);
 
             var response = restClient.Execute(restRequest);
 
             var content = response.Content;
+
+            if (response.StatusDescription == "Bad Request")
+            {
+                Console.WriteLine(response.Content);
+            }
+
             var dtoObject = JsonConvert.DeserializeObject<ResponseLogIn>(content);
 
             return dtoObject;

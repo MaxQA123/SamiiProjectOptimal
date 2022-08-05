@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace SamiiProjectOptimal.ApiPagesObjects
 {
-    public partial class LogInApi
-    {
         public class RequestLogIn
         {
             public string Email { get; set; }
@@ -29,5 +27,4 @@ namespace SamiiProjectOptimal.ApiPagesObjects
             public object AvatarMimeType { get; set; }
             public bool IncludesOnlineLesson { get; set; }
         }
-    }
 }

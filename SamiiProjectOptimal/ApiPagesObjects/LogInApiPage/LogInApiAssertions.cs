@@ -9,9 +9,14 @@ namespace SamiiProjectOptimal.ApiPagesObjects
 {
     public partial class LogInApi
     {
-        public static void VerifyingLoggedUser(ResponseLogIn response)
+        public static void VerifyingLoggedUserRandom(ResponseLogIn response, string email)
         {
-            Assert.AreEqual("agitatedvolhard@xitroo.com", response.Email);
+            Assert.AreEqual(email, response.Email);
+        }
+
+        public static void VerifyingLoggedUserConst(ResponseLogIn response)
+        {
+            Assert.AreEqual("newstud@xitroo.com", response.Email);
         }
 
     }
