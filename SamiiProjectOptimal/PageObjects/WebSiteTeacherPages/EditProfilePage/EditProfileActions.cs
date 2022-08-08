@@ -74,5 +74,32 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage
 
             return this;
         }
+
+        [AllureStep("ClickButtonAddForLocationEdtPrfPg")]
+        public EditProfile ClickButtonAddForLocationEdtPrfPg()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            ButtonAddForLocationEdtPrfPg.Click();
+
+            return this;
+        }
+
+        [AllureStep("ScrollToButtonAddForLocationEdtPrfPg")]
+        public EditProfile ScrollToButtonAddForLocationEdtPrfPg()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            Scrolling.ScrollToElement(ButtonAddForLocationEdtPrfPg);
+
+            return this;
+        }
+
+        [AllureStep("ScrollToRadioButtonProfileListedOnDirectoryEdtPrfPg")]
+        public EditProfile ScrollToRadioButtonProfileListedOnDirectoryEdtPrfPg()
+        {
+            WaitUntil.WaitSomeInterval(1);
+            Scrolling.ScrollToElement(RadioButtonProfileListedOnDirectoryEdtPrfPg);
+
+            return this;
+        }
     }
 }

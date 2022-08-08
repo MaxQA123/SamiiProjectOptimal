@@ -1,0 +1,139 @@
+{
+  "uuid": "b11ad762-cd50-40a7-ab31-c8d4821574ac-tr-0-1040",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.EditProfile",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteTeacherTests.EditProfile",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditProfile"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Teacher"
+    },
+    {
+      "name": "subSuite",
+      "value": "EditProfile"
+    }
+  ],
+  "links": [],
+  "name": "EditProfile",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class = 'btn icon ng-star-inserted']//i[@class = 'fas fa-pencil-alt']\"}\n  (Session info: chrome=104.0.5112.79)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.get_IconEditBadgesEdtPrfPg() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\EditProfilePage\\EditProfileElements.cs:line 22\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.__a$_around_ClickIconEditBadgesEdtPrfPg_100663514_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\EditProfilePage\\EditProfileActions.cs:line 17\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.__a$_around_ClickIconEditBadgesEdtPrfPg_100663514_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.__a$_around_ClickIconEditBadgesEdtPrfPg_100663514_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.ClickIconEditBadgesEdtPrfPg() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\EditProfilePage\\EditProfileElements.cs:line 13\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.EditProfile() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 606"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "EditProfile",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class = 'btn icon ng-star-inserted']//i[@class = 'fas fa-pencil-alt']\"}\n  (Session info: chrome=104.0.5112.79)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.get_IconEditBadgesEdtPrfPg() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\EditProfilePage\\EditProfileElements.cs:line 22\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.__a$_around_ClickIconEditBadgesEdtPrfPg_100663514_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\EditProfilePage\\EditProfileActions.cs:line 17\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.__a$_around_ClickIconEditBadgesEdtPrfPg_100663514_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.__a$_around_ClickIconEditBadgesEdtPrfPg_100663514_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.ClickIconEditBadgesEdtPrfPg() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\EditProfilePage\\EditProfileElements.cs:line 13\r\n   at SamiiProjectOptimal.Tests.WebSiteTeacherTests.EditProfile() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteTeacherTests.cs:line 606"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659965552441,
+          "stop": 1659965553878
+        },
+        {
+          "name": "ClickButtonLogIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659965553879,
+          "stop": 1659965554029
+        },
+        {
+          "name": "ClickIconEditBadgesEdtPrfPg",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class = 'btn icon ng-star-inserted']//i[@class = 'fas fa-pencil-alt']\"}\n  (Session info: chrome=104.0.5112.79)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.get_IconEditBadgesEdtPrfPg() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\EditProfilePage\\EditProfileElements.cs:line 22\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.__a$_around_ClickIconEditBadgesEdtPrfPg_100663514_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteTeacherPages\\EditProfilePage\\EditProfileActions.cs:line 17\r\n   at SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage.EditProfile.__a$_around_ClickIconEditBadgesEdtPrfPg_100663514_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1659965554036,
+          "stop": 1659965559155
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "66bf367999bb4a0b9512fac4dd1ffdc2-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1659965549566,
+      "stop": 1659965561441
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1659965549565,
+  "stop": 1659965561454
+}

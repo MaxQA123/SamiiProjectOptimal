@@ -50,59 +50,59 @@ namespace SamiiProjectOptimal.Additional
             return mainpath;
         }
 
-        public static string CopyJsonConfigFileOp()
-        {
-            string mainpath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory)) + "allureConfig.json";
-            using (FileStream fstream = new FileStream($"{mainpath}", FileMode.OpenOrCreate))
-            {
-                byte[] array = Encoding.Default.GetBytes(string.Format(
-                    "{{" +
-                    "allure" + ":" + "{{" +
-                    "directory" + ":" + "C:\\Automation\\SamiiProjectOptimal\\allure-results" + "," +
-                    "links" + ":" + "[[" +
-                    "{link}" + "," +
-                    "https://testrail.com/browse/{tms}" + "," +
-                    "https://jira.com/browse/{issue}" +
-                    "]]" +
-                    "}}" + "," +
-                    "specflow" + ":" + "{{" +
-                    "stepArguments" + ":" + "{{" +
-                    "convertToParameters" + ":" + "true" + "," +
-                    "paramNameRegex" + ":" + "" + "," +
-                    "paramValueRegex" + ":" + "" +
-                    "]]" + "," +
-                    "grouping" + ":" + "{{" +
-                    "suites" + ":" + "{{" +
-                    "parentSuite" + ":" + "^parentSuite:?(.+)" + "," +
-                    "suite" + ":" + "^suite:?(.+)" + "," +
-                    "subSuite" + ":" + "^subSuite:?(.+)" +
-                    "}}" + "," +
-                    "behaviors" + ":" + "{{" +
-                    "epic" + ":" + "^epic:?(.+)",
-                    "story" + ":" + "^story:(.+)" +
-                    "}}" + "," +
-                    "labels" + ":" + "{{" +
-                    "owner" + ":" + "^author:?(.+)" + "," +
-                    "severity" + ":" + "^(normal|blocker|critical|minor|trivial)" +
-                    "}}" + "," +
-                    "links" + ":" + "{{" +
-                    "tms" + ":" + "^story:(.+)" + "," +
-                    "issue" + ":" + "^issue:(.+)" + "," +
-                    "link" + ":" + "^link:(.+)" +
-                    "}}" +
-                    "}}" +
-                    "}}"));
-                fstream.Write(array, 0, array.Length);
-            }
-            FileInfo fileInf = new FileInfo(mainpath);
+        //public static string CopyJsonConfigFileOp()
+        //{
+        //    string mainpath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory)) + "allureConfig.json";
+        //    using (FileStream fstream = new FileStream($"{mainpath}", FileMode.OpenOrCreate))
+        //    {
+        //        byte[] array = Encoding.Default.GetBytes(string.Format(
+        //            "{{" +
+        //            "allure" + ":" + "{{" +
+        //            "directory" + ":" + "C:\\Automation\\SamiiProjectOptimal\\allure-results" + "," +
+        //            "links" + ":" + "[[" +
+        //            "{link}" + "," +
+        //            "https://testrail.com/browse/{tms}" + "," +
+        //            "https://jira.com/browse/{issue}" +
+        //            "]]" +
+        //            "}}" + "," +
+        //            "specflow" + ":" + "{{" +
+        //            "stepArguments" + ":" + "{{" +
+        //            "convertToParameters" + ":" + "true" + "," +
+        //            "paramNameRegex" + ":" + "" + "," +
+        //            "paramValueRegex" + ":" + "" +
+        //            "]]" + "," +
+        //            "grouping" + ":" + "{{" +
+        //            "suites" + ":" + "{{" +
+        //            "parentSuite" + ":" + "^parentSuite:?(.+)" + "," +
+        //            "suite" + ":" + "^suite:?(.+)" + "," +
+        //            "subSuite" + ":" + "^subSuite:?(.+)" +
+        //            "}}" + "," +
+        //            "behaviors" + ":" + "{{" +
+        //            "epic" + ":" + "^epic:?(.+)",
+        //            "story" + ":" + "^story:(.+)" +
+        //            "}}" + "," +
+        //            "labels" + ":" + "{{" +
+        //            "owner" + ":" + "^author:?(.+)" + "," +
+        //            "severity" + ":" + "^(normal|blocker|critical|minor|trivial)" +
+        //            "}}" + "," +
+        //            "links" + ":" + "{{" +
+        //            "tms" + ":" + "^story:(.+)" + "," +
+        //            "issue" + ":" + "^issue:(.+)" + "," +
+        //            "link" + ":" + "^link:(.+)" +
+        //            "}}" +
+        //            "}}" +
+        //            "}}"));
+        //        fstream.Write(array, 0, array.Length);
+        //    }
+        //    FileInfo fileInf = new FileInfo(mainpath);
 
-            if (fileInf.Exists)
-            {
-                fileInf.Delete();
-            }
-            File.Copy(Browser.RootPath() + @"\AllureConfigFIle\allureConfig.json", mainpath);
+        //    if (fileInf.Exists)
+        //    {
+        //        fileInf.Delete();
+        //    }
+        //    File.Copy(Browser.RootPath() + @"\AllureConfigFIle\allureConfig.json", mainpath);
 
-            return mainpath;
-        }
+        //    return mainpath;
+        //}
     }
 }

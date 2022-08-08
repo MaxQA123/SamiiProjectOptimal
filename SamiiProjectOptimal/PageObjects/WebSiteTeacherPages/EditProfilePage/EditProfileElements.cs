@@ -42,5 +42,13 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage
 
         public IWebElement IconEditLocationEdtPrfPg => Browser._Driver.FindElement(_IconEditLocationEdtPrfPg);
         public readonly static By _IconEditLocationEdtPrfPg = By.XPath("//th[@class = 'mobile-location-header']//button[@class = 'btn icon ng-star-inserted']");
+
+        //td[@colspan= '2']//button[@class = 'btn icon p-0']
+        //td[@colspan= '2']//button[text() = ' Add']
+        public IWebElement ButtonAddForLocationEdtPrfPg => Browser._Driver.FindElement(_ButtonAddForLocationEdtPrfPg);
+        public readonly static By _ButtonAddForLocationEdtPrfPg = By.XPath("//td[@colspan= '2']//button[text() = ' Add']");
+
+        public IWebElement RadioButtonProfileListedOnDirectoryEdtPrfPg => Browser._Driver.FindElement(_RadioButtonProfileListedOnDirectoryEdtPrfPg);
+        public readonly static By _RadioButtonProfileListedOnDirectoryEdtPrfPg = By.XPath("//span[@class = 'slider']");
     }
 }

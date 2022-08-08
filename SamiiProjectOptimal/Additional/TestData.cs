@@ -163,4 +163,14 @@ namespace SamiiProjectOptimal.Additional
         public const int parent = 1;
 
     }
+
+    public class ListOfNameLocationsEdtPrfPg
+    {
+        public const int firstInputField = 0;
+        public const int secondInputField = 1;
+        public const int thirdInputField = 2;
+        public const int fourthInputField = 3;
+        public const int fivethInputField = 4;
+        public const int sixthInputField = 5;
+    }
 }

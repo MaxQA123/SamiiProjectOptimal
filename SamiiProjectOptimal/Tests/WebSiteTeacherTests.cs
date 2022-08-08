@@ -603,6 +603,9 @@ namespace SamiiProjectOptimal.Tests
             Pages.LogInTeacher
                 .EnterEmailPassword()
                 .ClickButtonLogIn();
+            Pages.GeneralHeader
+                .ClickArrowDropDownMenu()
+                .ClickItemTeacherEditProfileDropDown();
             Pages.EditProfile
                 .ClickIconEditBadgesEdtPrfPg();
             Pages.Click
@@ -616,7 +619,9 @@ namespace SamiiProjectOptimal.Tests
                 .ClickIconEditIntroductionEdtPrfPg()
                 .EnterTextInFieldInputEditIntroductionEdtPrfPg()
                 .ClickIconConfirmIntroductionBadgesEdtPrfPg()
-                .ClickIconEditLocationEdtPrfPg();
+                .ClickIconEditLocationEdtPrfPg()
+                .ScrollToRadioButtonProfileListedOnDirectoryEdtPrfPg()
+                .ClickButtonAddForLocationEdtPrfPg();
 
             Thread.Sleep(5000);
         }
