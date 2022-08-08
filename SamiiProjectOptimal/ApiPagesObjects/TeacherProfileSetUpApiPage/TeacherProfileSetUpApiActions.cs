@@ -19,18 +19,23 @@ namespace SamiiProjectOptimal.ApiPagesObjects.TeacherProfileSetUpApiPage
                 "\"firstName\"" + ":" + $"\"TestTeacher\"" + "," +
                 "\"lastName\"" + ":" + $"\"{lastName}\"" + "," +
                 "\"email\"" + ":" + $"\"testteach@xitroo.com1\"" + "," +
-
+                "\"DateOfBirth\"" + ":" + $"\"1995-01-20T04:00:00+02:00\"" + "," +
                 "\"phoneNumber\"" + ":" + $"\"54654654654\"" + "," +
-                "\"instruments\"" + ":" + "{{" +
+                "\"instruments\"" + ":" + "[[" + "{{" +
+
                    "\"id\"" + ":" + $"\"2\"" + "," +
-                   "\"name\"" + ":" + $"\"Piano Accordion\"" + "," +
-                   "\"id\"" + ":" + $"\"33\"" + "," +
-                   "\"name\"" + ":" + $"\"Singing\"" + "," +
-                   "\"id\"" + ":" + $"\"48\"" + "," +
-                   "\"name\"" + ":" + $"\"Piano\"" + "," +
-                   "\"id\"" + ":" + $"\"6\"" + "," +
-                   "\"name\"" + ":" + $"\"Harpsichord\"" + "}}" +
-                "\"address\"" + ":" + "{{" +
+                   "\"name\"" + ":" + $"\"Piano Accordion\"" + "}}" + "," +
+                   
+                   "{{" + "\"id\"" + ":" + $"\"33\"" + "," +
+                   "\"name\"" + ":" + $"\"Singing\"" + "}}" + "," +
+                   
+                   "{{" + "\"id\"" + ":" + $"\"48\"" + "," +
+                   "\"name\"" + ":" + $"\"Piano\"" + "}}" + "," +
+                   
+                   "{{" + "\"id\"" + ":" + $"\"6\"" + "," +
+                   "\"name\"" + ":" + $"\"Harpsichord\"" + "}}" + "]]" +
+                
+                   "\"teachingAddress\"" + ":" + "{{" +
                    "\"id\"" + ":" + $"\"623\"" + "," +
                    "\"streetNumber\"" + ":" + $"\"null\"" + "," +
                    "\"streetName\"" + ":" + $"\"null\"" + "," +
@@ -44,10 +49,11 @@ namespace SamiiProjectOptimal.ApiPagesObjects.TeacherProfileSetUpApiPage
                 "\"teachingAddressAlsoResidential\"" + ":" + $"\"false\"" + "," +
                 "\"includesOnlineLesson\"" + ":" + $"\"true\"" + "," +
                 "\"onlineVideoLink\"" + ":" + $"\"4444\"" + "," +
-                "\"isShowPriceGuide\"" + ":" + $"\"false\"" + "}}" +
-                "\"teacherLocations\"" + ":" + "{{" +
+                "\"isShowPriceGuide\"" + ":" + $"\"true\"" + "}}" +
+                "\"teacherLocations\"" + ":" + "[[" + "{{" +
+
                    "\"id\"" + ":" + $"\"54\"" + "," +
-                   "\"name\"" + ":" + $"\"Home Studio\"" + "{{" +
+                   "\"name\"" + ":" + $"\"Home Studio\"" + "," +
                    "\"address\"" + ":" + "{{" +
                            "\"id\"" + ":" + $"\"324\"" + "," +
                            "\"streetNumber\"" + ":" + $"\"null\"" + "," +
@@ -61,10 +67,10 @@ namespace SamiiProjectOptimal.ApiPagesObjects.TeacherProfileSetUpApiPage
                            "\"location\"" + ":" + $"\"NSW\"" + "}}" +
                   "\"teacherId\"" + ":" + $"\"29\"" + "," +
                   "\"hasLesson\"" + ":" + $"\"false\"" + "," +
-                  "\"isDeleted\"" + ":" + $"\"false\"" + "}}" +
+                  "\"isDeleted\"" + ":" + $"\"false\"" + "}}" + "," +
 
-                  "\"id\"" + ":" + $"\"55\"" + "," +
-                  "\"name\"" + ":" + $"\"Second\"" + "{{" +
+                  "{{" + "\"id\"" + ":" + $"\"55\"" + "," +
+                  "\"name\"" + ":" + $"\"Second\"" + "," +
                   "\"address\"" + ":" + "{{" +
                            "\"id\"" + ":" + $"\"325\"" + "," +
                            "\"streetNumber\"" + ":" + $"\"null\"" + "," +
@@ -78,10 +84,10 @@ namespace SamiiProjectOptimal.ApiPagesObjects.TeacherProfileSetUpApiPage
                            "\"location\"" + ":" + $"\"NSW\"" + "}}" +
                   "\"teacherId\"" + ":" + $"\"29\"" + "," +
                   "\"hasLesson\"" + ":" + $"\"false\"" + "," +
-                  "\"isDeleted\"" + ":" + $"\"false\"" + "}}" +
+                  "\"isDeleted\"" + ":" + $"\"false\"" + "}}" + "," +
 
-                  "\"id\"" + ":" + $"\"61\"" + "," +
-                  "\"name\"" + ":" + $"\"Third\"" + "{{" +
+                  "{{" + "\"id\"" + ":" + $"\"61\"" + "," +
+                  "\"name\"" + ":" + $"\"Third\"" + "," +
                   "\"address\"" + ":" + "{{" +
                            "\"id\"" + ":" + $"\"374\"" + "," +
                            "\"streetNumber\"" + ":" + $"\"null\"" + "," +
@@ -97,8 +103,8 @@ namespace SamiiProjectOptimal.ApiPagesObjects.TeacherProfileSetUpApiPage
                   "\"hasLesson\"" + ":" + $"\"false\"" + "," +
                   "\"isDeleted\"" + ":" + $"\"false\"" + "}}" +
 
-                  "\"id\"" + ":" + $"\"72\"" + "," +
-                  "\"name\"" + ":" + $"\"Forth\"" + "{{" +
+                  "{{" + "\"id\"" + ":" + $"\"72\"" + "," +
+                  "\"name\"" + ":" + $"\"Forth\"" + "," +
                   "\"address\"" + ":" + "{{" +
                            "\"id\"" + ":" + $"\"501\"" + "," +
                            "\"streetNumber\"" + ":" + $"\"null\"" + "," +
@@ -112,9 +118,9 @@ namespace SamiiProjectOptimal.ApiPagesObjects.TeacherProfileSetUpApiPage
                            "\"location\"" + ":" + $"\"VIC\"" + "}}" +
                   "\"teacherId\"" + ":" + $"\"29\"" + "," +
                   "\"hasLesson\"" + ":" + $"\"false\"" + "," +
-                  "\"isDeleted\"" + ":" + $"\"false\"" + "}}" +
+                  "\"isDeleted\"" + ":" + $"\"false\"" + "}}" + "]]" + "," +
 
-                "\"timeZoneNameMoment\"" + ":" + $"\"null\"" + "}}");
+                  "\"timeZoneNameMoment\"" + ":" + $"\"Australia/Adelaide\"" + "}}");
 
             return payload;
         }
