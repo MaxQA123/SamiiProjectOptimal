@@ -23,6 +23,12 @@ namespace SamiiProjectOptimal.ApiHelpers
         public const long passwordLong = 1111;
     }
 
+    public class RequestGeneralTestDataProfileSetUp
+    {
+        public const string firstNameTeacher = "TestTeacher";
+        public const string lastNameTeacher = "NewTeacher";
+    }
+
     public class ResponseTestsData
     {
         public const string responseForSignUpStudent = "Account created";
