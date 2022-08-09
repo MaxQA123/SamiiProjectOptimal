@@ -361,8 +361,10 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPassword()
                 .ClickButtonSignIn();
             Pages.AdminHome
-                .ScrollToPaginationEducatorTbl()
-                .ClickButtonThreeOnPgntnEducator()
+                .ScrollToPaginationEducatorTbl();
+            Pages.Click
+                .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
+            Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
                 .ClickButtonImpersonateEducatorView();

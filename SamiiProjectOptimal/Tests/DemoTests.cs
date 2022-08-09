@@ -299,8 +299,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.AdminHome
-                .ClickButtonThreeOnPgntnEducator();
+            Pages.Click
+                .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
             Pages.EducatorsView
