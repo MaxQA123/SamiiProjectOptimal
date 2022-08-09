@@ -44,16 +44,29 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         #endregion
 
-        #region PageEnrolInALessonTabDetails
+        #region PageEnrolInALessonTabDetailsVersion1.0
 
         [AllureStep("ClickButtonNextPayLssnStdnt")]
         public PayLessonStudent ClickButtonNextPayLssnStdnt()
         {
-            WaitUntil.WaitSomeInterval(3);
-            //WaitUntil.ShouldLocate(_ButtonNextPayLssnStdntDtlsTab);
+            WaitUntil.WaitSomeInterval(2);
             ButtonNextPayLssnStdntDtlsTab.Click();
 
             return this; 
+        }
+
+        #endregion
+
+        #region PageEnrolInALessonTabDetailsVersion2.0
+
+        [AllureStep("ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab")]
+        public PayLessonStudent ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab()
+        {
+            WaitUntil.WaitSomeInterval(2);
+            WaitUntil.ElementIsClickable(ButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab);
+            ButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab.Click();
+
+            return this;
         }
 
         #endregion

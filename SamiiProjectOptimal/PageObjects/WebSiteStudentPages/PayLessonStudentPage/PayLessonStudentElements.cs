@@ -29,20 +29,27 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
 
         #endregion
 
-        #region PageEnrolInALessonTabDetails
+        #region PageEnrolInALessonTabDetailsVersion1.0
 
         public IWebElement ButtonNextPayLssnStdntDtlsTab => Browser._Driver.FindElement(_ButtonNextPayLssnStdntDtlsTab);
         public readonly static By _ButtonNextPayLssnStdntDtlsTab = By.XPath("//div[@class = 'd-flex justify-content-between button-area']//button[2]");
 
         #endregion
 
+        #region PageEnrolInALessonTabDetailsVersion2.0
+
+        public IWebElement ButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab => Browser._Driver.FindElement(_ButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab);
+        public readonly static By _ButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab = By.XPath("//div[@class = 'time-slot-create-container']//i[@class = 'fas fa-times fa-lg']");
+
+        #endregion
+
         #region PageEnrolInALessonTabConfirmation
 
         public IWebElement CheckBoxIAgreeToTheTermsAndConditions => Browser._Driver.FindElement(_CheckBoxIAgreeToTheTermsAndConditions);
-        public readonly static By _CheckBoxIAgreeToTheTermsAndConditions = By.XPath("//div[@_ngcontent-c6][3]//div[6]//input");
+        public readonly static By _CheckBoxIAgreeToTheTermsAndConditions = By.XPath("//input[@class = 'form-check-input ng-untouched ng-pristine ng-valid']");
 
         public IWebElement ButtonNextPayLssnStdntCnfrmtnTab => Browser._Driver.FindElement(_ButtonNextPayLssnStdntCnfrmtnTab);
-        public readonly static By _ButtonNextPayLssnStdntCnfrmtnTab = By.XPath("//div[@_ngcontent-c6][3]//div[7]//button[2]");
+        public readonly static By _ButtonNextPayLssnStdntCnfrmtnTab = By.XPath("//app-booking-confirmation//div[@class = 'd-flex justify-content-between button-area']//button[contains(text(), 'Next')]");
 
         #endregion
 

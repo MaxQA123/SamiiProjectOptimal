@@ -163,6 +163,13 @@ namespace SamiiProjectOptimal.Tests
 
         #region Version 2.0
 
+        //Date of publication:
+        //Version\Build: 2.0
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully has written and sent the message to the teacher.
+        //Comment: 
+        //Path to cheking's: 
+
         public void PayForOnceLesson()
         {
             Pages.EmailXitroo
@@ -177,7 +184,16 @@ namespace SamiiProjectOptimal.Tests
             Pages.PayLessonStudent
                 .EnterEmailPasswordPayLogInPg();
             Pages.PayLessonStudent
-                .ClickButtonLogIn();
+                .ClickButtonLogIn()
+                .ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab()
+                .ClickButtonNextPayLssnStdnt();
+
+            Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
+            Pages.PayLessonStudent
+                .ClickCheckBoxIAgreeToTheTermsAndConditions()
+                .ClickButtonNextPayLssnStdntCnfrmtnTab()
+                .ClickButtonEnrolTabPayment()
+                .ClickButtonConfirmMdlWndwYouveDone();
 
             Thread.Sleep(5000);
         }
