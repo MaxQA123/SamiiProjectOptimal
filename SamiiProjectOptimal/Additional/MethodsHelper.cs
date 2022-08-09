@@ -109,6 +109,17 @@ namespace SamiiProjectOptimal.Additional
             return this;
         }
 
+        [AllureStep("SelectNumberPaginationForTeacherAdminPg")]
+        public Click SelectNumberPaginationForTeacherAdminPg(int numberItem, string locationNumber)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorNumberPaginationForTeacherAdminPg(locationNumber);
+
+            _numberItem[numberItem].Click();
+
+            return this;
+        }
+
     }
 
     #endregion

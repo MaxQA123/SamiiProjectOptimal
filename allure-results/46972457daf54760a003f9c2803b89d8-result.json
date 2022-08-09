@@ -1,0 +1,338 @@
+{
+  "uuid": "64ceb238-239c-4d3c-bddd-114dc3283f31-tr-0-1026",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForAllLessonExceptOnce",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForAllLessonExceptOnce",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PayForAllLessonExceptOnce"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "PayForAllLessonExceptOnce"
+    }
+  ],
+  "links": [],
+  "name": "PayForAllLessonExceptOnce",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'time-slot-create-container']//i[@class = 'fas fa-times fa-lg']\"}\n  (Session info: chrome=104.0.5112.81)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.get_ButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentElements.cs:line 41\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab_100663581_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentActions.cs:line 66\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab_100663581_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab_100663581_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentElements.cs:line 15\r\n   at SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForAllLessonExceptOnce() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteStudentTests.cs:line 275"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PayForAllLessonExceptOnce",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'time-slot-create-container']//i[@class = 'fas fa-times fa-lg']\"}\n  (Session info: chrome=104.0.5112.81)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.get_ButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentElements.cs:line 41\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab_100663581_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentActions.cs:line 66\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab_100663581_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab_100663581_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentElements.cs:line 15\r\n   at SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForAllLessonExceptOnce() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteStudentTests.cs:line 275"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "OpenNewTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043215710,
+          "stop": 1660043215894
+        },
+        {
+          "name": "OpenWelcomeToSammii",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043217265,
+          "stop": 1660043218404
+        },
+        {
+          "name": "ClickLinkHere",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043218405,
+          "stop": 1660043224712
+        },
+        {
+          "name": "SwitchOnLogInModalWndw",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043224713,
+          "stop": 1660043232795
+        },
+        {
+          "name": "EnterEmailPasswordPayLogInPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = ef9d295d-6ba3-4bd1-a53b-a2d3d312bdb7)"
+                },
+                {
+                  "name": "String",
+                  "value": "newstud@xitroo.com"
+                }
+              ],
+              "start": 1660043235873,
+              "stop": 1660043236082
+            },
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = f9575881-7e6c-4a76-8b1a-3eb2eeab052a)"
+                },
+                {
+                  "name": "String",
+                  "value": "1111"
+                }
+              ],
+              "start": 1660043236098,
+              "stop": 1660043236256
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043232796,
+          "stop": 1660043236256
+        },
+        {
+          "name": "ClickButtonLogIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043236256,
+          "stop": 1660043236383
+        },
+        {
+          "name": "ClickButtonNextPayLssnStdnt",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043236384,
+          "stop": 1660043238473
+        },
+        {
+          "name": "SelectInstrumentConfirmationtabPayPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorInstrumentConfirmationtabPayPg",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1660043239477,
+              "stop": 1660043240531
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "2"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1660043238474,
+          "stop": 1660043240569
+        },
+        {
+          "name": "ClickCheckBoxIAgreeToTheTermsAndConditions",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043240570,
+          "stop": 1660043243675
+        },
+        {
+          "name": "SwitchOnLogInModalWndw",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043243676,
+          "stop": 1660043246758
+        },
+        {
+          "name": "ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class = 'time-slot-create-container']//i[@class = 'fas fa-times fa-lg']\"}\n  (Session info: chrome=104.0.5112.81)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.get_ButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentElements.cs:line 41\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab_100663581_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentActions.cs:line 66\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab_100663581_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660043246758,
+          "stop": 1660043248897
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "37832f508fdb4d18b40f9af2e1147379-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1660043213099,
+      "stop": 1660043249442
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1660043213098,
+  "stop": 1660043249452
+}

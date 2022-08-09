@@ -151,9 +151,11 @@ namespace SamiiProjectOptimal.Additional
 
     public class ListInstrumentForConfirmationtabPayPg
     {
-        public const int pianoAccordion = 0;
-        public const int singing = 1;
-        public const int piano = 2;
+        public const int doNotSelect = 0;
+        public const int pianoAccordion = 1;
+        public const int singing = 2;
+        public const int piano= 3;
+        public const int harpsichord = 4;
     }
 
     public class ListRolesCreateAccountpagePg
@@ -181,5 +183,15 @@ namespace SamiiProjectOptimal.Additional
         public const string third = "Third";
         public const string forth = "Forth";
         
+    }
+
+    public class NumbersForThePaginationAdminAcTableTeacher
+    {
+        public const int arrowInLeft = 0;
+        public const int first = 1;
+        public const int second = 2;
+        public const int third = 3;
+        public const int fourth = 4;
+        public const int fiveth = 5;
     }
 }

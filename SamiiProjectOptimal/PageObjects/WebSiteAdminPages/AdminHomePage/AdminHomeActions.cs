@@ -30,15 +30,6 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage
             return this;
         }
 
-        [AllureStep("ClickButtonThreeOnPgntnEducator")]
-        public AdminHome ClickButtonThreeOnPgntnEducator()
-        {
-            WaitUntil.ShouldLocate(_ButtonThreePagination);
-            ButtonThreePagination.Click();
-
-            return this;
-        }
-
         #endregion
 
         #region TableEducator
@@ -48,9 +39,9 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage
         {
             WaitUntil.WaitSomeInterval(1);
             WaitUntil.ShouldLocate(_ButtonDetailsTestTeacher);
-            ButtonDetailsTestTeachern.SendKeys("");
+            ButtonDetailsTestTeacher.SendKeys("");
             WaitUntil.WaitSomeInterval(1);
-            ButtonDetailsTestTeachern.Click();
+            ButtonDetailsTestTeacher.Click();
 
             return this;
 

@@ -124,7 +124,7 @@ namespace SamiiProjectOptimal.Tests
         //Date of publication:
         //Version\Build: 1.0
         //Willingness for testing: Done.
-        //This test case is doing checking: The successfully has written and sent the message to the teacher.
+        //This test case is doing checking: The successfully has paid of the lesson.
         //Comment: 
         //Path to cheking's: 
 
@@ -166,7 +166,7 @@ namespace SamiiProjectOptimal.Tests
         //Date of publication:
         //Version\Build: 2.0
         //Willingness for testing: Done.
-        //This test case is doing checking: The successfully has written and sent the message to the teacher.
+        //This test case is doing checking: The successfully has paid of the lesson.
         //Comment: 
         //Path to cheking's: 
 
@@ -187,8 +187,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogIn()
                 .ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab()
                 .ClickButtonNextPayLssnStdnt();
-
-            Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
+            Pages.Click
+                .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions()
                 .ClickButtonNextPayLssnStdntCnfrmtnTab()
@@ -207,10 +207,63 @@ namespace SamiiProjectOptimal.Tests
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Student")]
         [AllureSubSuite("PayForAllLessonExceptOnce")]
+
+        //Date of publication:
+        //Version\Build: 1.0
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully has paid of the lesson.
+        //Comment: 
+        //Path to cheking's: 
+
+        #region Version1.0
+
+        //public void PayForAllLessonExceptOnce()
+        //{
+        //    Pages.EmailXitroo
+        //        .OpenNewTab();
+        //    Browser._Driver.Navigate().GoToUrl(EndPoints.emailStudentStudTestNeww);
+        //    Pages.EmailXitroo
+        //        .OpenAssignToLesson();
+        //    Pages.EmailXitroo
+        //        .ClickLinkHere();
+        //    Pages.PayLessonStudent
+        //        .SwitchOnLogInModalWndw();
+        //    Pages.PayLessonStudent
+        //        .EnterEmailPasswordPayLogInPg();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonLogIn();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonNextPayLssnStdnt();
+        //    Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
+        //    Pages.PayLessonStudent
+        //        .ClickCheckBoxIAgreeToTheTermsAndConditions();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonNextPayLssnStdntCnfrmtnTab()
+        //        .SelectRadioButtonPayForTenLessonsTabPayment()
+        //        .ClickButtonCloseMdlWndwPerLessonDdTabPayment();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonEnrolTabPayment();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonConfirmMdlWndwYouveDone();
+
+        //    Thread.Sleep(5000);
+        //}
+
+        #endregion
+
+        //Date of publication:
+        //Version\Build: 2.0
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully has paid of the lesson.
+        //Comment: 
+        //Path to cheking's: 
+
+        #region Version2.0
+
         public void PayForAllLessonExceptOnce()
         {
             Pages.EmailXitroo
-                .OpenNewTab();
+               .OpenNewTab();
             Browser._Driver.Navigate().GoToUrl(EndPoints.emailStudentStudTestNeww);
             Pages.EmailXitroo
                 .OpenAssignToLesson();
@@ -221,22 +274,24 @@ namespace SamiiProjectOptimal.Tests
             Pages.PayLessonStudent
                 .EnterEmailPasswordPayLogInPg();
             Pages.PayLessonStudent
-                .ClickButtonLogIn();
-            Pages.PayLessonStudent
+                .ClickButtonLogIn()
+                
                 .ClickButtonNextPayLssnStdnt();
-            Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
+            Pages.Click
+                .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
-                .ClickCheckBoxIAgreeToTheTermsAndConditions();
-            Pages.PayLessonStudent
+                .ClickCheckBoxIAgreeToTheTermsAndConditions()
                 .ClickButtonNextPayLssnStdntCnfrmtnTab()
                 .SelectRadioButtonPayForTenLessonsTabPayment()
-                .ClickButtonCloseMdlWndwPerLessonDdTabPayment();
-            Pages.PayLessonStudent
-                .ClickButtonEnrolTabPayment();
-            Pages.PayLessonStudent
+                .ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab()
+                .ClickButtonEnrolTabPayment()
                 .ClickButtonConfirmMdlWndwYouveDone();
+
             Thread.Sleep(5000);
         }
+
+        #endregion
+
 
         [Test]
         [AllureTag("Regression")]

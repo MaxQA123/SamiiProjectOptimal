@@ -92,5 +92,15 @@ namespace SamiiProjectOptimal.Additional
             _element = Browser._Driver.FindElement(By.XPath(str));
             return _element.FindElements(By.XPath($".//tr[contains(@class, '{locationPlace}')]//input[@class = 'form-control ng-untouched ng-pristine ng-valid ng-star-inserted']"));
         }
+
+        [AllureStep("SelectorNumberPaginationForTeacherAdminPg")]
+        public static IList<IWebElement> SelectorNumberPaginationForTeacherAdminPg(string locationNumber)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            var str = "//nav[@class = 'pagination ng-star-inserted']";
+            _element = Browser._Driver.FindElement(By.XPath(str));
+            return _element.FindElements(By.XPath($".//li[contains(@class, '{locationNumber}')]//a"));
+        }
+        //nav[@class = 'pagination ng-star-inserted']/li[contains(@class, 'disabled')]//a
     }
 }
