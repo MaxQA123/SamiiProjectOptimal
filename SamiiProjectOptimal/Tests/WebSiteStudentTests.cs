@@ -119,7 +119,50 @@ namespace SamiiProjectOptimal.Tests
         [AllureSeverity(SeverityLevel.critical)]
         [Author("Maksim", "maxqatesting390@gmail.com")]
         [AllureSuite("Student")]
-        [AllureSubSuite("PayForLesson")]
+        [AllureSubSuite("PayForOnceLesson")]
+
+        //Date of publication:
+        //Version\Build: 1.0
+        //Willingness for testing: Done.
+        //This test case is doing checking: The successfully has written and sent the message to the teacher.
+        //Comment: 
+        //Path to cheking's: 
+
+        #region Version 1.0
+
+        //public void PayForOnceLesson()
+        //{
+        //    Pages.EmailXitroo
+        //        .OpenNewTab();
+        //    Browser._Driver.Navigate().GoToUrl(EndPoints.emailStudentStudTestNeww);
+        //    Pages.EmailXitroo
+        //        .OpenAssignToLesson();
+        //    Pages.EmailXitroo
+        //        .ClickLinkHere();
+        //    Pages.PayLessonStudent
+        //        .SwitchOnLogInModalWndw();
+        //    Pages.PayLessonStudent
+        //        .EnterEmailPasswordPayLogInPg();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonLogIn();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonNextPayLssnStdnt();
+        //    Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
+        //    Pages.PayLessonStudent
+        //        .ClickCheckBoxIAgreeToTheTermsAndConditions();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonNextPayLssnStdntCnfrmtnTab();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonEnrolTabPayment();
+        //    Pages.PayLessonStudent
+        //        .ClickButtonConfirmMdlWndwYouveDone();
+        //    Thread.Sleep(5000);
+        //}
+
+        #endregion
+
+        #region Version 2.0
+
         public void PayForOnceLesson()
         {
             Pages.EmailXitroo
@@ -135,19 +178,11 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPasswordPayLogInPg();
             Pages.PayLessonStudent
                 .ClickButtonLogIn();
-            Pages.PayLessonStudent
-                .ClickButtonNextPayLssnStdnt();
-            Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
-            Pages.PayLessonStudent
-                .ClickCheckBoxIAgreeToTheTermsAndConditions();
-            Pages.PayLessonStudent
-                .ClickButtonNextPayLssnStdntCnfrmtnTab();
-            Pages.PayLessonStudent
-                .ClickButtonEnrolTabPayment();
-            Pages.PayLessonStudent
-                .ClickButtonConfirmMdlWndwYouveDone();
+
             Thread.Sleep(5000);
         }
+
+        #endregion
 
         [Test]
         [AllureTag("Regression")]

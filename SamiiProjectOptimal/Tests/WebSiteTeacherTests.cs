@@ -622,6 +622,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickIconEditLocationEdtPrfPg()
                 .ScrollToRadioButtonProfileListedOnDirectoryEdtPrfPg()
                 .ClickButtonAddForLocationEdtPrfPg();
+            Pages.Click
+                .SelectLocationForTeacherEdtPrfPg(ListOfNameLocationsEdtPrfPg.fourthInputField, "");
 
             Thread.Sleep(5000);
         }

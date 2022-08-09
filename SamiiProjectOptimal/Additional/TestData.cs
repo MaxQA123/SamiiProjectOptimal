@@ -173,4 +173,13 @@ namespace SamiiProjectOptimal.Additional
         public const int fivethInputField = 4;
         public const int sixthInputField = 5;
     }
+
+    public class TestDataNameLocations
+    {
+        public const string homeStudio = "Home Studio";
+        public const string second = "Second";
+        public const string third = "Third";
+        public const string forth = "Forth";
+        
+    }
 }

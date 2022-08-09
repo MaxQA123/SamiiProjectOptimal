@@ -1,0 +1,248 @@
+{
+  "uuid": "e2387f89-8910-4309-a1b6-98c0bb8d6926-tr-0-1025",
+  "historyId": "SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForOnceLesson",
+  "fullName": "SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForOnceLesson",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "SamiiProjectOptimal.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PayForOnceLesson"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteStudentTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Student"
+    },
+    {
+      "name": "subSuite",
+      "value": "PayForLesson"
+    }
+  ],
+  "links": [],
+  "name": "PayForOnceLesson",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button _ngcontent-c8=\"\" class=\"btn btn-primary\">...</button> is not clickable at point (1649, 632). Other element would receive the click: <ngb-modal-window role=\"dialog\" tabindex=\"-1\" class=\"modal fade show d-block payment-dialog\" aria-modal=\"true\">...</ngb-modal-window>\n  (Session info: chrome=104.0.5112.81)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonNextPayLssnStdnt_100663580_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentActions.cs:line 54\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonNextPayLssnStdnt_100663580_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonNextPayLssnStdnt_100663580_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.ClickButtonNextPayLssnStdnt()\r\n   at SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForOnceLesson() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteStudentTests.cs:line 138"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PayForOnceLesson",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button _ngcontent-c8=\"\" class=\"btn btn-primary\">...</button> is not clickable at point (1649, 632). Other element would receive the click: <ngb-modal-window role=\"dialog\" tabindex=\"-1\" class=\"modal fade show d-block payment-dialog\" aria-modal=\"true\">...</ngb-modal-window>\n  (Session info: chrome=104.0.5112.81)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonNextPayLssnStdnt_100663580_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentActions.cs:line 54\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonNextPayLssnStdnt_100663580_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonNextPayLssnStdnt_100663580_w_0(Object[] )\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.ClickButtonNextPayLssnStdnt()\r\n   at SamiiProjectOptimal.Tests.WebSiteStudentTests.PayForOnceLesson() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\Tests\\WebSiteStudentTests.cs:line 138"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "OpenNewTab",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660028482903,
+          "stop": 1660028483020
+        },
+        {
+          "name": "OpenWelcomeToSammii",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660028484098,
+          "stop": 1660028485618
+        },
+        {
+          "name": "ClickLinkHere",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660028485619,
+          "stop": 1660028492020
+        },
+        {
+          "name": "SwitchOnLogInModalWndw",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660028492021,
+          "stop": 1660028500044
+        },
+        {
+          "name": "EnterEmailPasswordPayLogInPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 99fb3589-40c8-4a7c-aeef-4e87905a8ced)"
+                },
+                {
+                  "name": "String",
+                  "value": "newstud@xitroo.com"
+                }
+              ],
+              "start": 1660028503157,
+              "stop": 1660028503359
+            },
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = ef0f4739-e2b2-4695-b6d1-889da4403714)"
+                },
+                {
+                  "name": "String",
+                  "value": "1111"
+                }
+              ],
+              "start": 1660028503374,
+              "stop": 1660028503518
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660028500046,
+          "stop": 1660028503518
+        },
+        {
+          "name": "ClickButtonLogIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660028503519,
+          "stop": 1660028503648
+        },
+        {
+          "name": "ClickButtonNextPayLssnStdnt",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "element click intercepted: Element <button _ngcontent-c8=\"\" class=\"btn btn-primary\">...</button> is not clickable at point (1649, 632). Other element would receive the click: <ngb-modal-window role=\"dialog\" tabindex=\"-1\" class=\"modal fade show d-block payment-dialog\" aria-modal=\"true\">...</ngb-modal-window>\n  (Session info: chrome=104.0.5112.81)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonNextPayLssnStdnt_100663580_o() in C:\\Automation\\SamiiProjectOptimal\\SamiiProjectOptimal\\PageObjects\\WebSiteStudentPages\\PayLessonStudentPage\\PayLessonStudentActions.cs:line 54\r\n   at SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPage.PayLessonStudent.__a$_around_ClickButtonNextPayLssnStdnt_100663580_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660028503648,
+          "stop": 1660028507896
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ccad7397852b4ab49da8b42d04b1c1d2-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1660028480007,
+      "stop": 1660028508355
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1660028480005,
+  "stop": 1660028508363
+}

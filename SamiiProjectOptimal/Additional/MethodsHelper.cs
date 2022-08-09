@@ -91,7 +91,18 @@ namespace SamiiProjectOptimal.Additional
         public Click SelectRoleOnCreateAccountPage(int numberItem, string locationRole)
         {
             WaitUntil.WaitSomeInterval(1);
-            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorRoleOnCreateaccountPage(locationRole);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorRoleOnCreateAccountPage(locationRole);
+
+            _numberItem[numberItem].Click();
+
+            return this;
+        }
+        
+        [AllureStep("SelectRoleOnCreateaccountPage")]
+        public Click SelectLocationForTeacherEdtPrfPg(int numberItem, string locationPlace)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorLocationForTeacherEdtPrfPg(locationPlace);
 
             _numberItem[numberItem].Click();
 

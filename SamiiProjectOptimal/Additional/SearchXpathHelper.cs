@@ -76,12 +76,21 @@ namespace SamiiProjectOptimal.Additional
         }
 
         [AllureStep("SelectorRoleOnCreateaccountPage")]
-        public static IList<IWebElement> SelectorRoleOnCreateaccountPage(string locationRole)
+        public static IList<IWebElement> SelectorRoleOnCreateAccountPage(string locationRole)
         {
             WaitUntil.WaitSomeInterval(1);
             var str = "//div[@class = 'container']";
             _element = Browser._Driver.FindElement(By.XPath(str));
             return _element.FindElements(By.XPath($".//div[contains(text(), '{locationRole}')]"));
+        }
+
+        [AllureStep("SelectorLocationForTeacherEdtPrfPg")]
+        public static IList<IWebElement> SelectorLocationForTeacherEdtPrfPg(string locationPlace)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            var str = "//div[@class = 'h-100 d-flex flex-column justify-content-between']";
+            _element = Browser._Driver.FindElement(By.XPath(str));
+            return _element.FindElements(By.XPath($".//tr[contains(@class, '{locationPlace}')]//input[@class = 'form-control ng-untouched ng-pristine ng-valid ng-star-inserted']"));
         }
     }
 }
