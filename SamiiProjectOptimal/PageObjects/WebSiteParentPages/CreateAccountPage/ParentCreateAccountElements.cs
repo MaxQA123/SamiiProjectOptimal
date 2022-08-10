@@ -21,5 +21,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteParentPages.CreateAccountPage
 
         public IWebElement FieldInputParentStudentDetailsDateOfBirth => Browser._Driver.FindElement(_FieldInputParentStudentDetailsDateOfBirth);
         public readonly static By _FieldInputParentStudentDetailsDateOfBirth = By.XPath("//div[@class = 'studets ng-star-inserted']//input[@name = 'dp']");
+
+        public IWebElement ButtonSelectRoleParent => Browser._Driver.FindElement(_ButtonSelectRoleParent);
+        public readonly static By _ButtonSelectRoleParent = By.XPath("//div[contains(text(), 'Parent')]");
     }
 }

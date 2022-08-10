@@ -82,7 +82,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogInAsParent();
             Pages.PayLessonStudent
                 .ClickButtonNextPayLssnStdnt();
-            Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
+            Pages.TeacherCreateAccount
+                .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions();
             Pages.PayLessonStudent
@@ -125,7 +126,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogInAsParent();
             Pages.PayLessonStudent
                 .ClickButtonNextPayLssnStdnt();
-            Pages.Click.SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
+            Pages.TeacherCreateAccount
+                .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions();
             Pages.PayLessonStudent
@@ -200,7 +202,7 @@ namespace SamiiProjectOptimal.Tests
                 .EnterEmailPasswordAfterCreateAccount();
             Pages.LogInStudent
                 .ClickButtonSignIn();
-            Pages.GeneralCreateAccount
+            Pages.ParentCreateAccount
                 .SelectRoleParent();
             Pages.CreateAccountStudent
                 .EnterFirslastNamePhoneAddress();

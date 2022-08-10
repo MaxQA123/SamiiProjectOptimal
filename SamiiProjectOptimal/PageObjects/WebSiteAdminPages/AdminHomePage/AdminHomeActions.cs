@@ -1,4 +1,5 @@
 ﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -44,8 +45,23 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteAdminPages.AdminHomePage
             ButtonDetailsTestTeacher.Click();
 
             return this;
+        }
 
         #endregion
+
+        #region MethodsForSearchXPathHelper
+
+        [AllureStep("SelectNumberPaginationForTeacherAdminPg")]
+        public AdminHome SelectNumberPaginationForTeacherAdminPg(int numberItem, string locationNumber)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorNumberPaginationForTeacherAdminPg(locationNumber);
+
+            _numberItem[numberItem].Click();
+
+            return this;
         }
+
+        #endregion
     }
 }

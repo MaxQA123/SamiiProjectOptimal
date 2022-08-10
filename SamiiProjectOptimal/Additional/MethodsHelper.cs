@@ -27,113 +27,27 @@ namespace SamiiProjectOptimal.Additional
         }
     }
 
-    #region MethodsForSearchXPathHelper
-
     public class Click
     {
-        [AllureStep("ClickTwiceOnLessonPage")]
-        public Click ClickTwiceOnLessonPage(int timeSlot, string location)
-        {
-            WaitUntil.WaitSomeInterval(3);
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional(location);
-
-            _shedulerLessonPage[timeSlot].Click();
-            _shedulerLessonPage[timeSlot].Click();
-
-            return this;
-        }
-
-        [AllureStep("ClickOnceLessonPage")]
-        public Click ClickOnceLessonPage(int timeSlot, string location)
-        {
-            WaitUntil.WaitSomeInterval(3);
-            IList<IWebElement> _schedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional(location);
-
-            _schedulerLessonPage[timeSlot].Click();
-
-            return this;
-        }
-
-        [AllureStep("SelectUserOnMessengerPage")]
-        public Click SelectUserOnMessengerPage(int numberUser, string locationUserInList)
+        [AllureStep("Click")]
+        public void ClickElement(IWebElement element)
         {
             WaitUntil.WaitSomeInterval(1);
-            IList<IWebElement> _numberUser = SearchXpathHelper.SelectorUsersOnMessengerPage(locationUserInList);
-
-            _numberUser[numberUser].Click();
-
-            return this;
+            WaitUntil.CustomElevemtIsVisible(element);
+            element.Click();
         }
-
-        [AllureStep("SelectItemBadgesEdtPrflPg")]
-        public Click SelectItemBadgesEdtPrflPg(int numberItem, string locationItemBadges)
-        {
-            WaitUntil.WaitSomeInterval(1);
-            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorItemBadgesEdtPrflPg(locationItemBadges);
-
-            _numberItem[numberItem].Click();
-
-            return this;
-        }
-
-        [AllureStep("SelectInstrumentConfirmationtabPayPg")]
-        public Click SelectInstrumentConfirmationtabPayPg(int numberItem, string locationInstrument)
-        {
-            WaitUntil.WaitSomeInterval(1);
-            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorInstrumentConfirmationtabPayPg(locationInstrument);
-
-            _numberItem[numberItem].Click();
-
-            return this;
-        }
-
-        [AllureStep("SelectRoleOnCreateaccountPage")]
-        public Click SelectRoleOnCreateAccountPage(int numberItem, string locationRole)
-        {
-            WaitUntil.WaitSomeInterval(1);
-            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorRoleOnCreateAccountPage(locationRole);
-
-            _numberItem[numberItem].Click();
-
-            return this;
-        }
-        
-        [AllureStep("SelectRoleOnCreateaccountPage")]
-        public Click SelectLocationForTeacherEdtPrfPg(int numberItem, string locationPlace)
-        {
-            WaitUntil.WaitSomeInterval(1);
-            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorLocationForTeacherEdtPrfPg(locationPlace);
-
-            _numberItem[numberItem].Click();
-
-            return this;
-        }
-
-        [AllureStep("SelectNumberPaginationForTeacherAdminPg")]
-        public Click SelectNumberPaginationForTeacherAdminPg(int numberItem, string locationNumber)
-        {
-            WaitUntil.WaitSomeInterval(1);
-            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorNumberPaginationForTeacherAdminPg(locationNumber);
-
-            _numberItem[numberItem].Click();
-
-            return this;
-        }
-
     }
-
-    #endregion
 
     public class KeyBoardActions
     {
-        [AllureStep("InputFunctionWithoutClear")]
+        [AllureStep("InputFunctionWithoutClearSec")]
         public static void InputFunctionWithoutClearSec(IWebElement element)
         {
             WaitUntil.ElementIsClickable(element);
             element.SendKeys(Keys.Enter);
         }
 
-        [AllureStep("InputFunctionWithoutClear")]
+        [AllureStep("ClickEnterButton")]
         public static void ClickEnterButton()
         {
             new Actions(Browser._Driver)

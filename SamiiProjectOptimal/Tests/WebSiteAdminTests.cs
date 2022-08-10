@@ -70,7 +70,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
@@ -156,7 +156,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
@@ -238,7 +238,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
@@ -301,7 +301,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
@@ -379,7 +379,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
@@ -424,7 +424,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
@@ -481,7 +481,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
@@ -490,7 +490,7 @@ namespace SamiiProjectOptimal.Tests
 
             Pages.GeneralHeader
                 .ClickIconMessageHeader();
-            Pages.Click
+            Pages.GeneralMethods
                 .SelectUserOnMessengerPage(ListOfUsersMessengerPage.secondUser, "");
             Pages.GeneralMessenger
                 .EnterMessageOnMessengerPage();
@@ -507,7 +507,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.GeneralHeader
                 .ClickIconMessageHeader();
-            Pages.Click.SelectUserOnMessengerPage(ListOfUsersMessengerPage.firstUser, "");
+            Pages.GeneralMethods
+                .SelectUserOnMessengerPage(ListOfUsersMessengerPage.firstUser, "");
             Pages.GeneralMessenger
                 .VerifyTextMessage(getTextMessageForCompare);
 

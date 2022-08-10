@@ -75,7 +75,7 @@ namespace SamiiProjectOptimal.Tests
                 .EnterPassword();
             Pages.LogInTeacher
                 .ClickButtonLogIn();
-            Pages.Click
+            Pages.GeneralMethods
                 .SelectRoleOnCreateAccountPage(ListRolesCreateAccountpagePg.teacher, "");
             Pages.TeacherCreateAccount
                 .EnterFirstLastNameAddressPhone();
@@ -151,7 +151,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
-            Pages.Click
+            Pages.GeneralMethods
                 .ClickTwiceOnLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
 
             //IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
@@ -174,7 +174,7 @@ namespace SamiiProjectOptimal.Tests
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonSaveForTeacher();
 
-            Pages.Click
+            Pages.GeneralMethods
                 .ClickOnceLessonPage(TimeSlots.timeSlot_21_30, "Hame page");
 
             //IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
@@ -191,7 +191,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNextAfterAssignStudent();
             Pages.TeacherLssnShdlrMdlWndw
                 .ClickButtonSaveForTeacher();
-            Pages.Click
+            Pages.GeneralMethods
                 .ClickOnceLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
 
             //IList<IWebElement> _shedulerLessonPageA = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
@@ -362,7 +362,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();
@@ -561,7 +561,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogInAsTeacher();
             Pages.GeneralHeader
                 .ClickIconMessageHeader();
-            Pages.Click
+            Pages.GeneralMethods
                 .SelectUserOnMessengerPage(ListOfUsersMessengerPage.secondUser, "");
             Pages.GeneralMessenger
                 .EnterMessageOnMessengerPage();
@@ -578,7 +578,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.GeneralHeader
                 .ClickIconMessageHeader();
-            Pages.Click.SelectUserOnMessengerPage(ListOfUsersMessengerPage.firstUser, "");
+            Pages.GeneralMethods
+                .SelectUserOnMessengerPage(ListOfUsersMessengerPage.firstUser, "");
             Pages.GeneralMessenger
                 .VerifyTextMessage(getTextMessageForCompare);
 
@@ -610,11 +611,11 @@ namespace SamiiProjectOptimal.Tests
                 .ClickItemTeacherEditProfileDropDown();
             Pages.EditProfile
                 .ClickIconEditBadgesEdtPrfPg();
-            Pages.Click
+            Pages.TeacherCreateAccount
                 .SelectItemBadgesEdtPrflPg(ListItemBadges.internationalTourningMusician, "");
             Pages.EditProfile
                 .ClickButtonArrowWithRightBadgesEdtPrfPg();
-            Pages.Click
+            Pages.TeacherCreateAccount
                 .SelectItemBadgesEdtPrflPg(ListItemBadges.twelveYearsOfTeaching, "");
             Pages.EditProfile
                 .ClickIconConfirmEditBadgesEdtPrfPg()
@@ -624,7 +625,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickIconEditLocationEdtPrfPg()
                 .ScrollToRadioButtonProfileListedOnDirectoryEdtPrfPg()
                 .ClickButtonAddForLocationEdtPrfPg();
-            Pages.Click
+            Pages.TeacherCreateAccount
                 .SelectLocationForTeacherEdtPrfPg(ListOfNameLocationsEdtPrfPg.fourthInputField, "");
 
             Thread.Sleep(5000);

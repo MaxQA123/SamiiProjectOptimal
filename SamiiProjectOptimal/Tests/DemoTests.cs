@@ -129,7 +129,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
 
-            Pages.Click
+            Pages.GeneralMethods
                 .ClickTwiceOnLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
 
             Pages.AdminLssnShdlrMdlWndwPg
@@ -145,7 +145,7 @@ namespace SamiiProjectOptimal.Tests
 
             string time = Pages.TeacherLessonSheduler.GetTime(TimeSlots.timeSlot_21_00, "Home Studio");
 
-            Pages.Click
+            Pages.GeneralMethods
                 .ClickOnceLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
 
             Pages.TeacherLssnShdlrMdlWndw
@@ -299,7 +299,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.AdminHome
                 .ScrollToPaginationEducatorTbl();
-            Pages.Click
+            Pages.AdminHome
                 .SelectNumberPaginationForTeacherAdminPg(NumbersForThePaginationAdminAcTableTeacher.fiveth, "");
             Pages.AdminHome
                 .ClickButtonDetailsTestTeacher();

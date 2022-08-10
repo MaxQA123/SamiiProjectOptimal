@@ -48,5 +48,8 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage
 
         public IWebElement RadioButtonProfileListedOnDirectoryEdtPrfPg => Browser._Driver.FindElement(_RadioButtonProfileListedOnDirectoryEdtPrfPg);
         public readonly static By _RadioButtonProfileListedOnDirectoryEdtPrfPg = By.XPath("//span[@class = 'slider']");
+
+        public IList<IWebElement> InputLocation => Browser._Driver.FindElements(By.XPath($".//tbody/tr/td/input"));
+        
     }
 }

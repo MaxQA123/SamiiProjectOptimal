@@ -93,12 +93,11 @@ namespace SamiiProjectOptimal.Tests
                 .SwitchOnLogInPage();
             Pages.EmailXitroo
                 .EnterRepeatEmail(_email);
-
             Pages.LogInStudent
                 .EnterEmailPasswordAfterCreateAccount();
             Pages.LogInStudent
                 .ClickButtonSignIn();
-            Pages.Click
+            Pages.GeneralMethods
                 .SelectRoleOnCreateAccountPage(ListRolesCreateAccountpagePg.student, "");
             Pages.CreateAccountStudent
                 .EnterFirslastNamePhoneAddress();
@@ -187,7 +186,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogIn()
                 .ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab()
                 .ClickButtonNextPayLssnStdnt();
-            Pages.Click
+            Pages.TeacherCreateAccount
                 .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions()
@@ -277,7 +276,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogIn()
                 
                 .ClickButtonNextPayLssnStdnt();
-            Pages.Click
+            Pages.TeacherCreateAccount
                 .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions()
@@ -407,7 +406,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonSignIn();
             Pages.GeneralHeader
                 .ClickIconMessageHeader();
-            Pages.Click
+            Pages.GeneralMethods
                 .SelectUserOnMessengerPage(ListOfUsersMessengerPage.firstUser, "");
             Pages.GeneralMessenger
                 .EnterMessageOnMessengerPage();
@@ -424,7 +423,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogInAsTeacher();
             Pages.GeneralHeader
                 .ClickIconMessageHeader();
-            Pages.Click.SelectUserOnMessengerPage(ListOfUsersMessengerPage.secondUser, "");
+            Pages.GeneralMethods
+                .SelectUserOnMessengerPage(ListOfUsersMessengerPage.secondUser, "");
             Thread.Sleep(5000);
             Pages.GeneralMessenger
                 .VerifyTextMessage(getTextMessageForCompare);

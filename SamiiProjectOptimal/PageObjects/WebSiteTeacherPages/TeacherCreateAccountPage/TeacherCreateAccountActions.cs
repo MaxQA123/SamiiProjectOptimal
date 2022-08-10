@@ -1,4 +1,6 @@
-﻿using RimuTec.Faker;
+﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
+using RimuTec.Faker;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -100,6 +102,44 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.TeacherCreateAccou
         {
             WaitUntil.ShouldLocate(_ButtonTeacherNextStepButton);
             ButtonTeacherNextStepButton.Click();
+
+            return this;
+        }
+
+        #endregion
+
+        #region MethodsForSearchXPathHelper
+
+        [AllureStep("SelectLocationForTeacherEdtPrfPg")]
+        public TeacherCreateAccount SelectLocationForTeacherEdtPrfPg(int numberItem, string locationPlace)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorLocationForTeacherEdtPrfPg(locationPlace);
+
+            _numberItem[numberItem].Click();
+            _numberItem[numberItem].SendKeys(TestDataNameLocations.homeStudio);
+
+            return this;
+        }
+
+        [AllureStep("SelectItemBadgesEdtPrflPg")]
+        public TeacherCreateAccount SelectItemBadgesEdtPrflPg(int numberItem, string locationItemBadges)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorItemBadgesEdtPrflPg(locationItemBadges);
+
+            _numberItem[numberItem].Click();
+
+            return this;
+        }
+
+        [AllureStep("SelectInstrumentConfirmationtabPayPg")]
+        public TeacherCreateAccount SelectInstrumentConfirmationtabPayPg(int numberItem, string locationInstrument)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorInstrumentConfirmationtabPayPg(locationInstrument);
+
+            _numberItem[numberItem].Click();
 
             return this;
         }

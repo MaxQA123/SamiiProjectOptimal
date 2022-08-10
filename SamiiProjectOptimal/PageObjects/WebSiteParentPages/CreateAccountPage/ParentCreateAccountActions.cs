@@ -39,5 +39,15 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteParentPages.CreateAccountPage
 
             return this;
         }
+
+        [AllureStep("SelectRoleParent")]
+        public ParentCreateAccount SelectRoleParent()
+        {
+            WaitUntil.WaitSomeInterval(3);
+            WaitUntil.ElementIsClickable(ButtonSelectRoleParent);
+            ButtonSelectRoleParent.Click();
+
+            return this;
+        }
     }
 }
