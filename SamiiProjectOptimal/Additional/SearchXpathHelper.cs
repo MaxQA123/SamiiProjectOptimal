@@ -21,15 +21,6 @@ namespace SamiiProjectOptimal.Additional
             return _element.FindElements(By.XPath($".//span[contains(text(), '{location}')]/ancestor::tr//td"));
         }
 
-        [AllureStep("SelectorShedulerLessonPage")]
-        public static IList<IWebElement> SelectorShedulerLessonPage(string locationpage)
-        {
-            WaitUntil.WaitSomeInterval(10);
-            var str = "//div[@class = 'container-fluid']//div[@class = 'timeline-container']//table";
-            _element = Browser._Driver.FindElement(By.XPath(str));
-            return _element.FindElements(By.XPath($".//span[contains(text(), '{locationpage}')]/ancestor::tr//td"));
-        }
-
         [AllureStep("SelectorShedulerLessonPageAdditional")]
         public static IList<IWebElement> SelectorShedulerLessonPageAdditional(string _locationpage)
         {
@@ -39,14 +30,14 @@ namespace SamiiProjectOptimal.Additional
             return _element.FindElements(By.XPath($".//span[contains(text(), '{_locationpage}')]/ancestor::tr//td"));
         }
 
-        [AllureStep("SelectorOnsideRghtCalendarShedulerLessonPage")]
-        public static IList<IWebElement> SelectorOnsideRghtCalendarShedulerLessonPage(string locationmonth)
-        {
-            WaitUntil.WaitSomeInterval(10);
-            var str = $"//li[contains(text(), '{locationmonth}')]/ancestor::div/ul[@class = 'days']";
-            _element = Browser._Driver.FindElement(By.XPath(str));
-            return _element.FindElements(By.XPath($".//li"));
-        }
+        //[AllureStep("SelectorOnsideRghtCalendarShedulerLessonPage")]
+        //public static IList<IWebElement> SelectorOnsideRghtCalendarShedulerLessonPage(string locationmonth)
+        //{
+        //    WaitUntil.WaitSomeInterval(10);
+        //    var str = $"//li[contains(text(), '{locationmonth}')]/ancestor::div/ul[@class = 'days']";
+        //    _element = Browser._Driver.FindElement(By.XPath(str));
+        //    return _element.FindElements(By.XPath($".//li"));
+        //}
 
         [AllureStep("SelectorUsersOnMessengerPage")]
         public static IList<IWebElement> SelectorUsersOnMessengerPage(string locationUser)
@@ -84,7 +75,7 @@ namespace SamiiProjectOptimal.Additional
             return _element.FindElements(By.XPath($".//div[contains(text(), '{locationRole}')]"));
         }
 
-        [AllureStep("SelectorLocationForTeacherEdtPrfPg")]
+        //[AllureStep("SelectorLocationForTeacherEdtPrfPg")]
         //public static IList<IWebElement> SelectorLocationForTeacherEdtPrfPg(string locationPlace)
         //{
         //    WaitUntil.WaitSomeInterval(1);
@@ -93,6 +84,7 @@ namespace SamiiProjectOptimal.Additional
         //    return _element.FindElements(By.XPath($".//tr[contains(@class, '{locationPlace}')]//input[@class = 'form-control ng-untouched ng-pristine ng-valid ng-star-inserted']"));
         //}
 
+        [AllureStep("SelectorLocationForTeacherEdtPrfPg")]
         public static IList<IWebElement> SelectorLocationForTeacherEdtPrfPg(string locationPlace)
         {
             WaitUntil.WaitSomeInterval(1);
@@ -109,6 +101,5 @@ namespace SamiiProjectOptimal.Additional
             _element = Browser._Driver.FindElement(By.XPath(str));
             return _element.FindElements(By.XPath($".//li[contains(@class, '{locationNumber}')]//a"));
         }
-        //nav[@class = 'pagination ng-star-inserted']/li[contains(@class, 'disabled')]//a
     }
 }

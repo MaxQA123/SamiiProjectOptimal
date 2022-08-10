@@ -1,0 +1,154 @@
+{
+  "uuid": "0342977f-f0fd-403b-a61d-6ea25ff23507-tr-0-1001",
+  "historyId": "AdminTests.WebSiteAdminTests.LogIn",
+  "fullName": "AdminTests.WebSiteAdminTests.LogIn",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "AdminTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LogIn"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteAdminTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Admin"
+    },
+    {
+      "name": "subSuite",
+      "value": "Login"
+    }
+  ],
+  "links": [],
+  "name": "LogIn",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "LogIn"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LogIn",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Enter Credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660134233852,
+          "stop": 1660134235502
+        },
+        {
+          "name": "ClickButtonSignIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660134235503,
+          "stop": 1660134236638
+        },
+        {
+          "name": "GetNameAdminFromAdminPage",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660134236639,
+          "stop": 1660134245786
+        },
+        {
+          "name": "VerifyCurrentNameAdmin",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Pete Barter"
+            }
+          ],
+          "start": 1660134245787,
+          "stop": 1660134246807
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "62c22f38e7d44e798b8f7432e2690f49-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1660134231191,
+      "stop": 1660134252310
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1660134231189,
+  "stop": 1660134252317
+}

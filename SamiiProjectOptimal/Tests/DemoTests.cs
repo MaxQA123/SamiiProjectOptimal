@@ -38,25 +38,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickArrowDropDownMenu();
             Pages.GeneralHeader
                 .ClickButtonItemLessonSheduler();
-
-            IList<IWebElement> shedulerLessonOnSideRight = SearchXpathHelper.SelectorOnsideRghtCalendarShedulerLessonPage("August");
-
-            //shedulerLessonOnSideRight[8].Click();
-
-            foreach (var item in shedulerLessonOnSideRight)
-            {
-                if (item.Text == "1")
-                {
-                    item.Click();
-
-                    break;
-                }
-            }
-
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Third");
-
-            _shedulerLessonPage[29].Click();
-
+            Pages.GeneralMethods
+                .ClickOnceLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
             Pages.TeacherLssnShdlrMdlWndw
                .ClickDeleteDtlsTab();
             Pages.TeacherLssnShdlrMdlWndw
@@ -128,10 +111,8 @@ namespace SamiiProjectOptimal.Tests
             Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
-
             Pages.GeneralMethods
                 .ClickTwiceOnLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
-
             Pages.AdminLssnShdlrMdlWndwPg
                 .SelectAllInstruments();
             Pages.AdminLssnShdlrMdlWndwPg
@@ -175,11 +156,8 @@ namespace SamiiProjectOptimal.Tests
             Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
-
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
-
-            _shedulerLessonPage[31].Click();
-
+            Pages.GeneralMethods
+                .ClickOnceLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
             Pages.TeacherLssnShdlrMdlWndw
                .ClickDeleteDtlsTab();
             Pages.TeacherLssnShdlrMdlWndw
@@ -308,13 +286,8 @@ namespace SamiiProjectOptimal.Tests
             Pages.GeneralHeader
                 .ClickArrowDropDownMenu()
                 .ClickButtonItemLessonSheduler();
-
-            IList<IWebElement> shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPage("Home Studio");
-
-            shedulerLessonPage[44].Click();
-            WaitUntil.WaitSomeInterval(1);
-            shedulerLessonPage[44].Click();
-
+            Pages.GeneralMethods
+                .ClickTwiceOnLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
             Pages.AdminLssnShdlrMdlWndwPg
                 .SelectAllInstruments();
             Pages.AdminLssnShdlrMdlWndwPg
@@ -325,11 +298,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNext();
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonSaveForAdmin();
-
-            IList<IWebElement> _shedulerLessonPage = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
-
-            _shedulerLessonPage[44].Click();
-
+            Pages.GeneralMethods
+                .ClickOnceLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonAssignLessonToAfterSaved();
             Pages.AdminLssnShdlrMdlWndwPg
@@ -343,11 +313,8 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonNextAfterAssignStudent();
             Pages.AdminLssnShdlrMdlWndwPg
                 .ClickButtonSaveForAdmin();
-
-            IList<IWebElement> _shedulerLessonPageA = SearchXpathHelper.SelectorShedulerLessonPageAdditional("Home Studio");
-
-            _shedulerLessonPageA[44].Click();
-
+            Pages.GeneralMethods
+                .ClickOnceLessonPage(TimeSlots.timeSlot_21_30, "Home Studio");
             Pages.AdminLssnShdlrMdlWndwPg
                 .VerifySetLesson(getTitle)
                 .ClickButtonCloseViaCross();
