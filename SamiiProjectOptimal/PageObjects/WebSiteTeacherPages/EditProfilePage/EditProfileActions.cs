@@ -1,4 +1,5 @@
 ﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -98,6 +99,40 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteTeacherPages.EditProfilePage
         {
             WaitUntil.WaitSomeInterval(1);
             Scrolling.ScrollToElement(RadioButtonProfileListedOnDirectoryEdtPrfPg);
+
+            return this;
+        }
+
+        [AllureStep("SelectLocationForTeacherEdtPrfPg")]
+        public EditProfile SelectLocationFieldsWithLeftForTeacherEdtPrfPg(int numberItem, string locationPlace)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorLocationFieldsWithLeftForTeacherEdtPrfPg(locationPlace);
+
+            _numberItem[numberItem].Click();
+            _numberItem[numberItem].SendKeys(TestDataNameLocations.homeStudio);
+
+            return this;
+        }
+
+        [AllureStep("SelectItemBadgesEdtPrflPg")]
+        public EditProfile SelectItemBadgesEdtPrflPg(int numberItem, string locationItemBadges)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorItemBadgesEdtPrflPg(locationItemBadges);
+
+            _numberItem[numberItem].Click();
+
+            return this;
+        }
+
+        [AllureStep("SelectInstrumentConfirmationtabPayPg")]
+        public EditProfile SelectInstrumentConfirmationtabPayPg(int numberItem, string locationInstrument)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorInstrumentConfirmationtabPayPg(locationInstrument);
+
+            _numberItem[numberItem].Click();
 
             return this;
         }

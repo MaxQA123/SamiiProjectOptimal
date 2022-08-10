@@ -1,0 +1,76 @@
+{
+  "uuid": "3ccbb736-6f5d-4c59-be49-abd9d40eb2f7-tc-0-1000",
+  "name": "TeacherTests.WebSiteTeacherTests.EditProfile",
+  "children": [
+    "9145fb6c-b4ff-4baf-b59f-15309852005f-tr-0-1010"
+  ],
+  "befores": [
+    {
+      "name": "DobeforeAllTheTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1660137408173,
+      "stop": 1660137408173
+    },
+    {
+      "name": "SetUp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1660137408174,
+      "stop": 1660137408174
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEach",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1660137408174,
+      "stop": 1660137408174
+    },
+    {
+      "name": "DoAfterAllTheTests",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1660137408174,
+      "stop": 1660137408174
+    }
+  ],
+  "links": [],
+  "start": 1660137358383,
+  "stop": 1660137408227
+}

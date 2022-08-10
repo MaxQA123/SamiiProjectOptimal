@@ -1,4 +1,5 @@
 ﻿using NUnit.Allure.Attributes;
+using OpenQA.Selenium;
 using SamiiProjectOptimal.Additional;
 using System;
 using System.Collections.Generic;
@@ -130,6 +131,17 @@ namespace SamiiProjectOptimal.PageObjects.WebSiteStudentPages.PayLessonStudentPa
         {
             WaitUntil.ShouldLocate(_ButtonConfirmMdlWndwYouveDone);
             ButtonConfirmMdlWndwYouveDone.Click();
+
+            return this;
+        }
+
+        [AllureStep("SelectInstrumentConfirmationtabPayPg")]
+        public PayLessonStudent SelectInstrumentConfirmationtabPayPg(int numberItem, string locationInstrument)
+        {
+            WaitUntil.WaitSomeInterval(1);
+            IList<IWebElement> _numberItem = SearchXpathHelper.SelectorInstrumentConfirmationtabPayPg(locationInstrument);
+
+            _numberItem[numberItem].Click();
 
             return this;
         }

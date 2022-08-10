@@ -542,13 +542,11 @@ namespace TeacherTests
                 .ClickItemTeacherEditProfileDropDown();
             Pages.EditProfile
                 .ClickIconEditBadgesEdtPrfPg();
-            Pages.TeacherCreateAccount
-                .SelectItemBadgesEdtPrflPg(ListItemBadges.internationalTourningMusician, "");
             Pages.EditProfile
-                .ClickButtonArrowWithRightBadgesEdtPrfPg();
-            Pages.TeacherCreateAccount
-                .SelectItemBadgesEdtPrflPg(ListItemBadges.twelveYearsOfTeaching, "");
-            Pages.EditProfile
+                .SelectItemBadgesEdtPrflPg(ListItemBadges.internationalTourningMusician, "")
+                .ClickButtonArrowWithRightBadgesEdtPrfPg()
+                .SelectItemBadgesEdtPrflPg(ListItemBadges.twelveYearsOfTeaching, "")
+            
                 .ClickIconConfirmEditBadgesEdtPrfPg()
                 .ClickIconEditIntroductionEdtPrfPg()
                 .EnterTextInFieldInputEditIntroductionEdtPrfPg()
@@ -556,8 +554,8 @@ namespace TeacherTests
                 .ClickIconEditLocationEdtPrfPg()
                 .ScrollToRadioButtonProfileListedOnDirectoryEdtPrfPg()
                 .ClickButtonAddForLocationEdtPrfPg();
-            Pages.TeacherCreateAccount
-                .SelectLocationForTeacherEdtPrfPg(ListOfNameLocationsEdtPrfPg.fourthInputField, "");
+            Pages.EditProfile
+                .SelectLocationFieldsWithLeftForTeacherEdtPrfPg(ListOfNameLocationsEdtPrfPg.fourthInputField, "");
 
             Thread.Sleep(5000);
         }

@@ -82,7 +82,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogInAsParent();
             Pages.PayLessonStudent
                 .ClickButtonNextPayLssnStdnt();
-            Pages.TeacherCreateAccount
+            Pages.PayLessonStudent
                 .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions();
@@ -126,7 +126,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogInAsParent();
             Pages.PayLessonStudent
                 .ClickButtonNextPayLssnStdnt();
-            Pages.TeacherCreateAccount
+            Pages.PayLessonStudent
                 .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions();

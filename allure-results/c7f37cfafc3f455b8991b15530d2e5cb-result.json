@@ -1,0 +1,465 @@
+{
+  "uuid": "1df4426e-1690-4fcf-ad2b-b8b79245b901-tr-0-1010",
+  "historyId": "TeacherTests.WebSiteTeacherTests.EditProfile",
+  "fullName": "TeacherTests.WebSiteTeacherTests.EditProfile",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-JHNIII0"
+    },
+    {
+      "name": "package",
+      "value": "TeacherTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "EditProfile"
+    },
+    {
+      "name": "testClass",
+      "value": "WebSiteTeacherTests"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim <maxqatesting390@gmail.com>"
+    },
+    {
+      "name": "tag",
+      "value": "Regression"
+    },
+    {
+      "name": "owner",
+      "value": "Maksim Perevalov"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "suite",
+      "value": "Teacher"
+    },
+    {
+      "name": "subSuite",
+      "value": "EditProfile"
+    }
+  ],
+  "links": [],
+  "name": "EditProfile",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "EditProfile"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "EditProfile",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterEamilPassword",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143460536,
+          "stop": 1660143461995
+        },
+        {
+          "name": "ClickButtonLogIn",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143461997,
+          "stop": 1660143462171
+        },
+        {
+          "name": "ClickArrowDropDownMenu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143462173,
+          "stop": 1660143465853
+        },
+        {
+          "name": "ClickItemTeacherEditProfileDropDown",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143465854,
+          "stop": 1660143473719
+        },
+        {
+          "name": "ClickIconEditBadgesEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143473720,
+          "stop": 1660143479041
+        },
+        {
+          "name": "SelectItemBadgesEdtPrflPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorItemBadgesEdtPrflPg",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1660143480063,
+              "stop": 1660143481100
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "5"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1660143479045,
+          "stop": 1660143481186
+        },
+        {
+          "name": "ClickButtonArrowWithRightBadgesEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143481186,
+          "stop": 1660143482316
+        },
+        {
+          "name": "SelectItemBadgesEdtPrflPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorItemBadgesEdtPrflPg",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1660143483329,
+              "stop": 1660143484369
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "9"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1660143482316,
+          "stop": 1660143484430
+        },
+        {
+          "name": "ClickIconConfirmEditBadgesEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143484431,
+          "stop": 1660143485652
+        },
+        {
+          "name": "ClickIconEditIntroductionEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143485652,
+          "stop": 1660143486801
+        },
+        {
+          "name": "EnterTextInFieldInputEditIntroductionEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "InputFunctionWithClear",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 97ff0140-ce4e-4a19-ae34-8b686c992689)"
+                },
+                {
+                  "name": "String",
+                  "value": "Thank you for visiting. To get started have a look at my profile. View my videos, pictures and testimonials. The good thing about SAMii is you can book directly into my available lesson time slots based on the day and time that work well for you. Another cool feature is that secure payments are made easy for both of us. Let's get started by clicking the Enrol button now and I look forward to inspiring the next generation of musicians. (1234567890)%#@!?&"
+                }
+              ],
+              "start": 1660143487857,
+              "stop": 1660143493727
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143486801,
+          "stop": 1660143493727
+        },
+        {
+          "name": "ClickIconConfirmIntroductionBadgesEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143493727,
+          "stop": 1660143494838
+        },
+        {
+          "name": "ClickIconEditLocationEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143494838,
+          "stop": 1660143495994
+        },
+        {
+          "name": "ScrollToRadioButtonProfileListedOnDirectoryEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "ScrollToElement",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 715f107f-3c80-4755-9399-9f01006c79b6)"
+                }
+              ],
+              "start": 1660143497034,
+              "stop": 1660143497045
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143495995,
+          "stop": 1660143497045
+        },
+        {
+          "name": "ClickButtonAddForLocationEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1660143497047,
+          "stop": 1660143498163
+        },
+        {
+          "name": "SelectLocationForTeacherEdtPrfPg",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "SelectorLocationForTeacherEdtPrfPg",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "String",
+                  "value": ""
+                }
+              ],
+              "start": 1660143499189,
+              "stop": 1660143500226
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "3"
+            },
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1660143498164,
+          "stop": 1660143500450
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a9d894a476714490b16074105b743d85-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1660143457163,
+      "stop": 1660143505983
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1660143457161,
+  "stop": 1660143505991
+}

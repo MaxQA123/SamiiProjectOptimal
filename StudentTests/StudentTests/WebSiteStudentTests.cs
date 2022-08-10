@@ -186,7 +186,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogIn()
                 .ClickButtonCloseForMdlWndwTenLessonsInadvancePayLssnStdntDtlsTab()
                 .ClickButtonNextPayLssnStdnt();
-            Pages.TeacherCreateAccount
+            Pages.PayLessonStudent
                 .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions()
@@ -276,7 +276,7 @@ namespace SamiiProjectOptimal.Tests
                 .ClickButtonLogIn()
                 
                 .ClickButtonNextPayLssnStdnt();
-            Pages.TeacherCreateAccount
+            Pages.PayLessonStudent
                 .SelectInstrumentConfirmationtabPayPg(ListInstrumentForConfirmationtabPayPg.piano, "");
             Pages.PayLessonStudent
                 .ClickCheckBoxIAgreeToTheTermsAndConditions()
